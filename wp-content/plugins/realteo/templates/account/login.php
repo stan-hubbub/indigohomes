@@ -229,7 +229,7 @@ if ( isset( $_REQUEST['register-errors'] ) ) {
 					        </p>
 						        
 						<?php } ?>
-			        <p class="signup-submit">
+			        <p class="signup-submit margin-top-30">
 			            <input type="submit" name="submit" class="register-button"  value="<?php esc_html_e( 'Register', 'realteo' ); ?>"/>
 			        </p>
 			    </form>
