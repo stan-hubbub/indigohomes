@@ -856,9 +856,9 @@ header.fullwidth .container {
 /* Footer
 ------------------------------------- */
 #footer {
-  padding: 70px 0 0 0;
-  background-color: #fcfcfc;
-  box-shadow: inset 0 20px 50px -20px rgba(0,0,0,0.06);
+  /* padding: 70px 0 0 0; */
+  background-color: #01051b;
+  /* box-shadow: inset 0 20px 50px -20px rgba(0,0,0,0.06); */
 }
 
 #footer.sticky-footer { box-shadow: none; }
@@ -954,9 +954,9 @@ header.fullwidth .container {
 
 /* Footer Bottom */
 .copyrights {
-  color: #707070;
-  border-top: 1px solid rgba(0,0,0,0.09);
-  margin-top: 60px;
+  color: #01051b;
+  /* border-top: 1px solid rgba(0,0,0,0.09); */
+  /* margin-top: 60px; */
   text-align: center;
   padding: 40px 0;
   display: inline-block;
@@ -969,7 +969,7 @@ header.fullwidth .container {
   padding: 25px;
 }
 
-.copyrights a { color: #707070; }
+.copyrights a { color:rgba(255,255,255,0.8); }
 
 
 /* Dark Styles */
