@@ -12238,8 +12238,11 @@ body .counter-boxes-inside-parallax .counter-box-icon i,
   body, h1, h2, h3, h4, h5, h6,  input[type="text"], input[type="password"], input[type="email"],input[type="tel"],
   textarea, select, input[type="button"], input[type="submit"], button, #tiptip_content, .map-box,
   body .menu-responsive i.menu-trigger:after, body .pac-container
-  { font-family: sans-serif; text-transform: none; }
-   /*font-family: "Varela Round", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, */
+  { 
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+    text-transform: none; 
+  }
+  /*font-family: "Varela Round", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, */
 
 
   /* Headlines */
