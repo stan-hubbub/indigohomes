@@ -860,8 +860,8 @@ header.fullwidth .container {
 ------------------------------------- */
 #footer {
   /* padding: 70px 0 0 0; */
-  background-color: #040221;
-  /* box-shadow: inset 0 20px 50px -20px rgba(0,0,0,0.06); */
+  background-color: #f7f7f7;
+  box-shadow: inset 0 20px 50px -20px rgba(0,0,0,0.06);
   margin-bottom: -4px;
 }
 
@@ -958,7 +958,7 @@ header.fullwidth .container {
 
 /* Footer Bottom */
 .copyrights {
-  color:rgba(255,255,255,0.8); 
+  color:#868686;
   /* border-top: 1px solid rgba(0,0,0,0.09); */
   /* margin-top: 60px; */
   text-align: center;
@@ -973,7 +973,7 @@ header.fullwidth .container {
   padding: 25px;
 }
 
-.copyrights a { color:rgba(255,255,255,0.8); }
+.copyrights a { color:#868686;}
 
 
 /* Dark Styles */
