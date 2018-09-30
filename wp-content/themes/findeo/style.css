@@ -582,7 +582,10 @@ ul.top-bar-menu li i {
 /* ---------------------------------- */
 /* Header
 ------------------------------------- */
-#logo { display: inline-block; margin-top: 1px; }
+#logo { 
+  display: inline-block; 
+  margin-top: 8px; 
+}
 
 
 #logo img { max-height: 43px; width: auto; transform: translate3d(0,0,0); }
@@ -592,7 +595,7 @@ img.footer-logo { max-height: 43px; width: auto; transform: translate3d(0,0,0); 
 #header {
   position: relative;
   z-index: 1011;
-  padding: 25px 0 14px 0;
+  padding: 15px 0 5px 0;
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.12);
 }
 
@@ -812,7 +815,7 @@ header.fullwidth .container {
 .admin-bar #header.cloned.sticky { margin-top: 32px }
 /* Sticky header styles */
 #header.cloned #logo img { transform: translate3d(0,0,0); max-width: 120px; margin-top: 1px; }
-#header.cloned { padding: 18px 0 7px 0; }
+#header.cloned { padding: 10px 0 0 0; }
 
 .sticky-logo { display: none; }
 
