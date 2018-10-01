@@ -882,7 +882,7 @@ header.fullwidth .container {
   margin-top: -200px;
   position: relative;
   z-index: -1;
-  box-shadow: 0 20px 40px -20px rgba(0,0,0,0.06);
+  /* box-shadow: 0 20px 40px -20px rgba(0,0,0,0.06); */
 }
 
 .text-widget span { color: #707070; }
@@ -3807,7 +3807,8 @@ a.listing-address {
 
 /* Listing Details */
 ul.listing-details {
-  background-color: #f7f7f7;
+  /* background-color: #f7f7f7; */
+  border-top: 1px solid #f7f7f7;
   list-style: none;
   padding: 0;
   margin: 0;
