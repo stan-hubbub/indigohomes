@@ -3927,7 +3927,7 @@ ul.listing-details li {
 }
 
 .list-layout .listing-img-container:after {
-  background: linear-gradient(to bottom, transparent 55%, rgba(44, 42, 80,0.5));
+  background: linear-gradient(to bottom, transparent 55%, rgba(44, 42, 80,0.5))!important;
 }
 
 
