@@ -3097,7 +3097,7 @@ body .vc_parallax>* {
 
 #titlebar h1,
 #titlebar h2 {
-  font-size: 25px;
+  font-size: 23px;
   line-height: 40px;
   margin: 1px 0 3px 0;
 }
@@ -3635,25 +3635,26 @@ body .agent-page ul.social-icons{
 
 .listing-img-container:before {
   opacity: 0.9;
-  background: linear-gradient(to bottom, transparent 65%, #2f2f2f);
+  background: linear-gradient(to bottom, transparent 65%,rgba(44, 42, 80,0.3));
   transition: opacity .3s;
 }
 
-.listing-img-container:after {
+/* .listing-img-container:after {
   opacity: 0;
   background: linear-gradient(to bottom, transparent 60%, #66676b);
   transition: opacity .4s;
-}
+} */
 
 .listing-img-container:hover:before {
-  opacity: 0;
-  transition: opacity 0.4s;
+  /* opacity: 0; */
+  /* transition: opacity 0.4s; */
+  background: linear-gradient(to bottom, transparent 65%,rgba(44, 42, 80,0.5));
 }
 
-.listing-img-container:hover:after {
+/* .listing-img-container:hover:after {
   opacity: 0.9;
   transition: opacity 0.3s;
-}
+} */
 
 
 /* Content on image */
