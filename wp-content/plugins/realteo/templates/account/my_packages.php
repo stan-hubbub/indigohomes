@@ -40,7 +40,7 @@
 		</div><a href="<?php echo get_permalink( realteo_get_option( 'submit_property_page' ) ); ?>" class="margin-top-20 button"> <?php esc_html_e('Submit New Property','realteo'); ?></a>
 <?php endif; ?>
 	
-	<a href="<?php echo get_permalink( wc_get_page_id( 'shop' ) ) ; ?>" class="margin-top-20 button"><i class="sl sl-icon-basket"></i> <?php esc_html_e('Purchase New Package','realteo'); ?></a>
+	<!-- <a href="<?php echo get_permalink( wc_get_page_id( 'shop' ) ) ; ?>" class="margin-top-20 button"><i class="sl sl-icon-basket"></i> <?php esc_html_e('Purchase New Package','realteo'); ?></a> -->
 
 </div>
 
