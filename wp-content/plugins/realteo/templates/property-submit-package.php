@@ -116,7 +116,7 @@ $user_packages = $data->user_packages;
                     ?>
                     
                     <input type="radio" name="package" value="<?php echo $product->get_id(); ?>" id="package-<?php echo $product->get_id(); ?>" />
-                  	<label for="package-<?php echo $product->get_id(); ?>"> <?php esc_html_e('Buy this package','realteo'); ?></label>
+                  	<label for="package-<?php echo $product->get_id(); ?>"> <?php esc_html_e('Select this package','realteo'); ?></label>
                     
                 </div>
             </div>
