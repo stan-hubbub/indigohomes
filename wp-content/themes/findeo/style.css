@@ -3074,7 +3074,6 @@ body .vc_parallax>* {
   position: relative;
   padding: 30px 0;
   margin-bottom: 65px;
-  border-bottom: 1px solid #efefef;
 }
 
 
@@ -4259,7 +4258,6 @@ div.fullwidth.border-bottom { border-bottom: 1px solid #e4e4e4;}
   background: linear-gradient(to bottom, #f7f7f7 0%, rgba(255,255,255,0.5));
   padding: 55px 0;
   padding-bottom: 45px;
-  border-bottom: none;
 }
 
 
