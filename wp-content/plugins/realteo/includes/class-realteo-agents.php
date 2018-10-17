@@ -741,6 +741,12 @@ class Realteo_Agents {
 	 
 	        case 'empty_password':
 	            return __( 'You need to enter a password to login.', 'realteo' );
+	    	
+			case 'first_name':
+	            return __( 'You need to provide your first name.', 'realteo' );
+	 
+			case 'last_name':
+	            return __( 'You need to provide your last name.', 'realteo' );
 	 
 	        case 'invalid_username':
 	            return __(
@@ -810,6 +816,16 @@ class Realteo_Agents {
 	    // parameter we need to validate
 	    if ( ! is_email( $email ) ) {
 	        $errors->add( 'email', $this->get_error_message( 'email' ) );
+	        return $errors;
+	    }
+		
+		if ( empty( $first_name ) ) {
+	        $errors->add( 'first_name', $this->get_error_message( 'first_name' ) );
+	        return $errors;
+	    }
+		
+		if ( empty( $last_name ) ) {
+	        $errors->add( '$last_name', $this->get_error_message( 'last_name' ) );
 	        return $errors;
 	    }
 	 
