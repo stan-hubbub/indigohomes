@@ -38,7 +38,7 @@ if ( $order ) : ?>
 
 	<?php else : ?>
 		<div class="notification closeable success">
-			<p><?php echo apply_filters( 'woocommerce_thankyou_order_received_text', esc_html__( 'Thank you. Your order has been received.', 'findeo' ), $order ); ?></p>
+			<p><?php echo apply_filters( 'woocommerce_thankyou_order_received_text', esc_html__( 'Done. You successfully submitted a property.', 'findeo' ), $order ); ?></p>
 		</div>
 		<ul class="order_details">
 			<li class="woocommerce-order-overview__order order">
@@ -79,6 +79,6 @@ if ( $order ) : ?>
 
 <?php else : ?>
 
-	<p><?php echo apply_filters( 'woocommerce_thankyou_order_received_text', esc_html__( 'Thank you. Your order has been received.', 'findeo' ), null ); ?></p>
+	<p><?php echo apply_filters( 'woocommerce_thankyou_order_received_text', esc_html__( 'Done. You successfully submitted a property.', 'findeo' ), null ); ?></p>
 
 <?php endif; ?>
