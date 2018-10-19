@@ -55,6 +55,12 @@ if ( isset( $_REQUEST['register-errors'] ) ) {
 			case 'policy-fail':
 			     $errors[] = esc_html__( "Please accept the Privacy Policy to register account.", 'realteo' );
 			     break;
+			case 'first_name':
+			     $errors[] = esc_html__( "Please provide your first name", 'realteo' );
+			     break;
+			case 'last_name':
+			     $errors[] = esc_html__( "Please provide your last name", 'realteo' );
+			     break;
 	 
 	        case 'incorrect_password':
 	            $err = esc_html__(
