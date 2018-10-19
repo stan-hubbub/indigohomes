@@ -1,0 +1,59 @@
+{
+   "results" : [
+      {
+         "address_components" : [
+            {
+               "long_name" : "Malolos",
+               "short_name" : "Malolos",
+               "types" : [ "locality", "political" ]
+            },
+            {
+               "long_name" : "Bulacan",
+               "short_name" : "Bulacan",
+               "types" : [ "administrative_area_level_2", "political" ]
+            },
+            {
+               "long_name" : "Central Luzon",
+               "short_name" : "Central Luzon",
+               "types" : [ "administrative_area_level_1", "political" ]
+            },
+            {
+               "long_name" : "Philippines",
+               "short_name" : "PH",
+               "types" : [ "country", "political" ]
+            }
+         ],
+         "formatted_address" : "Malolos, Bulacan, Philippines",
+         "geometry" : {
+            "bounds" : {
+               "northeast" : {
+                  "lat" : 14.8918292,
+                  "lng" : 120.8664321
+               },
+               "southwest" : {
+                  "lat" : 14.7553029,
+                  "lng" : 120.7814579
+               }
+            },
+            "location" : {
+               "lat" : 14.8527393,
+               "lng" : 120.8160376
+            },
+            "location_type" : "APPROXIMATE",
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 14.8918292,
+                  "lng" : 120.8664321
+               },
+               "southwest" : {
+                  "lat" : 14.7553029,
+                  "lng" : 120.7814579
+               }
+            }
+         },
+         "place_id" : "ChIJgbh9k69TljMRWT_y11n1sjI",
+         "types" : [ "locality", "political" ]
+      }
+   ],
+   "status" : "OK"
+}
