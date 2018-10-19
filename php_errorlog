@@ -81,3 +81,61 @@
 [22-Sep-2018 05:46:11 UTC] PHP Warning:  explode() expects parameter 2 to be string, array given in /home/hubbub42/public_html/indigohomes.ph/wp-content/plugins/woocommerce/includes/class-wc-query.php on line 448
 [24-Sep-2018 00:28:38 UTC] Aq_Resize.process() error: $url parameter is required
 [27-Sep-2018 12:10:47 UTC] PHP Warning:  explode() expects parameter 2 to be string, array given in /home/hubbub42/public_html/indigohomes.ph/wp-content/plugins/woocommerce/includes/class-wc-query.php on line 448
+[30-Sep-2018 05:41:12 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/hubbub42/public_html/indigohomes.ph/wp-content/plugins/web-font-social-icons/socialicons-widget.php on line 64
+[30-Sep-2018 16:38:34 UTC] Aq_Resize.process() error: $url parameter is required
+[30-Sep-2018 16:38:40 UTC] Aq_Resize.process() error: $url parameter is required
+[30-Sep-2018 16:39:46 UTC] Aq_Resize.process() error: $url parameter is required
+[30-Sep-2018 16:39:49 UTC] Aq_Resize.process() error: $url parameter is required
+[30-Sep-2018 16:40:02 UTC] Aq_Resize.process() error: $url parameter is required
+[30-Sep-2018 16:40:02 UTC] Aq_Resize.process() error: $url parameter is required
+[06-Oct-2018 00:34:10 UTC] Aq_Resize.process() error: $height parameter is required
+[06-Oct-2018 00:34:10 UTC] Aq_Resize.process() error: $height parameter is required
+[06-Oct-2018 00:34:10 UTC] Aq_Resize.process() error: $height parameter is required
+[12-Oct-2018 21:37:50 UTC] Aq_Resize.process() error: $url parameter is required
+[14-Oct-2018 03:48:31 UTC] Aq_Resize.process() error: $height parameter is required
+[14-Oct-2018 03:48:31 UTC] Aq_Resize.process() error: $height parameter is required
+[14-Oct-2018 03:48:31 UTC] Aq_Resize.process() error: $height parameter is required
+[14-Oct-2018 03:48:53 UTC] Aq_Resize.process() error: $height parameter is required
+[14-Oct-2018 03:48:53 UTC] Aq_Resize.process() error: $height parameter is required
+[14-Oct-2018 03:48:53 UTC] Aq_Resize.process() error: $height parameter is required
+[14-Oct-2018 03:49:20 UTC] Aq_Resize.process() error: $height parameter is required
+[14-Oct-2018 03:49:20 UTC] Aq_Resize.process() error: $height parameter is required
+[14-Oct-2018 03:49:20 UTC] Aq_Resize.process() error: $height parameter is required
+[14-Oct-2018 03:49:41 UTC] Aq_Resize.process() error: $height parameter is required
+[14-Oct-2018 03:49:41 UTC] Aq_Resize.process() error: $height parameter is required
+[14-Oct-2018 03:49:41 UTC] Aq_Resize.process() error: $height parameter is required
+[14-Oct-2018 03:50:04 UTC] Aq_Resize.process() error: $height parameter is required
+[14-Oct-2018 03:50:04 UTC] Aq_Resize.process() error: $height parameter is required
+[14-Oct-2018 03:50:04 UTC] Aq_Resize.process() error: $height parameter is required
+[14-Oct-2018 03:50:26 UTC] Aq_Resize.process() error: $height parameter is required
+[14-Oct-2018 03:50:26 UTC] Aq_Resize.process() error: $height parameter is required
+[14-Oct-2018 03:50:26 UTC] Aq_Resize.process() error: $height parameter is required
+[14-Oct-2018 03:50:34 UTC] Aq_Resize.process() error: $height parameter is required
+[14-Oct-2018 03:50:34 UTC] Aq_Resize.process() error: $height parameter is required
+[14-Oct-2018 03:50:34 UTC] Aq_Resize.process() error: $height parameter is required
+[14-Oct-2018 15:54:57 UTC] PHP Warning:  explode() expects parameter 2 to be string, array given in /home/hubbub42/public_html/indigohomes.ph/wp-content/plugins/woocommerce/includes/class-wc-query.php on line 448
+[15-Oct-2018 09:31:29 UTC] Aq_Resize.process() error: $height parameter is required
+[15-Oct-2018 09:31:29 UTC] Aq_Resize.process() error: $height parameter is required
+[15-Oct-2018 09:32:39 UTC] Aq_Resize.process() error: $height parameter is required
+[16-Oct-2018 05:23:51 UTC] Aq_Resize.process() error: $url parameter is required
+[16-Oct-2018 08:06:37 UTC] PHP Warning:  explode() expects parameter 2 to be string, array given in /home/hubbub42/public_html/indigohomes.ph/wp-content/plugins/woocommerce/includes/class-wc-query.php on line 448
+[16-Oct-2018 08:45:41 UTC] PHP Warning:  explode() expects parameter 2 to be string, array given in /home/hubbub42/public_html/indigohomes.ph/wp-content/plugins/woocommerce/includes/class-wc-query.php on line 448
+[16-Oct-2018 13:57:47 UTC] Aq_Resize.process() error: $height parameter is required
+[16-Oct-2018 13:57:47 UTC] Aq_Resize.process() error: $height parameter is required
+[16-Oct-2018 15:08:49 UTC] Aq_Resize.process() error: $url parameter is required
+[16-Oct-2018 18:29:12 UTC] Aq_Resize.process() error: $height parameter is required
+[16-Oct-2018 20:46:07 UTC] Aq_Resize.process() error: $height parameter is required
+[16-Oct-2018 20:46:07 UTC] Aq_Resize.process() error: $height parameter is required
+[16-Oct-2018 20:46:07 UTC] Aq_Resize.process() error: $height parameter is required
+[17-Oct-2018 00:16:30 UTC] Aq_Resize.process() error: $url parameter is required
+[17-Oct-2018 04:47:29 UTC] Aq_Resize.process() error: $height parameter is required
+[17-Oct-2018 06:27:46 UTC] Aq_Resize.process() error: $height parameter is required
+[17-Oct-2018 06:27:46 UTC] Aq_Resize.process() error: $height parameter is required
+[17-Oct-2018 06:27:46 UTC] Aq_Resize.process() error: $height parameter is required
+[17-Oct-2018 10:49:13 UTC] Aq_Resize.process() error: $url parameter is required
+[17-Oct-2018 14:19:40 UTC] Aq_Resize.process() error: $height parameter is required
+[17-Oct-2018 20:06:39 UTC] Aq_Resize.process() error: $url parameter is required
+[17-Oct-2018 20:56:32 UTC] Aq_Resize.process() error: $height parameter is required
+[17-Oct-2018 20:56:32 UTC] Aq_Resize.process() error: $height parameter is required
+[17-Oct-2018 20:56:32 UTC] Aq_Resize.process() error: $height parameter is required
+[17-Oct-2018 23:40:49 UTC] Aq_Resize.process() error: $height parameter is required
