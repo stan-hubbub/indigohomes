@@ -138,7 +138,7 @@ if ( isset( $_REQUEST['register-errors'] ) ) {
 							<input type="text" class="input-text" name="log" id="user_login" value="" />
 						</label>
 					</p>
-					<p class="form-row form-row-wide hidden">
+					<p class="form-row form-row-wide">
 						<label for="password"><?php _e( 'Password:', 'realteo' ); ?>
 							<i class="im im-icon-Lock-2"></i>
 							<input class="input-text" type="password" name="pwd" id="user_pass"/>
