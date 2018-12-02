@@ -186,12 +186,12 @@ if ( isset( $_REQUEST['register-errors'] ) ) {
 			    	<?php endif; ?>
 
 			        <p class="form-row">
-			            <label for="first_name"><?php esc_html_e( 'First name', 'realteo' ); ?></label>
+			            <label for="first_name"><?php esc_html_e( 'First name', 'realteo' ); ?> <strong>*</strong></label>
 			            <input type="text" name="first_name" id="first-name">
 			        </p>
 			 
 			        <p class="form-row">
-			            <label for="last_name"><?php esc_html_e( 'Last name', 'realteo' ); ?></label>
+			            <label for="last_name"><?php esc_html_e( 'Last name', 'realteo' ); ?> <strong>*</strong></label>
 			            <input type="text" name="last_name" id="last-name">
 			        </p>
 
