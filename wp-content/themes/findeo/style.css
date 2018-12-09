@@ -14661,7 +14661,7 @@ object-fit: cover;
   line-height: 20px;
 }
 
-.status-publish #billing-address,
-.status-publish #customer_details {
+.status-publish #billing-address {
+/* .status-publish #customer_details { */
   display: none;
 }
