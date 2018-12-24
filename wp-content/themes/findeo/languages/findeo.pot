@@ -2,9 +2,9 @@
 # This file is distributed under the ThemeForest.=!>
 msgid ""
 msgstr ""
-"Project-Id-Version: Findeo 1.2.3\n"
+"Project-Id-Version: Findeo 1.2.42\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/theme/style\n"
-"POT-Creation-Date: 2018-08-09 10:47:20+00:00\n"
+"POT-Creation-Date: 2018-12-11 13:37:58+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -460,61 +460,6 @@ msgstr ""
 msgid "Header"
 msgstr ""
 
-#: functions.php:405 functions.php:455
-msgid "A <strong>valid purchase code</strong> is required for automatic updates."
-msgstr ""
-
-#: functions.php:416 functions.php:466
-msgid "Purchase code not updated. We will keep the existing one."
-msgstr ""
-
-#: functions.php:419 functions.php:469
-msgid ""
-"Your <strong>purchase code is valid</strong>. Thank you! Enjoy one-click "
-"automatic updates."
-msgstr ""
-
-#: functions.php:426 functions.php:476
-msgid "Purchase code ( e.g. 9g2b13fa-10aa-2267-883a-9201a94cf9b5 )"
-msgstr ""
-
-#: functions.php:427 functions.php:477
-msgid "Enter your purchase code and <strong>hit return/enter</strong>."
-msgstr ""
-
-#: functions.php:429 functions.php:478
-msgid ""
-"Find out how to <a "
-"href=\"https://help.market.envato.com/hc/en-us/articles/202822600-Where-Is-"
-"My-Purchase-Code-\" target=\"_blank\">get your purchase code</a>."
-msgstr ""
-
-#: functions.php:494
-msgid ""
-"<a href=\"%s\">Please enter your purchase code</a> to get automatic updates "
-"for <b>%s</b>."
-msgstr ""
-
-#: functions.php:540
-msgid ""
-"We are sorry but we couldn't connect to the verification server. Please try "
-"again later."
-msgstr ""
-
-#: functions.php:553
-msgid ""
-"Your purchase's support period has ended. Please extend it to receive "
-"automatic updates."
-msgstr ""
-
-#: functions.php:555
-msgid "Could not find a sale with this purchase code. Please double check."
-msgstr ""
-
-#: functions.php:562
-msgid "Please enter a valid purchase code. Make sure to get all the characters."
-msgstr ""
-
 #: header-alt.php:125 header.php:162
 msgid "Hi,"
 msgstr ""
@@ -949,20 +894,20 @@ msgstr ""
 msgid "Set which share buttons you want to display on single blog post"
 msgstr ""
 
-#: inc/customizer/blog.php:82 inc/customizer/header.php:113
+#: inc/customizer/blog.php:82 inc/customizer/header.php:114
 msgid "Facebook"
 msgstr ""
 
-#: inc/customizer/blog.php:83 inc/customizer/header.php:111
+#: inc/customizer/blog.php:83 inc/customizer/header.php:112
 #: template-parts/content-single.php:34
 msgid "Twitter"
 msgstr ""
 
-#: inc/customizer/blog.php:84 inc/customizer/header.php:124
+#: inc/customizer/blog.php:84 inc/customizer/header.php:125
 msgid "Google Plus"
 msgstr ""
 
-#: inc/customizer/blog.php:85 inc/customizer/header.php:127
+#: inc/customizer/blog.php:85 inc/customizer/header.php:128
 msgid "Pinterest"
 msgstr ""
 
@@ -1013,14 +958,14 @@ msgid "Can be set individually on single pages and posts"
 msgstr ""
 
 #: inc/customizer/footer.php:20 inc/customizer/header.php:52
-#: inc/customizer/header.php:180 inc/customizer/header.php:206
-#: inc/customizer/header.php:218
+#: inc/customizer/header.php:181 inc/customizer/header.php:207
+#: inc/customizer/header.php:219
 msgid "Enable"
 msgstr ""
 
 #: inc/customizer/footer.php:21 inc/customizer/header.php:53
-#: inc/customizer/header.php:181 inc/customizer/header.php:207
-#: inc/customizer/header.php:219 inc/meta-boxes.php:164 inc/meta-boxes.php:176
+#: inc/customizer/header.php:182 inc/customizer/header.php:208
+#: inc/customizer/header.php:220 inc/meta-boxes.php:164 inc/meta-boxes.php:176
 msgid "Disable"
 msgstr ""
 
@@ -1134,7 +1079,7 @@ msgstr ""
 msgid "Set empty to hide"
 msgstr ""
 
-#: inc/customizer/header.php:69 woocommerce/myaccount/form-login.php:90
+#: inc/customizer/header.php:69 woocommerce/myaccount/form-login.php:86
 msgid "Email address"
 msgstr ""
 
@@ -1150,179 +1095,179 @@ msgstr ""
 msgid "Social Icons"
 msgstr ""
 
-#: inc/customizer/header.php:93
+#: inc/customizer/header.php:94
 msgid "Social Icon"
 msgstr ""
 
-#: inc/customizer/header.php:99
+#: inc/customizer/header.php:100
 msgid "URL"
 msgstr ""
 
-#: inc/customizer/header.php:100
+#: inc/customizer/header.php:101
 msgid "This will be the link of the icon"
 msgstr ""
 
-#: inc/customizer/header.php:106
+#: inc/customizer/header.php:107
 msgid "Social Service"
 msgstr ""
 
-#: inc/customizer/header.php:107
+#: inc/customizer/header.php:108
 msgid "Choose site"
 msgstr ""
 
-#: inc/customizer/header.php:110
+#: inc/customizer/header.php:111
 msgid "--Choose icon--"
 msgstr ""
 
-#: inc/customizer/header.php:112
+#: inc/customizer/header.php:113
 msgid "WordPress"
 msgstr ""
 
-#: inc/customizer/header.php:114
+#: inc/customizer/header.php:115
 msgid "LinkedIN"
 msgstr ""
 
-#: inc/customizer/header.php:115
+#: inc/customizer/header.php:116
 msgid "Steam"
 msgstr ""
 
-#: inc/customizer/header.php:116
+#: inc/customizer/header.php:117
 msgid "Tumblr"
 msgstr ""
 
-#: inc/customizer/header.php:117
+#: inc/customizer/header.php:118
 msgid "GitHub"
 msgstr ""
 
-#: inc/customizer/header.php:118
+#: inc/customizer/header.php:119
 msgid "Delicious"
 msgstr ""
 
-#: inc/customizer/header.php:119
+#: inc/customizer/header.php:120
 msgid "Instagram"
 msgstr ""
 
-#: inc/customizer/header.php:120
+#: inc/customizer/header.php:121
 msgid "Xing"
 msgstr ""
 
-#: inc/customizer/header.php:121
+#: inc/customizer/header.php:122
 msgid "Amazon"
 msgstr ""
 
-#: inc/customizer/header.php:122
+#: inc/customizer/header.php:123
 msgid "Dropbox"
 msgstr ""
 
-#: inc/customizer/header.php:123
+#: inc/customizer/header.php:124
 msgid "PayPal"
 msgstr ""
 
-#: inc/customizer/header.php:125
+#: inc/customizer/header.php:126
 msgid "StumbleUpon"
 msgstr ""
 
-#: inc/customizer/header.php:126
+#: inc/customizer/header.php:127
 msgid "Yahoo"
 msgstr ""
 
-#: inc/customizer/header.php:128
+#: inc/customizer/header.php:129
 msgid "Dribbble"
 msgstr ""
 
-#: inc/customizer/header.php:129
+#: inc/customizer/header.php:130
 msgid "Flickr"
 msgstr ""
 
-#: inc/customizer/header.php:130
+#: inc/customizer/header.php:131
 msgid "Reddit"
 msgstr ""
 
-#: inc/customizer/header.php:131
+#: inc/customizer/header.php:132
 msgid "Vimeo"
 msgstr ""
 
-#: inc/customizer/header.php:132
+#: inc/customizer/header.php:133
 msgid "Spotify"
 msgstr ""
 
-#: inc/customizer/header.php:133
+#: inc/customizer/header.php:134
 msgid "RSS"
 msgstr ""
 
-#: inc/customizer/header.php:134
+#: inc/customizer/header.php:135
 msgid "YouTube"
 msgstr ""
 
-#: inc/customizer/header.php:135
+#: inc/customizer/header.php:136
 msgid "Blogger"
 msgstr ""
 
-#: inc/customizer/header.php:136
+#: inc/customizer/header.php:137
 msgid "Evernote"
 msgstr ""
 
-#: inc/customizer/header.php:137
+#: inc/customizer/header.php:138
 msgid "Digg"
 msgstr ""
 
-#: inc/customizer/header.php:138
+#: inc/customizer/header.php:139
 msgid "500px"
 msgstr ""
 
-#: inc/customizer/header.php:139
+#: inc/customizer/header.php:140
 msgid "Forrst"
 msgstr ""
 
-#: inc/customizer/header.php:140
+#: inc/customizer/header.php:141
 msgid "AppStore"
 msgstr ""
 
-#: inc/customizer/header.php:141
+#: inc/customizer/header.php:142
 msgid "LastFM"
 msgstr ""
 
-#: inc/customizer/header.php:150
+#: inc/customizer/header.php:151
 msgid "General Header"
 msgstr ""
 
-#: inc/customizer/header.php:151
+#: inc/customizer/header.php:152
 msgid "General Header settings"
 msgstr ""
 
-#: inc/customizer/header.php:161
+#: inc/customizer/header.php:162
 msgid "Header layout"
 msgstr ""
 
-#: inc/customizer/header.php:166
+#: inc/customizer/header.php:167
 msgid "Boxed"
 msgstr ""
 
-#: inc/customizer/header.php:167
+#: inc/customizer/header.php:168
 msgid "Full-width"
 msgstr ""
 
-#: inc/customizer/header.php:174
+#: inc/customizer/header.php:175
 msgid "Switching it to ON will globally enable sticky header for all pages and post"
 msgstr ""
 
-#: inc/customizer/header.php:188
+#: inc/customizer/header.php:189
 msgid "Header style"
 msgstr ""
 
-#: inc/customizer/header.php:193
+#: inc/customizer/header.php:194
 msgid "Standard"
 msgstr ""
 
-#: inc/customizer/header.php:194
+#: inc/customizer/header.php:195
 msgid "Alternative"
 msgstr ""
 
-#: inc/customizer/header.php:201
+#: inc/customizer/header.php:202
 msgid "Display \"My account\" button in header"
 msgstr ""
 
-#: inc/customizer/header.php:213
+#: inc/customizer/header.php:214
 msgid "Display \"Submit Property\" button in header"
 msgstr ""
 
@@ -2099,19 +2044,19 @@ msgstr ""
 msgid "Click to toggle"
 msgstr ""
 
-#: woocommerce/cart/cart.php:31 woocommerce/cart/cart.php:63
+#: woocommerce/cart/cart.php:29 woocommerce/cart/cart.php:61
 msgid "Product"
 msgstr ""
 
-#: woocommerce/cart/cart.php:32 woocommerce/cart/cart.php:81
+#: woocommerce/cart/cart.php:30 woocommerce/cart/cart.php:81
 msgid "Price"
 msgstr ""
 
-#: woocommerce/cart/cart.php:33 woocommerce/cart/cart.php:87
+#: woocommerce/cart/cart.php:31 woocommerce/cart/cart.php:87
 msgid "Quantity"
 msgstr ""
 
-#: woocommerce/cart/cart.php:34 woocommerce/cart/cart.php:105
+#: woocommerce/cart/cart.php:32 woocommerce/cart/cart.php:105
 msgid "Total"
 msgstr ""
 
@@ -2186,34 +2131,34 @@ msgstr ""
 msgid "Add to cart"
 msgstr ""
 
-#: woocommerce/myaccount/form-login.php:36
-#: woocommerce/myaccount/form-login.php:55
+#: woocommerce/myaccount/form-login.php:32
+#: woocommerce/myaccount/form-login.php:51
 msgid "Login"
 msgstr ""
 
-#: woocommerce/myaccount/form-login.php:43
+#: woocommerce/myaccount/form-login.php:39
 msgid "Username or email address"
 msgstr ""
 
-#: woocommerce/myaccount/form-login.php:47
-#: woocommerce/myaccount/form-login.php:97
+#: woocommerce/myaccount/form-login.php:43
+#: woocommerce/myaccount/form-login.php:93
 msgid "Password"
 msgstr ""
 
-#: woocommerce/myaccount/form-login.php:57
+#: woocommerce/myaccount/form-login.php:53
 msgid "Remember me"
 msgstr ""
 
-#: woocommerce/myaccount/form-login.php:61
+#: woocommerce/myaccount/form-login.php:57
 msgid "Lost your password?"
 msgstr ""
 
-#: woocommerce/myaccount/form-login.php:74
-#: woocommerce/myaccount/form-login.php:107
+#: woocommerce/myaccount/form-login.php:70
+#: woocommerce/myaccount/form-login.php:103
 msgid "Register"
 msgstr ""
 
-#: woocommerce/myaccount/form-login.php:83
+#: woocommerce/myaccount/form-login.php:79
 msgid "Username"
 msgstr ""
 

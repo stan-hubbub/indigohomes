@@ -65,7 +65,7 @@ function findeo_register_required_plugins() {
             'slug'          		=> 'js_composer', // The plugin slug (typically the folder name)
             'source'            	=> get_template_directory() . '/plugins/js_composer.zip', // The plugin source
             'required'          	=> true, // If false, the plugin is only 'recommended' instead of required
-            'version'          		=> '5.5.2', // E.g. 1.0.0. If set, the active plugin must be this version or higher, otherwise a notice is presented
+            'version'          		=> '5.6', // E.g. 1.0.0. If set, the active plugin must be this version or higher, otherwise a notice is presented
             'force_activation'      => false, // If true, plugin is activated upon theme activation and cannot be deactivated until theme switch
             'force_deactivation'    => false, // If true, plugin is deactivated upon theme switch, useful for theme-specific plugins
             'external_url'      	=> '', // If set, overrides default API URL and points to an external URL
@@ -74,35 +74,35 @@ function findeo_register_required_plugins() {
 	        'name'                  => 'Revolution Slider',
 	        'slug'                  => 'revslider',
 	        'source'                => get_template_directory() . '/plugins/revslider.zip',
-	        'version'               => '5.4.8',
+	        'version'               => '5.4.8.1',
 	        'required'              => true,
 	    ),	
 	    array(
 	        'name'                  => 'Realteo',
 	        'slug'                  => 'realteo',
 	        'source'                => get_template_directory() . '/plugins/realteo.zip',
-	        'version'               => '1.0.12',
+	        'version'               => '1.0.15',
 	        'required'              => true,
 	    ),	 	    
 	    array(
 	        'name'                  => 'Realteo Forms and Fields Editor',
 	        'slug'                  => 'realteo-forms-and-fields-editor',
 	        'source'                => get_template_directory() . '/plugins/realteo-forms-and-fields-editor.zip',
-	        'version'               => '1.0.11',
+	        'version'               => '1.0.13',
 	        'required'              => true,
 	    ),	        
 	    array(
 	        'name'                  => 'Findeo Shortcodes',
 	        'slug'                  => 'findeo-shortcodes',
 	        'source'                => get_template_directory() . '/plugins/findeo-shortcodes.zip',
-	        'version'               => '1.2.7',
+	        'version'               => '1.2.81',
 	        'required'              => true,
 	    ),	    
 	    array(
 	        'name'                  => 'Findeo VC Bridge',
 	        'slug'                  => 'findeo-vc-bridge',
 	        'source'                => get_template_directory() . '/plugins/findeo-vc-bridge.zip',
-	        'version'               => '1.2.92',
+	        'version'               => '1.2.94',
 	        'required'              => true,
 	    ),	    
 	    array(
