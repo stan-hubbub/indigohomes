@@ -14649,13 +14649,3 @@ max-height: 300px;
 object-fit: cover;
 }
 
-.agent-desc {
-  margin-bottom: 20px;
-  font-size: 90%;
-  line-height: 20px;
-}
-
-.status-publish #billing-address {
-/* .status-publish #customer_details { */
-  display: none;
-}

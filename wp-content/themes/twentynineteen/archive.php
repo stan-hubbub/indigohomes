@@ -20,11 +20,8 @@ get_header();
 			<header class="page-header">
 				<?php
 					the_archive_title( '<h1 class="page-title">', '</h1>' );
-<<<<<<< HEAD
-=======
 					// Remove for now @TODO
 					// the_archive_description( '<div class="page-description">', '</div>' );
->>>>>>> 2e44257b6b0e8e00a667e44bb3c1e43a5c74088a
 				?>
 			</header><!-- .page-header -->
 

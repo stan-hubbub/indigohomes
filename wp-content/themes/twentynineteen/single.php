@@ -27,12 +27,7 @@ get_header();
 					// Parent post navigation.
 					the_post_navigation(
 						array(
-<<<<<<< HEAD
-							/* translators: %s: parent post link */
-							'prev_text' => sprintf( __( '<span class="meta-nav">Published in</span><span class="post-title">%s</span>', 'twentynineteen' ), '%title' ),
-=======
 							'prev_text' => _x( '<span class="meta-nav">Published in</span><br/><span class="post-title">%title</span>', 'Parent post link', 'twentynineteen' ),
->>>>>>> 2e44257b6b0e8e00a667e44bb3c1e43a5c74088a
 						)
 					);
 				} elseif ( is_singular( 'post' ) ) {

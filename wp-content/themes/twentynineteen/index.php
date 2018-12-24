@@ -39,11 +39,7 @@ get_header();
 
 		}
 		?>
-<<<<<<< HEAD
-
-=======
 		
->>>>>>> 2e44257b6b0e8e00a667e44bb3c1e43a5c74088a
 		</main><!-- .site-main -->
 	</section><!-- .content-area -->
 

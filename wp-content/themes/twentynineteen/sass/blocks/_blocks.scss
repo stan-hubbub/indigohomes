@@ -198,15 +198,9 @@
 		&.is-style-outline .wp-block-button__link,
 		&.is-style-outline .wp-block-button__link:focus,
 		&.is-style-outline .wp-block-button__link:active {
-<<<<<<< HEAD
-			@include button-all-transition;
-			border-width: 2px;
-			border-style: solid;
-=======
 			@include button-all-transition;	
 			border-width: 2px;
 			border-style: solid;		
->>>>>>> 2e44257b6b0e8e00a667e44bb3c1e43a5c74088a
 
 			&:not(.has-background) {
 				background: transparent;
@@ -250,17 +244,6 @@
 		}
 	}
 
-<<<<<<< HEAD
-	.wp-block-archives,
-	.wp-block-categories {
-
-		&.aligncenter {
-			text-align: center;
-		}
-	}
-
-=======
->>>>>>> 2e44257b6b0e8e00a667e44bb3c1e43a5c74088a
 	//! Latest categories
 	.wp-block-categories {
 
@@ -333,10 +316,6 @@
 			margin-top: calc(4 * #{ $size__spacing-unit});
 			margin-bottom: calc(4.33 * #{ $size__spacing-unit});
 			margin-right: 0;
-<<<<<<< HEAD
-			padding-left: 0;
-=======
->>>>>>> 2e44257b6b0e8e00a667e44bb3c1e43a5c74088a
 		}
 
 		p {
@@ -375,21 +354,10 @@
 			padding: 0;
 
 			blockquote {
-<<<<<<< HEAD
-				margin: $size__spacing-unit 0;
-				padding: 0;
-				text-align: left;
-				max-width: 100%;
-
-				p:first-child {
-					margin-top: 0;
-				}
-=======
 				margin-left: 0;
 				padding: 0;
 				text-align: left;
 				max-width: 100%;
->>>>>>> 2e44257b6b0e8e00a667e44bb3c1e43a5c74088a
 			}
 		}
 
@@ -423,18 +391,10 @@
 			}
 
 			blockquote {
-<<<<<<< HEAD
-				max-width: 100%;
-				color: $color__background-body;
-				padding-left: 0;
-				margin-left: $size__spacing-unit;
-				margin-right: $size__spacing-unit;
-=======
 				max-width: calc(100% - (2 * #{$size__spacing-unit}));
 				color: $color__background-body;
 				padding-left: 0;
 				margin-left: $size__spacing-unit;
->>>>>>> 2e44257b6b0e8e00a667e44bb3c1e43a5c74088a
 
 				&.has-text-color p,
 				&.has-text-color a,
@@ -452,17 +412,6 @@
 				}
 			}
 
-<<<<<<< HEAD
-			&.alignright,
-			&.alignleft {
-
-				@include media(tablet) {
-					padding: $size__spacing-unit calc(2 * #{$size__spacing-unit});
-				}
-			}
-
-=======
->>>>>>> 2e44257b6b0e8e00a667e44bb3c1e43a5c74088a
 			&.alignfull {
 
 				@include media(tablet) {
@@ -571,13 +520,10 @@
 			line-height: 1.25;
 			padding: 0;
 			color: #fff;
-<<<<<<< HEAD
-=======
 			-ms-hyphens: auto;
 			-moz-hyphens: auto;
 			-webkit-hyphens: auto;
 			hyphens: auto;
->>>>>>> 2e44257b6b0e8e00a667e44bb3c1e43a5c74088a
 
 			@include media(tablet) {
 				font-size: $font__size-xl;
@@ -590,11 +536,7 @@
 			width: 100%;
 
 			@include media(tablet) {
-<<<<<<< HEAD
-				padding: $size__spacing-unit calc(2 * #{$size__spacing-unit});
-=======
 				padding: $size__spacing-unit;
->>>>>>> 2e44257b6b0e8e00a667e44bb3c1e43a5c74088a
 			}
 		}
 
@@ -628,13 +570,6 @@
 		.blocks-gallery-item:last-child {
 			margin-bottom: 16px;
 		}
-<<<<<<< HEAD
-
-		figcaption a {
-			color: #fff;
-		}
-=======
->>>>>>> 2e44257b6b0e8e00a667e44bb3c1e43a5c74088a
 	}
 
 	//! Captions
@@ -765,13 +700,6 @@
 			padding-right: $size__spacing-unit;
 		}
 
-<<<<<<< HEAD
-		@include media(mobile) {
-			flex-wrap: nowrap;
-		}
-
-=======
->>>>>>> 2e44257b6b0e8e00a667e44bb3c1e43a5c74088a
 		@include media(tablet) {
 			.wp-block-column > * {
 
@@ -856,11 +784,7 @@
 	.has-secondary-background-color,
 	.has-dark-gray-background-color,
 	.has-light-gray-background-color {
-<<<<<<< HEAD
-
-=======
 		
->>>>>>> 2e44257b6b0e8e00a667e44bb3c1e43a5c74088a
 		// Use white text against these backgrounds by default.
 		color: $color__background-body;
 
