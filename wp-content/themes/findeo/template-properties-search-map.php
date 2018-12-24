@@ -31,7 +31,7 @@ get_header(get_option('header_bar_style','standard') );
 	</ul>
 
 	<!-- Main Search Container -->
-	<div class="main-search-container">
+	<div class="main-search-container active">
 
 		<div class="container">
 			<div class="row">

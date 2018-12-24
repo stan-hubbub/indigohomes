@@ -527,7 +527,9 @@ class Wp_Temporary_Login_Without_Password_Admin {
 
 			$reviewurl = 'https://wordpress.org/support/plugin/temporary-login-without-password/reviews/';
 
-			$nobugurl = add_query_arg( 'tlwp_nobug', 1, menu_page_url( 'wp-temporary-login-without-password', false ) );
+			$current_page_url = "//".$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'];
+
+			$nobugurl = add_query_arg( 'tlwp_nobug', 1, $current_page_url);
 
 			echo '<div class="notice notice-warning">';
 

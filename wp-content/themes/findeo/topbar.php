@@ -60,6 +60,7 @@ if($top_header_status) :
                 $headericons = get_option( 'findeo_top_social_icons', array() );
                 if ( is_array($headericons) && !empty( $headericons ) ) {
                     echo '<ul class="social-icons">';
+                    
                     foreach( $headericons as $icon ) {
                         echo '<li><a class="' . $icon['icon'] . '" title="' . esc_attr($icon['icon']) . '" href="' . esc_url($icon['url']) . '"><i class="icon-' . $icon['icon'] . '"></i></a></li>';
                     }
