@@ -136,13 +136,11 @@ class WC_Gateway_PPEC_Cart_Handler {
 		}
 
 		if ( isset( $_POST['from_checkout'] ) && 'yes' === $_POST['from_checkout'] ) {
-			add_filter( 'woocommerce_cart_needs_shipping', '__return_false' );
-
 			// Intercept process_checkout call to exit after validation.
 			add_action( 'woocommerce_after_checkout_validation', array( $this, 'maybe_start_checkout' ), 10, 2 );
 			WC()->checkout->process_checkout();
 		} else {
-			$this->start_checkout();
+			$this->start_checkout( true );
 		}
 	}
 
@@ -162,7 +160,7 @@ class WC_Gateway_PPEC_Cart_Handler {
 
 		if ( empty( $error_messages ) ) {
 			$this->set_customer_data( $_POST );
-			$this->start_checkout();
+			$this->start_checkout( false );
 		} else {
 			wp_send_json_error( array( 'messages' => $error_messages ) );
 		}
@@ -172,11 +170,13 @@ class WC_Gateway_PPEC_Cart_Handler {
 	/**
 	 * Set Express Checkout and return token in response.
 	 *
+	 * @param bool $skip_checkout  Whether checkout screen is being bypassed.
+	 *
 	 * @since 1.6.4
 	 */
-	protected function start_checkout() {
+	protected function start_checkout( $skip_checkout ) {
 		try {
-			wc_gateway_ppec()->checkout->start_checkout_from_cart();
+			wc_gateway_ppec()->checkout->start_checkout_from_cart( $skip_checkout );
 			wp_send_json_success( array( 'token' => WC()->session->paypal->token ) );
 		} catch( PayPal_API_Exception $e ) {
 			wp_send_json_error( array( 'messages' => array( $e->getMessage() ) ) );
@@ -267,7 +267,8 @@ class WC_Gateway_PPEC_Cart_Handler {
 
 		?>
 		<div class="wcppec-checkout-buttons woo_pp_cart_buttons_div">
-			<?php if ( 'yes' === $settings->use_spb ) : ?>
+			<?php if ( 'yes' === $settings->use_spb ) :
+				wp_enqueue_script( 'wc-gateway-ppec-smart-payment-buttons' ); ?>
 			<div id="woo_pp_ec_button_product"></div>
 			<?php else : ?>
 
@@ -303,7 +304,8 @@ class WC_Gateway_PPEC_Cart_Handler {
 				</div>
 			<?php endif; ?>
 
-			<?php if ( 'yes' === $settings->use_spb ) : ?>
+			<?php if ( 'yes' === $settings->use_spb ) :
+				wp_enqueue_script( 'wc-gateway-ppec-smart-payment-buttons' ); ?>
 			<div id="woo_pp_ec_button_cart"></div>
 			<?php else : ?>
 
@@ -336,7 +338,8 @@ class WC_Gateway_PPEC_Cart_Handler {
 		}
 		?>
 
-		<?php if ( 'yes' === $settings->use_spb ) : ?>
+		<?php if ( 'yes' === $settings->use_spb ) :
+			wp_enqueue_script( 'wc-gateway-ppec-smart-payment-buttons' ); ?>
 		<p class="woocommerce-mini-cart__buttons buttons wcppec-cart-widget-spb">
 			<span id="woo_pp_ec_button_mini_cart"></span>
 		</p>
@@ -427,8 +430,8 @@ class WC_Gateway_PPEC_Cart_Handler {
 			);
 
 		} elseif ( 'yes' === $settings->use_spb ) {
-			wp_enqueue_script( 'paypal-checkout-js', 'https://www.paypalobjects.com/api/checkout.js', array(), null, true );
-			wp_enqueue_script( 'wc-gateway-ppec-smart-payment-buttons', wc_gateway_ppec()->plugin_url . 'assets/js/wc-gateway-ppec-smart-payment-buttons.js', array( 'jquery', 'paypal-checkout-js' ), wc_gateway_ppec()->version, true );
+			wp_register_script( 'paypal-checkout-js', 'https://www.paypalobjects.com/api/checkout.js', array(), null, true );
+			wp_register_script( 'wc-gateway-ppec-smart-payment-buttons', wc_gateway_ppec()->plugin_url . 'assets/js/wc-gateway-ppec-smart-payment-buttons.js', array( 'jquery', 'paypal-checkout-js' ), wc_gateway_ppec()->version, true );
 
 			$data = array(
 				'environment'          => 'sandbox' === $settings->get_environment() ? 'sandbox' : 'production',

@@ -33,6 +33,7 @@ class TwentyNineteen_Walker_Comment extends Walker_Comment {
 				<footer class="comment-meta">
 					<div class="comment-author vcard">
 						<?php
+<<<<<<< HEAD
 						$comment_author_link = get_comment_author_link( $comment );
 						$comment_author_url  = get_comment_author_url( $comment );
 						$comment_author      = get_comment_author( $comment );
@@ -69,6 +70,39 @@ class TwentyNineteen_Walker_Comment extends Walker_Comment {
 						if ( ! empty( $comment_author_url ) ) {
 							echo '</a>';
 						}
+=======
+							$comment_author_link = get_comment_author_link( $comment );
+							$comment_author_url  = get_comment_author_url( $comment );
+							$comment_author      = get_comment_author( $comment );
+							$avatar              = get_avatar( $comment, $args['avatar_size'] );
+							if ( 0 != $args['avatar_size'] ) {
+								if ( empty( $comment_author_url ) ) {
+									echo $avatar;
+								} else {
+									printf( '<a href="%s" rel="external nofollow" class="url">', $comment_author_url );
+									echo $avatar;
+								}
+							}
+
+							/*
+							 * Using the `check` icon instead of `check_circle`, since we can't add a
+							 * fill color to the inner check shape when in circle form.
+							 */
+							if ( twentynineteen_is_comment_by_post_author( $comment ) ) {
+								/* translators: %s: SVG Icon */
+								printf( '<span class="post-author-badge" aria-hidden="true">%s</span>', twentynineteen_get_icon_svg( 'check', 24 ) );
+							}
+
+							printf(
+								/* translators: %s: comment author link */
+								__( '%s <span class="screen-reader-text says">says:</span>', 'twentynineteen' ),
+								sprintf( '<span class="fn">%s</span>', $comment_author )
+							);
+
+							if ( ! empty( $comment_author_url ) ) {
+								echo '</a>';
+							}
+>>>>>>> 2e44257b6b0e8e00a667e44bb3c1e43a5c74088a
 						?>
 					</div><!-- .comment-author -->
 
@@ -115,4 +149,8 @@ class TwentyNineteen_Walker_Comment extends Walker_Comment {
 			?>
 		<?php
 	}
+<<<<<<< HEAD
+=======
+
+>>>>>>> 2e44257b6b0e8e00a667e44bb3c1e43a5c74088a
 }

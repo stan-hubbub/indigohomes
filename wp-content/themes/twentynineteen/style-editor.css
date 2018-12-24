@@ -58,6 +58,15 @@ body .wp-block[data-align="full"] {
   }
 }
 
+<<<<<<< HEAD
+=======
+/** === Editor Block Toolbar Position === */
+.editor-block-list__block[data-align="wide"] .editor-block-contextual-toolbar .editor-block-toolbar.editor-block-toolbar,
+.editor-block-list__block[data-align="full"] .editor-block-contextual-toolbar .editor-block-toolbar.editor-block-toolbar {
+  max-width: none;
+}
+
+>>>>>>> 2e44257b6b0e8e00a667e44bb3c1e43a5c74088a
 /** === Content Width === */
 .wp-block {
   width: calc(100vw - (2 * 1rem));
@@ -332,6 +341,7 @@ figcaption,
 .wp-block[data-type="core/cover"][data-align="right"] .wp-block-cover {
   width: 100%;
   max-width: 100%;
+<<<<<<< HEAD
   padding: calc(1.375 * 1rem);
 }
 
@@ -339,12 +349,18 @@ figcaption,
 .wp-block[data-type="core/cover"][data-align="right"] .wp-block-cover p {
   padding-left: 0;
   padding-right: 0;
+=======
+>>>>>>> 2e44257b6b0e8e00a667e44bb3c1e43a5c74088a
 }
 
 @media only screen and (min-width: 768px) {
   .wp-block[data-type="core/cover"][data-align="left"] .wp-block-cover,
   .wp-block[data-type="core/cover"][data-align="right"] .wp-block-cover {
+<<<<<<< HEAD
     padding: calc(2.75 * 1rem) calc(2.75 * 1rem) calc(3.125 * 1rem);
+=======
+    padding: 1rem;
+>>>>>>> 2e44257b6b0e8e00a667e44bb3c1e43a5c74088a
   }
 }
 
@@ -621,6 +637,7 @@ figcaption,
   padding-left: calc(2 * 1rem);
 }
 
+<<<<<<< HEAD
 /* Remove duplicate rule-line when a separator
  * is followed by an H1, or H2 */
 .wp-block[data-type="core/separator"] + .wp-block[data-type="core/heading"] h1:before,
@@ -628,6 +645,8 @@ figcaption,
   display: none;
 }
 
+=======
+>>>>>>> 2e44257b6b0e8e00a667e44bb3c1e43a5c74088a
 /** === Latest Posts, Archives, Categories === */
 ul.wp-block-archives,
 .wp-block-categories,
@@ -767,5 +786,9 @@ ul.wp-block-archives li ul,
 
 /* Make sure our non-latin font overrides don't overwrite the iconfont used in the classic editor toolbar */
 .wp-block[data-type="core/freeform"] .mce-btn i {
+<<<<<<< HEAD
   font-family: dashicons !important;
+=======
+	font-family: dashicons !important;
+>>>>>>> 2e44257b6b0e8e00a667e44bb3c1e43a5c74088a
 }

@@ -221,6 +221,11 @@ function twentynineteen_scripts() {
 
 	wp_style_add_data( 'twentynineteen-style', 'rtl', 'replace' );
 
+<<<<<<< HEAD
+=======
+	wp_enqueue_script( 'twentynineteen-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
+
+>>>>>>> 2e44257b6b0e8e00a667e44bb3c1e43a5c74088a
 	if ( has_nav_menu( 'menu-1' ) ) {
 		wp_enqueue_script( 'twentynineteen-priority-menu', get_theme_file_uri( '/js/priority-menu.js' ), array(), '1.0', true );
 		wp_enqueue_script( 'twentynineteen-touch-navigation', get_theme_file_uri( '/js/touch-keyboard-navigation.js' ), array(), '1.0', true );
@@ -235,6 +240,7 @@ function twentynineteen_scripts() {
 add_action( 'wp_enqueue_scripts', 'twentynineteen_scripts' );
 
 /**
+<<<<<<< HEAD
  * Fix skip link focus in IE11.
  *
  * This does not enqueue the script because it is tiny and because it is only for IE11,
@@ -253,6 +259,8 @@ function twentynineteen_skip_link_focus_fix() {
 add_action( 'wp_print_footer_scripts', 'twentynineteen_skip_link_focus_fix' );
 
 /**
+=======
+>>>>>>> 2e44257b6b0e8e00a667e44bb3c1e43a5c74088a
  * Enqueue supplemental block editor styles.
  */
 function twentynineteen_editor_customizer_styles() {
@@ -279,6 +287,7 @@ function twentynineteen_colors_css_wrap() {
 
 	require_once get_parent_theme_file_path( '/inc/color-patterns.php' );
 
+<<<<<<< HEAD
 	$primary_color = 199;
 	if ( 'default' !== get_theme_mod( 'primary_color', 'default' ) ) {
 		$primary_color = get_theme_mod( 'primary_color_hue', 199 );
@@ -286,6 +295,16 @@ function twentynineteen_colors_css_wrap() {
 	?>
 
 	<style type="text/css" id="custom-theme-colors" <?php echo is_customize_preview() ? 'data-hue="' . absint( $primary_color ) . '"' : ''; ?>>
+=======
+	if ( 'default' === get_theme_mod( 'primary_color', 'default' ) ) {
+		$primary_color = 199;
+	} else {
+		$primary_color = absint( get_theme_mod( 'primary_color_hue', 199 ) );
+	}
+	?>
+
+	<style type="text/css" id="custom-theme-colors" <?php echo is_customize_preview() ? 'data-hue="' . $primary_color . '"' : ''; ?>>
+>>>>>>> 2e44257b6b0e8e00a667e44bb3c1e43a5c74088a
 		<?php echo twentynineteen_custom_colors_css(); ?>
 	</style>
 	<?php

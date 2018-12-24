@@ -205,16 +205,27 @@ class TwentyNineteen_SVG_Icons {
 			'facebook.com',
 			'fb.me',
 		),
+<<<<<<< HEAD
 		'feed'        => array(
+=======
+		'feed'    => array(
+>>>>>>> 2e44257b6b0e8e00a667e44bb3c1e43a5c74088a
 			'feed',
 		),
 		'google-plus' => array(
 			'plus.google.com',
 		),
+<<<<<<< HEAD
 		'lastfm'      => array(
 			'last.fm',
 		),
 		'mail'        => array(
+=======
+		'lastfm'   => array(
+			'last.fm',
+		),
+		'mail'   => array(
+>>>>>>> 2e44257b6b0e8e00a667e44bb3c1e43a5c74088a
 			'mailto:',
 		),
 		'slideshare'  => array(

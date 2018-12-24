@@ -28,6 +28,7 @@ $discussion = twentynineteen_get_discussion_data();
 	<div class="<?php echo $discussion->responses > 0 ? 'comments-title-wrap' : 'comments-title-wrap no-responses'; ?>">
 		<h2 class="comments-title">
 		<?php
+<<<<<<< HEAD
 		if ( comments_open() ) {
 			if ( have_comments() ) {
 				_e( 'Join the Conversation', 'twentynineteen' );
@@ -53,13 +54,46 @@ $discussion = twentynineteen_get_discussion_data();
 				);
 			}
 		}
+=======
+			if ( comments_open() ) {
+				if ( have_comments() ) {
+					_e( 'Join the Conversation', 'twentynineteen' );
+				} else {
+					_e( 'Leave a comment', 'twentynineteen' );
+				}
+			} else {
+				if ( '1' == $discussion->responses ) {
+					/* translators: %s: post title */
+					printf( _x( 'One reply on &ldquo;%s&rdquo;', 'comments title', 'twentynineteen' ), get_the_title() );
+				} else {
+					printf(
+						/* translators: 1: number of comments, 2: post title */
+						_nx(
+							'%1$s reply on &ldquo;%2$s&rdquo;',
+							'%1$s replies on &ldquo;%2$s&rdquo;',
+							$discussion->responses,
+							'comments title',
+							'twentynineteen'
+						),
+						number_format_i18n( $discussion->responses ),
+						get_the_title()
+					);
+				}
+			}
+>>>>>>> 2e44257b6b0e8e00a667e44bb3c1e43a5c74088a
 		?>
 		</h2><!-- .comments-title -->
 		<?php
 			// Only show discussion meta information when comments are open and available.
+<<<<<<< HEAD
 		if ( have_comments() && comments_open() ) {
 			get_template_part( 'template-parts/post/discussion', 'meta' );
 		}
+=======
+			if ( have_comments() && comments_open() ) {
+			get_template_part( 'template-parts/post/discussion', 'meta' );
+			}
+>>>>>>> 2e44257b6b0e8e00a667e44bb3c1e43a5c74088a
 		?>
 	</div><!-- .comments-title-flex -->
 	<?php

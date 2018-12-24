@@ -12,8 +12,14 @@
  */
 function twentynineteen_custom_colors_css() {
 
+<<<<<<< HEAD
 	$primary_color = 199;
 	if ( 'default' !== get_theme_mod( 'primary_color', 'default' ) ) {
+=======
+	if ( 'default' === get_theme_mod( 'primary_color', 'default' ) ) {
+		$primary_color = 199;
+	} else {
+>>>>>>> 2e44257b6b0e8e00a667e44bb3c1e43a5c74088a
 		$primary_color = absint( get_theme_mod( 'primary_color_hue', 199 ) );
 	}
 
@@ -24,6 +30,7 @@ function twentynineteen_custom_colors_css() {
 	 *
 	 * @param int $saturation Color saturation level.
 	 */
+<<<<<<< HEAD
 	$saturation = apply_filters( 'twentynineteen_custom_colors_saturation', 100 );
 	$saturation = absint( $saturation ) . '%';
 
@@ -66,6 +73,23 @@ function twentynineteen_custom_colors_css() {
 	 */
 	$lightness_selection = apply_filters( 'twentynineteen_custom_colors_lightness_selection', 90 );
 	$lightness_selection = absint( $lightness_selection ) . '%';
+=======
+
+	$saturation           = absint( apply_filters( 'twentynineteen_custom_colors_saturation', 100 ) );
+	$saturation           = $saturation . '%';
+
+	$saturation_selection = absint( apply_filters( 'twentynineteen_custom_colors_saturation_selection', 50 ) );
+	$saturation_selection = $saturation_selection . '%';
+
+	$lightness            = absint( apply_filters( 'twentynineteen_custom_colors_lightness', 33 ) );
+	$lightness            = $lightness . '%';
+
+	$lightness_hover      = absint( apply_filters( 'twentynineteen_custom_colors_lightness_hover', 23 ) );
+	$lightness_hover      = $lightness_hover . '%';
+
+	$lightness_selection  = absint( apply_filters( 'twentynineteen_custom_colors_lightness_selection', 90 ) );
+	$lightness_selection  = $lightness_selection . '%';
+>>>>>>> 2e44257b6b0e8e00a667e44bb3c1e43a5c74088a
 
 	$theme_css = '
 		/*
@@ -259,9 +283,17 @@ function twentynineteen_custom_colors_css() {
 			color: inherit;
 		}
 		';
+<<<<<<< HEAD
 
 	if ( function_exists( 'register_block_type' ) && is_admin() ) {
 		$theme_css = $editor_css;
+=======
+	$css = '';
+	if ( function_exists( 'register_block_type' ) && is_admin() ) {
+		$css .= $editor_css;
+	} else if ( ! is_admin() ) {
+		$css = $theme_css;
+>>>>>>> 2e44257b6b0e8e00a667e44bb3c1e43a5c74088a
 	}
 
 	/**
@@ -273,5 +305,9 @@ function twentynineteen_custom_colors_css() {
 	 * @param int    $primary_color The user's selected color hue.
 	 * @param string $saturation    Filtered theme color saturation level.
 	 */
+<<<<<<< HEAD
 	return apply_filters( 'twentynineteen_custom_colors_css', $theme_css, $primary_color, $saturation );
+=======
+	return apply_filters( 'twentynineteen_custom_colors_css', $css, $primary_color, $saturation );
+>>>>>>> 2e44257b6b0e8e00a667e44bb3c1e43a5c74088a
 }

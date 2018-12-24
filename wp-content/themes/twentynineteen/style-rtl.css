@@ -1604,7 +1604,10 @@ body.page .main-navigation {
   display: block;
   width: 32px;
   height: 32px;
+<<<<<<< HEAD
   transform: translateZ(0);
+=======
+>>>>>>> 2e44257b6b0e8e00a667e44bb3c1e43a5c74088a
 }
 
 .social-navigation ul.social-links-menu li a svg#ui-icon-link {
@@ -3690,11 +3693,14 @@ body.page .main-navigation {
   text-decoration: none;
 }
 
+<<<<<<< HEAD
 .entry .entry-content .wp-block-archives.aligncenter,
 .entry .entry-content .wp-block-categories.aligncenter {
   text-align: center;
 }
 
+=======
+>>>>>>> 2e44257b6b0e8e00a667e44bb3c1e43a5c74088a
 .entry .entry-content .wp-block-categories ul {
   padding-top: 0.75rem;
 }
@@ -3765,7 +3771,10 @@ body.page .main-navigation {
   margin-top: calc(4 * 1rem);
   margin-bottom: calc(4.33 * 1rem);
   margin-left: 0;
+<<<<<<< HEAD
   padding-right: 0;
+=======
+>>>>>>> 2e44257b6b0e8e00a667e44bb3c1e43a5c74088a
 }
 
 .entry .entry-content .wp-block-pullquote p {
@@ -3805,16 +3814,23 @@ body.page .main-navigation {
 }
 
 .entry .entry-content .wp-block-pullquote.alignleft blockquote, .entry .entry-content .wp-block-pullquote.alignright blockquote {
+<<<<<<< HEAD
   margin: 1rem 0;
+=======
+  margin-right: 0;
+>>>>>>> 2e44257b6b0e8e00a667e44bb3c1e43a5c74088a
   padding: 0;
   text-align: right;
   max-width: 100%;
 }
 
+<<<<<<< HEAD
 .entry .entry-content .wp-block-pullquote.alignleft blockquote p:first-child, .entry .entry-content .wp-block-pullquote.alignright blockquote p:first-child {
   margin-top: 0;
 }
 
+=======
+>>>>>>> 2e44257b6b0e8e00a667e44bb3c1e43a5c74088a
 .entry .entry-content .wp-block-pullquote.is-style-solid-color {
   background-color: #0073aa;
   padding-right: 0;
@@ -3850,11 +3866,18 @@ body.page .main-navigation {
 }
 
 .entry .entry-content .wp-block-pullquote.is-style-solid-color blockquote {
+<<<<<<< HEAD
   max-width: 100%;
   color: #fff;
   padding-right: 0;
   margin-right: 1rem;
   margin-left: 1rem;
+=======
+  max-width: calc(100% - (2 * 1rem));
+  color: #fff;
+  padding-right: 0;
+  margin-right: 1rem;
+>>>>>>> 2e44257b6b0e8e00a667e44bb3c1e43a5c74088a
 }
 
 .entry .entry-content .wp-block-pullquote.is-style-solid-color blockquote.has-text-color p,
@@ -3870,12 +3893,15 @@ body.page .main-navigation {
 }
 
 @media only screen and (min-width: 768px) {
+<<<<<<< HEAD
   .entry .entry-content .wp-block-pullquote.is-style-solid-color.alignright, .entry .entry-content .wp-block-pullquote.is-style-solid-color.alignleft {
     padding: 1rem calc(2 * 1rem);
   }
 }
 
 @media only screen and (min-width: 768px) {
+=======
+>>>>>>> 2e44257b6b0e8e00a667e44bb3c1e43a5c74088a
   .entry .entry-content .wp-block-pullquote.is-style-solid-color.alignfull {
     padding-right: calc(10% + 58px + (2 * 1rem));
     padding-left: calc(10% + 58px + (2 * 1rem));
@@ -3979,6 +4005,13 @@ body.page .main-navigation {
   line-height: 1.25;
   padding: 0;
   color: #fff;
+<<<<<<< HEAD
+=======
+  -ms-hyphens: auto;
+  -moz-hyphens: auto;
+  -webkit-hyphens: auto;
+  hyphens: auto;
+>>>>>>> 2e44257b6b0e8e00a667e44bb3c1e43a5c74088a
 }
 
 @media only screen and (min-width: 768px) {
@@ -4003,7 +4036,11 @@ body.page .main-navigation {
   .entry .entry-content .wp-block-cover-image.alignleft, .entry .entry-content .wp-block-cover-image.alignright,
   .entry .entry-content .wp-block-cover.alignleft,
   .entry .entry-content .wp-block-cover.alignright {
+<<<<<<< HEAD
     padding: 1rem calc(2 * 1rem);
+=======
+    padding: 1rem;
+>>>>>>> 2e44257b6b0e8e00a667e44bb3c1e43a5c74088a
   }
 }
 
@@ -4055,10 +4092,13 @@ body.page .main-navigation {
   margin-bottom: 16px;
 }
 
+<<<<<<< HEAD
 .entry .entry-content .wp-block-gallery figcaption a {
   color: #fff;
 }
 
+=======
+>>>>>>> 2e44257b6b0e8e00a667e44bb3c1e43a5c74088a
 .entry .entry-content .wp-block-audio figcaption,
 .entry .entry-content .wp-block-video figcaption,
 .entry .entry-content .wp-block-image figcaption,
@@ -4205,12 +4245,15 @@ body.page .main-navigation {
   padding-left: 1rem;
 }
 
+<<<<<<< HEAD
 @media only screen and (min-width: 600px) {
   .entry .entry-content .wp-block-columns {
     flex-wrap: nowrap;
   }
 }
 
+=======
+>>>>>>> 2e44257b6b0e8e00a667e44bb3c1e43a5c74088a
 @media only screen and (min-width: 768px) {
   .entry .entry-content .wp-block-columns .wp-block-column > *:first-child {
     margin-top: 0;

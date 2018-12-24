@@ -106,7 +106,14 @@ function twentynineteen_can_show_post_thumbnail() {
  * Returns true if image filters are enabled on the theme options.
  */
 function twentynineteen_image_filters_enabled() {
+<<<<<<< HEAD
 	return 0 !== get_theme_mod( 'image_filter', 1 );
+=======
+	if ( get_theme_mod( 'image_filter', 1 ) ) {
+		return true;
+	}
+	return false;
+>>>>>>> 2e44257b6b0e8e00a667e44bb3c1e43a5c74088a
 }
 
 /**
@@ -415,7 +422,14 @@ function twentynineteen_hsl_hex( $h, $s, $l, $to_hex = true ) {
 
 		return "#$r$g$b";
 
+<<<<<<< HEAD
 	}
 
 	return "rgb($r, $g, $b)";
+=======
+	} else {
+
+		return "rgb($r, $g, $b)";
+	}
+>>>>>>> 2e44257b6b0e8e00a667e44bb3c1e43a5c74088a
 }

@@ -125,7 +125,11 @@ function twentynineteen_customize_partial_blogdescription() {
  * Bind JS handlers to instantly live-preview changes.
  */
 function twentynineteen_customize_preview_js() {
+<<<<<<< HEAD
 	wp_enqueue_script( 'twentynineteen-customize-preview', get_theme_file_uri( '/js/customize-preview.js' ), array( 'customize-preview' ), '20181108', true );
+=======
+	wp_enqueue_script( 'twentynineteen-customize-preview', get_theme_file_uri( '/js/customize-preview.js' ), array( 'customize-preview' ), '20151215', true );
+>>>>>>> 2e44257b6b0e8e00a667e44bb3c1e43a5c74088a
 }
 add_action( 'customize_preview_init', 'twentynineteen_customize_preview_js' );
 
@@ -133,7 +137,11 @@ add_action( 'customize_preview_init', 'twentynineteen_customize_preview_js' );
  * Load dynamic logic for the customizer controls area.
  */
 function twentynineteen_panels_js() {
+<<<<<<< HEAD
 	wp_enqueue_script( 'twentynineteen-customize-controls', get_theme_file_uri( '/js/customize-controls.js' ), array(), '20181031', true );
+=======
+	wp_enqueue_script( 'twentynineteen-customize-controls', get_theme_file_uri( '/js/customize-controls.js' ), array(), '1.0', true );
+>>>>>>> 2e44257b6b0e8e00a667e44bb3c1e43a5c74088a
 }
 add_action( 'customize_controls_enqueue_scripts', 'twentynineteen_panels_js' );
 

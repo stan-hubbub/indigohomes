@@ -3,8 +3,11 @@
  *
  * Helps with accessibility for keyboard only users.
  *
+<<<<<<< HEAD
  * This is the source file for what is minified in the twentynineteen_skip_link_focus_fix() PHP function.
  *
+=======
+>>>>>>> 2e44257b6b0e8e00a667e44bb3c1e43a5c74088a
  * Learn more: https://git.io/vWdr2
  */
 ( function() {

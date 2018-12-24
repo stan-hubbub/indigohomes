@@ -17,6 +17,10 @@ if ( $has_responses ) {
 } else {
 	$meta_label = __( 'No comments', 'twentynineteen' );
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 2e44257b6b0e8e00a667e44bb3c1e43a5c74088a
 ?>
 
 <div class="discussion-meta">
