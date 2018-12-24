@@ -77,7 +77,7 @@ findeo_Kirki::add_section( 'properties_list', array(
 			'dynamic'   => esc_attr__( 'Map shows only markers based on currently displayed properties', 'findeo' ),
 			'static' => esc_attr__( 'Map shows all markers ignoring the search form', 'findeo' ),
 		),
-		 'active_callback'  => array(
+		'active_callback'  => array(
             array(
                 'setting'  => 'pp_properties_top_layout',
                 'operator' => '==',

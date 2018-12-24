@@ -29,7 +29,7 @@ findeo_Kirki::add_section( 'typography', array(
 		'priority'    => 10,
 		'output'      => array(
 			array(
-				'element' => 'body',
+				'element' => 'body,.chosen-single, #tiptip_content, .map-box,  body .pac-container',
 			),
 		),
 	) );	

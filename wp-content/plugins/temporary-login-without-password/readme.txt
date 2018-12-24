@@ -4,7 +4,7 @@ Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_i
 Tags: temporary access, developer access, admin login, temporary login, passwordless login, customer login, secure login, access, admin, log in, login, login security, protection, user login, user login, wordpress admin login, wordpress login, wp-admin, wp-login, expiration, login, Login Without Password, user, WordPress Admin, wp-admin, developer login
 Requires at least: 3.0.1
 Tested up to: 4.9.8
-Stable tag: 1.5.11
+Stable tag: 1.5.13
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -68,9 +68,17 @@ No. at this moment it's not possible to do this.
 
 == Changelog ==
 
+**1.5.13 [2018-11-19]**
+
+* Update: Now, temporary user can be redirected to any page without using redirect_to query params.
+
+**1.5.12 [2018-10-24]**
+
+* Fix: Temporary user redirected to admin page even if 'redirect_to' query param present once user logged in with temporary login link.
+
 **1.5.11 [2018-10-08]**
 
-* Update: Added filter for expiry_option. Now, one can add any custom expiry_option for the temporary login.
+* Update: Added filter for expiry_option. Now, one can add any custom expiry_option for the temporary login. [See example](https://wordpress.org/support/topic/additional-expiry-option/)
 
 **1.5.10 [2018-09-12]**
 
