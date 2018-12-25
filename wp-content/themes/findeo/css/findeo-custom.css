@@ -1,21 +1,21 @@
 
 /* posts */
-ul.listing-details {
+.findeo-custom .ul.listing-details {
   background-color: transparent;
 }
 
 /* footer */
-#footer {
+.findeo-custom #footer {
   box-shadow: none;
   background-color: #ffffff;
   padding: 0;
 }
 
-.footer-shadow {
+.findeo-custom .footer-shadow {
   box-shadow: none;
 }
 
-.copyrights {
+.findeo-custom .copyrights {
   text-align: left;
   padding: 20px 0;
 }
