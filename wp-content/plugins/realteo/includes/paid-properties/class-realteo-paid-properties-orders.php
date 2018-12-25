@@ -105,7 +105,7 @@ class Realteo_Orders {
 			if ( isset( $item['property_id'] )  ) {
 				switch ( get_post_status( $item['property_id'] ) ) {
 					case 'pending' :
-						echo wpautop( sprintf( __( '%s has been submitted successfully and <b>will be visible once approved</b>.<br> Visit <a href="//www.indigohomes.ph/my-properties">My Properties</a> to manage your properties.', 'realteo' ), get_the_title( $item['property_id'] ) ) );
+						echo wpautop( sprintf( __( '%s has been submitted successfully and will be visible once approved.', 'realteo' ), get_the_title( $item['property_id'] ) ) );
 					break;
 					case 'pending_payment' :
 					case 'expired' :

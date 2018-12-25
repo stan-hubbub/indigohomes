@@ -133,7 +133,7 @@ if ( isset( $_REQUEST['register-errors'] ) ) {
 				<?php } ?>
 
 				    <p class="form-row form-row-wide">
-							<label for="username"><?php _e( 'Email:', 'realteo' ); ?>
+							<label for="username"><?php _e( 'Username/Email:', 'realteo' ); ?>
 							<i class="im im-icon-Male"></i>
 							<input type="text" class="input-text" name="log" id="user_login" value="" />
 						</label>
@@ -186,12 +186,12 @@ if ( isset( $_REQUEST['register-errors'] ) ) {
 			    	<?php endif; ?>
 
 			        <p class="form-row">
-			            <label for="first_name"><?php esc_html_e( 'First name', 'realteo' ); ?> <strong>*</strong></label>
+			            <label for="first_name"><?php esc_html_e( 'First name', 'realteo' ); ?></label>
 			            <input type="text" name="first_name" id="first-name">
 			        </p>
 			 
 			        <p class="form-row">
-			            <label for="last_name"><?php esc_html_e( 'Last name', 'realteo' ); ?> <strong>*</strong></label>
+			            <label for="last_name"><?php esc_html_e( 'Last name', 'realteo' ); ?></label>
 			            <input type="text" name="last_name" id="last-name">
 			        </p>
 
@@ -216,9 +216,9 @@ if ( isset( $_REQUEST['register-errors'] ) ) {
 							?>
 				 		</p>
 			 		<?php } ?>
-			        <!-- <p class="form-row margin-top-30 margin-bottom-30">
+			        <p class="form-row margin-top-30 margin-bottom-30">
 			            <?php esc_html_e( 'Note: Your password will be generated automatically and sent to your email address.', 'realteo' ); ?>
-			        </p> -->
+			        </p>
 					<?php $recaptcha_status = realteo_get_option('realteo_recaptcha');
 	            	if($recaptcha_status) { ?>
 			        <p class="form-row captcha_wrapper">
@@ -235,7 +235,7 @@ if ( isset( $_REQUEST['register-errors'] ) ) {
 					        </p>
 						        
 						<?php } ?>
-			        <p class="signup-submit margin-top-30">
+			        <p class="signup-submit">
 			            <input type="submit" name="submit" class="register-button"  value="<?php esc_html_e( 'Register', 'realteo' ); ?>"/>
 			        </p>
 			    </form>

@@ -1,7 +1,7 @@
 <?php
 /*
  * Plugin Name: Realteo - Real Estate Plugin by Purethemes
- * Version: 1.0.12
+ * Version: 1.0.15
  * Plugin URI: http://www.purethemes.net/
  * Description: Real Estate Plugin from Purethemes.net
  * Author: Purethemes.net

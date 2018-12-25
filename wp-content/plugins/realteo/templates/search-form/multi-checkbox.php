@@ -1,4 +1,6 @@
 <div class="search-form-<?php echo esc_attr($data->name);?> checkboxes one-in-row <?php if(isset($data->css_class)) { echo esc_attr($data->css_class); }?>">
+
+
 <?php 
 
 if(isset($_GET[$data->name])) {

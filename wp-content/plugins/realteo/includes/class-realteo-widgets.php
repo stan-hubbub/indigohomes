@@ -513,7 +513,7 @@ class Realteo_Contact_Agent_Widget extends Realteo_Widget {
 				
 				
 			</div>
-<?php if(isset($instance['desc']) && !empty($instance['desc'])) {  ?>
+			<?php if(isset($instance['desc']) && !empty($instance['desc'])) {  ?>
 				<div class="agent-desc">
 				<?php 
 				 	$allowed_tags = wp_kses_allowed_html( 'post' );

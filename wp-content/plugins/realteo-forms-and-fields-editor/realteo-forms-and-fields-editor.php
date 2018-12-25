@@ -1,7 +1,7 @@
 <?php
 /*
  * Plugin Name: Realteo - Forms&Fields Editor
- * Version: 1.0.11
+ * Version: 1.0.13
  * Plugin URI: http://www.purethemes.net/
  * Description: Editor for Realteo - Real Estate Plugin from Purethemes.net
  * Author: Purethemes.net

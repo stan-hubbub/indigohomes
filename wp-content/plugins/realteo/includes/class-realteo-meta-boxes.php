@@ -68,7 +68,7 @@ class Realteo_Meta_Boxes {
 			'name' => __( 'Expiration date', 'realteo' ),
 			'desc' => '',
 			'id'   => '_property_expires',
-			'type' => 'text_date',
+			'type' => 'text_date_timestamp',
 			
 		) );
 

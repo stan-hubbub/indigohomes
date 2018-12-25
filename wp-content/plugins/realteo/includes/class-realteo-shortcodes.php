@@ -39,6 +39,7 @@ class Realteo_Shortcodes {
 			'with_keyword_search'		=> 'no',
 			'list_style'				=> 'list-layout',
 			'layout_switch'				=> 'on',
+			'order_switch'				=> '',
 			'per_page'                  => get_option( 'posts_per_page' ),
 			'orderby'                   => '',
 			'order'                     => '',
@@ -75,11 +76,12 @@ class Realteo_Shortcodes {
 		
 		$realteo_query = Realteo_Property::get_real_properties( apply_filters( 'realteo_output_defaults_args', $get_properties ));
 		ob_start();
+		
 		?>
 
 			<div class="row margin-bottom-15">
 
-				<?php do_action( 'realto_before_archive', $list_style, $layout_switch ); ?>
+				<?php do_action( 'realto_before_archive', $list_style, $layout_switch, $order_switch  ); ?>
 			</div>
 		<?php
 		if ( $realteo_query->have_posts() ) { 

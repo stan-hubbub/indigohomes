@@ -3,7 +3,7 @@
 Plugin Name: Findeo VC Bridge
 Plugin URI:
 Description: Adds Visual Composer compatibiliy to Findeo theme..
-Version: 1.2.92
+Version: 1.2.94
 Author: Purethems.net
 Author URI: http://purethemes.net
 */
