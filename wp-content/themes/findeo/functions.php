@@ -180,12 +180,12 @@ add_action( 'widgets_init', 'findeo_widgets_init' );
  * Enqueue scripts and styles.
  */
 function findeo_scripts() {
-	
+
+	wp_enqueue_style('findeo-custom', get_template_directory_uri().'/css/findeo-custom.css', array(), '1.2' );
 	wp_register_style( 'bootstrap', get_template_directory_uri(). '/css/bootstrap.css' );
 	wp_register_style( 'findeo-woocommerce', get_template_directory_uri(). '/css/woocommerce.min.css' );
     wp_register_style( 'findeo-icons', get_template_directory_uri(). '/css/icons.css' );
 	wp_enqueue_style( 'findeo-style', get_stylesheet_uri(), array('bootstrap','findeo-icons','findeo-woocommerce') );
-	wp_enqueue_style('findeo-custom', get_template_directory_uri().'/css/findeo-custom.css', array(), '1.1' );
 	
 	wp_enqueue_script( 'findeo-navigation', get_template_directory_uri() . '/js/navigation.min.js', array(), '20151215', true );
 
