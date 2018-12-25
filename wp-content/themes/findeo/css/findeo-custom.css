@@ -1,4 +1,13 @@
 
+/* pages */
+.findeo-custom #titlebar {
+  padding: 20px 0;
+}
+
+.findeo-custom #titlebar h2 {
+  font-size: 28px;
+}
+
 /* posts */
 .findeo-custom .ul.listing-details {
   background-color: transparent;
@@ -18,4 +27,10 @@
 .findeo-custom .copyrights {
   padding: 20px 0;
   text-align: left;
+}
+
+/* woocommerce */
+.findeo-custom #customer_details,
+.findeo-custom .woocommerce-customer-details {
+  display: none;
 }
