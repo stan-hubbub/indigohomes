@@ -1,0 +1,21 @@
+
+/* posts */
+ul.listing-details {
+  background-color: transparent;
+}
+
+/* footer */
+#footer {
+  box-shadow: none;
+  background-color: #ffffff;
+  padding: 0;
+}
+
+.footer-shadow {
+  box-shadow: none;
+}
+
+.copyrights {
+  text-align: left;
+  padding: 20px 0;
+}
