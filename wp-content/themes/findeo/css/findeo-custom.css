@@ -6,8 +6,8 @@
 
 /* footer */
 .findeo-custom #footer {
-  box-shadow: none;
   background-color: #ffffff;
+  box-shadow: none;
   padding: 0;
 }
 
@@ -16,6 +16,6 @@
 }
 
 .findeo-custom .copyrights {
-  text-align: left;
   padding: 20px 0;
+  text-align: left;
 }
