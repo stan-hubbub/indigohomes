@@ -36,9 +36,9 @@
   display: none;
 }
 
-#package_selection .user-packages [type="radio"]:checked + label:before, 
-#package_selection .user-packages [type="radio"]:not(:checked) + label:before, 
-#package_selection .plan-features [type="radio"]:checked + label:before, 
-#package_selection .plan-features [type="radio"]:not(:checked) + label:before {
+.findeo-custom #package_selection .user-packages [type="radio"]:checked + label:before, 
+.findeo-custom #package_selection .user-packages [type="radio"]:not(:checked) + label:before, 
+.findeo-custom #package_selection .plan-features [type="radio"]:checked + label:before, 
+.findeo-custom #package_selection .plan-features [type="radio"]:not(:checked) + label:before {
   border-radius: 30px;
 }
