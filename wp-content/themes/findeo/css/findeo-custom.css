@@ -31,6 +31,7 @@
 
 /* woocommerce */
 .findeo-custom #customer_details,
-.findeo-custom .woocommerce-customer-details {
+.findeo-custom .woocommerce-customer-details,
+.findeo-custom a.button.wc-forward {
   display: none;
 }
