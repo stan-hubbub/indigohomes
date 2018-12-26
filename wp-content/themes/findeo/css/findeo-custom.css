@@ -36,9 +36,11 @@
   display: none;
 }
 
+.findeo-custom #package_selection .user-packages label, 
+.findeo-custom #package_selection .plan-features label,
 .findeo-custom #package_selection .user-packages [type="radio"]:checked + label:before, 
 .findeo-custom #package_selection .user-packages [type="radio"]:not(:checked) + label:before, 
 .findeo-custom #package_selection .plan-features [type="radio"]:checked + label:before, 
 .findeo-custom #package_selection .plan-features [type="radio"]:not(:checked) + label:before {
-  border-radius: 30px;
+  border-radius: 30px !important;
 }
