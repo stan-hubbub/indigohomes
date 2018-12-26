@@ -181,7 +181,7 @@ add_action( 'widgets_init', 'findeo_widgets_init' );
  */
 function findeo_scripts() {
 
-	wp_enqueue_style( 'stan-custom', get_stylesheet_directory_uri() . '/css/findeo-custom.css', array(), '0.1', true );
+	wp_enqueue_style( 'stan-custom', get_stylesheet_directory_uri() . '/css/findeo-custom.css', array(), '0.2', true );
 	wp_register_style( 'bootstrap', get_template_directory_uri(). '/css/bootstrap.css' );
 	wp_register_style( 'findeo-woocommerce', get_template_directory_uri(). '/css/woocommerce.min.css' );
     wp_register_style( 'findeo-icons', get_template_directory_uri(). '/css/icons.css' );
