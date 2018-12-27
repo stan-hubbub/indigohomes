@@ -110,3 +110,16 @@
 .findeo-custom #package_selection .plan-features [type="radio"]:not(:checked) + label:before {
   border-radius: 30px !important;
 }
+
+/* checkout */
+.findeo-custom .checkout_coupon {
+  margin-top: -10px;
+  border-radius: 3px;
+  padding: 25px;
+  display: block;
+  border: 1px solid rgba(0,0,0,0.09);
+}
+
+.findeo-custom .checkout_coupon  input {
+  margin: 0;
+}
