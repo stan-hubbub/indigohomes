@@ -7,7 +7,7 @@
   margin-left: 35px;
 }
 .listing-content ul.listing-details li {
-  padding: 0;
+  padding: 0 !important;
   margin-right: 20px;
 }
 
