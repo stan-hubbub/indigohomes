@@ -20,9 +20,9 @@
 </head>
 
 <body <?php body_class(); ?>>
-
+	
 <!-- Wrapper -->
-<div id="wrapper">
+<div id="wrapper" class="findeo-custom">
 <?php do_action('realteo_after_wrapper'); ?>
 <?php 
 $header_layout = get_option('findeo_header_layout') ;
@@ -186,9 +186,9 @@ $sticky = apply_filters('findeo_sticky_header_filter',$sticky);
 									</ul>
 								</div>
 							<?php } else { ?>
-									<a href="<?php echo get_permalink(realteo_get_option( 'my_account_page' ))?>" class="sign-in"><i class="fa fa-user"></i> <?php esc_html_e('Log In / Register','findeo');  ?>
+									<a href="<?php echo get_permalink(realteo_get_option( 'my_account_page' ))?>" class="sign-in"><i class="fa fa-user"></i> <?php esc_html_e('Log In / Register','findeo');  ?></a>
 							<?php }	?>
-						</a>
+						
 					<?php endif;?>
 					
 					<?php 

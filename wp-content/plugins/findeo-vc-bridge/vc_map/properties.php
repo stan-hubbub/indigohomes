@@ -63,6 +63,16 @@ function properties_integrateWithVC() {
             __( 'Menu order', 'findeo' ) => 'menu_order'
             ),
         ),
+         array(
+          'type' => 'dropdown',
+          'heading' => __( '"Order by" dropdown switch ', 'findeo' ),
+          'param_name' => 'order_switch',
+          'value' => array(
+            __( 'Show', 'findeo' ) => 'on',
+            __( 'Hide', 'findeo' ) => 'off'
+            ),
+          'save_always' => true,
+        ),
         array(
           'type' => 'dropdown',
           'heading' => __( 'Order', 'findeo' ),

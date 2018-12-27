@@ -349,6 +349,7 @@ class Realteo_Search {
 				
 				if (substr($meta_key, -4) == "_min" || substr($meta_key, -4) == "_max") { continue; }
 				$meta = get_query_var( $meta_key );
+
 				if ( $meta ) {
 
 					if(is_array($meta)){
@@ -359,7 +360,7 @@ class Realteo_Search {
 			                'compare' => 'IN',
 			            );	
 				
-					}else {
+					} else {
 						$meta_queries[] = array(
 			                'key'     => $meta_key,
 			                'value'   => $meta, 
@@ -367,8 +368,9 @@ class Realteo_Search {
 					}
 					
 				}
-
+				
 			}
+
 			
 			
 			if( isset($ordering_args['meta_key']) && $ordering_args['meta_key'] == '_featured' ){

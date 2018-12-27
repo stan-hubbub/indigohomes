@@ -50,6 +50,25 @@ $template_loader = new Realteo_Template_Loader;
 ================================================== -->
 <div class="container">
 	<div class="row">
+			<!-- Main Search Input -->
+			<form action="<?php echo get_post_type_archive_link('agency'); ?>" method="GET">
+				<div class="col-md-12">
+					<div class="main-search-input">
+					<?php 
+					if ( ! empty( $_GET['s'] ) ) {
+						$keywords = sanitize_text_field( $_GET['s'] );
+					} else {
+						$keywords = '';
+					} ?>
+						<input type="text" class="ico-01" name="s" placeholder="<?php esc_html_e( 'Type agency name' , 'findeo' ); ?>" 
+						value="<?php echo esc_attr( $keywords ); ?>"/>
+						<input type="hidden" name="post_type" value="agency">
+						<button class="button"><?php esc_html_e( 'Search' , 'findeo' ); ?></button>
+					</div>
+				</div>
+			</form>
+		</div>
+	<div class="row">
 		<div class="col-md-12">
 			
 			<?php

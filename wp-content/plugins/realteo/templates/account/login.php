@@ -216,9 +216,9 @@ if ( isset( $_REQUEST['register-errors'] ) ) {
 							?>
 				 		</p>
 			 		<?php } ?>
-			        <!-- <p class="form-row margin-top-30 margin-bottom-30">
+			        <p class="form-row margin-top-30 margin-bottom-30">
 			            <?php esc_html_e( 'Note: Your password will be generated automatically and sent to your email address.', 'realteo' ); ?>
-			        </p> -->
+			        </p>
 					<?php $recaptcha_status = realteo_get_option('realteo_recaptcha');
 	            	if($recaptcha_status) { ?>
 			        <p class="form-row captcha_wrapper">
@@ -235,7 +235,7 @@ if ( isset( $_REQUEST['register-errors'] ) ) {
 					        </p>
 						        
 						<?php } ?>
-			        <p class="signup-submit margin-top-30">
+			        <p class="signup-submit">
 			            <input type="submit" name="submit" class="register-button"  value="<?php esc_html_e( 'Register', 'realteo' ); ?>"/>
 			        </p>
 			    </form>

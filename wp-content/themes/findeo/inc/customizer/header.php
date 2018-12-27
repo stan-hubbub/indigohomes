@@ -87,6 +87,7 @@ findeo_Kirki::add_panel( 'header_options_panel', array(
 		  'label'       => esc_attr__( 'Social Icons', 'findeo' ),
 		  'section'     => 'top_header',
 		  'priority'    => 10,
+		  'transport' => 'refresh',
 		  'settings'    => 'findeo_top_social_icons',
 		  'row_label' => array(
 				'type' => 'text',

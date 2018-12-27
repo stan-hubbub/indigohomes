@@ -46,7 +46,8 @@ $message = $data->message;
 						<span class="table-property-price"><?php the_property_price($property); ?></span>
 					</div>
 				</td>
-				<td class="expire-date"><?php echo realteo_get_expiration_date($property_id); ?></td>
+				<td class="expire-date">
+					<?php echo realteo_get_expiration_date($property_id); ?></td>
 				<td class="action">
 					<?php
 						$actions = array();

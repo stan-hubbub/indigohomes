@@ -19,6 +19,7 @@ if($floorplans) : ?>
 				$img = wp_get_attachment_image( $plan['floorplan_image_id'], 'full', null, array(
 					'class' => 'floorplan-image',
 				) );
+				$img_url = wp_get_attachment_image_src( $plan['floorplan_image_id'], 'full', null );
 			}
 		?>
 		<h3><?php echo esc_html( $plan['floorplan_title'] ); ?><?php if ( isset( $plan['floorplan_area'] ) ) { ?>
@@ -27,7 +28,7 @@ if($floorplans) : ?>
 		</h3>
 		<div>
 			<?php if ( isset( $plan['floorplan_image_id'] ) ) { ?>
-			<a class="floor-pic mfp-image" href="<?php echo esc_url($plan['floorplan_image']); ?>">
+			<a class="floor-pic mfp-image" href="<?php echo esc_url($img_url[0]); ?>">
 				<?php echo $img; ?>
 			</a>
 			<?php } ?>

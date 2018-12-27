@@ -123,7 +123,7 @@ switch ($layout) {
 		<!-- Sidebar -->
 		<div class="col-lg-4 col-md-5">
 			<div class="sidebar sticky right">
-				<?php get_sidebar('property'); ?>
+				<?php get_sidebar('listing'); ?>
 			</div>
 		</div>
 		<!-- Sidebar / End -->

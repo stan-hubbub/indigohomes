@@ -1,6 +1,7 @@
 <!-- Content
 ================================================== -->
 <?php $gallery = get_post_meta( $post->ID, '_gallery', true );
+
 if(!empty($gallery)) : ?>
 <div class="container">
 	<div class="row margin-bottom-50">

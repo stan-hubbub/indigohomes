@@ -1972,6 +1972,10 @@ ob_end_clean();
 		header("Content-Disposition: attachment; filename=".sanitize_title($slider->getAlias()).".zip");
 		header("Pragma: no-cache");
 		header("Expires: 0");
+		
+		ob_clean();
+		flush();
+		
 		readfile(RevSliderGlobals::$uploadsUrlExportZip);
 		
 		@unlink(RevSliderGlobals::$uploadsUrlExportZip); //delete file after sending it to user

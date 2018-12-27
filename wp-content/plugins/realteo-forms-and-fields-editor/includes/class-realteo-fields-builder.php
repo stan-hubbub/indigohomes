@@ -214,7 +214,7 @@ class Realteo_Fields_Editor {
 
     private function form_editor_save($tab) {
      
-        $field_name             = ! empty( $_POST['name'] ) ? array_map( 'sanitize_text_field', $_POST['name'] )                     : array();
+        $field_name             = ! empty( $_POST['name'] ) ? array_map( 'sanitize_textarea_field', $_POST['name'] )                     : array();
         $field_id               = ! empty( $_POST['id'] ) ? array_map( 'sanitize_text_field', $_POST['id'] )                         : array();
         $field_type             = ! empty( $_POST['type'] ) ? array_map( 'sanitize_text_field', $_POST['type'] )                     : array();
         $field_invert             = ! empty( $_POST['invert'] ) ? array_map( 'sanitize_text_field', $_POST['invert'] )                     : array();
@@ -239,7 +239,7 @@ class Realteo_Fields_Editor {
             }
 
             $new_field                      = array();
-            $new_field['name']              = $field_name[ $key ];
+            $new_field['name']              = stripslashes($field_name[ $key ]);
             $new_field['id']                = $field_id[ $key ];
             $new_field['type']              = $field_type[ $key ];
             $new_field['invert']            = isset($field_invert[ $key ]) ? $field_invert[ $key ] : false;
