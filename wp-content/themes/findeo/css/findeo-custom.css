@@ -9,7 +9,7 @@
 }
 
 /* posts */
-.findeo-custom .ul.listing-details {
+.findeo-custom .list-layout ul.listing-details {
   background-color: transparent;
 }
 
@@ -27,6 +27,47 @@
 .findeo-custom .copyrights {
   padding: 20px 0;
   text-align: left;
+}
+
+/* property/show  */
+.findeo-custom .property-main-features {
+  padding: 0;
+  background: transparent;
+  margin-top: -50px;
+}
+
+.findeo-custom #titlebar.property-titlebar span a {
+  margin-top: 20px;
+}
+
+.findeo-custom .property-title {
+  margin-left: 0;
+  max-width: 100%;
+}
+
+/* sidebar */
+.findeo-custom .agent-widget {
+  padding: 40px 20px;
+}
+
+.findeo-custom .property-main-features li {
+  padding: 0;
+  margin-right: 20px;
+  line-height: normal;
+}
+
+.findeo-custom .property-main-features li span {
+  display: inline;
+}
+
+.findeo-custom .property-main-features li:last-child {
+  margin-right: 0;
+}
+
+.findeo-custom .property-pricing,
+.findeo-custom .back-to-listings, 
+.findeo-custom .property-type-badge {
+  display: none !important;
 }
 
 /* woocommerce */
