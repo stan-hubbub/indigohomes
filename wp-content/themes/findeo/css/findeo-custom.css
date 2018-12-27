@@ -33,6 +33,7 @@
 .findeo-custom .property-main-features {
   padding: 0;
   background: transparent;
+  margin-top: -50px;
 }
 
 .findeo-custom #titlebar.property-titlebar span a {
