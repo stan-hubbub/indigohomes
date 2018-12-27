@@ -1,3 +1,15 @@
+/* homepage */
+.findeo-custom .listing-img-content .listing-price {
+  display: none;
+}
+
+.listing-content ul.listing-details {
+  margin-left: 35px;
+}
+.listing-content ul.listing-details li {
+  padding: 0 !important;
+  margin-right: 20px;
+}
 
 /* pages */
 .findeo-custom #titlebar {
