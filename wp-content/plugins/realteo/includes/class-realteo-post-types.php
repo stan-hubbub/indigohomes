@@ -344,7 +344,13 @@ class Realteo_Post_Types {
 			break;
 
 			case "expires" :
+			$expires = get_post_meta( $post->ID, '_property_expires', true );
+
+			if($this->is_timestamp($expires)){
 				echo realteo_get_expiration_date($post->ID);
+			} else {
+				echo $expires;
+			}
 			break;
 
 			case "featured_property" :
@@ -421,14 +427,25 @@ class Realteo_Post_Types {
 		// See if it is already set
 		if ( get_post_meta( $post->ID, '_property_expires', true ) ) {
 			$expires =  get_post_meta( $post->ID, '_property_expires', true );
-			if ( $expires && strtotime( $expires ) < current_time( 'timestamp' ) ) {
-				update_post_meta( $post->ID, '_property_expires', '' );
+			if($this->is_timestamp($expires)){
+				if ( $expires && $expires < current_time( 'timestamp' ) ) {
+					update_post_meta( $post->ID, '_property_expires', '' );
+				} else {
+					update_post_meta( $post->ID, '_property_expires', $expires );
+				}
+			} else {
+				$timestamp = strtotime($expires);
+				update_post_meta( $post->ID, '_property_expires', $timestamp );
+				if ( $expires && strtotime( $expires ) < current_time( 'timestamp' ) ) {
+					update_post_meta( $post->ID, '_property_expires', '' );
+				} 
 			}
+			
 		}
 
 		// See if the user has set the expiry manually:
 		if ( ! empty( $_POST[ '_property_expires' ] ) ) {
-			update_post_meta( $post->ID, '_property_expires', date( 'Y-m-d', strtotime( sanitize_text_field( $_POST[ '_property_expires' ] ) ) ) );
+			update_post_meta( $post->ID, '_property_expires',  $_POST[ '_property_expires' ]  );
 
 		// No manual setting? Lets generate a date if there isn't already one
 		} elseif ( false == isset( $expires ) ) {
@@ -442,13 +459,21 @@ class Realteo_Post_Types {
 		}
 	}
 
+	public function is_timestamp($timestamp) {
 
+		$check = (is_int($timestamp) OR is_float($timestamp))
+			? $timestamp
+			: (string) (int) $timestamp;
+		return  ($check === $timestamp)
+	        	AND ( (int) $timestamp <=  PHP_INT_MAX)
+	        	AND ( (int) $timestamp >= ~PHP_INT_MAX);
+	}
 	/**
 	 * Maintenance task to expire propertys.
 	 */
 	public function check_for_expired() {
 		global $wpdb;
-
+		$date_format = get_option('date_format');
 		// Change status to expired
 		$property_ids = $wpdb->get_col( $wpdb->prepare( "
 			SELECT postmeta.post_id FROM {$wpdb->postmeta} as postmeta
@@ -458,7 +483,7 @@ class Realteo_Post_Types {
 			AND postmeta.meta_value < %s
 			AND posts.post_status = 'publish'
 			AND posts.post_type = 'property'
-		", date( 'Y-m-d', current_time( 'timestamp' ) ) ) );
+		", strtotime(date( $date_format, current_time( 'timestamp' ) ) ) ) );
 
 		if ( $property_ids ) {
 			foreach ( $property_ids as $property_id ) {
@@ -479,7 +504,7 @@ class Realteo_Post_Types {
 			AND postmeta.meta_value < %s
 			AND posts.post_status = 'publish'
 			AND posts.post_type = 'property'
-		", date( 'Y-m-d', strtotime('+5 days') ) ) );
+		", strtotime( date( $date_format, strtotime('+5 days') ) ) ) );
 
 		if ( $property_ids ) {
 			foreach ( $property_ids as $property_id ) {
@@ -495,7 +520,7 @@ class Realteo_Post_Types {
 				WHERE posts.post_type = 'property'
 				AND posts.post_modified < %s
 				AND posts.post_status = 'expired'
-			", date( 'Y-m-d', strtotime( '-' . apply_filters( 'realteo_delete_expired_properties_days', 30 ) . ' days', current_time( 'timestamp' ) ) ) ) );
+			", strtotime( date( $date_format, strtotime( '-' . apply_filters( 'realteo_delete_expired_properties_days', 30 ) . ' days', current_time( 'timestamp' ) ) ) ) ) );
 
 			if ( $property_ids ) {
 				foreach ( $property_ids as $property_id ) {
@@ -506,6 +531,8 @@ class Realteo_Post_Types {
 	}
 
 
+
+/*
 	/**
 	 * Adds bulk actions to drop downs on Job Listing admin page.
 	 *

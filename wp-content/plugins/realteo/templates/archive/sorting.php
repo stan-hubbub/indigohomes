@@ -2,7 +2,7 @@
 	<!-- Sort by -->
 	<div class="sort-by">
 		<label><?php esc_html_e('Sort by:','realteo'); ?></label>
-		<form class="realteo-ordering" method="get">
+		<form class="realteo-ordering" method="get" action="">
 		<div class="sort-by-select">
 			<?php $default = isset( $_GET['realteo_order'] ) ? (string) $_GET['realteo_order']  : realteo_get_option('realteo_sort_by');
 			?>

@@ -305,12 +305,16 @@ function realteo_render_column($col='') {
 }
 
 
-function realto_result_sorting(){
+function realto_result_sorting($list_style, $layout_switch = null, $order_switch = null){
+	
+	if($order_switch == 'off') {
+		return;
+	}
 	$template_loader = new Realteo_Template_Loader; 
 	$template_loader->get_template_part( 'archive/sorting' ); 
 }
 
-function realto_result_layout_switch($list_style, $layout_switch = null){
+function realto_result_layout_switch($list_style, $layout_switch = null, $order_switch = null){
 	if(!isset($layout_switch)){
 		$layout_switch = 'on';
 	}
@@ -322,8 +326,8 @@ function realto_result_layout_switch($list_style, $layout_switch = null){
 }
 
 /* Hooks */
-add_action( 'realto_before_archive', 'realto_result_sorting', 10 );
-add_action( 'realto_before_archive', 'realto_result_layout_switch', 20, 2 );
+add_action( 'realto_before_archive', 'realto_result_sorting', 10, 3 );
+add_action( 'realto_before_archive', 'realto_result_layout_switch', 20, 3 );
 
 /**
  * Return type of properties
@@ -680,14 +684,14 @@ function realteo_get_post_status($id){
 function calculate_property_expiry( $id ) {
 	// Get duration from the product if set...
 	$duration = get_post_meta( $id, '_duration', true );
-
+	
 	// ...otherwise use the global option
 	if ( ! $duration ) {
 		$duration = absint( realteo_get_option( 'realteo_default_duration' ) );
 	}
 
 	if ( $duration ) {
-		return date( 'Y-m-d', strtotime( "+{$duration} days", current_time( 'timestamp' ) ) );
+		return strtotime( "+{$duration} days", current_time( 'timestamp' ) );
 	}
 
 	return '';
@@ -695,10 +699,14 @@ function calculate_property_expiry( $id ) {
 
 function realteo_get_expiration_date($id) {
 	$expires = get_post_meta( $id, '_property_expires', true );
+
 	if(!empty($expires)) {
-		$saved_date = get_option( 'date_format' );
-		$saved_date_timestamp = strtotime($expires);
-		$new_date = date($saved_date, $saved_date_timestamp); 
+		if(realteo_is_timestamp($expires)) {
+			$saved_date = get_option( 'date_format' );
+			$new_date = date($saved_date, $expires); 
+		} else {
+			return $expires;
+		}
 	}
 	return (empty($expires)) ? __('Never/not set','realteo') : $new_date ;
 }
@@ -940,12 +948,16 @@ function realteo_geocode($address){
     $url = "https://maps.google.com/maps/api/geocode/json?address={$address}&key={$api_key}";
  
     // get the json response
-    $resp_json = file_get_contents($url);
+    // get the json response
+    $resp_json = wp_remote_get($url);
     $file = 'wp-content/geocode.txt';
-    file_put_contents($file, $resp_json);
+    //file_put_contents($file, $resp_json);
     // decode the json
     
-    $resp = json_decode($resp_json, true);
+ 
+	$resp_json = wp_remote_get($url);
+ 	$resp = json_decode( wp_remote_retrieve_body( $resp_json ), true );
+ 
 
     // response status will be 'OK', if able to geocode given address 
     if($resp['status']=='OK'){
@@ -1243,4 +1255,14 @@ function realteo_cmb2_get_user_options( $query_args ) {
 
     return $user_options;
 }
+
+function realteo_is_timestamp($timestamp) {
+
+		$check = (is_int($timestamp) OR is_float($timestamp))
+			? $timestamp
+			: (string) (int) $timestamp;
+		return  ($check === $timestamp)
+	        	AND ( (int) $timestamp <=  PHP_INT_MAX)
+	        	AND ( (int) $timestamp >= ~PHP_INT_MAX);
+	}
 

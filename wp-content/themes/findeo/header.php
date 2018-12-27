@@ -22,7 +22,7 @@
 <body <?php body_class(); ?>>
 	
 <!-- Wrapper -->
-<div id="wrapper">
+<div id="wrapper" class="findeo-custom">
 <?php do_action('realteo_after_wrapper'); ?>
 <?php 
 $header_layout = get_option('findeo_header_layout') ;

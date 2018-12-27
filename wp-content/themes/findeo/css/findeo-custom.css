@@ -1,0 +1,45 @@
+
+/* pages */
+.findeo-custom #titlebar {
+  padding: 20px 0;
+}
+
+.findeo-custom #titlebar h2 {
+  font-size: 23px;
+}
+
+/* posts */
+.findeo-custom .ul.listing-details {
+  background-color: transparent;
+}
+
+/* footer */
+.findeo-custom #footer {
+  background-color: #ffffff;
+  box-shadow: none;
+  padding: 0;
+}
+
+.findeo-custom .footer-shadow {
+  box-shadow: none;
+}
+
+.findeo-custom .copyrights {
+  padding: 20px 0;
+  text-align: left;
+}
+
+/* woocommerce */
+.findeo-custom #customer_details,
+.findeo-custom .woocommerce-customer-details {
+  display: none;
+}
+
+.findeo-custom #package_selection .user-packages label, 
+.findeo-custom #package_selection .plan-features label,
+.findeo-custom #package_selection .user-packages [type="radio"]:checked + label:before, 
+.findeo-custom #package_selection .user-packages [type="radio"]:not(:checked) + label:before, 
+.findeo-custom #package_selection .plan-features [type="radio"]:checked + label:before, 
+.findeo-custom #package_selection .plan-features [type="radio"]:not(:checked) + label:before {
+  border-radius: 30px !important;
+}

@@ -72,7 +72,7 @@ class Realteo_Geocode {
 		if ( empty( $raw_address ) ) {
 			return false;
 		}
-
+		$raw_address = preg_replace('/[^(\x20-\x7F)]*/','', $raw_address);
 		$geocode_api_url =  self::GOOGLE_MAPS_GEOCODE_API_URL;
 		$api_key = realteo_get_option( 'realteo_maps_api_server' );
 
@@ -102,6 +102,7 @@ class Realteo_Geocode {
 					)
 				);
 				$result           = wp_remote_retrieve_body( $result );
+				
 				$geocoded_address = json_decode( $result );
 
 				if ( $geocoded_address->status ) {

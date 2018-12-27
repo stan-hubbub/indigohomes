@@ -3,7 +3,7 @@
 Plugin Name: Findeo Shortcodes
 Plugin URI:
 Description: Shortcodes required by Findeo Theme.
-Version: 1.2.7
+Version: 1.2.81
 Author: Purethemes.net
 Author URI: http://purethemes.net
 Text Domain: findeo-shortcodes

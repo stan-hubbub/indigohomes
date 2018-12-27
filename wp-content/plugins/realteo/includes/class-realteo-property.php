@@ -160,9 +160,10 @@ class Realteo_Property {
         foreach ($taxonomy_objects as $tax) {
         	
         	$get_tax = (isset($_GET['tax-'.$tax->name])) ? $_GET['tax-'.$tax->name] : $args['tax-'.$tax->name] ;
-			
-			if(strpos($get_tax, ',') !== false) {
-				$get_tax = explode(',', $get_tax);
+			if(!is_array($get_tax)){
+				if(strpos($get_tax, ',') !== false) {
+					$get_tax = explode(',', $get_tax);
+				}
 			}
         	if(is_array($get_tax)){
         		$query_args['tax_query'][$tax->name] = array('relation'=> 'OR');
