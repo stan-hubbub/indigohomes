@@ -1,11 +1,13 @@
 
 /* pages */
 .findeo-custom #titlebar {
-  padding: 20px 0;
+  padding: 10px 0;
+  margin-bottom: 40px;
 }
 
 .findeo-custom #titlebar h2 {
-  font-size: 23px;
+  font-size: 18px;
+  margin: 0;
 }
 
 /* posts */
@@ -68,6 +70,13 @@
 .findeo-custom .back-to-listings, 
 .findeo-custom .property-type-badge {
   display: none !important;
+}
+
+/* submit-property */
+.findeo-custom #property_preview .property-titlebar span a, 
+.findeo-custom #titlebar.property-titlebar span {
+  margin-bottom: 10px;
+  margin-top: 10px;
 }
 
 /* woocommerce */
