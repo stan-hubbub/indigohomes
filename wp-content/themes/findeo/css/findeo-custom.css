@@ -1,3 +1,8 @@
+/* misc */
+.display-inline {
+  display: inline-block;
+}
+
 /* homepage */
 .findeo-custom .listing-img-content .listing-price {
   display: none;
