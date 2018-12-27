@@ -32,7 +32,7 @@
 /* property/show  */
 .findeo-custom .property-badge.property-badge-sale,
 .findeo-custom .property-type-badge.property-type-badge-condominium {
-  display: none;
+  display: none !important;
 }
 
 /* woocommerce */
