@@ -29,6 +29,12 @@
   text-align: left;
 }
 
+/* property/show  */
+.findeo-custom .property-badge.property-badge-sale,
+.findeo-custom .property-type-badge.property-type-badge-condominium {
+  display: none;
+}
+
 /* woocommerce */
 .findeo-custom #customer_details,
 .findeo-custom .woocommerce-customer-details {
