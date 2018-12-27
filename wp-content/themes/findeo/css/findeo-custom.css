@@ -30,6 +30,17 @@
 }
 
 /* property/show  */
+.findeo-custom #titlebar.property-titlebar span a {
+  margin-top: 20px;
+}
+
+.findeo-custom .property-title {
+  margin-left: 0;
+  max-width: 100%;
+}
+
+.findeo-custom .property-pricing,
+.findeo-custom .back-to-listings, 
 .findeo-custom .property-badge.property-badge-sale,
 .findeo-custom .property-type-badge.property-type-badge-condominium {
   display: none !important;
