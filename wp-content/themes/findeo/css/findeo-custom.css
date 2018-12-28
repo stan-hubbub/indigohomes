@@ -1,4 +1,10 @@
 /* misc */
+#header {
+  box-shadow: none;
+  background: #ffffff;
+  border-bottom: 1px solid #ededed;
+}
+
 .findeo-custom .display-inline {
   display: inline-block;
 }
@@ -105,6 +111,10 @@
 
 .findeo-custom .plan.featured .plan-price {
   padding: 58px 30px;
+}
+
+.findeo-custom .plan.featured .plan-features {
+  padding: 35px 30px 55px 30px;
 }
 
 /* woocommerce */
