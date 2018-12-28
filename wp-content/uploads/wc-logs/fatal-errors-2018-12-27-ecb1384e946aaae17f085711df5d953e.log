@@ -1,0 +1,50 @@
+2018-12-27T17:31:54+00:00 CRITICAL Uncaught Error: Cannot use object of type WP_Error as array in /home/hubbub42/public_html/indigohomes.ph/wp-content/plugins/realteo/includes/class-realteo-geocode.php:211
+Stack trace:
+#0 /home/hubbub42/public_html/indigohomes.ph/wp-content/plugins/realteo/includes/class-realteo-geocode.php(44): Realteo_Geocode::save_location_data(485, Array)
+#1 /home/hubbub42/public_html/indigohomes.ph/wp-includes/class-wp-hook.php(286): Realteo_Geocode->update_location_data(485, Array)
+#2 /home/hubbub42/public_html/indigohomes.ph/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#3 /home/hubbub42/public_html/indigohomes.ph/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#4 /home/hubbub42/public_html/indigohomes.ph/wp-content/plugins/realteo/includes/class-realteo-submit.php(1240): do_action('realteo_update_...', 485, Array)
+#5 /home/hubbub42/public_html/indigohomes.ph/wp-content/plugins/realteo/includes/class-realteo-submit.php(755): Realteo_Submit->update_property_data(Array)
+#6 /home/hubbub42/pub in /home/hubbub42/public_html/indigohomes.ph/wp-content/plugins/realteo/includes/class-realteo-geocode.php on line 211
+
+2018-12-27T17:32:10+00:00 CRITICAL Uncaught Error: Cannot use object of type WP_Error as array in /home/hubbub42/public_html/indigohomes.ph/wp-content/plugins/realteo/includes/class-realteo-geocode.php:211
+Stack trace:
+#0 /home/hubbub42/public_html/indigohomes.ph/wp-content/plugins/realteo/includes/class-realteo-geocode.php(56): Realteo_Geocode::save_location_data(485, Array)
+#1 /home/hubbub42/public_html/indigohomes.ph/wp-includes/class-wp-hook.php(286): Realteo_Geocode->update_admin_location_data(485, Object(WP_Post), true)
+#2 /home/hubbub42/public_html/indigohomes.ph/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#3 /home/hubbub42/public_html/indigohomes.ph/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#4 /home/hubbub42/public_html/indigohomes.ph/wp-includes/post.php(3736): do_action('save_post_prope...', 485, Object(WP_Post), true)
+#5 /home/hubbub42/public_html/indigohomes.ph/wp-includes/post.php(3820): wp_insert_post(Array, false)
+#6 /home/hubbub42/public_html/indigohomes.ph/wp-content/plugins/realteo/inclu in /home/hubbub42/public_html/indigohomes.ph/wp-content/plugins/realteo/includes/class-realteo-geocode.php on line 211
+
+2018-12-27T17:32:51+00:00 CRITICAL Uncaught Error: Cannot use object of type WP_Error as array in /home/hubbub42/public_html/indigohomes.ph/wp-content/plugins/realteo/includes/class-realteo-geocode.php:211
+Stack trace:
+#0 /home/hubbub42/public_html/indigohomes.ph/wp-content/plugins/realteo/includes/class-realteo-geocode.php(56): Realteo_Geocode::save_location_data(485, Array)
+#1 /home/hubbub42/public_html/indigohomes.ph/wp-includes/class-wp-hook.php(286): Realteo_Geocode->update_admin_location_data(485, Object(WP_Post), true)
+#2 /home/hubbub42/public_html/indigohomes.ph/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#3 /home/hubbub42/public_html/indigohomes.ph/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#4 /home/hubbub42/public_html/indigohomes.ph/wp-includes/post.php(3736): do_action('save_post_prope...', 485, Object(WP_Post), true)
+#5 /home/hubbub42/public_html/indigohomes.ph/wp-includes/post.php(3820): wp_insert_post(Array, false)
+#6 /home/hubbub42/public_html/indigohomes.ph/wp-content/plugins/realteo/inclu in /home/hubbub42/public_html/indigohomes.ph/wp-content/plugins/realteo/includes/class-realteo-geocode.php on line 211
+
+2018-12-27T17:33:02+00:00 CRITICAL Uncaught Error: Cannot use object of type WP_Error as array in /home/hubbub42/public_html/indigohomes.ph/wp-content/plugins/realteo/includes/class-realteo-geocode.php:211
+Stack trace:
+#0 /home/hubbub42/public_html/indigohomes.ph/wp-content/plugins/realteo/includes/class-realteo-geocode.php(56): Realteo_Geocode::save_location_data(485, Array)
+#1 /home/hubbub42/public_html/indigohomes.ph/wp-includes/class-wp-hook.php(286): Realteo_Geocode->update_admin_location_data(485, Object(WP_Post), true)
+#2 /home/hubbub42/public_html/indigohomes.ph/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#3 /home/hubbub42/public_html/indigohomes.ph/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#4 /home/hubbub42/public_html/indigohomes.ph/wp-includes/post.php(3736): do_action('save_post_prope...', 485, Object(WP_Post), true)
+#5 /home/hubbub42/public_html/indigohomes.ph/wp-includes/post.php(3820): wp_insert_post(Array, false)
+#6 /home/hubbub42/public_html/indigohomes.ph/wp-content/plugins/realteo/inclu in /home/hubbub42/public_html/indigohomes.ph/wp-content/plugins/realteo/includes/class-realteo-geocode.php on line 211
+
+2018-12-27T17:33:27+00:00 CRITICAL Uncaught Error: Cannot use object of type WP_Error as array in /home/hubbub42/public_html/indigohomes.ph/wp-content/plugins/realteo/includes/class-realteo-geocode.php:211
+Stack trace:
+#0 /home/hubbub42/public_html/indigohomes.ph/wp-content/plugins/realteo/includes/class-realteo-geocode.php(56): Realteo_Geocode::save_location_data(485, Array)
+#1 /home/hubbub42/public_html/indigohomes.ph/wp-includes/class-wp-hook.php(286): Realteo_Geocode->update_admin_location_data(485, Object(WP_Post), true)
+#2 /home/hubbub42/public_html/indigohomes.ph/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#3 /home/hubbub42/public_html/indigohomes.ph/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#4 /home/hubbub42/public_html/indigohomes.ph/wp-includes/post.php(3736): do_action('save_post_prope...', 485, Object(WP_Post), true)
+#5 /home/hubbub42/public_html/indigohomes.ph/wp-includes/post.php(3820): wp_insert_post(Array, false)
+#6 /home/hubbub42/public_html/indigohomes.ph/wp-content/plugins/realteo/inclu in /home/hubbub42/public_html/indigohomes.ph/wp-content/plugins/realteo/includes/class-realteo-geocode.php on line 211
+
