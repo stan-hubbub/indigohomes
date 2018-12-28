@@ -143,6 +143,10 @@
   margin-bottom: 10px;
 }
 
-a.showcoupon {
+.findeo-custom a.showcoupon {
   padding: 10px;
+}
+
+.findeo-custom .notification a {
+  text-decoration: underline;
 }
