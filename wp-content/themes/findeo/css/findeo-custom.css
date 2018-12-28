@@ -1,12 +1,30 @@
+/* misc */
+.findeo-custom #header {
+  box-shadow: none;
+  background: #ffffff;
+  border-bottom: 1px solid #ededed;
+}
+
+.findeo-custom .display-inline {
+  display: inline-block;
+}
+
+.findeo-custom .submit-section-header {
+  margin: 60px 0 30px 0;
+  padding-bottom: 0;
+  border-bottom: 0;
+}
+
 /* homepage */
 .findeo-custom .listing-img-content .listing-price {
   display: none;
 }
 
-.listing-content ul.listing-details {
+.findeo-custom .listing-content ul.listing-details {
   margin-left: 35px;
 }
-.listing-content ul.listing-details li {
+
+.findeo-custom .listing-content ul.listing-details li {
   padding: 0 !important;
   margin-right: 20px;
 }
@@ -91,17 +109,67 @@
   margin-top: 10px;
 }
 
+.findeo-custom .plan.featured .plan-price {
+  padding: 58px 30px;
+}
+
+.findeo-custom .plan.featured .plan-features {
+  padding: 35px 30px 55px 30px;
+}
+
 /* woocommerce */
 .findeo-custom #customer_details,
 .findeo-custom .woocommerce-customer-details {
   display: none;
 }
 
-.findeo-custom #package_selection .user-packages label, 
-.findeo-custom #package_selection .plan-features label,
 .findeo-custom #package_selection .user-packages [type="radio"]:checked + label:before, 
 .findeo-custom #package_selection .user-packages [type="radio"]:not(:checked) + label:before, 
+.findeo-custom #package_selection .plan-features label,
 .findeo-custom #package_selection .plan-features [type="radio"]:checked + label:before, 
 .findeo-custom #package_selection .plan-features [type="radio"]:not(:checked) + label:before {
-  border-radius: 30px !important;
+  border-radius: 60px !important;
+}
+
+.findeo-custom #payment div.payment_box {
+  box-shadow: none;
+}
+
+.findeo-custom #payment {
+  border-top: none;
+}
+
+/* checkout */
+.findeo-custom .checkout_coupon {
+  border-radius: 3px;
+  border: 1px solid rgba(0,0,0,0.09);
+  display: block;
+  margin-bottom: 15px;
+  padding: 25px;
+}
+
+.findeo-custom .checkout_coupon  input {
+  margin: 0;
+  height: 48px;
+  border-bottom-right-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.findeo-custom .checkout_coupon button.btn {
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
+  height: 48px;
+  margin-left: -4px;
+}
+
+.findeo-custom .checkout_coupon p:first-child {
+  margin-bottom: 10px;
+}
+
+.findeo-custom a.showcoupon {
+  padding: 10px;
+}
+
+.findeo-custom .notification a {
+  text-decoration: underline;
 }
