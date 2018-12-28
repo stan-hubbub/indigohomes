@@ -135,13 +135,17 @@
   box-shadow: none;
 }
 
+.findeo-custom #payment {
+  border-top: none;
+}
+
 /* checkout */
 .findeo-custom .checkout_coupon {
-  margin-top: -10px;
   border-radius: 3px;
-  padding: 25px;
-  display: block;
   border: 1px solid rgba(0,0,0,0.09);
+  display: block;
+  margin-bottom: 15px;
+  padding: 25px;
 }
 
 .findeo-custom .checkout_coupon  input {
