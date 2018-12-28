@@ -3,6 +3,12 @@
   display: inline-block;
 }
 
+.submit-section-header {
+  margin: 60px 0 30px 0;
+  padding-bottom: 0;
+  border-bottom: 0;
+}
+
 /* homepage */
 .findeo-custom .listing-img-content .listing-price {
   display: none;
