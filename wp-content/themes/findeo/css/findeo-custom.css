@@ -146,7 +146,16 @@
 
 .findeo-custom .checkout_coupon  input {
   margin: 0;
-  height: 49px;
+  height: 48px;
+  border-bottom-right-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.findeo-custom .checkout_coupon button.btn {
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
+  height: 48px;
+  margin-left: -4px;
 }
 
 .findeo-custom .checkout_coupon p:first-child {
