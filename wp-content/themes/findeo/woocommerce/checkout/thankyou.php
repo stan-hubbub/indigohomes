@@ -40,7 +40,7 @@ if ( $order ) : ?>
 		<div class="notification closeable success">
 			<p>
 				<?php echo apply_filters( 'woocommerce_thankyou_order_received_text', esc_html__( 'Congratulations! Your property has been published.', 'findeo' ), $order ); ?>
-				<a href="' . get_permalink( $data->id ) . '">View &rarr;</a>
+				<a href="<?php get_permalink( $data->id ) ?>">View &rarr;</a>
 			</p>
 		</div>
 		<ul class="order_details">
