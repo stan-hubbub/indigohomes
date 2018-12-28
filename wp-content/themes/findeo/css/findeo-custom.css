@@ -1,9 +1,9 @@
 /* misc */
-.display-inline {
+.findeo-custom .display-inline {
   display: inline-block;
 }
 
-.submit-section-header {
+.findeo-custom .submit-section-header {
   margin: 60px 0 30px 0;
   padding-bottom: 0;
   border-bottom: 0;
@@ -14,10 +14,11 @@
   display: none;
 }
 
-.listing-content ul.listing-details {
+.findeo-custom .listing-content ul.listing-details {
   margin-left: 35px;
 }
-.listing-content ul.listing-details li {
+
+.findeo-custom .listing-content ul.listing-details li {
   padding: 0 !important;
   margin-right: 20px;
 }
