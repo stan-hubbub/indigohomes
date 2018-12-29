@@ -89,6 +89,10 @@
   font-size: 36px;
 }
 
+.findeo-custom .property-description h3.desc-headline {
+  padding-bottom: 20px;
+}
+
 /* sidebar */
 .findeo-custom .agent-widget {
   padding: 40px 20px;
