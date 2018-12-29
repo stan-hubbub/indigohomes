@@ -68,6 +68,7 @@
 }
 
 /* footer */
+#footer,
 .findeo-custom #footer {
   background-color: #ffffff;
   box-shadow: none;
@@ -78,6 +79,7 @@
   box-shadow: none;
 }
 
+#footer .copyrights,
 .findeo-custom .copyrights {
   padding: 20px 0;
   text-align: left;
