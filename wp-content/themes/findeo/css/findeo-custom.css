@@ -217,15 +217,15 @@
 }
 
 /* my profile hacks */
-.findeo-custom article#post-151 .sidebar.left{
+.findeo-custom .page.type-page.status-publish.hentry .sidebar.left{
   margin-left: -15px ;
 }
 
-.findeo-custom article#post-151 .sidebar.left,
-.findeo-custom article#post-151 .col-md-8 {
+.findeo-custom .page.type-page.status-publish.hentry .sidebar.left,
+.findeo-custom .page.type-page.status-publish.hentry .col-md-8 {
   padding-right: 0;
 }
 
-.findeo-custom article#post-151 .my-profile {
+.findeo-custom .page.type-page.status-publish.hentry .my-profile {
   padding-right: 15px;
 }
