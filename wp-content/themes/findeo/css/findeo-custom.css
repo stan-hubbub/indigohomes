@@ -145,6 +145,11 @@
 }
 
 /* submit-property */
+.findeo-custom .submit-page, 
+.findeo-custom #titlebar.submit-page h2 {
+  padding: 0;
+}
+
 .findeo-custom #property_preview .property-titlebar span a, 
 .findeo-custom #titlebar.property-titlebar span {
   margin-bottom: 10px;
