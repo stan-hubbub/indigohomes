@@ -43,6 +43,10 @@
   margin-right: 20px;
 }
 
+.findeo-custom .listing-title h4 {
+  margin-bottom: 20px;
+}
+
 .findeo-custom .listing-title h4 a {
   line-height: 26px;
 }
