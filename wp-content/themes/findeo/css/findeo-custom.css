@@ -218,7 +218,7 @@
 
 /* my profile hacks */
 .findeo-custom article#post-151 .sidebar.left{
-  padding-left: 0 ;
+  margin-left: -15px ;
 }
 
 .findeo-custom article#post-151 .sidebar.left,
