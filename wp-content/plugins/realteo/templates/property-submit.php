@@ -93,8 +93,8 @@ endif;
 		<input type="hidden" 	name="property_id" value="<?php echo esc_attr( $data->property_id ); ?>" />
 		<input type="hidden" 	name="step" value="<?php echo esc_attr( $data->step ); ?>" />
 		<div class="input-with-icon margin-top-25 margin-bottom-30 big">
-			<i class="fa fa-arrow-circle-right" style="margin-top: 1px;"></i>
 			<input type="submit" name="submit_property" class="button" value="<?php echo esc_attr( $data->submit_button_text ); ?>" />
+			<i class="fa fa-arrow-circle-right" style="margin-top: 1px;"></i>
 		</div>
 	</p>
 	
