@@ -77,6 +77,13 @@
   max-width: 100%;
 }
 
+.findeo-custom li.checkboxed:before, 
+.findeo-custom .property-features.checkboxes li:before {
+  color: inherit;
+  background: none !important;
+  font-size: 15px;
+}
+
 /* sidebar */
 .findeo-custom .agent-widget {
   padding: 40px 20px;
