@@ -84,6 +84,11 @@
   font-size: 15px;
 }
 
+.findeo-custom #titlebar.property-titlebar h1, 
+.findeo-custom #titlebar.property-titlebar h2 {
+  font-size: 36px;
+}
+
 /* sidebar */
 .findeo-custom .agent-widget {
   padding: 40px 20px;
