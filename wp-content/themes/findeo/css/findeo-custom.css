@@ -43,6 +43,10 @@
   margin-right: 20px;
 }
 
+.findeo-custom .listing-title h4 a {
+  line-height: 26px;
+}
+
 /* pages */
 .findeo-custom #titlebar {
   padding: 10px 0;
@@ -104,7 +108,9 @@
 }
 
 .findeo-custom .property-description h3.desc-headline {
-  padding-bottom: 20px;
+  border-bottom: none;
+  margin: 60px 0 20px 0;
+  padding-bottom: 0;
 }
 
 /* sidebar */
