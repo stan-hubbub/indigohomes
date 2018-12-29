@@ -217,11 +217,11 @@
 }
 
 /* my profile hacks */
-article#post-149 .col-md-4 {
-  padding-left: 0;
+.findeo-custom article#post-151 .col-md-4 {
+  padding-left: 0 ;
 }
 
-article#post-149 .sidebar.left,
-article#post-149 .col-md-8 {
+.findeo-custom article#post-151 .sidebar.left,
+.findeo-custom article#post-151 .col-md-8 {
   padding-right: 0;
 }
