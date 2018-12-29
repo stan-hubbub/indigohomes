@@ -70,9 +70,9 @@
 /* footer */
 #footer,
 .findeo-custom #footer {
-  background-color: #ffffff;
-  box-shadow: none;
-  padding: 0;
+  background-color: #ffffff !important;
+  box-shadow: none !important;
+  padding: 0 !important;
 }
 
 .findeo-custom .footer-shadow {
@@ -81,8 +81,8 @@
 
 #footer .copyrights,
 .findeo-custom .copyrights {
-  padding: 20px 0;
-  text-align: left;
+  padding: 20px 0 !important;
+  text-align: left !important;
 }
 
 /* property/show  */
