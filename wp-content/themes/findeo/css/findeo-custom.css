@@ -264,6 +264,7 @@
   padding: 20px;
 }
 
+.findeo-custom #titlebar h2 + span,
 .findeo-custom #titlebar span a {
   margin-top: 0;
   margin-bottom: 5px;
