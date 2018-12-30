@@ -85,6 +85,11 @@
   text-align: left !important;
 }
 
+.findeo-custom .copyrights {
+  margin-top: 0;
+  border-top: 1px solid rgba(0,0,0,0.08);
+}
+
 /* property/show  */
 .findeo-custom .property-main-features {
   padding: 0;
@@ -164,6 +169,11 @@
   padding: 35px 30px 55px 30px;
 }
 
+.findeo-custom .submit-page .divider {
+  padding-bottom: 0;
+  margin: 0;
+}
+
 /* woocommerce */
 .findeo-custom #customer_details,
 .findeo-custom .woocommerce-customer-details {
@@ -233,4 +243,29 @@
 
 .findeo-custom article.col-md-12.page.status-publish .my-profile {
   padding-right: 15px;
+}
+
+/* author */
+.findeo-custom .agent-page .agent-name {
+  padding-left: 0;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.findeo-custom .agent-page {
+  margin-bottom: 10px;
+}
+
+.findeo-custom .agent-page p {
+  margin-bottom: 10px;
+}
+
+.findeo-custom .agent-page .agent-contact-details {
+  padding: 20px;
+}
+
+.findeo-custom #titlebar span a, 
+.findeo-custom #titlebar span {
+  margin-top: 0;
+  margin-bottom: 5px;
 }
