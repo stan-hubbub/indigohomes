@@ -282,6 +282,7 @@
   display: none;
 }
 
-.findeo-custom table.shop_table td, table.manage-table td {
+.findeo-custom table.shop_table td, 
+.findeo-custom table.manage-table td {
   padding: 20px !important;
 }
