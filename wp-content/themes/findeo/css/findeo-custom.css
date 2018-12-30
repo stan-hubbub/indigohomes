@@ -293,5 +293,9 @@
 }
 
 .findeo-custom .cart_totals a.checkout-button {
-  margin-right: 20px;
+  margin-right: 15px;
+}
+.findeo-custom .shop_table th.product-quantity,
+.findeo-custom .shop_table td.product-quantity {
+  text-align: center;
 }
