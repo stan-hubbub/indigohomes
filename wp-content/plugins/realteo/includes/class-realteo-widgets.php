@@ -501,7 +501,7 @@ class Realteo_Contact_Agent_Widget extends Realteo_Widget {
 					<?php 
 					if(isset($instance['email']) && !empty($instance['email'])) { 	
 						if(isset($agent_data->user_email)): $email = $agent_data->user_email; ?>
-							<br><span><i class="fa fa-envelope-o "></i><a href="mailto:<?php echo esc_attr($email);?>"><?php echo esc_html($email);?></a></span>
+							<span><i class="fa fa-envelope-o "></i><a href="mailto:<?php echo esc_attr($email);?>"><?php echo esc_html($email);?></a></span>
 						<?php endif; ?>
 					<?php } ?>
 					<?php if(isset($instance['phone']) && !empty($instance['phone'])) { 
