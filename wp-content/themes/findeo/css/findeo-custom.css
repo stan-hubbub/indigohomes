@@ -85,6 +85,11 @@
   text-align: left !important;
 }
 
+.findeo-custom .copyrights {
+  margin-top: 0;
+  border-top: 1px solid rgba(0,0,0,0.08);
+}
+
 /* property/show  */
 .findeo-custom .property-main-features {
   padding: 0;

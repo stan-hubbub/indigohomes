@@ -86,7 +86,7 @@ $template_loader = new Realteo_Template_Loader; ?>
 		<!-- Property Description / End -->
 	</div>
 
-	<div class="row margin-bottom-30">
+	<div class="row">
 		<div class="col-md-12">
 			<div class="input-with-icon grey"><i class="sl sl-icon-note"></i><input type="submit" name="edit_property" class="button realteo-button-edit-listing" value="<?php esc_attr_e( 'Edit listing', 'realteo' ); ?>" /></div>
 			<div class="input-with-icon"><i class="sl sl-icon-check"></i><input type="submit" name="continue" id="property_preview_submit_button" class="button realteo-button-submit-listing" value="<?php echo apply_filters( 'submit_property_step_preview_submit_text', __( 'Submit Listing', 'realteo' ) ); ?>" /></div>
