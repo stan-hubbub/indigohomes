@@ -275,4 +275,13 @@
   background-color: transparent !important;
   border-bottom: #e4e4e4 1px solid;
   color: #707070;
+  padding: 20px;
+}
+
+.findeo-custom input[name="update_cart"] {
+  display: none;
+}
+
+.findeo-custom .cart_totals.calculated_shipping h2 {
+  display: none;
 }
