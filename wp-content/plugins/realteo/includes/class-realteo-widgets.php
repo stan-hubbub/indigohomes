@@ -499,14 +499,14 @@ class Realteo_Contact_Agent_Widget extends Realteo_Widget {
 					
 					<h4><a href="<?php echo esc_url(get_author_posts_url( $agentID )); ?>"><?php echo $agent_data->first_name; ?> <?php echo $agent_data->last_name; ?></a></h4>
 					<?php 
-					if(isset($instance['phone']) && !empty($instance['phone'])) { 
-						if(isset($agent_data->phone) && !empty($agent_data->phone)): ?><span><i class="sl sl-icon-call-in"></i><a href="tel:<?php echo esc_html($agent_data->phone); ?>"><?php echo esc_html($agent_data->phone); ?></a></span><?php endif; 
-					}
 					if(isset($instance['email']) && !empty($instance['email'])) { 	
 						if(isset($agent_data->user_email)): $email = $agent_data->user_email; ?>
-							<br><span><i class="fa fa-envelope-o "></i><a href="mailto:<?php echo esc_attr($email);?>"><?php echo esc_html($email);?></a></span>
+							<span><i class="fa fa-envelope-o "></i><a href="mailto:<?php echo esc_attr($email);?>"><?php echo esc_html($email);?></a></span>
 						<?php endif; ?>
 					<?php } ?>
+					<?php if(isset($instance['phone']) && !empty($instance['phone'])) { 
+						if(isset($agent_data->phone) && !empty($agent_data->phone)): ?><span><i class="sl sl-icon-call-in"></i><a href="tel:<?php echo esc_html($agent_data->phone); ?>"><?php echo esc_html($agent_data->phone); ?></a></span><?php endif; 
+					} ?>
 				</div>
 
 				<div class="clearfix"></div>

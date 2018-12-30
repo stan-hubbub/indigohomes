@@ -1,8 +1,22 @@
 /* misc */
+.findeo-custom #logo {
+  margin-top: 5px;
+}
+
+.findeo-custom #logo img {
+  max-height: 38px;
+}
+
 .findeo-custom #header {
   box-shadow: none;
   background: #ffffff;
   border-bottom: 1px solid #ededed;
+}
+
+.findeo-custom #header.sticky #logo img {
+  max-width: 180px;
+  max-height: 60px;
+  margin-top: 6px;
 }
 
 .findeo-custom .display-inline {
@@ -29,6 +43,14 @@
   margin-right: 20px;
 }
 
+.findeo-custom .listing-title h4 {
+  margin-bottom: 20px;
+}
+
+.findeo-custom .listing-title h4 a {
+  line-height: 26px;
+}
+
 /* pages */
 .findeo-custom #titlebar {
   padding: 10px 0;
@@ -46,26 +68,28 @@
 }
 
 /* footer */
+#footer,
 .findeo-custom #footer {
-  background-color: #ffffff;
-  box-shadow: none;
-  padding: 0;
+  background-color: #ffffff !important;
+  box-shadow: none !important;
+  padding: 0 !important;
 }
 
 .findeo-custom .footer-shadow {
   box-shadow: none;
 }
 
+#footer .copyrights,
 .findeo-custom .copyrights {
-  padding: 20px 0;
-  text-align: left;
+  padding: 20px 0 !important;
+  text-align: left !important;
 }
 
 /* property/show  */
 .findeo-custom .property-main-features {
   padding: 0;
   background: transparent;
-  margin-top: -50px;
+  margin-top: -60px;
 }
 
 .findeo-custom #titlebar.property-titlebar span a {
@@ -75,6 +99,24 @@
 .findeo-custom .property-title {
   margin-left: 0;
   max-width: 100%;
+}
+
+.findeo-custom li.checkboxed:before, 
+.findeo-custom .property-features.checkboxes li:before {
+  color: inherit;
+  background: none !important;
+  font-size: 15px;
+}
+
+.findeo-custom #titlebar.property-titlebar h1, 
+.findeo-custom #titlebar.property-titlebar h2 {
+  font-size: 36px;
+}
+
+.findeo-custom .property-description h3.desc-headline {
+  border-bottom: none;
+  margin: 60px 0 20px 0;
+  padding-bottom: 0;
 }
 
 /* sidebar */
@@ -103,6 +145,11 @@
 }
 
 /* submit-property */
+.findeo-custom .submit-page, 
+.findeo-custom #titlebar.submit-page h2 {
+  padding: 0;
+}
+
 .findeo-custom #property_preview .property-titlebar span a, 
 .findeo-custom #titlebar.property-titlebar span {
   margin-bottom: 10px;
@@ -172,4 +219,18 @@
 
 .findeo-custom .notification a {
   text-decoration: underline;
+}
+
+/* my profile hacks */
+.findeo-custom article.col-md-12.page.status-publish .sidebar.left {
+  margin-left: -15px;
+}
+
+.findeo-custom article.col-md-12.page.status-publish .sidebar.left,
+.findeo-custom article.col-md-12.page.status-publish .col-md-8 {
+  padding-right: 0;
+}
+
+.findeo-custom article.col-md-12.page.status-publish .my-profile {
+  padding-right: 15px;
 }

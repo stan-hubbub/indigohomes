@@ -61,7 +61,7 @@ $role = array_shift( $roles );
 					</a>
 				</li>
 				<?php } ?>	
-				<?php if( realteo_get_option( 'property_packages_page' ) ) { ?>
+				<!-- <?php if( realteo_get_option( 'property_packages_page' ) ) { ?>
 				<li>
 					<a href="<?php echo get_permalink( realteo_get_option( 'property_packages_page' ) ); ?>"
 					<?php if( $current == 'my_packages' ) { echo 'class="current"'; }?> >
@@ -69,7 +69,7 @@ $role = array_shift( $roles );
 						<?php esc_html_e('My Packages','realteo');?>
 					</a>
 				</li>
-				<?php } ?>	
+				<?php } ?>	 -->
 				<?php if( realteo_get_option( 'my_orders_page' ) ) { ?>
 				<li>
 					<a href="<?php echo get_permalink( realteo_get_option( 'my_orders_page' ) ); ?>">
