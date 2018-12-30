@@ -25,7 +25,6 @@ do_action( 'woocommerce_before_cart' ); ?>
 	<table class="shop_table shop_table_responsive cart woocommerce-cart-form__contents" cellspacing="0">
 		<thead>
 			<tr>
-				<th class="product-thumbnail">&nbsp;</th>
 				<th class="product-name"><?php esc_html_e( 'Product', 'findeo' ); ?></th>
 				<th class="product-price"><?php esc_html_e( 'Price', 'findeo' ); ?></th>
 				<th class="product-quantity"><?php esc_html_e( 'Quantity', 'findeo' ); ?></th>
@@ -45,18 +44,6 @@ do_action( 'woocommerce_before_cart' ); ?>
 					$product_permalink = apply_filters( 'woocommerce_cart_item_permalink', $_product->is_visible() ? $_product->get_permalink( $cart_item ) : '', $cart_item, $cart_item_key );
 					?>
 					<tr class="woocommerce-cart-form__cart-item <?php echo esc_attr( apply_filters( 'woocommerce_cart_item_class', 'cart_item', $cart_item, $cart_item_key ) ); ?>">
-
-						<td class="product-thumbnail">
-						<?php
-						$thumbnail = apply_filters( 'woocommerce_cart_item_thumbnail', $_product->get_image(), $cart_item, $cart_item_key );
-
-						if ( ! $product_permalink ) {
-							echo $thumbnail; // PHPCS: XSS ok.
-						} else {
-							printf( '<a href="%s">%s</a>', esc_url( $product_permalink ), $thumbnail ); // PHPCS: XSS ok.
-						}
-						?>
-						</td>
 
 						<td class="product-name" data-title="<?php esc_attr_e( 'Product','findeo' ); ?>">
 						<?php
@@ -128,7 +115,7 @@ do_action( 'woocommerce_before_cart' ); ?>
 			do_action( 'woocommerce_cart_contents' );
 			?>
 			<tr>
-				<td colspan="6" class="actions">
+				<td colspan="5" class="actions">
 
 					<?php if ( wc_coupons_enabled() ) { ?>
 						<div class="coupon">
