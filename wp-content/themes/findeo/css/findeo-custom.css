@@ -234,3 +234,14 @@
 .findeo-custom article.col-md-12.page.status-publish .my-profile {
   padding-right: 15px;
 }
+
+/* author */
+.findeo-custom .agent-page .agent-name {
+  padding-left: 0;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.findeo-custom .agent-page {
+  margin-bottom: 10px;
+}
