@@ -46,18 +46,6 @@ do_action( 'woocommerce_before_cart' ); ?>
 					?>
 					<tr class="woocommerce-cart-form__cart-item <?php echo esc_attr( apply_filters( 'woocommerce_cart_item_class', 'cart_item', $cart_item, $cart_item_key ) ); ?>">
 
-						<td class="product-thumbnail">
-						<?php
-						$thumbnail = apply_filters( 'woocommerce_cart_item_thumbnail', $_product->get_image(), $cart_item, $cart_item_key );
-
-						if ( ! $product_permalink ) {
-							echo $thumbnail; // PHPCS: XSS ok.
-						} else {
-							printf( '<a href="%s">%s</a>', esc_url( $product_permalink ), $thumbnail ); // PHPCS: XSS ok.
-						}
-						?>
-						</td>
-
 						<td class="product-name" data-title="<?php esc_attr_e( 'Product','findeo' ); ?>">
 						<?php
 						if ( ! $product_permalink ) {
@@ -128,7 +116,7 @@ do_action( 'woocommerce_before_cart' ); ?>
 			do_action( 'woocommerce_cart_contents' );
 			?>
 			<tr>
-				<td colspan="6" class="actions">
+				<td colspan="5" class="actions">
 
 					<?php if ( wc_coupons_enabled() ) { ?>
 						<div class="coupon">
