@@ -164,6 +164,11 @@
   padding: 35px 30px 55px 30px;
 }
 
+.findeo-custom .submit-page .divider {
+  padding-bottom: 0;
+  margin: 0;
+}
+
 /* woocommerce */
 .findeo-custom #customer_details,
 .findeo-custom .woocommerce-customer-details {
