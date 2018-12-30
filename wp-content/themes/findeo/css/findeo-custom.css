@@ -286,3 +286,12 @@
 .findeo-custom table.manage-table td {
   padding: 20px !important;
 }
+
+.findeo-custom .woocommerce .cart-collaterals .cart_totals, 
+.findeo-custom .woocommerce-page .cart-collaterals .cart_totals {
+  text-align: right;
+}
+
+.findeo-custom .cart_totals a.checkout-button {
+  margin-right: 20px;
+}
