@@ -264,8 +264,15 @@
   padding: 20px;
 }
 
-.findeo-custom #titlebar span a, 
-.findeo-custom #titlebar span {
+.findeo-custom #titlebar span a {
   margin-top: 0;
   margin-bottom: 5px;
+}
+
+/* cart */
+.findeo-custom table.shop_table th, 
+.findeo-custom table.manage-table th {
+  background-color: transparent !important;
+  border-bottom: #e4e4e4 1px solid;
+  color: #707070;
 }
