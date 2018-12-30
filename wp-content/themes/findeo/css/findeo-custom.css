@@ -249,3 +249,7 @@
 .findeo-custom .agent-page p {
   margin-bottom: 10px;
 }
+
+.findeo-custom .agent-page .agent-contact-details {
+  padding: 20px;
+}
