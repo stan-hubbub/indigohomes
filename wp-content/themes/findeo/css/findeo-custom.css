@@ -102,7 +102,7 @@
 .findeo-custom .property-main-features {
   padding: 0;
   background: transparent;
-  margin-top: -60px;
+  margin-top: -50px;
 }
 
 .findeo-custom #titlebar.property-titlebar span a {
@@ -171,7 +171,6 @@
 
 .findeo-custom .plan.featured .plan-price {
   padding: 58px 30px;
-  background-color: #2a293a; 
 }
 
 .findeo-custom .plan.featured .listing-badges .featured {
