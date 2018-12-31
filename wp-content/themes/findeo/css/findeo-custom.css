@@ -203,8 +203,14 @@
   background: transparent;
 }
 
+/* hack */
+.page-id-148 .header-widget .button,
 .findeo-custom #package_selection h4.headline {
   display: none;
+}
+
+.page-id-148 .header-widget .user-menu {
+  margin-right: 0;
 }
 
 /* woocommerce */
