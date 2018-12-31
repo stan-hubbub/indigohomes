@@ -240,7 +240,7 @@
   border-top: none;
 }
 
-.findeo-custom .woocommerce-Price-currencySymbol {
+.findeo-custom #package_selection .woocommerce-Price-currencySymbol {
   position: relative;
   top: -11px;
   font-size: 20px;
