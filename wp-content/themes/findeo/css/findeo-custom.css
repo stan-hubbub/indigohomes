@@ -166,6 +166,10 @@
   background-color: #2a293a; 
 }
 
+.findeo-custom .plan.featured .listing-badges .featured {
+  color: #2a293a;
+}
+
 .findeo-custom .plan.featured .plan-features {
   padding: 35px 30px 55px 30px;
 }
