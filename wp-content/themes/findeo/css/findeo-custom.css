@@ -19,6 +19,14 @@
   margin-top: 6px;
 }
 
+.findeo-custom #breadcrumbs {
+  font-weight: 400;
+}
+
+.findeo-custom #breadcrumbs li a span {
+  color: #35327e;
+}
+
 .findeo-custom .display-inline {
   display: inline-block;
 }
@@ -163,6 +171,11 @@
 
 .findeo-custom .plan.featured .plan-price {
   padding: 58px 30px;
+  background-color: #2a293a; 
+}
+
+.findeo-custom .plan.featured .listing-badges .featured {
+  color: #2a293a;
 }
 
 .findeo-custom .plan.featured .plan-features {
@@ -174,18 +187,49 @@
   margin: 0;
 }
 
+.findeo-custom .submit-page .ih-btn {
+  padding-left: 60px;
+  padding-right: 60px;
+  margin-right: 0;
+}
+
+.findeo-custom #package_selection .user-packages [type="radio"]:checked + label:before, 
+.findeo-custom #package_selection .user-packages [type="radio"]:not(:checked) + label:before, 
+.findeo-custom #package_selection .plan-features [type="radio"]:checked + label:before, 
+.findeo-custom #package_selection .plan-features [type="radio"]:not(:checked) + label:before {
+  background: transparent;
+  border: 1px solid rgba(0,0,0,0.08);
+  border-radius: 15px;
+}
+
+.findeo-custom #package_selection .user-packages [type="radio"]:checked + label:after, 
+.findeo-custom #package_selection .user-packages [type="radio"]:not(:checked) + label:after, 
+.findeo-custom #package_selection .plan-features [type="radio"]:checked + label:after, 
+.findeo-custom #package_selection .plan-features [type="radio"]:not(:checked) + label:after {
+  background: transparent;
+}
+
+/* hack */
+.page-id-148 .header-widget .button,
+.findeo-custom #package_selection h4.headline {
+  display: none;
+}
+
+.page-id-148 .header-widget .user-menu {
+  margin-right: 0;
+}
+
 /* woocommerce */
 .findeo-custom #customer_details,
 .findeo-custom .woocommerce-customer-details {
   display: none;
 }
 
-.findeo-custom #package_selection .user-packages [type="radio"]:checked + label:before, 
-.findeo-custom #package_selection .user-packages [type="radio"]:not(:checked) + label:before, 
-.findeo-custom #package_selection .plan-features label,
-.findeo-custom #package_selection .plan-features [type="radio"]:checked + label:before, 
-.findeo-custom #package_selection .plan-features [type="radio"]:not(:checked) + label:before {
-  border-radius: 60px !important;
+.findeo-custom #package_selection .user-packages label, 
+.findeo-custom #package_selection .plan-features label {
+  background: transparent;
+  border: 1px solid #35327e;
+  color: #35327e !important;
 }
 
 .findeo-custom #payment div.payment_box {
@@ -194,6 +238,12 @@
 
 .findeo-custom #payment {
   border-top: none;
+}
+
+.findeo-custom .woocommerce-Price-currencySymbol {
+  position: relative;
+  top: -11px;
+  font-size: 20px;
 }
 
 /* checkout */
@@ -299,4 +349,15 @@
 .findeo-custom .shop_table th.product-quantity,
 .findeo-custom .shop_table td.product-quantity {
   text-align: center;
+}
+
+/* buttons */
+.ih-btn {
+  border-radius: 3px;
+  border: none;
+  color: #fff;
+  font-size: 17px;
+  font-weight: 500;
+  height: 60px;
+  padding: 20px 26px;
 }
