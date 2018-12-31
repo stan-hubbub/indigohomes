@@ -300,3 +300,14 @@
 .findeo-custom .shop_table td.product-quantity {
   text-align: center;
 }
+
+/* buttons */
+.ih-btn {
+  border-radius: 3px;
+  border: none;
+  color: #fff;
+  font-size: 17px;
+  font-weight: 500;
+  height: 60px;
+  padding: 20px 26px;
+}

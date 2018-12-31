@@ -132,13 +132,11 @@ $user_packages = $data->user_packages;
 <?php endif; ?>
 
 <div class="submit-page">
-
 	<p>
 		<input type="hidden" 	name="realteo_form" value="<?php echo $data->form; ?>" />
 		<input type="hidden" 	name="property_id" value="<?php echo esc_attr( $data->property_id ); ?>" />
 		<input type="hidden" 	name="step" value="<?php echo esc_attr( $data->step ); ?>" />
-		<div class="input-with-icon big  margin-top-10 margin-bottom-30"><i class="sl sl-icon-plus" style="margin-top: 1px;"></i><input type="submit" name="continue" class="button" value="<?php echo esc_attr( $data->submit_button_text ); ?>" /></div>
+		<input type="submit" name="continue" class="ih-btn" value="<?php echo esc_attr( $data->submit_button_text ); ?>" />
 	</p>
-
 </form>
 </div>
