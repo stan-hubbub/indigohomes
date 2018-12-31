@@ -23,7 +23,7 @@
   font-weight: 400;
 }
 
-.findeo-custom #breadcrumbs li a {
+.findeo-custom #breadcrumbs li a span {
   color: #35327e;
 }
 
@@ -185,6 +185,12 @@
 .findeo-custom .submit-page .divider {
   padding-bottom: 0;
   margin: 0;
+}
+
+.findeo-custom .submit-page .ih-btn {
+  padding-left: 60px;
+  padding-right: 60px;
+  margin-right: 0;
 }
 
 .findeo-custom #package_selection .user-packages [type="radio"]:checked + label:before, 
