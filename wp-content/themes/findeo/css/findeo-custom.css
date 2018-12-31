@@ -180,12 +180,11 @@
   display: none;
 }
 
-.findeo-custom #package_selection .user-packages [type="radio"]:checked + label:before, 
-.findeo-custom #package_selection .user-packages [type="radio"]:not(:checked) + label:before, 
-.findeo-custom #package_selection .plan-features label,
-.findeo-custom #package_selection .plan-features [type="radio"]:checked + label:before, 
-.findeo-custom #package_selection .plan-features [type="radio"]:not(:checked) + label:before {
-  border-radius: 60px !important;
+.findeo-custom #package_selection .user-packages label, 
+.findeo-custom #package_selection .plan-features label {
+  background: transparent;
+  border: 1px solid #35327e;
+  color: #35327e !important;
 }
 
 .findeo-custom #payment div.payment_box {
