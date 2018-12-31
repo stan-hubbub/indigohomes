@@ -19,6 +19,14 @@
   margin-top: 6px;
 }
 
+.findeo-custom #breadcrumbs {
+  font-weight: 400;
+}
+
+.findeo-custom #breadcrumbs li a {
+  color: #35327e;
+}
+
 .findeo-custom .display-inline {
   display: inline-block;
 }
@@ -195,6 +203,10 @@
   background: transparent;
 }
 
+.findeo-custom #package_selection #package_selection h4.headline {
+  display: none;
+}
+
 /* woocommerce */
 .findeo-custom #customer_details,
 .findeo-custom .woocommerce-customer-details {
@@ -214,6 +226,12 @@
 
 .findeo-custom #payment {
   border-top: none;
+}
+
+.findeo-custom .woocommerce-Price-currencySymbol {
+  position: relative;
+  top: -11px;
+  font-size: 20px;
 }
 
 /* checkout */
