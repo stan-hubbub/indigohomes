@@ -56,7 +56,7 @@ $template_loader = new Realteo_Template_Loader; ?>
 		?>
  	<div class="row margin-bottom-50">
 		<!-- Property Description -->
-		<div class="col-lg-8 col-md-7">
+		<div class="col-lg-12">
 
 			<div class="property-description">
 
