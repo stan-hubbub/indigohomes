@@ -72,7 +72,7 @@ switch ($layout) {
 	<div class="row">
 		
 		<!-- Property Description -->
-		<div class="col-lg-12">
+		<div class="col-lg-8 col-md-7">
 			<?php while ( have_posts() ) : the_post();  ?>
 			
 			<div class="property-description print-only">
