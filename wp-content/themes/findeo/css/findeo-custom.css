@@ -367,21 +367,21 @@
 }
 
 /* login */
-/* .findeo-custom .my-account {
+.findeo-custom .my-account {
   max-width: 400px;
   margin: auto;
-} */
-/* 
-.lost_password {
+}
+
+.findeo-custom .lost_password {
   margin: 0;
   text-align: right;
 }
 
-.wp-social-login-widget {
+.findeo-custom .wp-social-login-widget {
   position: relative;
 }
 
-.wp-social-login-widget::after {
+/*.wp-social-login-widget::after {
   content: 'Or';
   position: absolute;
   z-index: 1;
