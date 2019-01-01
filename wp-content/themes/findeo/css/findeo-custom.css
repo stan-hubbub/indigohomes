@@ -42,6 +42,10 @@
   border-bottom: 0;
 }
 
+.findeo-custom .text-right {
+  text-align: right;
+}
+
 /* homepage */
 .findeo-custom .listing-img-content .listing-price {
   display: none;
@@ -364,4 +368,45 @@
   font-weight: 500;
   height: 60px;
   padding: 20px 26px;
+}
+
+/* login */
+.findeo-custom .my-account {
+  max-width: 400px;
+  margin: auto;
+}
+
+.findeo-custom .lost_password {
+  margin: 22px 0 0 0;
+  display: block;
+}
+
+.findeo-custom .wp-social-login-widget {
+  position: relative;
+  padding-bottom: 40px;
+}
+
+.findeo-custom .wp-social-login-widget::after {
+  background: #fff;
+  bottom: 12px;
+  content: 'or';
+  display: block;
+  left: 0;
+  margin: auto;
+  position: absolute;
+  right: 0;
+  text-align: center;
+  width: 35px;
+  z-index: 2;
+}
+
+.findeo-custom .wp-social-login-widget::before {
+  border-bottom: 1px solid rgba(0,0,0,0.08);
+  bottom: 24px;
+  content: '';
+  display: block;
+  left: 0;
+  position: absolute;
+  width: 100%;
+  z-index: 1;
 }
