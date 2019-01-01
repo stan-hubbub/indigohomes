@@ -383,23 +383,28 @@
 }
 
 .findeo-custom .wp-social-login-widget::after {
-  content: 'Or';
-  text-transform: uppercase;
-  position: absolute;
-  bottom: 8px;
-  left: 0;
-  z-index: 2;
-  text-align: center;
-  padding: 5px;
   background: #fff;
+  bottom: 12px;
+  content: 'Or';
+  display: block;
+  left: 0;
+  margin: auto;
+  position: absolute;
+  right: 0;
+  text-align: center;
+  text-align: center;
+  text-transform: uppercase;
+  width: 35px;
+  z-index: 2;
 }
 
 .findeo-custom .wp-social-login-widget::before {
-  content: '';
-  position: absolute;
-  bottom: 24px;
-  left: 0;
   border-bottom: 1px solid #e0e0e0;
-  z-index: 1;
+  bottom: 24px;
+  content: '';
+  display: block;
+  left: 0;
+  position: absolute;
   width: 100%;
+  z-index: 1;
 }
