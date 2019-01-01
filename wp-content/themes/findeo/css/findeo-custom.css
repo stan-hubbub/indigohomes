@@ -395,13 +395,12 @@
   position: absolute;
   right: 0;
   text-align: center;
-  text-transform: uppercase;
   width: 35px;
   z-index: 2;
 }
 
 .findeo-custom .wp-social-login-widget::before {
-  border-bottom: 1px solid #e0e0e0;
+  border-bottom: 1px solid rgba(0,0,0,0.08);
   bottom: 24px;
   content: '';
   display: block;

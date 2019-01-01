@@ -157,6 +157,7 @@ if ( isset( $_REQUEST['register-errors'] ) ) {
 							<span class="lost_password">
 								<a href="<?php echo wp_lostpassword_url(); ?>"> <?php esc_html_e('Lost Your Password?','realteo'); ?></a>
 							</span>
+						</div>	
 				</div>
 				</form>
 			</div>
