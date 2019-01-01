@@ -175,24 +175,24 @@ if ( isset( $_REQUEST['register-errors'] ) ) {
 				<?php } ?>
 			        <p class="form-row">
 			            <label for="email"><?php esc_html_e( 'Email', 'realteo' ); ?> <strong>*</strong></label>
-			            <input type="text" name="email" id="email">
+			            <input type="text" name="email" id="email" required="required">
 			        </p>
 			 		
 			 		<?php if(realteo_get_option('realteo_generate_password')) : ?>
 			        <p class="form-row">
 			            <label for="password"><?php esc_html_e( 'Password', 'realteo' ); ?> <strong>*</strong></label>
-			            <input type="password" name="password" id="password">
+			            <input type="password" name="password" id="password" required="required">
 			        </p>
 			    	<?php endif; ?>
 
 			        <p class="form-row">
 			            <label for="first_name"><?php esc_html_e( 'First name', 'realteo' ); ?> <strong>*</strong></label>
-			            <input type="text" name="first_name" id="first-name">
+			            <input type="text" name="first_name" id="first-name" required="required">
 			        </p>
 			 
 			        <p class="form-row">
 			            <label for="last_name"><?php esc_html_e( 'Last name', 'realteo' ); ?> <strong>*</strong></label>
-			            <input type="text" name="last_name" id="last-name">
+			            <input type="text" name="last_name" id="last-name" required="required">
 			        </p>
 
 			        <?php do_action('realteo_registration_form') ?>
