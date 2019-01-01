@@ -382,7 +382,9 @@
 }
 
 .findeo-custom .wp-social-login-widget::after {
-  /* content: 'Or';
-  position: absolute; */
+  content: 'Or';
+  position: absolute;
+  bottom: 0;
+  left: 0;
   z-index: 1;
 }
