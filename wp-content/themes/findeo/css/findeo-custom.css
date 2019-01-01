@@ -381,8 +381,8 @@
   position: relative;
 }
 
-/*.wp-social-login-widget::after {
-  content: 'Or';
-  position: absolute;
+.findeo-custom .wp-social-login-widget::after {
+  /* content: 'Or';
+  position: absolute; */
   z-index: 1;
-} */
+}
