@@ -379,23 +379,27 @@
 
 .findeo-custom .wp-social-login-widget {
   position: relative;
+  padding-bottom: 40px;
 }
 
 .findeo-custom .wp-social-login-widget::after {
   content: 'Or';
+  text-transform: uppercase;
   position: absolute;
   bottom: 8px;
   left: 0;
-  z-index: 1;
+  z-index: 2;
   text-align: center;
-  width: 100%;
+  padding: 5px;
+  background: #fff;
 }
 
 .findeo-custom .wp-social-login-widget::before {
   content: '';
   position: absolute;
-  bottom: 0;
+  bottom: 24px;
   left: 0;
+  border-bottom: 1px solid #e0e0e0;
   z-index: 1;
   width: 100%;
 }
