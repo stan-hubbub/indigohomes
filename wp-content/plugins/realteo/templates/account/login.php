@@ -76,7 +76,7 @@ if ( isset( $_REQUEST['register-errors'] ) ) {
 } ?>
 
 	<div class="row">
-	<div class="col-md-4 col-md-offset-4">
+	<div class="col-md-6 col-md-offset-3">
 	
 	<!--Tab -->
 		<div class="my-account style-1 margin-top-5 margin-bottom-40">
@@ -133,7 +133,7 @@ if ( isset( $_REQUEST['register-errors'] ) ) {
 				<?php } ?>
 
 				    <p class="form-row form-row-wide">
-							<label for="username"><?php _e( 'Username/Email:', 'realteo' ); ?>
+							<label for="username"><?php _e( 'Email:', 'realteo' ); ?>
 							<i class="im im-icon-Male"></i>
 							<input type="text" class="input-text" name="log" id="user_login" value="" required="required"/>
 						</label>
@@ -144,15 +144,17 @@ if ( isset( $_REQUEST['register-errors'] ) ) {
 							<input class="input-text" type="password" name="pwd" id="user_pass" required="required"/>
 						</label>
 					</p>
+					<p class="form-row">
+						<label for="rememberme" class="rememberme">
+							<input name="rememberme" type="checkbox" id="rememberme" value="forever" /> <?php esc_html_e('Remember Me','realteo'); ?>
+						</label>
+					</div>
 				   <p class="form-row">
 						<input type="submit" class="button border margin-top-10" name="login" value="<?php _e( 'Sign In', 'realteo' ); ?>" />
-
-						<label for="rememberme" class="rememberme">
-						<input name="rememberme" type="checkbox" id="rememberme" value="forever" /> <?php esc_html_e('Remember Me','realteo'); ?></label>
 					</p>
-				    <p class="lost_password">
+				    <span class="lost_password">
 						<a href="<?php echo wp_lostpassword_url(); ?>"> <?php esc_html_e('Lost Your Password?','realteo'); ?></a>
-					</p>
+					</span>
 				</form>
 	
 			</div>
