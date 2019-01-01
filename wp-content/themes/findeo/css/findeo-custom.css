@@ -384,7 +384,18 @@
 .findeo-custom .wp-social-login-widget::after {
   content: 'Or';
   position: absolute;
-  bottom: 0;
+  bottom: 8px;
   left: 0;
   z-index: 1;
+  text-align: center;
+  width: 100%;
+}
+
+.findeo-custom .wp-social-login-widget::before {
+  content: '';
+  position: absolute;
+  bottom: 8px;
+  left: 0;
+  z-index: 1;
+  width: 100%;
 }
