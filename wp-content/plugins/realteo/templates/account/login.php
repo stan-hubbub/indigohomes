@@ -144,17 +144,15 @@ if ( isset( $_REQUEST['register-errors'] ) ) {
 							<input class="input-text" type="password" name="pwd" id="user_pass" required="required"/>
 						</label>
 					</p>
-					<p class="form-row">
-						<label for="rememberme" class="rememberme">
-							<input name="rememberme" type="checkbox" id="rememberme" value="forever" /> <?php esc_html_e('Remember Me','realteo'); ?>
-						</label>
-					</div>
 				   <p class="form-row">
 						<input type="submit" class="button border margin-top-10" name="login" value="<?php _e( 'Sign In', 'realteo' ); ?>" />
+
+						<label for="rememberme" class="rememberme">
+						<input name="rememberme" type="checkbox" id="rememberme" value="forever" /> <?php esc_html_e('Remember Me','realteo'); ?></label>
 					</p>
-				    <span class="lost_password">
+				    <p class="lost_password">
 						<a href="<?php echo wp_lostpassword_url(); ?>"> <?php esc_html_e('Lost Your Password?','realteo'); ?></a>
-					</span>
+					</p>
 				</form>
 	
 			</div>
