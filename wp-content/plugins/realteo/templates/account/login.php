@@ -150,10 +150,10 @@ if ( isset( $_REQUEST['register-errors'] ) ) {
 						</label>
 					</p>	
 				  <div class="row">
-						<div class='col-xs-12'>
+						<div class='col-xs-6'>
 							<input type="submit" class="button border margin-top-10" name="login" value="<?php _e( 'Sign In', 'realteo' ); ?>" />
 						</div>	
-						<div class='col-xs-12 text-right'>
+						<div class='col-xs-6 text-right'>
 							<span class="lost_password">
 								<a href="<?php echo wp_lostpassword_url(); ?>"> <?php esc_html_e('Lost Your Password?','realteo'); ?></a>
 							</span>

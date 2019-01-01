@@ -377,7 +377,8 @@
 }
 
 .findeo-custom .lost_password {
-  margin: 22px 0 0 0;
+  margin: 21px 0 0 0;
+  display: block;
 }
 
 .findeo-custom .wp-social-login-widget {
