@@ -76,7 +76,7 @@ if ( isset( $_REQUEST['register-errors'] ) ) {
 } ?>
 
 	<div class="row">
-	<div class="col-md-6 col-md-offset-3">
+	<div class="col-md-4 col-md-offset-4">
 	
 	<!--Tab -->
 		<div class="my-account style-1 margin-top-5 margin-bottom-40">
