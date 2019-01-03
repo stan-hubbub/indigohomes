@@ -442,3 +442,11 @@
   border-bottom: 0;
   background: transparent;
 }
+
+.findeo-custom .mce-container {
+  border-radius: 3px;
+}
+
+.findeo-custom div.mce-statusbar {
+  border-top: 0
+}
