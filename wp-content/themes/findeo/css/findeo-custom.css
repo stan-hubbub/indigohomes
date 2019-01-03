@@ -218,14 +218,40 @@
   background: transparent;
 }
 
-/* hack */
+/* hack, cart and submit */
 .page-id-148 .header-widget .button,
+.page-id-171 .header-widget .button,
 .findeo-custom #package_selection h4.headline {
   display: none;
 }
 
+.page-id-171 .header-widget .user-menu
 .page-id-148 .header-widget .user-menu {
   margin-right: 0;
+}
+
+body .findeo-custom .add-floorplans-submit-item.button,
+.findeo-custom #_gallery-description, 
+.findeo-custom #gallery-description {
+  margin-top: 0;
+}
+
+.findeo-custom .add-floorplans-submit-item.button {
+  border: 1px solid #35327e;
+  background-color: transparent;
+  color: #35327e;
+}
+
+.findeo-custom table#floorplans-submit-container {
+  margin: 0;
+}
+
+.findeo-custom #submit_map {
+  margin-bottom: 30px;
+}
+
+.findeo-custom .show-more.visible {
+  max-height: 10000px;
 }
 
 /* woocommerce */
@@ -361,14 +387,31 @@
 }
 
 /* buttons */
-.ih-btn {
+.findeo-custom .ih-btn {
   border-radius: 3px;
   border: none;
   color: #fff;
   font-size: 17px;
   font-weight: 500;
-  height: 60px;
-  padding: 20px 26px;
+  height: 50px;
+  line-height: 50px;
+  padding: 0 25px;
+  transition: all 0.2s ease-in-out;
+}
+
+.findeo-custom .ih-btn:hover {
+  background: #06026f;
+}
+
+.findeo-custom .ih-btn.border {
+  background: #fff;
+  border: 1px solid #382f83;
+  color: #382f83;
+}
+
+.findeo-custom .ih-btn.border:hover {
+  background-color: #35327e;
+  color: #fff;
 }
 
 /* login */
@@ -411,3 +454,50 @@
   width: 100%;
   z-index: 1;
 }
+
+/* forms and notification */
+.findeo-custom .property-manager-error {
+  color: #000;
+}
+
+.findeo-custom .notification.warning a {
+  color: #35327e;
+}
+
+.findeo-custom .chosen-container-single .chosen-single,
+.findeo-custom input[type=text], 
+.findeo-custom input[type=password], 
+.findeo-custom input[type=email], 
+.findeo-custom input[type=tel], 
+.findeo-custom input[type=number], 
+.findeo-custom select, 
+.findeo-custom textarea {
+  border-color: #999999;
+  background-color: #ffffff;
+}
+
+.findeo-custom .wp-editor-container {
+  border-radius: 3px;
+  border-color: #999999;
+}
+
+.findeo-custom div.mce-toolbar-grp {
+  border-bottom: 0;
+  background: transparent;
+}
+
+.findeo-custom .mce-container {
+  border-radius: 3px;
+}
+
+.findeo-custom div.mce-statusbar {
+  border-top: 0;
+  border-radius: 3px;
+}
+
+.findeo-custom .realteo-term-checklist label:before, 
+.findeo-custom .checkboxes label:before {
+  border-width: 1px;
+  border-color: #999999;
+}
+
