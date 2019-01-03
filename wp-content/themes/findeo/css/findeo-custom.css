@@ -451,3 +451,9 @@
   border-top: 0;
   border-radius: 3px;
 }
+
+.findeo-custom .realteo-term-checklist label:before, 
+.findeo-custom .checkboxes label:before {
+  border-width: 1px;
+  border-color: #999999;
+}
