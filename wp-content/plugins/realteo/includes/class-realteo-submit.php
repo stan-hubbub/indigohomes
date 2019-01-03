@@ -884,7 +884,7 @@ class Realteo_Submit  {
 	 */
 	private static function validate_package( $package_id, $is_user_package ) {
 		if ( empty( $package_id ) ) {
-			return new WP_Error( 'error', __( 'Invalid Package', 'realteo' ) );
+			return new WP_Error( 'error', __( 'Please select a package.', 'realteo' ) );
 		} elseif ( $is_user_package ) {
 			if ( ! realteo_package_is_valid( get_current_user_id(), $package_id ) ) {
 				return new WP_Error( 'error', __( 'Invalid Package', 'realteo' ) );
@@ -893,7 +893,7 @@ class Realteo_Submit  {
 			$package = wc_get_product( $package_id );
 
 			if ( ! $package->is_type( 'property_package' )  ) {
-				return new WP_Error( 'error', __( 'Please select a package', 'realteo' ) );
+				return new WP_Error( 'error', __( 'Invalid Package', 'realteo' ) );
 			}
 
 		}
