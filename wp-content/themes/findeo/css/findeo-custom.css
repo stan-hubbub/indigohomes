@@ -184,6 +184,7 @@
 
 .findeo-custom .plan.featured .listing-badges .featured {
   color: #2a293a;
+  display: none;
 }
 
 .findeo-custom .plan.featured .plan-features {
