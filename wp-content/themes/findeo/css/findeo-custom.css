@@ -392,7 +392,8 @@ body .findeo-custom .add-floorplans-submit-item.button,
   font-size: 17px;
   font-weight: 500;
   height: 50px;
-  padding: 20px 26px;
+  line-height: 50px;
+  padding: 0 25px;
   transition: all 0.2s ease-in-out;
 }
 
