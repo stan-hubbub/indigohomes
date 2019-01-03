@@ -75,7 +75,7 @@ $scale = realteo_get_option( 'scale', 'sq ft' ); ?>
 					$button = (isset($field['placeholder']) && !empty($field['placeholder'])) ? $field['placeholder'] : esc_html_e('Add Floorplan','realteo') ;?>
 
 
-					<i class="fa fa-plus-circle"></i> <?php echo $button; ?></a>
+					<?php echo $button; ?></a>
 			
 
 <!-- Section / End -->

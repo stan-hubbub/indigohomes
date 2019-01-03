@@ -234,6 +234,11 @@ body .findeo-custom .add-floorplans-submit-item.button,
   margin-top: 0;
 }
 
+.findeo-custom .add-floorplans-submit-item.button {
+  border: 1px solid #35327e;
+  background-color: transparent;
+  color: #35327e;
+}
 .findeo-custom table#floorplans-submit-container {
   margin: 0;
 }
