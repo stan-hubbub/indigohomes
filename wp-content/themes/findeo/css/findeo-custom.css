@@ -184,6 +184,7 @@
 
 .findeo-custom .plan.featured .listing-badges .featured {
   color: #2a293a;
+  display: none;
 }
 
 .findeo-custom .plan.featured .plan-features {
@@ -206,7 +207,7 @@
 .findeo-custom #package_selection .plan-features [type="radio"]:checked + label:before, 
 .findeo-custom #package_selection .plan-features [type="radio"]:not(:checked) + label:before {
   background: transparent;
-  border: 1px solid rgba(0,0,0,0.08);
+  border: 1px solid #707070;
   border-radius: 15px;
 }
 
