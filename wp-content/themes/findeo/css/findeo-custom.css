@@ -429,13 +429,13 @@
 .findeo-custom input[type=number], 
 .findeo-custom select, 
 .findeo-custom textarea {
-  border-color: #777;
-  background-color: #fff;
+  border-color: #999999;
+  background-color: #ffffff;
 }
 
 .findeo-custom .wp-editor-container {
   border-radius: 3px;
-  border-color: #777;
+  border-color: #999999;
 }
 
 .findeo-custom div.mce-toolbar-grp {
