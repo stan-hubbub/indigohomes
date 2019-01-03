@@ -420,3 +420,15 @@
 .findeo-custom .notification.warning a {
   color: #35327e;
 }
+
+.findeo-custom .chosen-container-single .chosen-single,
+.findeo-custom input[type=text], 
+.findeo-custom input[type=password], 
+.findeo-custom input[type=email], 
+.findeo-custom input[type=tel], 
+.findeo-custom input[type=number], 
+.findeo-custom select, 
+.findeo-custom textarea {
+  border-color: #888;
+  background-color: #fff;
+}
