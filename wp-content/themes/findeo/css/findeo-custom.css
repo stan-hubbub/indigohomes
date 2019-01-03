@@ -239,8 +239,13 @@ body .findeo-custom .add-floorplans-submit-item.button,
   background-color: transparent;
   color: #35327e;
 }
+
 .findeo-custom table#floorplans-submit-container {
   margin: 0;
+}
+
+.findeo-custom #submit_map {
+  margin-bottom: 30px;
 }
 
 /* woocommerce */
