@@ -385,7 +385,7 @@ body .findeo-custom .add-floorplans-submit-item.button,
 }
 
 /* buttons */
-.ih-btn {
+.findeo-custom .ih-btn {
   border-radius: 3px;
   border: none;
   color: #fff;
@@ -393,12 +393,22 @@ body .findeo-custom .add-floorplans-submit-item.button,
   font-weight: 500;
   height: 50px;
   padding: 20px 26px;
+  transition: all 0.2s ease-in-out;
 }
 
-.ih-btn.border {
+.findeo-custom .ih-btn:hover {
+  background: #06026f;
+}
+
+.findeo-custom .ih-btn.border {
   background: #fff;
   border: 1px solid #382f83;
   color: #382f83;
+}
+
+.findeo-custom .ih-btn.border:hover {
+  background-color: #35327e;
+  color: #fff;
 }
 
 /* login */
