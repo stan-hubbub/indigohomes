@@ -228,6 +228,16 @@
   margin-right: 0;
 }
 
+body .findeo-custom .add-floorplans-submit-item.button,
+.findeo-custom #_gallery-description, 
+.findeo-custom #gallery-description {
+  margin-top: 0;
+}
+
+.findeo-custom table#floorplans-submit-container {
+  margin: 0;
+}
+
 /* woocommerce */
 .findeo-custom #customer_details,
 .findeo-custom .woocommerce-customer-details {
@@ -457,3 +467,4 @@
   border-width: 1px;
   border-color: #999999;
 }
+
