@@ -395,6 +395,12 @@ body .findeo-custom .add-floorplans-submit-item.button,
   padding: 20px 26px;
 }
 
+.ih-btn.border {
+  background: #fff;
+  border: 1px solid #382f83;
+  color: #382f83;
+}
+
 /* login */
 .findeo-custom .my-account {
   max-width: 400px;
