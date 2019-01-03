@@ -448,5 +448,6 @@
 }
 
 .findeo-custom div.mce-statusbar {
-  border-top: 0
+  border-top: 0;
+  border-radius: 3px;
 }
