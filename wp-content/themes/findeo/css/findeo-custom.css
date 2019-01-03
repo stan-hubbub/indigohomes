@@ -411,3 +411,12 @@
   width: 100%;
   z-index: 1;
 }
+
+/* forms and notification */
+.findeo-custom .property-manager-error {
+  color: #000;
+}
+
+.findeo-custom .notification.warning a {
+  color: #35327e;
+}

@@ -893,7 +893,7 @@ class Realteo_Submit  {
 			$package = wc_get_product( $package_id );
 
 			if ( ! $package->is_type( 'property_package' )  ) {
-				return new WP_Error( 'error', __( 'Invalid Package', 'realteo' ) );
+				return new WP_Error( 'error', __( 'Please select a package', 'realteo' ) );
 			}
 
 		}
