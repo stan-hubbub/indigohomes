@@ -132,6 +132,12 @@
   font-size: 36px;
 }
 
+.findeo-custom .property-description {
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  hyphens: auto;
+}
+
 .findeo-custom .property-description h3.desc-headline {
   border-bottom: none;
   margin: 60px 0 20px 0;
