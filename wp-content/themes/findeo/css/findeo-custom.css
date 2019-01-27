@@ -50,6 +50,10 @@
   background-color: transparent;
 }
 
+.findeo-custom .layout-switcher {
+  display: none;
+}
+
 /* homepage */
 .findeo-custom .listing-img-content .listing-price {
   display: none;
@@ -104,9 +108,7 @@
 
 /* property/show  */
 .findeo-custom .property-main-features {
-  padding: 0;
-  background: transparent;
-  margin-top: -50px;
+  padding: 20px;
 }
 
 .findeo-custom #titlebar.property-titlebar span a {
