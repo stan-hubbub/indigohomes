@@ -16,23 +16,23 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="profile" href="http://gmpg.org/xfn/11">
 <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
-<link rel="stylesheet" media="screen" href="<?php echo get_stylesheet_directory_uri(); ?>/css/findeo-custom.css?v=0.2.14">
+<link rel="stylesheet" media="screen" href="<?php echo get_stylesheet_directory_uri(); ?>/css/findeo-custom.css?v=0.2.15">
 <?php wp_head(); ?>
 </head>
 
 <body <?php body_class(); ?>>
-	
+
 <!-- Wrapper -->
 <div id="wrapper" class="findeo-custom">
 <?php do_action('realteo_after_wrapper'); ?>
-<?php 
+<?php
 $header_layout = get_option('findeo_header_layout') ;
 
 $sticky = get_option('findeo_sticky_header') ;
 
 if(is_singular()){
 
-	$header_layout_single = get_post_meta($post->ID, 'findeo_header_layout', TRUE); 
+	$header_layout_single = get_post_meta($post->ID, 'findeo_header_layout', TRUE);
 
 	switch ($header_layout_single) {
 		case 'on':
@@ -42,19 +42,19 @@ if(is_singular()){
 
 		case 'disable':
 			$header_layout = false;
-			break;	
+			break;
 
 		case 'use_global':
-			$header_layout = get_option('findeo_header_layout'); 
+			$header_layout = get_option('findeo_header_layout');
 			break;
-		
+
 		default:
-			$header_layout = get_option('findeo_header_layout'); 
+			$header_layout = get_option('findeo_header_layout');
 			break;
 	}
 
 
-	$sticky_single = get_post_meta($post->ID, 'findeo_sticky_header', TRUE); 
+	$sticky_single = get_post_meta($post->ID, 'findeo_sticky_header', TRUE);
 	switch ($sticky_single) {
 		case 'on':
 		case 'enable':
@@ -63,22 +63,22 @@ if(is_singular()){
 
 		case 'disable':
 			$sticky = false;
-			break;	
+			break;
 
 		case 'use_global':
-			$sticky = get_option('findeo_sticky_header'); 
+			$sticky = get_option('findeo_sticky_header');
 			break;
-		
+
 		default:
-			$sticky = get_option('findeo_sticky_header'); 
+			$sticky = get_option('findeo_sticky_header');
 			break;
 	}
-	
+
 }
 
 
 $header_layout = apply_filters('findeo_header_layout_filter',$header_layout);
-$sticky = apply_filters('findeo_sticky_header_filter',$sticky); 
+$sticky = apply_filters('findeo_sticky_header_filter',$sticky);
 
 ?>
 <!-- Header Container
@@ -90,13 +90,13 @@ $sticky = apply_filters('findeo_sticky_header_filter',$sticky);
 	<!-- Header -->
 	<div id="header">
 		<div class="container">
-			
+
 			<!-- Left Side Content -->
 			<div <?php if( function_exists('realteo_get_option')) { ?> class="left-side" <?php } ?> >
 				<div id="logo">
-					<?php 
-		                $logo = get_option( 'pp_logo_upload', '' ); 
-		                $logo_retina = get_option( 'pp_retina_logo_upload', '' ); 
+					<?php
+		                $logo = get_option( 'pp_logo_upload', '' );
+		                $logo_retina = get_option( 'pp_retina_logo_upload', '' );
 		             	if($logo) {
 		                    if(is_front_page()){ ?>
 		                    <a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr(get_bloginfo('name', 'display')); ?>" rel="home"><img src="<?php echo esc_url($logo); ?>" data-rjs="<?php echo esc_url($logo_retina); ?>" alt="<?php esc_attr(bloginfo('name')); ?>"/></a>
@@ -128,14 +128,14 @@ $sticky = apply_filters('findeo_sticky_header_filter',$sticky);
 				<!-- Main Navigation -->
 				<nav id="navigation" class="style-1">
 					<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'responsive', 'container' => false ) );  ?>
-			
+
 				</nav>
 				<div class="clearfix"></div>
 				<!-- Main Navigation / End -->
-				
+
 			</div>
 			<!-- Left Side Content / End -->
-			<?php 
+			<?php
 
 			$my_account_display = get_option('findeo_my_account_display', true );
 			$submit_display = get_option('findeo_submit_display', true );
@@ -146,23 +146,23 @@ $sticky = apply_filters('findeo_sticky_header_filter',$sticky);
 				<div class="header-widget">
 
 					<?php if( true == $my_account_display) : ?>
-					
+
 							<?php
-							if ( is_user_logged_in() &&  function_exists('realteo_get_option')) { 
+							if ( is_user_logged_in() &&  function_exists('realteo_get_option')) {
 								$current_user = wp_get_current_user();
 								$roles = $current_user->roles;
-								$role = array_shift( $roles ); 
+								$role = array_shift( $roles );
 								if(!empty($current_user->user_firstname)){
 									$name = $current_user->user_firstname;
 								} else {
 									$name =  $current_user->display_name;
 								}?>
-	
+
 								<div class="user-menu">
 									<div class="user-name"><span><?php echo get_avatar( $current_user->user_email, 32 );?></span>
 										<?php esc_html_e('Hi,','findeo') ?> <?php echo $name; ?>!</div>
 									<ul>
-									<?php do_action('realteo_user_menu_before'); ?>	
+									<?php do_action('realteo_user_menu_before'); ?>
 									<li>
 										<a href="<?php echo get_permalink(realteo_get_option( 'my_account_page' )); ?>" >
 											<i class="sl sl-icon-user"></i> <?php esc_html_e('My Profile','findeo');?>
@@ -176,12 +176,12 @@ $sticky = apply_filters('findeo_sticky_header_filter',$sticky);
 									<?php if(in_array($role,array('agent','administrator','admin','owner'))) : ?>
 									<li>
 										<a href="<?php echo get_permalink( realteo_get_option( 'my_properties_page' ) ); ?>">
-											<i class="sl sl-icon-docs"></i> 
+											<i class="sl sl-icon-docs"></i>
 											<?php esc_html_e('My Properties','findeo');?>
 										</a>
 									</li>
 									<?php endif; ?>
-									<?php do_action('realteo_user_menu_after'); ?>	
+									<?php do_action('realteo_user_menu_after'); ?>
 									<li><a href="<?php echo wp_logout_url(home_url()); ?>"><i class="sl sl-icon-power"></i> <?php esc_html_e('Log Out','findeo');?></a>
 									</li>
 									</ul>
@@ -189,11 +189,11 @@ $sticky = apply_filters('findeo_sticky_header_filter',$sticky);
 							<?php } else { ?>
 									<a href="<?php echo get_permalink(realteo_get_option( 'my_account_page' ))?>" class="sign-in"><i class="fa fa-user"></i> <?php esc_html_e('Log In / Register','findeo');  ?></a>
 							<?php }	?>
-						
+
 					<?php endif;?>
-					
-					<?php 
-			
+
+					<?php
+
 					if( true == $submit_display ) : ?>
 						<a href="<?php echo get_permalink( realteo_get_option( 'submit_property_page' ) ); ?>" class="button border"><?php esc_html_e('Submit Property','findeo'); ?></a>
 					<?php endif; ?>
@@ -202,7 +202,7 @@ $sticky = apply_filters('findeo_sticky_header_filter',$sticky);
 			<!-- Right Side Content / End -->
 			<?php endif; ?>
 				<!-- Header Widget / End -->
-			
+
 
 		</div>
 	</div>
