@@ -46,15 +46,14 @@
   text-align: right;
 }
 
+.findeo-custom ul.listing-details {
+  background-color: transparent;
+}
+
 /* homepage */
 .findeo-custom .listing-img-content .listing-price {
   display: none;
 }
-
-/* .findeo-custom .listing-content ul.listing-details li {
-  padding: 0 !important;
-  margin-right: 20px;
-} */
 
 .findeo-custom .listing-title h4 {
   margin-bottom: 20px;
