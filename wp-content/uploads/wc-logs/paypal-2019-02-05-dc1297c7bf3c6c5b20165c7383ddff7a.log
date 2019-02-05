@@ -1,0 +1,74 @@
+2019-02-05T08:55:48+00:00 INFO Generating payment form for order 610. Notify URL: https://www.indigohomes.ph/wc-api/WC_Gateway_Paypal/
+2019-02-05T08:55:48+00:00 INFO PayPal Request Args for order 610: Array
+(
+    [cmd] => _cart
+    [business] => admin@indigohomes.ph
+    [no_note] => 1
+    [currency_code] => PHP
+    [charset] => utf-8
+    [rm] => 2
+    [upload] => 1
+    [return] => https://www.indigohomes.ph/checkout/order-received/610/?key=wc_order_5c594f9491a86&utm_nooverride=1
+    [cancel_return] => https://www.indigohomes.ph/cart/?cancel_order=true&order=wc_order_5c594f9491a86&order_id=610&redirect&_wpnonce=eb2a7f744d
+    [page_style] => 
+    [image_url] => 
+    [paymentaction] => sale
+    [bn] => WooThemes_Cart
+    [invoice] => IH-610
+    [custom] => {"order_id":610,"order_key":"wc_order_5c594f9491a86"}
+    [notify_url] => https://www.indigohomes.ph/wc-api/WC_Gateway_Paypal/
+    [first_name] => ***
+    [last_name] => ***
+    [address1] => ***
+    [address2] => ***
+    [city] => ***
+    [state] => ***
+    [zip] => ***
+    [country] => ***
+    [email] => ***@***
+    [night_phone_b] => ***
+    [no_shipping] => 1
+    [tax_cart] => 0.00
+    [item_name_1] => Cleverer (Property title: CN Lorem Ipsum is simply dummy text of the printing and typesettin...
+    [quantity_1] => 1
+    [amount_1] => 1200
+    [item_number_1] => 
+)
+
+2019-02-05T10:30:45+00:00 INFO Generating payment form for order 610. Notify URL: https://www.indigohomes.ph/wc-api/WC_Gateway_Paypal/
+2019-02-05T10:30:45+00:00 INFO PayPal Request Args for order 610: Array
+(
+    [cmd] => _cart
+    [business] => admin@indigohomes.ph
+    [no_note] => 1
+    [currency_code] => PHP
+    [charset] => utf-8
+    [rm] => 2
+    [upload] => 1
+    [return] => https://www.indigohomes.ph/checkout/order-received/610/?key=wc_order_5c594f9491a86&utm_nooverride=1
+    [cancel_return] => https://www.indigohomes.ph/cart/?cancel_order=true&order=wc_order_5c594f9491a86&order_id=610&redirect&_wpnonce=eb2a7f744d
+    [page_style] => 
+    [image_url] => 
+    [paymentaction] => sale
+    [bn] => WooThemes_Cart
+    [invoice] => IH-610
+    [custom] => {"order_id":610,"order_key":"wc_order_5c594f9491a86"}
+    [notify_url] => https://www.indigohomes.ph/wc-api/WC_Gateway_Paypal/
+    [first_name] => ***
+    [last_name] => ***
+    [address1] => ***
+    [address2] => ***
+    [city] => ***
+    [state] => ***
+    [zip] => ***
+    [country] => ***
+    [email] => ***@***
+    [night_phone_b] => ***
+    [no_shipping] => 1
+    [tax_cart] => 0.00
+    [item_name_1] => Cleverer (Property title: CN Lorem Ipsum is simply dummy text of the printing and typesettin...
+    [quantity_1] => 1
+    [amount_1] => 1200
+    [item_number_1] => 
+)
+

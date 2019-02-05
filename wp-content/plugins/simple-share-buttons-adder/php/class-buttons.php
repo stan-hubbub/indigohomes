@@ -196,7 +196,7 @@ class Buttons {
 			$wrap_id = 'Y' !== $arr_settings['ssba_new_buttons'] ? 'ssba-classic-2' : 'ssba-modern-2';
 
 			// Ssba div.
-			$html_share_buttons = '<!-- Simple Share Buttons Adder (' . esc_html( SSBA_VERSION ) . ') simplesharebuttons.com --><div id="' . esc_attr( $wrap_id ) . '" class="ssba ssbp-wrap' . esc_attr( ' ' . $arr_settings['ssba_plus_align'] ) . ' ssbp--theme-' . esc_attr( $arr_settings['ssba_plus_button_style'] ) . '">';
+			$html_share_buttons = '<!-- Simple Share Buttons Adder (' . esc_html( SSBA_VERSION ) . ') simplesharebuttons.com --><div class="' . esc_attr( $wrap_id ) . ' ssba ssbp-wrap' . esc_attr( ' ' . $arr_settings['ssba_plus_align'] ) . ' ssbp--theme-' . esc_attr( $arr_settings['ssba_plus_button_style'] ) . '">';
 
 			// Center if set so.
 			$html_share_buttons .= '<div style="text-align:' . esc_attr( $alignment ) . '">';
@@ -268,7 +268,7 @@ class Buttons {
 				// Just return buttons.
 				$html_content = $html_share_buttons;
 			}
-		} // End if().
+		}
 
 		// Return content and share buttons.
 		return $html_content;
@@ -425,7 +425,7 @@ class Buttons {
 		$arr_selected_ssba = 'Y' === $arr_settings['ssba_new_buttons'] ? explode( ',', $arr_settings['ssba_selected_plus_buttons'] ) : explode( ',', $arr_settings['ssba_selected_buttons'] );
 
 		// Check if array is not empty.
-		if ( '' !== $arr_settings['ssba_selected_buttons'] ) {
+		if ( is_array( $arr_selected_ssba ) && '' !== $arr_selected_ssba[0] ) {
 
 			// Add post ID to settings array.
 			$arr_settings['post_id'] = $int_post_id;
@@ -780,21 +780,6 @@ class Buttons {
 		// Close href.
 		$html_share_buttons .= '</a>';
 
-		// If show share count is set to Y.
-		if ( ( ( 'Y' === $arr_settings['ssba_show_share_count'] && 'Y' !== $arr_settings['ssba_new_buttons'] )
-			||
-			( 'Y' === $arr_settings['ssba_plus_show_share_count'] && 'Y' === $arr_settings['ssba_new_buttons'] )
-			||
-			( 'Y' === $arr_settings['ssba_bar_show_share_count'] && isset( $arr_settings['bar_call'] )
-			)
-			&& $boo_show_share_count
-			) ) {
-			// Newsharedcount needs to be enabled.
-			if ( 'Y' === $arr_settings['twitter_newsharecounts'] ) {
-				$html_share_buttons .= '<span class="' . esc_attr( $count_class ) . '">' . esc_html( $this->ssba_twitter_count( $url_current_page ) ) . '</span>';
-			}
-		}
-
 		// Add closing li if plus.
 		if ( 'Y' === $arr_settings['ssba_new_buttons'] || isset( $arr_settings['bar_call'] ) ) {
 			$html_share_buttons .= '</li>';
@@ -802,32 +787,6 @@ class Buttons {
 
 		// Return share buttons.
 		return $html_share_buttons;
-	}
-
-	/**
-	 * Get twitter share count.
-	 *
-	 * @param string $url_current_page The current page url.
-	 *
-	 * @return int|string
-	 */
-	public function ssba_twitter_count( $url_current_page ) {
-		// Get results from newsharecounts and return the number of shares.
-		$result = wp_safe_remote_get( 'http://public.newsharecounts.com/count.json?url=' . $url_current_page, array(
-			'timeout' => 6,
-		) );
-
-		// Check there was an error.
-		if ( is_wp_error( $result ) ) {
-			return 0;
-		}
-
-		// Decode data.
-		$result = json_decode( $result['body'], true );
-		$count  = isset( $result['count'] ) ? $result['count'] : 0;
-
-		// Return.
-		return $this->ssba_format_number( $count );
 	}
 
 	/**
@@ -841,67 +800,7 @@ class Buttons {
 	 * @return string
 	 */
 	public function ssba_google( $arr_settings, $url_current_page, $str_page_title, $boo_show_share_count ) {
-		$nofollow = 'Y' === $arr_settings['ssba_rel_nofollow'] ? ' rel="nofollow"' : '';
-		$network = 'Google+';
-		$target =
-			( 'Y' === $arr_settings['ssba_plus_share_new_window']
-					&& 'Y' === $arr_settings['ssba_new_buttons']
-					&& ! isset( $arr_settings['bar_call']
-			) )
-			||
-			  ( 'Y' === $arr_settings['ssba_share_new_window']
-				&& 'Y' !== $arr_settings['ssba_new_buttons']
-				&& ! isset( $arr_settings['bar_call']
-			  ) )
-			||
-			( 'Y' === $arr_settings['ssba_bar_share_new_window'] && isset( $arr_settings['bar_call']
-			) ) ? ' target="_blank" ' : '';
-		$plus_class = 'Y' === $arr_settings['ssba_new_buttons'] || isset( $arr_settings['bar_call'] ) ? ' ssbp-google ssbp-btn' : '';
-		$count_class = 'Y' === $arr_settings['ssba_new_buttons'] || isset( $arr_settings['bar_call'] ) ? ' ssbp-each-share' : ' ssba_sharecount';
-		$html_share_buttons = '';
-
-		// Add li if plus.
-		if ( 'Y' === $arr_settings['ssba_new_buttons'] || isset( $arr_settings['bar_call'] ) ) {
-			$html_share_buttons .= '<li class="ssbp-li--google">';
-		}
-
-		// Google share link.
-		$html_share_buttons .= '<a data-site="" class="ssba_google_share' . esc_attr( $plus_class ) . '" href="https://plus.google.com/share?url=' . esc_attr( $url_current_page ) . '" ' . esc_attr( $target . $nofollow ) . '>';
-
-		// If image set is not custom.
-		if ( 'custom' !== $arr_settings['ssba_image_set'] && 'Y' !== $arr_settings['ssba_new_buttons'] && ! isset( $arr_settings['bar_call'] ) ) {
-			// Show ssba image.
-			$html_share_buttons .= '<img src="' . esc_attr( plugins_url() ) . '/simple-share-buttons-adder/buttons/' . esc_attr( $arr_settings['ssba_image_set'] ) . '/google.png" style="width: ' . esc_html( $arr_settings['ssba_size'] ) . 'px;" title="Google+" class="ssba ssba-img" alt="Share on Google+" />';
-		} elseif ( 'Y' !== $arr_settings['ssba_new_buttons'] && ! isset( $arr_settings['bar_call'] ) ) { // If using custom images.
-			// Show custom image.
-			$html_share_buttons .= '<img src="' . esc_url( $arr_settings['ssba_custom_google'] ) . '" style="width: ' . esc_html( $arr_settings['ssba_size'] ) . 'px;" title="Share on Google+" class="ssba ssba-img" alt="Google+" />';
-		}
-
-		// Close href.
-		$html_share_buttons .= '<div title="' . $network . '" class="ssbp-text">' . $network . '</div>';
-
-		// Close href.
-		$html_share_buttons .= '</a>';
-
-		// If show share count is set to Y.
-		if ( ( ( 'Y' === $arr_settings['ssba_show_share_count'] && 'Y' !== $arr_settings['ssba_new_buttons'] )
-			||
-			( 'Y' === $arr_settings['ssba_plus_show_share_count'] && 'Y' === $arr_settings['ssba_new_buttons'] )
-			||
-			( 'Y' === $arr_settings['ssba_bar_show_share_count'] && isset( $arr_settings['bar_call'] )
-			)
-			&& $boo_show_share_count
-			) ) {
-			$html_share_buttons .= '<span class="' . esc_attr( $count_class ) . '">' . esc_html( $this->get_google_share_count( $url_current_page ) ) . '</span>';
-		}
-
-		// Add closing li if plus.
-		if ( 'Y' === $arr_settings['ssba_new_buttons'] || isset( $arr_settings['bar_call'] ) ) {
-			$html_share_buttons .= '</li>';
-		}
-
-		// Return share buttons.
-		return $html_share_buttons;
+		return;
 	}
 
 	/**
@@ -912,44 +811,7 @@ class Buttons {
 	 * @return string
 	 */
 	public function get_google_share_count( $url_current_page ) {
-		$args = array(
-			'method'    => 'POST',
-			'headers'   => array(
-				// Setup content type to JSON.
-				'Content-Type' => 'application/json',
-			),
-			// Setup POST options to Google API.
-			'body'      => wp_json_encode( array(
-				'method'     => 'pos.plusones.get',
-				'id'         => 'p',
-				'method'     => 'pos.plusones.get',
-				'jsonrpc'    => '2.0',
-				'key'        => 'p',
-				'apiVersion' => 'v1',
-				'params'     => array(
-					'nolog'   => true,
-					'id'      => $url_current_page,
-					'source'  => 'widget',
-					'userId'  => '@viewer',
-					'groupId' => '@self',
-				),
-			) ),
-			// Disable checking SSL sertificates.
-			'sslverify' => false,
-		);
-
-		// Retrieves JSON with HTTP POST method for current URL.
-		$json_string = wp_remote_post( 'https://clients6.google.com/rpc', $args );
-
-		if ( is_wp_error( $json_string ) ) {
-			// Return zero if response is error.
-			return '0';
-		} else {
-			$json = json_decode( $json_string['body'], true );
-
-			// Return count of Google +1 for requsted URL.
-			return $this->ssba_format_number( intval( $json['result']['metadata']['globalCounts']['count'] ) );
-		}
+		return;
 	}
 
 	/**

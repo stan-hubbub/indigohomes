@@ -46,14 +46,14 @@
     max-width: 84px;
 }
 
-#ssba-plus-2 {
+.ssba-plus-2 {
     width: 100%;
 }
 
-#ssba-classic-2 {
+.ssba-classic-2 {
     width: 100%;
 }
 
-#plus-share-buttons .ssbp-each-share, #ssba-bar-2 li .ssbp-each-share {
+.ssbp-each-share, #ssba-bar-2 li .ssbp-each-share {
     display: block;
 }

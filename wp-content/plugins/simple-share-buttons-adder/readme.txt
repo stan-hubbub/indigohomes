@@ -2,8 +2,8 @@
 Contributors: sharethis, scottstorebloom, surlyrightclick, DavidoffNeal
 Tags: share buttons, social buttons, facebook, twitter, google+, share, share links, stumble upon, linkedin, pinterest, yummly, vk
 Requires at least: 4.5
-Tested up to: 4.9.5
-Stable tag: 7.4.18
+Tested up to: 5.0.2
+Stable tag: 7.5.19
 License: GPLv2 or later
 
 A simple plugin that enables you to add share buttons to all of your posts and/or pages.
@@ -65,6 +65,16 @@ Please visit the <a href="https://wordpress.org/support/plugin/simple-share-butt
 4. An example of the buttons shown below page content using the "Ribbon" theme.
 
 == Changelog ==
+
+= 7.5.19 =
+* Fix: double class issue.
+* Add: remove gloogle plus from button options.
+
+= 7.5.18 =
+* Fix: Make sure all custom/advanced css fields work properly and separately.
+* Add: Style to avoid decoration to the buttons.
+* Fix: Major conflict with classic and modern buttons if no networks selected.
+* Add: change wrapper id to a class.
 
 = 7.4.18 =
 * Fix: Mobile disable option for Share Bar.
