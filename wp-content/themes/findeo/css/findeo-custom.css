@@ -378,6 +378,7 @@ body .findeo-custom .add-floorplans-submit-item.button,
   width: 100%;
 }
 
+.findeo-custom .order_review_heading,
 .findeo-custom input[name="update_cart"],
 .findeo-custom .cart_totals.calculated_shipping h2 {
   display: none;
@@ -385,6 +386,11 @@ body .findeo-custom .add-floorplans-submit-item.button,
 
 .findeo-custom .product-remove.text-center {
   text-align: center !important;
+}
+
+.findeo-custom .coupon-box .woocommerce-info {
+  background-color: transparent;
+  color: #707070;
 }
 
 .findeo-custom table.shop_table td,
