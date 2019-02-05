@@ -304,10 +304,7 @@ body .findeo-custom .add-floorplans-submit-item.button,
 }
 
 .findeo-custom .checkout_coupon_x button.btn {
-  /* border-bottom-left-radius: 0;
-  /* margin-left: -4px; */
   background: transparent;
-  border-top-left-radius: 0; */
   border: 1px solid #35327e;
   color: #35327e !important;
   height: 48px;
