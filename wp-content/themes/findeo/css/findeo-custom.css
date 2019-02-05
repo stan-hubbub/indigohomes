@@ -286,18 +286,18 @@ body .findeo-custom .add-floorplans-submit-item.button,
 
 /* checkout */
 .findeo-custom .checkout_coupon_x {
-  border-bottom: 1px solid rgba(0,0,0,0.09);
-  border-radius: 0;
+  /* border-bottom: 1px solid rgba(0,0,0,0.09); */
+  /* border-radius: 0; */
   display: block;
   margin-bottom: 15px;
-  margin-right: -4px;
+  /* margin-right: -4px; */
   padding: 20px;
   text-align: right;
 }
 
 .findeo-custom .checkout_coupon_x  input {
-  border-bottom-right-radius: 0;
-  border-top-right-radius: 0;
+  /* border-bottom-right-radius: 0; */
+  /* border-top-right-radius: 0; */
   height: 48px;
   margin: 0;
   text-align: left;
