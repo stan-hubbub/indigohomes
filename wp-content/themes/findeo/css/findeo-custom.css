@@ -378,7 +378,7 @@ body .findeo-custom .add-floorplans-submit-item.button,
   width: 100%;
 }
 
-.findeo-custom .order_review_heading,
+.findeo-custom h3#order_review_heading,
 .findeo-custom input[name="update_cart"],
 .findeo-custom .cart_totals.calculated_shipping h2 {
   display: none;
@@ -425,6 +425,11 @@ body .findeo-custom .add-floorplans-submit-item.button,
   transition: all 0.2s ease-in-out;
 }
 
+.findeo-custom .ih-btn.secondary {
+  border: #35327e 1px solid;
+  background: transparent;
+  color: #35327e;
+}
 .findeo-custom .ih-btn:hover {
   background: #06026f;
 }
