@@ -50,6 +50,7 @@
   background-color: transparent;
 }
 
+.layout-switcher,
 .findeo-custom .layout-switcher {
   display: none;
 }
