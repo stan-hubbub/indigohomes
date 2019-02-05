@@ -78,15 +78,12 @@ class Wp_Temporary_Login_Without_Password_Admin {
 	 * @since 1.0
 	 */
 	public function admin_menu() {
-		$current_user_id = get_current_user_id();
-		if ( ! Wp_Temporary_Login_Without_Password_Common::is_valid_temporary_login( $current_user_id ) ) {
-			add_users_page(
-				__( 'Temporary Logins', 'temporary-login-without-password' ), __( 'Temporary Logins', 'temporary-login-without-password' ), apply_filters( 'tempadmin_user_cap', 'manage_options' ), 'wp-temporary-login-without-password', array(
-					__class__,
-					'admin_settings',
-				)
-			);
-		}
+		add_users_page(
+			__( 'Temporary Logins', 'temporary-login-without-password' ), __( 'Temporary Logins', 'temporary-login-without-password' ), apply_filters( 'tempadmin_user_cap', 'manage_options' ), 'wp-temporary-login-without-password', array(
+				__class__,
+				'admin_settings',
+			)
+		);
 	}
 
 	/**
@@ -98,26 +95,36 @@ class Wp_Temporary_Login_Without_Password_Admin {
 	 */
 	public static function admin_settings() {
 
-		$active_tab          = ! empty( $_GET['tab'] ) ? $_GET['tab'] : 'home';
-		$_template_file      = WTLWP_PLUGIN_DIR . '/templates/admin-settings.php';
-		$wtlwp_generated_url = ! empty( $_REQUEST['wtlwp_generated_url'] ) ? $_REQUEST['wtlwp_generated_url'] : '';
-		$user_email          = ! empty( $_REQUEST['user_email'] ) ? sanitize_email( $_REQUEST['user_email'] ) : '';
-		$tlwp_settings       = maybe_unserialize( get_option( 'tlwp_settings', array() ) );
-		$action              = ! empty( $_GET['action'] ) ? $_GET['action'] : '';
-		$user_id             = ! empty( $_GET['user_id'] ) ? $_GET['user_id'] : '';
-		$do_update           = ( 'update' === $action ) ? 1 : 0;
+		$_template_file = WTLWP_PLUGIN_DIR . '/templates/admin-settings.php';
 
-		if ( ! empty( $user_id ) ) {
-			$temporary_user_data = Wp_Temporary_Login_Without_Password_Common::get_temporary_logins_data( $user_id );
+		$is_temporary_login = false;
+		$current_user_id    = get_current_user_id();
+		if ( Wp_Temporary_Login_Without_Password_Common::is_valid_temporary_login( $current_user_id ) ) {
+			$is_temporary_login = true;
 		}
 
-		if ( ! empty( $wtlwp_generated_url ) ) {
-			$mailto_link = Wp_Temporary_Login_Without_Password_Common::generate_mailto_link( $user_email, $wtlwp_generated_url );
-		}
+		$active_tab = ! empty( $_GET['tab'] ) ? $_GET['tab'] : ( $is_temporary_login ? 'system-info' : 'home' );
 
-		$default_role  = ( ! empty( $tlwp_settings ) && isset( $tlwp_settings['default_role'] ) ) ? $tlwp_settings['default_role'] : 'administrator';
-		$default_expiry_time  = ( ! empty( $tlwp_settings ) && isset( $tlwp_settings['default_expiry_time'] ) ) ? $tlwp_settings['default_expiry_time'] : 'week';
-		$visible_roles  = ( ! empty( $tlwp_settings ) && isset( $tlwp_settings['visible_roles'] ) ) ? $tlwp_settings['visible_roles'] : array();
+		if ( ! $is_temporary_login ) {
+			$wtlwp_generated_url = ! empty( $_REQUEST['wtlwp_generated_url'] ) ? $_REQUEST['wtlwp_generated_url'] : '';
+			$user_email          = ! empty( $_REQUEST['user_email'] ) ? sanitize_email( $_REQUEST['user_email'] ) : '';
+			$tlwp_settings       = maybe_unserialize( get_option( 'tlwp_settings', array() ) );
+			$action              = ! empty( $_GET['action'] ) ? $_GET['action'] : '';
+			$user_id             = ! empty( $_GET['user_id'] ) ? $_GET['user_id'] : '';
+			$do_update           = ( 'update' === $action ) ? 1 : 0;
+
+			if ( ! empty( $user_id ) ) {
+				$temporary_user_data = Wp_Temporary_Login_Without_Password_Common::get_temporary_logins_data( $user_id );
+			}
+
+			if ( ! empty( $wtlwp_generated_url ) ) {
+				$mailto_link = Wp_Temporary_Login_Without_Password_Common::generate_mailto_link( $user_email, $wtlwp_generated_url );
+			}
+
+			$default_role        = ( ! empty( $tlwp_settings ) && isset( $tlwp_settings['default_role'] ) ) ? $tlwp_settings['default_role'] : 'administrator';
+			$default_expiry_time = ( ! empty( $tlwp_settings ) && isset( $tlwp_settings['default_expiry_time'] ) ) ? $tlwp_settings['default_expiry_time'] : 'week';
+			$visible_roles       = ( ! empty( $tlwp_settings ) && isset( $tlwp_settings['visible_roles'] ) ) ? $tlwp_settings['visible_roles'] : array();
+		}
 
 		include $_template_file;
 	}
@@ -200,18 +207,18 @@ class Wp_Temporary_Login_Without_Password_Admin {
 
 		$data = $_POST['tlwp_settings_data'];
 
-		$default_role  = isset( $data['default_role'] ) ? $data['default_role'] : 'administrator';
-		$default_expiry_time  = isset( $data['default_expiry_time'] ) ? $data['default_expiry_time'] : 'week';
-		$visible_roles = isset( $data['visible_roles'] ) ? $data['visible_roles'] : array();
+		$default_role        = isset( $data['default_role'] ) ? $data['default_role'] : 'administrator';
+		$default_expiry_time = isset( $data['default_expiry_time'] ) ? $data['default_expiry_time'] : 'week';
+		$visible_roles       = isset( $data['visible_roles'] ) ? $data['visible_roles'] : array();
 
 		if ( ! in_array( $default_role, $visible_roles ) ) {
 			$visible_roles[] = $default_role;
 		}
 
 		$tlwp_settings = array(
-			'default_role'  => $default_role,
+			'default_role'        => $default_role,
 			'default_expiry_time' => $default_expiry_time,
-			'visible_roles' => $visible_roles
+			'visible_roles'       => $visible_roles
 		);
 
 		$update = update_option( 'tlwp_settings', maybe_serialize( $tlwp_settings ), true );
@@ -527,9 +534,9 @@ class Wp_Temporary_Login_Without_Password_Admin {
 
 			$reviewurl = 'https://wordpress.org/support/plugin/temporary-login-without-password/reviews/';
 
-			$current_page_url = "//".$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'];
+			$current_page_url = "//" . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];
 
-			$nobugurl = add_query_arg( 'tlwp_nobug', 1, $current_page_url);
+			$nobugurl = add_query_arg( 'tlwp_nobug', 1, $current_page_url );
 
 			echo '<div class="notice notice-warning">';
 

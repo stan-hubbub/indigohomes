@@ -7,11 +7,14 @@
 
 ?>
 <h2 class="nav-tab-wrapper">
-    <a href="<?php echo esc_url( admin_url( 'users.php?page=wp-temporary-login-without-password&tab=home' ) ); ?>" class="nav-tab <?php echo 'home' === $active_tab ? 'nav-tab-active' : ''; ?>"><?php echo esc_html__( 'Temporary Logins', 'temporary-login-without-password' ); ?></a>
-    <a href="<?php echo esc_url( admin_url( 'users.php?page=wp-temporary-login-without-password&tab=settings' ) ); ?>" class="nav-tab <?php echo 'settings' === $active_tab ? 'nav-tab-active' : ''; ?>"><?php echo esc_html__( 'Settings', 'temporary-login-without-password' ); ?></a>
+    <?php if(! $is_temporary_login)  { ?>
+        <a href="<?php echo esc_url( admin_url( 'users.php?page=wp-temporary-login-without-password&tab=home' ) ); ?>" class="nav-tab <?php echo 'home' === $active_tab ? 'nav-tab-active' : ''; ?>"><?php echo esc_html__( 'Temporary Logins', 'temporary-login-without-password' ); ?></a>
+        <a href="<?php echo esc_url( admin_url( 'users.php?page=wp-temporary-login-without-password&tab=settings' ) ); ?>" class="nav-tab <?php echo 'settings' === $active_tab ? 'nav-tab-active' : ''; ?>"><?php echo esc_html__( 'Settings', 'temporary-login-without-password' ); ?></a>
+	<?php } ?>
+    <a href="<?php echo esc_url( admin_url( 'users.php?page=wp-temporary-login-without-password&tab=system-info' ) ); ?>" class="nav-tab <?php echo 'system-info' === $active_tab ? 'nav-tab-active' : ''; ?>"><?php echo esc_html__( 'System Info', 'temporary-login-without-password' ); ?></a>
 </h2>
 
-<?php if ( 'home' === $active_tab ) { ?>
+<?php if ( 'home' === $active_tab && !$is_temporary_login ) { ?>
     <div class="wrap wtlwp-settings-wrap" id="temporary-logins">
         <h2>
 			<?php echo esc_html__( 'Temporary Logins', 'temporary-login-without-password' ); ?>
@@ -63,10 +66,13 @@
             <!-- List All Generated Logins End -->
         </div>
     </div>
-<?php } elseif ( 'settings' === $active_tab ) { ?>
-
+<?php } elseif ( 'settings' === $active_tab && !$is_temporary_login) { ?>
     <div class="wrap list-wtlwp-logins" id="wtlwp-logins-settings">
 		<?php include WTLWP_PLUGIN_DIR . '/templates/temporary-logins-settings.php'; ?>
     </div>
 
-<?php } ?>
+<?php } else {  ?>
+    <div class="wrap tlwp-sytem-info" id="tlwp-system-info">
+		<?php include WTLWP_PLUGIN_DIR . '/templates/system-info.php'; ?>
+    </div>
+<?php }  ?>

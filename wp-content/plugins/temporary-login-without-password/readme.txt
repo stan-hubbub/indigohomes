@@ -3,8 +3,8 @@ Contributors: storeapps, niravmehta, malayladu
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=CPTHCDC382KVA
 Tags: temporary access, developer access, admin login, temporary login, passwordless login, customer login, secure login, access, admin, log in, login, login security, protection, user login, user login, wordpress admin login, wordpress login, wp-admin, wp-login, expiration, login, Login Without Password, user, WordPress Admin, wp-admin, developer login
 Requires at least: 3.0.1
-Tested up to: 4.9.8
-Stable tag: 1.5.13
+Tested up to: 5.0.3
+Stable tag: 1.5.14
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -58,7 +58,6 @@ No. temporary user can't login with username & password.
 
 No. at this moment it's not possible to do this.
 
-
 == Screenshots ==
 
 1. Create a new Temporary Login.
@@ -67,6 +66,10 @@ No. at this moment it's not possible to do this.
 4. Update Temporary Login
 
 == Changelog ==
+
+**1.5.14 [2019-01-14]**
+
+* Update: Added System info page and allow temporary user to access system info page
 
 **1.5.13 [2018-11-19]**
 

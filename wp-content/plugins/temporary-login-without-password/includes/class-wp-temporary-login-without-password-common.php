@@ -708,7 +708,7 @@ class Wp_Temporary_Login_Without_Password_Common {
 	 * @return array
 	 */
 	public static function get_blocked_pages() {
-		$blocked_pages = array( 'wp-temporary-login-without-password', 'user-new.php', 'user-edit.php', 'profile.php' );
+		$blocked_pages = array( 'user-new.php', 'user-edit.php', 'profile.php' );
 		$blocked_pages = apply_filters( 'wtlwp_restricted_pages_for_temporary_users', $blocked_pages );
 
 		return $blocked_pages;
