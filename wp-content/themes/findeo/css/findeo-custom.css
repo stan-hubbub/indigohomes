@@ -287,13 +287,15 @@ body .findeo-custom .add-floorplans-submit-item.button,
 /* checkout */
 .findeo-custom .checkout_coupon_x {
   border-radius: 3px;
-  border: 1px solid rgba(0,0,0,0.09);
+  border: 0 solid rgba(0,0,0,0.09);
   display: block;
   margin-bottom: 15px;
   padding: 25px;
+  text-align: right;
 }
 
 .findeo-custom .checkout_coupon_x  input {
+  text-align: right;
   margin: 0;
   height: 48px;
   border-bottom-right-radius: 0;
@@ -301,6 +303,7 @@ body .findeo-custom .add-floorplans-submit-item.button,
 }
 
 .findeo-custom .checkout_coupon_x button.btn {
+  text-align: right;
   border-bottom-left-radius: 0;
   border-top-left-radius: 0;
   height: 48px;
@@ -308,6 +311,7 @@ body .findeo-custom .add-floorplans-submit-item.button,
 }
 
 .findeo-custom .checkout_coupon_x p:first-child {
+  text-align: right;
   margin-bottom: 10px;
 }
 
