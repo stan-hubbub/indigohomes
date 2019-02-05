@@ -370,7 +370,7 @@ body .findeo-custom .add-floorplans-submit-item.button,
 /* cart */
 .findeo-custom table.shop_table th {
   background-color: transparent !important;
-  border-bottom: #e4e4e4 0px solid;
+  border-bottom: #e4e4e4 1px solid;
   color: #707070;
 }
 
