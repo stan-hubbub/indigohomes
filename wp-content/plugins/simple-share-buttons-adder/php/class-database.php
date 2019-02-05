@@ -143,9 +143,9 @@ class Database {
 			'ssba_plus_font_weight'      => '',
 
 			// Include.
-			'ssba_selected_buttons'         => 'facebook,google,twitter,linkedin',
-			'ssba_selected_bar_buttons'     => 'facebook,google,twitter,linkedin',
-			'ssba_selected_plus_buttons'    => 'facebook,google,twitter,linkedin',
+			'ssba_selected_buttons'         => 'facebook,pinterest,twitter,linkedin',
+			'ssba_selected_bar_buttons'     => 'facebook,pinterest,twitter,linkedin',
+			'ssba_selected_plus_buttons'    => 'facebook,pinterest,twitter,linkedin',
 			'ssba_plus_button_style'        => 1,
 			'ssba_bar_style'                => 1,
 			'ssba_new_buttons'              => '',
@@ -173,7 +173,6 @@ class Database {
 
 			// Custom images.
 			'ssba_custom_email'          => '',
-			'ssba_custom_google'         => '',
 			'ssba_custom_facebook'       => '',
 			'ssba_custom_twitter'        => '',
 			'ssba_custom_diggit'         => '',
@@ -199,11 +198,6 @@ class Database {
 			'sharedcount_share_enabled'   => '',
 			'sharedcount_share_api_key'   => '',
 			'sharedcount_share_plan'      => 'free',
-
-			// Newsharecounts.
-			'twitter_newsharecounts'       => '',
-			'plus_twitter_newsharecounts'  => '',
-			'share_twitter_newsharecounts' => '',
 
 			// New with sharethis.
 			'facebook_insights'          => '',
@@ -287,8 +281,8 @@ class Database {
 				'ssba_plus_font_color'       => '',
 				'ssba_plus_font_size'        => '12',
 				'ssba_plus_font_weight'      => '',
-				'ssba_selected_bar_buttons'     => 'facebook,google,twitter,linkedin',
-				'ssba_selected_plus_buttons'    => 'facebook,google,twitter,linkedin',
+				'ssba_selected_bar_buttons'     => 'facebook,pinterest,twitter,linkedin',
+				'ssba_selected_plus_buttons'    => 'facebook,pinterest,twitter,linkedin',
 				'ssba_plus_button_style'        => 1,
 				'ssba_bar_style'                => 1,
 				'ssba_new_buttons'              => '',
@@ -407,17 +401,6 @@ class Database {
 			$this->class_ssba->ssba_update_options( $new );
 		}
 
-		// If version is less than 6.1.5.
-		if ( $version < '6.1.5' ) {
-			// New settings.
-			$new = array(
-				'twitter_newsharecounts' => '',
-			);
-
-			// Update settings.
-			$this->class_ssba->ssba_update_options( $new );
-		}
-
 		// If version is less than 6.2.0.
 		if ( $version < '6.2.0' ) {
 			// New settings.
@@ -466,9 +449,6 @@ class Database {
 			),
 			'flattr'        => array(
 				'full_name' => esc_html__( 'Flattr', 'simple-share-buttons-adder' ),
-				),
-			'google'        => array(
-				'full_name' => esc_html__( 'Google+', 'simple-share-buttons-adder' ),
 				),
 			'linkedin'      => array(
 				'full_name' => esc_html__( 'LinkedIn', 'simple-share-buttons-adder' ),

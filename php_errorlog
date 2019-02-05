@@ -225,3 +225,171 @@
 [21-Dec-2018 18:54:16 UTC] Aq_Resize.process() error: $height parameter is required
 [22-Dec-2018 08:07:24 UTC] WordPress database error Deadlock found when trying to get lock; try restarting transaction for query DELETE FROM `wpsm_options` WHERE `option_name` = '_site_transient_kirki_googlefonts_cache' made by require('wp-blog-header.php'), require_once('wp-load.php'), require_once('wp-config.php'), require_once('wp-settings.php'), do_action('wp_loaded'), WP_Hook->do_action, WP_Hook->apply_filters, Kirki_Modules_Webfonts->run, Kirki_Fonts_Google::get_instance, Kirki_Fonts_Google->__construct, Kirki_Fonts::get_google_fonts, get_site_transient, delete_site_option, delete_network_option, delete_option
 [22-Dec-2018 08:07:24 UTC] WordPress database error Deadlock found when trying to get lock; try restarting transaction for query DELETE FROM `wpsm_options` WHERE `option_name` = '_site_transient_kirki_googlefonts_cache' made by require_once('wp-load.php'), require_once('wp-config.php'), require_once('wp-settings.php'), do_action('wp_loaded'), WP_Hook->do_action, WP_Hook->apply_filters, Kirki_Modules_Webfonts->run, Kirki_Fonts_Google::get_instance, Kirki_Fonts_Google->__construct, Kirki_Fonts::get_google_fonts, get_site_transient, delete_site_option, delete_network_option, delete_option
+[02-Jan-2019 16:19:22 UTC] Aq_Resize.process() error: $height parameter is required
+[03-Jan-2019 21:09:19 UTC] PHP Parse error:  syntax error, unexpected '}', expecting end of file in /home/hubbub42/public_html/indigohomes.ph/wp-content/themes/findeo/woocommerce/cart/cart.php on line 110
+[06-Jan-2019 01:20:19 UTC] Aq_Resize.process() error: $url parameter is required
+[06-Jan-2019 01:30:27 UTC] Aq_Resize.process() error: $height parameter is required
+[06-Jan-2019 03:01:36 UTC] Aq_Resize.process() error: $height parameter is required
+[06-Jan-2019 03:01:36 UTC] Aq_Resize.process() error: $height parameter is required
+[06-Jan-2019 03:01:36 UTC] Aq_Resize.process() error: $height parameter is required
+[06-Jan-2019 10:34:02 UTC] Aq_Resize.process() error: $url parameter is required
+[06-Jan-2019 10:54:10 UTC] Aq_Resize.process() error: $height parameter is required
+[06-Jan-2019 11:34:40 UTC] Aq_Resize.process() error: $height parameter is required
+[06-Jan-2019 11:34:40 UTC] Aq_Resize.process() error: $height parameter is required
+[06-Jan-2019 11:34:40 UTC] Aq_Resize.process() error: $height parameter is required
+[06-Jan-2019 19:46:46 UTC] Aq_Resize.process() error: $url parameter is required
+[06-Jan-2019 20:57:00 UTC] Aq_Resize.process() error: $height parameter is required
+[06-Jan-2019 20:57:00 UTC] Aq_Resize.process() error: $height parameter is required
+[06-Jan-2019 20:57:00 UTC] Aq_Resize.process() error: $height parameter is required
+[06-Jan-2019 22:57:30 UTC] Aq_Resize.process() error: $height parameter is required
+[11-Jan-2019 22:02:27 UTC] Aq_Resize.process() error: $height parameter is required
+[12-Jan-2019 03:13:43 UTC] Aq_Resize.process() error: $height parameter is required
+[12-Jan-2019 03:13:43 UTC] Aq_Resize.process() error: $height parameter is required
+[12-Jan-2019 03:13:43 UTC] Aq_Resize.process() error: $height parameter is required
+[12-Jan-2019 07:25:54 UTC] Aq_Resize.process() error: $height parameter is required
+[12-Jan-2019 12:58:32 UTC] Aq_Resize.process() error: $height parameter is required
+[12-Jan-2019 12:58:32 UTC] Aq_Resize.process() error: $height parameter is required
+[12-Jan-2019 12:58:32 UTC] Aq_Resize.process() error: $height parameter is required
+[12-Jan-2019 19:36:06 UTC] Aq_Resize.process() error: $height parameter is required
+[12-Jan-2019 22:47:40 UTC] Aq_Resize.process() error: $height parameter is required
+[12-Jan-2019 22:47:40 UTC] Aq_Resize.process() error: $height parameter is required
+[12-Jan-2019 22:47:40 UTC] Aq_Resize.process() error: $height parameter is required
+[13-Jan-2019 09:34:38 UTC] Aq_Resize.process() error: $height parameter is required
+[13-Jan-2019 09:34:38 UTC] Aq_Resize.process() error: $height parameter is required
+[13-Jan-2019 09:34:38 UTC] Aq_Resize.process() error: $height parameter is required
+[13-Jan-2019 19:36:54 UTC] Aq_Resize.process() error: $height parameter is required
+[13-Jan-2019 19:36:54 UTC] Aq_Resize.process() error: $height parameter is required
+[13-Jan-2019 19:36:54 UTC] Aq_Resize.process() error: $height parameter is required
+[15-Jan-2019 01:36:39 UTC] Aq_Resize.process() error: $height parameter is required
+[15-Jan-2019 04:47:53 UTC] Aq_Resize.process() error: $height parameter is required
+[15-Jan-2019 04:47:53 UTC] Aq_Resize.process() error: $height parameter is required
+[15-Jan-2019 04:47:53 UTC] Aq_Resize.process() error: $height parameter is required
+[15-Jan-2019 17:45:09 UTC] Aq_Resize.process() error: $height parameter is required
+[15-Jan-2019 22:59:20 UTC] Aq_Resize.process() error: $height parameter is required
+[15-Jan-2019 22:59:20 UTC] Aq_Resize.process() error: $height parameter is required
+[15-Jan-2019 22:59:20 UTC] Aq_Resize.process() error: $height parameter is required
+[15-Jan-2019 23:46:40 UTC] PHP Warning:  explode() expects parameter 2 to be string, array given in /home/hubbub42/public_html/indigohomes.ph/wp-content/plugins/woocommerce/includes/class-wc-query.php on line 448
+[17-Jan-2019 10:40:00 UTC] PHP Fatal error:  Uncaught Error: Cannot use object of type WP_Error as array in /home/hubbub42/public_html/indigohomes.ph/wp-content/plugins/realteo/includes/class-realteo-geocode.php:211
+Stack trace:
+#0 /home/hubbub42/public_html/indigohomes.ph/wp-content/plugins/realteo/includes/class-realteo-geocode.php(44): Realteo_Geocode::save_location_data(574, Array)
+#1 /home/hubbub42/public_html/indigohomes.ph/wp-includes/class-wp-hook.php(286): Realteo_Geocode->update_location_data(574, Array)
+#2 /home/hubbub42/public_html/indigohomes.ph/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#3 /home/hubbub42/public_html/indigohomes.ph/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#4 /home/hubbub42/public_html/indigohomes.ph/wp-content/plugins/realteo/includes/class-realteo-submit.php(1240): do_action('realteo_update_...', 574, Array)
+#5 /home/hubbub42/public_html/indigohomes.ph/wp-content/plugins/realteo/includes/class-realteo-submit.php(755): Realteo_Submit->update_property_data(Array)
+#6 /home/hubbub42/pub in /home/hubbub42/public_html/indigohomes.ph/wp-content/plugins/realteo/includes/class-realteo-geocode.php on line 211
+[17-Jan-2019 10:40:15 UTC] PHP Fatal error:  Uncaught Error: Cannot use object of type WP_Error as array in /home/hubbub42/public_html/indigohomes.ph/wp-content/plugins/realteo/includes/class-realteo-geocode.php:211
+Stack trace:
+#0 /home/hubbub42/public_html/indigohomes.ph/wp-content/plugins/realteo/includes/class-realteo-geocode.php(56): Realteo_Geocode::save_location_data(574, Array)
+#1 /home/hubbub42/public_html/indigohomes.ph/wp-includes/class-wp-hook.php(286): Realteo_Geocode->update_admin_location_data(574, Object(WP_Post), true)
+#2 /home/hubbub42/public_html/indigohomes.ph/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#3 /home/hubbub42/public_html/indigohomes.ph/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#4 /home/hubbub42/public_html/indigohomes.ph/wp-includes/post.php(3736): do_action('save_post_prope...', 574, Object(WP_Post), true)
+#5 /home/hubbub42/public_html/indigohomes.ph/wp-includes/post.php(3820): wp_insert_post(Array, false)
+#6 /home/hubbub42/public_html/indigohomes.ph/wp-content/plugins/realteo/inclu in /home/hubbub42/public_html/indigohomes.ph/wp-content/plugins/realteo/includes/class-realteo-geocode.php on line 211
+[24-Jan-2019 03:48:08 UTC] Aq_Resize.process() error: $height parameter is required
+[24-Jan-2019 15:23:32 UTC] Aq_Resize.process() error: $height parameter is required
+[24-Jan-2019 15:23:32 UTC] Aq_Resize.process() error: $height parameter is required
+[24-Jan-2019 15:23:32 UTC] Aq_Resize.process() error: $height parameter is required
+[26-Jan-2019 11:53:11 UTC] Aq_Resize.process() error: $height parameter is required
+[26-Jan-2019 11:53:11 UTC] Aq_Resize.process() error: $height parameter is required
+[26-Jan-2019 11:53:11 UTC] Aq_Resize.process() error: $height parameter is required
+[26-Jan-2019 14:34:11 UTC] Aq_Resize.process() error: $url parameter is required
+[03-Feb-2019 00:24:05 UTC] WordPress database error Deadlock found when trying to get lock; try restarting transaction for query DELETE FROM `wpsm_options` WHERE `option_name` = '_site_transient_kirki_googlefonts_cache' made by require('wp-blog-header.php'), require_once('wp-load.php'), require_once('wp-config.php'), require_once('wp-settings.php'), do_action('wp_loaded'), WP_Hook->do_action, WP_Hook->apply_filters, Kirki_Modules_Webfonts->run, Kirki_Fonts_Google::get_instance, Kirki_Fonts_Google->__construct, Kirki_Fonts::get_google_fonts, get_site_transient, delete_site_option, delete_network_option, delete_option
+[03-Feb-2019 03:54:04 UTC] Aq_Resize.process() error: $height parameter is required
+[03-Feb-2019 04:14:05 UTC] Aq_Resize.process() error: $height parameter is required
+[03-Feb-2019 04:14:05 UTC] Aq_Resize.process() error: $height parameter is required
+[03-Feb-2019 04:14:05 UTC] Aq_Resize.process() error: $height parameter is required
+[05-Feb-2019 04:59:43 UTC] The WC_Cart::get_remove_url function is deprecated since version 3.3. Replace with wc_get_cart_remove_url.
+[05-Feb-2019 04:59:43 UTC] The WC_Cart::get_remove_url function is deprecated since version 3.3. Replace with wc_get_cart_remove_url.
+[05-Feb-2019 04:59:49 UTC] The WC_Cart::get_remove_url function is deprecated since version 3.3. Replace with wc_get_cart_remove_url.
+[05-Feb-2019 05:04:55 UTC] The WC_Cart::get_remove_url function is deprecated since version 3.3. Replace with wc_get_cart_remove_url.
+[05-Feb-2019 05:04:55 UTC] The WC_Cart::get_remove_url function is deprecated since version 3.3. Replace with wc_get_cart_remove_url.
+[05-Feb-2019 05:05:29 UTC] The WC_Cart::get_remove_url function is deprecated since version 3.3. Replace with wc_get_cart_remove_url.
+[05-Feb-2019 05:05:33 UTC] The WC_Cart::get_remove_url function is deprecated since version 3.3. Replace with wc_get_cart_remove_url.
+[05-Feb-2019 05:05:33 UTC] The WC_Cart::get_remove_url function is deprecated since version 3.3. Replace with wc_get_cart_remove_url.
+[05-Feb-2019 05:20:41 UTC] The WC_Cart::get_remove_url function is deprecated since version 3.3. Replace with wc_get_cart_remove_url.
+[05-Feb-2019 05:20:41 UTC] The WC_Cart::get_remove_url function is deprecated since version 3.3. Replace with wc_get_cart_remove_url.
+[05-Feb-2019 05:23:23 UTC] The WC_Cart::get_remove_url function is deprecated since version 3.3. Replace with wc_get_cart_remove_url.
+[05-Feb-2019 05:23:23 UTC] The WC_Cart::get_remove_url function is deprecated since version 3.3. Replace with wc_get_cart_remove_url.
+[05-Feb-2019 05:23:38 UTC] The WC_Cart::get_remove_url function is deprecated since version 3.3. Replace with wc_get_cart_remove_url.
+[05-Feb-2019 05:23:38 UTC] The WC_Cart::get_remove_url function is deprecated since version 3.3. Replace with wc_get_cart_remove_url.
+[05-Feb-2019 05:23:59 UTC] The WC_Cart::get_remove_url function is deprecated since version 3.3. Replace with wc_get_cart_remove_url.
+[05-Feb-2019 05:23:59 UTC] The WC_Cart::get_remove_url function is deprecated since version 3.3. Replace with wc_get_cart_remove_url.
+[05-Feb-2019 05:24:49 UTC] The WC_Cart::get_remove_url function is deprecated since version 3.3. Replace with wc_get_cart_remove_url.
+[05-Feb-2019 05:24:49 UTC] The WC_Cart::get_remove_url function is deprecated since version 3.3. Replace with wc_get_cart_remove_url.
+[05-Feb-2019 05:25:08 UTC] The WC_Cart::get_remove_url function is deprecated since version 3.3. Replace with wc_get_cart_remove_url.
+[05-Feb-2019 05:25:16 UTC] The WC_Cart::get_remove_url function is deprecated since version 3.3. Replace with wc_get_cart_remove_url.
+[05-Feb-2019 05:25:21 UTC] The WC_Cart::get_remove_url function is deprecated since version 3.3. Replace with wc_get_cart_remove_url.
+[05-Feb-2019 05:37:14 UTC] The WC_Cart::get_remove_url function is deprecated since version 3.3. Replace with wc_get_cart_remove_url.
+[05-Feb-2019 05:44:18 UTC] The WC_Cart::get_remove_url function is deprecated since version 3.3. Replace with wc_get_cart_remove_url.
+[05-Feb-2019 05:49:44 UTC] The WC_Cart::get_remove_url function is deprecated since version 3.3. Replace with wc_get_cart_remove_url.
+[05-Feb-2019 05:54:07 UTC] The WC_Cart::get_remove_url function is deprecated since version 3.3. Replace with wc_get_cart_remove_url.
+[05-Feb-2019 05:54:31 UTC] The WC_Cart::get_remove_url function is deprecated since version 3.3. Replace with wc_get_cart_remove_url.
+[05-Feb-2019 06:05:56 UTC] The WC_Cart::get_remove_url function is deprecated since version 3.3. Replace with wc_get_cart_remove_url.
+[05-Feb-2019 06:08:05 UTC] The WC_Cart::get_remove_url function is deprecated since version 3.3. Replace with wc_get_cart_remove_url.
+[05-Feb-2019 06:10:22 UTC] The WC_Cart::get_remove_url function is deprecated since version 3.3. Replace with wc_get_cart_remove_url.
+[05-Feb-2019 06:10:33 UTC] The WC_Cart::get_remove_url function is deprecated since version 3.3. Replace with wc_get_cart_remove_url.
+[05-Feb-2019 06:11:21 UTC] The WC_Cart::get_remove_url function is deprecated since version 3.3. Replace with wc_get_cart_remove_url.
+[05-Feb-2019 06:11:34 UTC] The WC_Cart::get_remove_url function is deprecated since version 3.3. Replace with wc_get_cart_remove_url.
+[05-Feb-2019 06:11:42 UTC] The WC_Cart::get_remove_url function is deprecated since version 3.3. Replace with wc_get_cart_remove_url.
+[05-Feb-2019 06:12:13 UTC] The WC_Cart::get_remove_url function is deprecated since version 3.3. Replace with wc_get_cart_remove_url.
+[05-Feb-2019 06:12:18 UTC] The WC_Cart::get_remove_url function is deprecated since version 3.3. Replace with wc_get_cart_remove_url.
+[05-Feb-2019 06:59:40 UTC] The WC_Cart::get_remove_url function is deprecated since version 3.3. Replace with wc_get_cart_remove_url.
+[05-Feb-2019 07:20:11 UTC] The WC_Cart::get_remove_url function is deprecated since version 3.3. Replace with wc_get_cart_remove_url.
+[05-Feb-2019 07:22:43 UTC] The WC_Cart::get_remove_url function is deprecated since version 3.3. Replace with wc_get_cart_remove_url.
+[05-Feb-2019 07:24:51 UTC] The WC_Cart::get_remove_url function is deprecated since version 3.3. Replace with wc_get_cart_remove_url.
+[05-Feb-2019 07:25:32 UTC] The WC_Cart::get_remove_url function is deprecated since version 3.3. Replace with wc_get_cart_remove_url.
+[05-Feb-2019 07:33:21 UTC] The WC_Cart::get_remove_url function is deprecated since version 3.3. Replace with wc_get_cart_remove_url.
+[05-Feb-2019 07:34:13 UTC] The WC_Cart::get_remove_url function is deprecated since version 3.3. Replace with wc_get_cart_remove_url.
+[05-Feb-2019 07:36:06 UTC] The WC_Cart::get_remove_url function is deprecated since version 3.3. Replace with wc_get_cart_remove_url.
+[05-Feb-2019 07:36:39 UTC] The WC_Cart::get_remove_url function is deprecated since version 3.3. Replace with wc_get_cart_remove_url.
+[05-Feb-2019 08:05:41 UTC] The WC_Cart::get_remove_url function is deprecated since version 3.3. Replace with wc_get_cart_remove_url.
+[05-Feb-2019 08:10:58 UTC] The WC_Cart::get_remove_url function is deprecated since version 3.3. Replace with wc_get_cart_remove_url.
+[05-Feb-2019 08:18:10 UTC] The WC_Cart::get_remove_url function is deprecated since version 3.3. Replace with wc_get_cart_remove_url.
+[05-Feb-2019 08:18:27 UTC] The WC_Cart::get_remove_url function is deprecated since version 3.3. Replace with wc_get_cart_remove_url.
+[05-Feb-2019 08:21:09 UTC] The WC_Cart::get_remove_url function is deprecated since version 3.3. Replace with wc_get_cart_remove_url.
+[05-Feb-2019 08:25:39 UTC] The WC_Cart::get_remove_url function is deprecated since version 3.3. Replace with wc_get_cart_remove_url.
+[05-Feb-2019 08:25:43 UTC] The WC_Cart::get_remove_url function is deprecated since version 3.3. Replace with wc_get_cart_remove_url.
+[05-Feb-2019 08:26:01 UTC] The WC_Cart::get_remove_url function is deprecated since version 3.3. Replace with wc_get_cart_remove_url.
+[05-Feb-2019 08:26:27 UTC] The WC_Cart::get_remove_url function is deprecated since version 3.3. Replace with wc_get_cart_remove_url.
+[05-Feb-2019 08:32:21 UTC] The WC_Cart::get_remove_url function is deprecated since version 3.3. Replace with wc_get_cart_remove_url.
+[05-Feb-2019 08:33:27 UTC] The WC_Cart::get_remove_url function is deprecated since version 3.3. Replace with wc_get_cart_remove_url.
+[05-Feb-2019 08:35:08 UTC] The WC_Cart::get_remove_url function is deprecated since version 3.3. Replace with wc_get_cart_remove_url.
+[05-Feb-2019 08:37:43 UTC] The WC_Cart::get_remove_url function is deprecated since version 3.3. Replace with wc_get_cart_remove_url.
+[05-Feb-2019 08:42:44 UTC] The WC_Cart::get_remove_url function is deprecated since version 3.3. Replace with wc_get_cart_remove_url.
+[05-Feb-2019 08:43:08 UTC] The WC_Cart::get_remove_url function is deprecated since version 3.3. Replace with wc_get_cart_remove_url.
+[05-Feb-2019 08:43:20 UTC] The WC_Cart::get_remove_url function is deprecated since version 3.3. Replace with wc_get_cart_remove_url.
+[05-Feb-2019 08:43:23 UTC] The WC_Cart::get_remove_url function is deprecated since version 3.3. Replace with wc_get_cart_remove_url.
+[05-Feb-2019 08:44:20 UTC] The WC_Cart::get_remove_url function is deprecated since version 3.3. Replace with wc_get_cart_remove_url.
+[05-Feb-2019 08:45:05 UTC] The WC_Cart::get_remove_url function is deprecated since version 3.3. Replace with wc_get_cart_remove_url.
+[05-Feb-2019 08:46:19 UTC] The WC_Cart::get_remove_url function is deprecated since version 3.3. Replace with wc_get_cart_remove_url.
+[05-Feb-2019 08:48:40 UTC] The WC_Cart::get_remove_url function is deprecated since version 3.3. Replace with wc_get_cart_remove_url.
+[05-Feb-2019 08:50:43 UTC] The WC_Cart::get_remove_url function is deprecated since version 3.3. Replace with wc_get_cart_remove_url.
+[05-Feb-2019 08:51:04 UTC] The WC_Cart::get_remove_url function is deprecated since version 3.3. Replace with wc_get_cart_remove_url.
+[05-Feb-2019 08:51:56 UTC] The WC_Cart::get_remove_url function is deprecated since version 3.3. Replace with wc_get_cart_remove_url.
+[05-Feb-2019 08:52:53 UTC] The WC_Cart::get_remove_url function is deprecated since version 3.3. Replace with wc_get_cart_remove_url.
+[05-Feb-2019 08:55:58 UTC] The WC_Cart::get_remove_url function is deprecated since version 3.3. Replace with wc_get_cart_remove_url.
+[05-Feb-2019 09:08:32 UTC] The WC_Cart::get_remove_url function is deprecated since version 3.3. Replace with wc_get_cart_remove_url.
+[05-Feb-2019 09:10:15 UTC] The WC_Cart::get_remove_url function is deprecated since version 3.3. Replace with wc_get_cart_remove_url.
+[05-Feb-2019 09:19:21 UTC] The WC_Cart::get_remove_url function is deprecated since version 3.3. Replace with wc_get_cart_remove_url.
+[05-Feb-2019 09:26:03 UTC] The WC_Cart::get_remove_url function is deprecated since version 3.3. Replace with wc_get_cart_remove_url.
+[05-Feb-2019 10:08:41 UTC] The WC_Cart::get_remove_url function is deprecated since version 3.3. Replace with wc_get_cart_remove_url.
+[05-Feb-2019 10:13:22 UTC] The WC_Cart::get_remove_url function is deprecated since version 3.3. Replace with wc_get_cart_remove_url.
+[05-Feb-2019 10:13:27 UTC] The WC_Cart::get_remove_url function is deprecated since version 3.3. Replace with wc_get_cart_remove_url.
+[05-Feb-2019 10:27:51 UTC] The WC_Cart::get_remove_url function is deprecated since version 3.3. Replace with wc_get_cart_remove_url.
+[05-Feb-2019 10:30:56 UTC] The WC_Cart::get_remove_url function is deprecated since version 3.3. Replace with wc_get_cart_remove_url.
+[05-Feb-2019 10:31:08 UTC] The WC_Cart::get_remove_url function is deprecated since version 3.3. Replace with wc_get_cart_remove_url.
+[05-Feb-2019 10:32:22 UTC] The WC_Cart::get_remove_url function is deprecated since version 3.3. Replace with wc_get_cart_remove_url.
+[05-Feb-2019 10:35:18 UTC] The WC_Cart::get_remove_url function is deprecated since version 3.3. Replace with wc_get_cart_remove_url.
+[05-Feb-2019 10:48:45 UTC] The WC_Cart::get_remove_url function is deprecated since version 3.3. Replace with wc_get_cart_remove_url.
+[05-Feb-2019 10:49:30 UTC] The WC_Cart::get_remove_url function is deprecated since version 3.3. Replace with wc_get_cart_remove_url.
+[05-Feb-2019 10:51:04 UTC] The WC_Cart::get_remove_url function is deprecated since version 3.3. Replace with wc_get_cart_remove_url.
+[05-Feb-2019 10:56:28 UTC] The WC_Cart::get_remove_url function is deprecated since version 3.3. Replace with wc_get_cart_remove_url.
+[05-Feb-2019 11:01:01 UTC] The WC_Cart::get_remove_url function is deprecated since version 3.3. Replace with wc_get_cart_remove_url.
+[05-Feb-2019 11:01:05 UTC] The WC_Cart::get_remove_url function is deprecated since version 3.3. Replace with wc_get_cart_remove_url.
+[05-Feb-2019 11:09:19 UTC] The WC_Cart::get_remove_url function is deprecated since version 3.3. Replace with wc_get_cart_remove_url.
+[05-Feb-2019 11:09:36 UTC] The WC_Cart::get_remove_url function is deprecated since version 3.3. Replace with wc_get_cart_remove_url.
+[05-Feb-2019 11:17:18 UTC] The WC_Cart::get_remove_url function is deprecated since version 3.3. Replace with wc_get_cart_remove_url.
+[05-Feb-2019 11:17:33 UTC] The WC_Cart::get_remove_url function is deprecated since version 3.3. Replace with wc_get_cart_remove_url.
+[05-Feb-2019 11:17:39 UTC] The WC_Cart::get_remove_url function is deprecated since version 3.3. Replace with wc_get_cart_remove_url.

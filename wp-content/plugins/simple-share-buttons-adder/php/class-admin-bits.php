@@ -300,8 +300,6 @@ class Admin_Bits {
 				'ssba_pinterest_featured'    => ( isset( $ssba_post['ssba_pinterest_featured'] ) ? $ssba_post['ssba_pinterest_featured'] : 'N' ),
 				'ssba_content_priority'      => ( isset( $ssba_post['ssba_content_priority'] ) ? $ssba_post['ssba_content_priority'] : 'N' ),
 				'ssba_plus_additional_css'   => $ssba_post['ssba_plus_additional_css'],
-				'ssba_plus_custom_styles'         => $ssba_post['ssba_plus_custom_styles'],
-				'ssba_plus_custom_styles_enabled' => $ssba_post['ssba_plus_custom_styles_enabled'],
 				'ssba_plus_email_message'         => stripslashes_deep( $ssba_post['ssba_plus_email_message'] ),
 				'ssba_plus_twitter_text'          => stripslashes_deep( $ssba_post['ssba_plus_twitter_text'] ),
 				'ssba_plus_buffer_text'           => stripslashes_deep( $ssba_post['ssba_plus_buffer_text'] ),
@@ -318,8 +316,6 @@ class Admin_Bits {
 				'ssba_plus_default_pinterest'     => ( isset( $ssba_post['ssba_plus_default_pinterest'] ) ? $ssba_post['ssba_plus_default_pinterest'] : 'N' ),
 				'ssba_plus_pinterest_featured'    => ( isset( $ssba_post['ssba_plus_pinterest_featured'] ) ? $ssba_post['ssba_plus_pinterest_featured'] : 'N' ),
 				'ssba_bar_additional_css'        => $ssba_post['ssba_bar_additional_css'],
-				'ssba_bar_custom_styles'         => $ssba_post['ssba_bar_custom_styles'],
-				'ssba_bar_custom_styles_enabled' => $ssba_post['ssba_bar_custom_styles_enabled'],
 				'ssba_bar_email_message'         => stripslashes_deep( $ssba_post['ssba_bar_email_message'] ),
 				'ssba_bar_twitter_text'          => stripslashes_deep( $ssba_post['ssba_bar_twitter_text'] ),
 				'ssba_bar_buffer_text'           => stripslashes_deep( $ssba_post['ssba_bar_buffer_text'] ),
@@ -386,7 +382,6 @@ class Admin_Bits {
 				'ssba_bar_mobile'             => isset( $ssba_post['ssba_bar_mobile'] ) ? $ssba_post['ssba_bar_mobile'] : 'N',
 				'ssba_mobile_breakpoint'        => $ssba_post['ssba_mobile_breakpoint'],
 				'ssba_custom_facebook'          => $ssba_post['ssba_custom_facebook'],
-				'ssba_custom_google'            => $ssba_post['ssba_custom_google'],
 				'ssba_custom_twitter'           => $ssba_post['ssba_custom_twitter'],
 				'ssba_custom_linkedin'          => $ssba_post['ssba_custom_linkedin'],
 				'ssba_custom_flattr'            => $ssba_post['ssba_custom_flattr'],
@@ -408,11 +403,6 @@ class Admin_Bits {
 				'sharedcount_enabled'           => isset( $ssba_post['sharedcount_enabled'] ) ? $ssba_post['sharedcount_enabled'] : 'N',
 				'sharedcount_api_key'           => $ssba_post['sharedcount_api_key'],
 				'sharedcount_plan'              => $ssba_post['sharedcount_plan'],
-
-				// New share counts.
-				'twitter_newsharecounts'        => $ssba_post['twitter_newsharecounts'],
-				'plus_twitter_newsharecounts'   => $ssba_post['plus_twitter_newsharecounts'],
-				'bar_twitter_newsharecounts'    => $ssba_post['bar_twitter_newsharecounts'],
 
 				// Facebook.
 				'facebook_insights'             => $ssba_post['facebook_insights'],

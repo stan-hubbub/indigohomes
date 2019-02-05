@@ -557,17 +557,6 @@ class Admin_Panel {
 			),
 		);
 
-		// Newsharecounts.com enable.
-		$opts22 = array(
-			'form_group' => false,
-			'type'       => 'checkbox',
-			'name'       => 'twitter_newsharecounts',
-			'label'      => '',
-			'tooltip'    => 'Switch on to enable the use of the newsharecounts.com API for Twitter share counts',
-			'value'      => 'Y',
-			'checked'    => isset( $arr_settings['twitter_newsharecounts'] ) && 'Y' === $arr_settings['twitter_newsharecounts'] ? esc_attr( 'checked' ) : null,
-		);
-
 		// Sharedcount enable.
 		$opts23 = array(
 			'form_group' => false,
@@ -1169,28 +1158,6 @@ class Admin_Panel {
 			'checked'    => isset( $arr_settings['ssba_custom_styles_enabled'] ) && 'Y' === $arr_settings['ssba_custom_styles_enabled'] ? 'checked' : null,
 		);
 
-		// Enable custom css for plus.
-		$opts41p = array(
-			'form_group' => false,
-			'type'       => 'checkbox',
-			'name'       => 'ssba_plus_custom_styles_enabled',
-			'label'      => 'Enable Custom CSS',
-			'tooltip'    => 'Switch on to disable all SSBA styles and use your own custom CSS',
-			'value'      => 'Y',
-			'checked'    => isset( $arr_settings['ssba_plus_custom_styles_enabled'] ) && 'Y' === $arr_settings['ssba_plus_custom_styles_enabled'] ? 'checked' : null,
-		);
-
-		// Enable custom css for share bar.
-		$opts41s = array(
-			'form_group' => false,
-			'type'       => 'checkbox',
-			'name'       => 'ssba_bar_custom_styles_enabled',
-			'label'      => 'Enable Custom CSS',
-			'tooltip'    => 'Switch on to disable all SSBA styles and use your own custom CSS',
-			'value'      => 'Y',
-			'checked'    => isset( $arr_settings['ssba_bar_custom_styles_enabled'] ) && 'Y' === $arr_settings['ssba_bar_custom_styles_enabled'] ? 'checked' : null,
-		);
-
 		// Custom css.
 		$opts42 = array(
 			'form_group' => false,
@@ -1201,30 +1168,6 @@ class Admin_Panel {
 			'label'      => 'Custom CSS',
 			'tooltip'    => 'Enter in your own custom CSS for your share buttons',
 			'value'      => isset( $arr_settings['ssba_custom_styles'] ) ? $arr_settings['ssba_custom_styles'] : '',
-		);
-
-		// Custom css for plus.
-		$opts42p = array(
-			'form_group' => false,
-			'type'       => 'textarea',
-			'rows'       => '15',
-			'class'      => 'code-font',
-			'name'       => 'ssba_plus_custom_styles',
-			'label'      => 'Custom CSS',
-			'tooltip'    => 'Enter in your own custom CSS for your share buttons',
-			'value'      => isset( $arr_settings['ssba_plus_custom_styles'] ) ? $arr_settings['ssba_plus_custom_styles'] : '',
-		);
-
-		// Custom css for share bar.
-		$opts42s = array(
-			'form_group' => false,
-			'type'       => 'textarea',
-			'rows'       => '15',
-			'class'      => 'code-font',
-			'name'       => 'ssba_bar_custom_styles',
-			'label'      => 'Custom CSS',
-			'tooltip'    => 'Enter in your own custom CSS for your share buttons',
-			'value'      => isset( $arr_settings['ssba_bar_custom_styles'] ) ? $arr_settings['ssba_bar_custom_styles'] : '',
 		);
 
 		// Switch to new buttons.
@@ -1575,21 +1518,21 @@ class Admin_Panel {
 		}
 
 		foreach ( $arr_buttons as $non_buttons ) {
-			if ( ! in_array( $non_buttons, $selected_button_array, true ) ) {
+			if ( is_array( $selected_button_array ) && ! in_array( $non_buttons, $selected_button_array, true ) ) {
 				$non_selected_buttons[] = $non_buttons;
 			}
 		}
 
 		// Plus buttons.
 		foreach ( $arr_buttons as $non_plus_buttons ) {
-			if ( ! in_array( $non_plus_buttons, $selected_plus_button_array, true ) ) {
+			if ( is_array( $selected_plus_button_array ) && ! in_array( $non_plus_buttons, $selected_plus_button_array, true ) ) {
 				$non_plus_selected_buttons[] = $non_plus_buttons;
 			}
 		}
 
 		// Bar Buttons.
 		foreach ( $arr_buttons as $non_bar_buttons ) {
-			if ( ! in_array( $non_bar_buttons, $selected_bar_button_array, true ) ) {
+			if ( is_array( $selected_bar_button_array ) && ! in_array( $non_bar_buttons, $selected_bar_button_array, true ) ) {
 				$non_bar_selected_buttons[] = $non_bar_buttons;
 			}
 		}
@@ -1620,7 +1563,7 @@ class Admin_Panel {
 			$arr_bar_buttons = array_merge( $selected_bar_button_array, $non_bar_selected_buttons );
 		}
 
-		include_once( "{$this->plugin->dir_path}/templates/admin-panel.php" );
+		include_once "{$this->plugin->dir_path}/templates/admin-panel.php";
 	}
 
 	/**
@@ -1668,7 +1611,6 @@ class Admin_Panel {
 	public function get_custom_button_key( $arr_settings ) {
 		$custom_array = array(
 			'facebook'    => isset( $arr_settings['ssba_custom_facebook'] ) ? $arr_settings['ssba_custom_facebook'] : '',
-			'google'      => isset( $arr_settings['ssba_custom_google'] ) ? $arr_settings['ssba_custom_google'] : '',
 			'twitter'     => isset( $arr_settings['ssba_custom_twitter'] ) ? $arr_settings['ssba_custom_twitter'] : '',
 			'linkedin'    => isset( $arr_settings['ssba_custom_linkedin'] ) ? $arr_settings['ssba_custom_linkedin'] : '',
 			'flattr'      => isset( $arr_settings['ssba_custom_flattr'] ) ? $arr_settings['ssba_custom_flattr'] : '',
