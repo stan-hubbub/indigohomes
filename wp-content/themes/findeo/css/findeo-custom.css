@@ -428,7 +428,7 @@ body .findeo-custom .add-floorplans-submit-item.button,
 .findeo-custom .ih-btn.secondary {
   border: #35327e 1px solid;
   background: transparent;
-  color: #35327e;
+  color: #35327e !important;
 }
 .findeo-custom .ih-btn:hover {
   background: #06026f;
