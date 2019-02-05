@@ -46,18 +46,17 @@
   text-align: right;
 }
 
-/* homepage */
-.findeo-custom .listing-img-content .listing-price {
+.findeo-custom ul.listing-details {
+  background-color: transparent;
+}
+
+.findeo-custom .layout-switcher {
   display: none;
 }
 
-.findeo-custom .listing-content ul.listing-details {
-  margin-left: 35px;
-}
-
-.findeo-custom .listing-content ul.listing-details li {
-  padding: 0 !important;
-  margin-right: 20px;
+/* homepage */
+.findeo-custom .listing-img-content .listing-price {
+  display: none;
 }
 
 .findeo-custom .listing-title h4 {
@@ -109,9 +108,7 @@
 
 /* property/show  */
 .findeo-custom .property-main-features {
-  padding: 0;
-  background: transparent;
-  margin-top: -50px;
+  padding: 20px;
 }
 
 .findeo-custom #titlebar.property-titlebar span a {
@@ -123,16 +120,22 @@
   max-width: 100%;
 }
 
-.findeo-custom li.checkboxed:before, 
+.findeo-custom li.checkboxed:before,
 .findeo-custom .property-features.checkboxes li:before {
   color: inherit;
   background: none !important;
   font-size: 15px;
 }
 
-.findeo-custom #titlebar.property-titlebar h1, 
+.findeo-custom #titlebar.property-titlebar h1,
 .findeo-custom #titlebar.property-titlebar h2 {
   font-size: 36px;
+}
+
+.findeo-custom .property-description {
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  hyphens: auto;
 }
 
 .findeo-custom .property-description h3.desc-headline {
@@ -161,18 +164,18 @@
 }
 
 .findeo-custom .property-pricing,
-.findeo-custom .back-to-listings, 
+.findeo-custom .back-to-listings,
 .findeo-custom .property-type-badge {
   display: none !important;
 }
 
 /* submit-property */
-.findeo-custom .submit-page, 
+.findeo-custom .submit-page,
 .findeo-custom #titlebar.submit-page h2 {
   padding: 0;
 }
 
-.findeo-custom #property_preview .property-titlebar span a, 
+.findeo-custom #property_preview .property-titlebar span a,
 .findeo-custom #titlebar.property-titlebar span {
   margin-bottom: 10px;
   margin-top: 10px;
@@ -202,18 +205,18 @@
   margin-right: 0;
 }
 
-.findeo-custom #package_selection .user-packages [type="radio"]:checked + label:before, 
-.findeo-custom #package_selection .user-packages [type="radio"]:not(:checked) + label:before, 
-.findeo-custom #package_selection .plan-features [type="radio"]:checked + label:before, 
+.findeo-custom #package_selection .user-packages [type="radio"]:checked + label:before,
+.findeo-custom #package_selection .user-packages [type="radio"]:not(:checked) + label:before,
+.findeo-custom #package_selection .plan-features [type="radio"]:checked + label:before,
 .findeo-custom #package_selection .plan-features [type="radio"]:not(:checked) + label:before {
   background: transparent;
   border: 1px solid #707070;
   border-radius: 15px;
 }
 
-.findeo-custom #package_selection .user-packages [type="radio"]:checked + label:after, 
-.findeo-custom #package_selection .user-packages [type="radio"]:not(:checked) + label:after, 
-.findeo-custom #package_selection .plan-features [type="radio"]:checked + label:after, 
+.findeo-custom #package_selection .user-packages [type="radio"]:checked + label:after,
+.findeo-custom #package_selection .user-packages [type="radio"]:not(:checked) + label:after,
+.findeo-custom #package_selection .plan-features [type="radio"]:checked + label:after,
 .findeo-custom #package_selection .plan-features [type="radio"]:not(:checked) + label:after {
   background: transparent;
 }
@@ -231,7 +234,7 @@
 }
 
 body .findeo-custom .add-floorplans-submit-item.button,
-.findeo-custom #_gallery-description, 
+.findeo-custom #_gallery-description,
 .findeo-custom #gallery-description {
   margin-top: 0;
 }
@@ -260,7 +263,7 @@ body .findeo-custom .add-floorplans-submit-item.button,
   display: none;
 }
 
-.findeo-custom #package_selection .user-packages label, 
+.findeo-custom #package_selection .user-packages label,
 .findeo-custom #package_selection .plan-features label {
   background: transparent;
   border: 1px solid #35327e;
@@ -356,7 +359,7 @@ body .findeo-custom .add-floorplans-submit-item.button,
 }
 
 /* cart */
-.findeo-custom table.shop_table th, 
+.findeo-custom table.shop_table th,
 .findeo-custom table.manage-table th {
   background-color: transparent !important;
   border-bottom: #e4e4e4 1px solid;
@@ -368,12 +371,12 @@ body .findeo-custom .add-floorplans-submit-item.button,
   display: none;
 }
 
-.findeo-custom table.shop_table td, 
+.findeo-custom table.shop_table td,
 .findeo-custom table.manage-table td {
   padding: 20px !important;
 }
 
-.findeo-custom .woocommerce .cart-collaterals .cart_totals, 
+.findeo-custom .woocommerce .cart-collaterals .cart_totals,
 .findeo-custom .woocommerce-page .cart-collaterals .cart_totals {
   text-align: right;
 }
@@ -465,12 +468,12 @@ body .findeo-custom .add-floorplans-submit-item.button,
 }
 
 .findeo-custom .chosen-container-single .chosen-single,
-.findeo-custom input[type=text], 
-.findeo-custom input[type=password], 
-.findeo-custom input[type=email], 
-.findeo-custom input[type=tel], 
-.findeo-custom input[type=number], 
-.findeo-custom select, 
+.findeo-custom input[type=text],
+.findeo-custom input[type=password],
+.findeo-custom input[type=email],
+.findeo-custom input[type=tel],
+.findeo-custom input[type=number],
+.findeo-custom select,
 .findeo-custom textarea {
   border-color: #999999;
   background-color: #ffffff;
@@ -495,7 +498,7 @@ body .findeo-custom .add-floorplans-submit-item.button,
   border-radius: 3px;
 }
 
-.findeo-custom .realteo-term-checklist label:before, 
+.findeo-custom .realteo-term-checklist label:before,
 .findeo-custom .checkboxes label:before {
   border-width: 1px;
   border-color: #999999;
