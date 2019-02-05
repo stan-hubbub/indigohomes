@@ -371,6 +371,7 @@ body .findeo-custom .add-floorplans-submit-item.button,
 
 .findeo-custom #payment ul.payment_methods {
   border-bottom: 4px solid #fff;
+  padding: 20px;
 }
 
 .findeo-custom #payment div.payment_box {
@@ -382,7 +383,7 @@ body .findeo-custom .add-floorplans-submit-item.button,
   display: none;
 }
 
-.findeo-custom .product-remove .text-center {
+.findeo-custom .product-remove.text-center {
   text-align: center !important;
 }
 
