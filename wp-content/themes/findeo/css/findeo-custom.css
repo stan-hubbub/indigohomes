@@ -285,7 +285,7 @@ body .findeo-custom .add-floorplans-submit-item.button,
 }
 
 /* checkout */
-.findeo-custom .checkout_coupon {
+.findeo-custom .checkout_coupon_x {
   border-radius: 3px;
   border: 1px solid rgba(0,0,0,0.09);
   display: block;
@@ -293,21 +293,21 @@ body .findeo-custom .add-floorplans-submit-item.button,
   padding: 25px;
 }
 
-.findeo-custom .checkout_coupon  input {
+.findeo-custom .checkout_coupon_x  input {
   margin: 0;
   height: 48px;
   border-bottom-right-radius: 0;
   border-top-right-radius: 0;
 }
 
-.findeo-custom .checkout_coupon button.btn {
+.findeo-custom .checkout_coupon_x button.btn {
   border-bottom-left-radius: 0;
   border-top-left-radius: 0;
   height: 48px;
   margin-left: -4px;
 }
 
-.findeo-custom .checkout_coupon p:first-child {
+.findeo-custom .checkout_coupon_x p:first-child {
   margin-bottom: 10px;
 }
 
