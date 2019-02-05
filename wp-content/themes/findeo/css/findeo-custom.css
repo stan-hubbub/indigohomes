@@ -510,7 +510,7 @@ body .findeo-custom .add-floorplans-submit-item.button,
 .findeo-custom input[type=number],
 .findeo-custom select,
 .findeo-custom textarea {
-  border-color: #999999;
+  /* border-color: #999999; */
   background-color: #ffffff;
 }
 
