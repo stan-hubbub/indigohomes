@@ -286,7 +286,7 @@ body .findeo-custom .add-floorplans-submit-item.button,
 
 /* checkout */
 .findeo-custom .checkout_coupon_x {
-  border-bottom: 0 solid rgba(0,0,0,0.09);
+  border-bottom: 1px solid rgba(0,0,0,0.09);
   border-radius: 0;
   display: block;
   margin-bottom: 15px;
