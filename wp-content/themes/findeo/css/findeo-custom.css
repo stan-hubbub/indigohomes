@@ -291,7 +291,7 @@ body .findeo-custom .add-floorplans-submit-item.button,
   display: block;
   margin-bottom: 15px;
   /* margin-right: -4px; */
-  padding: 20px;
+  padding: 20px 0;
   text-align: right;
 }
 
@@ -305,6 +305,7 @@ body .findeo-custom .add-floorplans-submit-item.button,
 
 .findeo-custom .checkout_coupon_x button.btn {
   text-align: center;
+  margin-right: 0;
   /* border-bottom-left-radius: 0;
   border-top-left-radius: 0; */
   height: 48px;
