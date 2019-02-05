@@ -391,6 +391,7 @@ body .findeo-custom .add-floorplans-submit-item.button,
 .findeo-custom .coupon-box .woocommerce-info {
   background-color: transparent;
   color: #707070;
+  border: 1px solid #ededed;
 }
 
 .findeo-custom table.shop_table td,
