@@ -365,21 +365,25 @@ body .findeo-custom .add-floorplans-submit-item.button,
 /* cart */
 .findeo-custom table.shop_table th {
   background-color: transparent !important;
-  border-bottom: #e4e4e4 1px solid;
+  border-bottom: #e4e4e4 0px solid;
   color: #707070;
-}
-
-.findeo-custom table.manage-table th {
-  border-bottom: 0;
 }
 
 .findeo-custom #payment ul.payment_methods {
   border-bottom: 4px solid #fff;
 }
 
+.findeo-custom #payment div.payment_box {
+  width: 100%;
+}
+
 .findeo-custom input[name="update_cart"],
 .findeo-custom .cart_totals.calculated_shipping h2 {
   display: none;
+}
+
+.findeo-custom .product-remove .text-center {
+  text-align: center !important;
 }
 
 .findeo-custom table.shop_table td,
