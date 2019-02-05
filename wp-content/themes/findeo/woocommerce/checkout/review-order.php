@@ -25,7 +25,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 		<tr>
 			<th class="product-name"><?php _e( 'Product', 'woocommerce' ); ?></th>
 			<th class="product-total"><?php _e( 'Total', 'woocommerce' ); ?></th>
-      <th class="product-remove"><?php _e( 'Remove', 'woocommerce' ); ?></th>
+      <th class="product-remove text-center"><?php _e( 'Remove', 'woocommerce' ); ?></th>
 		</tr>
 	</thead>
 	<tbody>
@@ -46,7 +46,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 						<td class="product-total">
 							<?php echo apply_filters( 'woocommerce_cart_item_subtotal', WC()->cart->get_product_subtotal( $_product, $cart_item['quantity'] ), $cart_item, $cart_item_key ); ?>
 						</td>
-            <td class="product-remove">
+            <td class="product-remove text-center">
                 <?php
                   echo apply_filters( 'woocommerce_cart_item_remove_link', sprintf(
                     '<a href="%s" class="remove" aria-label="%s" data-product_id="%s" data-product_sku="%s">&times;</a>',
