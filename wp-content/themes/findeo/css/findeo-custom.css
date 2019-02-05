@@ -304,12 +304,15 @@ body .findeo-custom .add-floorplans-submit-item.button,
 }
 
 .findeo-custom .checkout_coupon_x button.btn {
-  text-align: center;
-  margin-right: 0;
   /* border-bottom-left-radius: 0;
-  border-top-left-radius: 0; */
-  height: 48px;
   /* margin-left: -4px; */
+  background: transparent;
+  border-top-left-radius: 0; */
+  border: 1px solid #35327e;
+  color: #35327e !important;
+  height: 48px;
+  margin-right: 0;
+  text-align: center;
 }
 
 .findeo-custom .checkout_coupon_x p:first-child {
