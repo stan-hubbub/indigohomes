@@ -319,6 +319,10 @@ body .findeo-custom .add-floorplans-submit-item.button,
   text-decoration: underline;
 }
 
+.findeo-custom .cart-subtotal {
+  display: none;
+}
+
 /* my profile hacks */
 .findeo-custom article.col-md-12.page.status-publish .sidebar.left {
   margin-left: -15px;
@@ -362,7 +366,7 @@ body .findeo-custom .add-floorplans-submit-item.button,
 .findeo-custom table.shop_table th,
 .findeo-custom table.manage-table th {
   background-color: transparent !important;
-  border-bottom: #e4e4e4 1px solid;
+  border-bottom: #e4e4e4 0px solid;
   color: #707070;
 }
 
