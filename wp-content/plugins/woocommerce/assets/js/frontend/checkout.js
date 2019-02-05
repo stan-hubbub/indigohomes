@@ -532,6 +532,7 @@ jQuery( function( $ ) {
 	var wc_checkout_coupons = {
 		init: function() {
 			$( document.body ).on( 'click', 'a.showcoupon', this.show_coupon_form );
+			$( document.body ).on( 'click', 'a.showcoupon', $('.woocommerce-form-coupon-toggle').hide );
 			$( document.body ).on( 'click', '.woocommerce-remove-coupon', this.remove_coupon );
 			$( 'form.checkout_coupon' ).hide().submit( this.submit );
 		},
