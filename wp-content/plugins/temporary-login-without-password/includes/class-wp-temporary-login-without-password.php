@@ -62,6 +62,8 @@ class Wp_Temporary_Login_Without_Password {
 		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/class-wp-temporary-login-without-password-common.php';
 		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/class-wp-temporary-login-without-password-layout.php';
 
+		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/class-wtlwp-system-info.php';
+
 		$this->loader = new Wp_Temporary_Login_Without_Password_Loader();
 	}
 
