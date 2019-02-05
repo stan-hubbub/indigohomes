@@ -285,29 +285,30 @@ body .findeo-custom .add-floorplans-submit-item.button,
 }
 
 /* checkout */
-.findeo-custom .checkout_coupon {
-  border-radius: 3px;
-  border: 1px solid rgba(0,0,0,0.09);
+.findeo-custom .checkout_coupon_x {
   display: block;
   margin-bottom: 15px;
-  padding: 25px;
+  padding: 20px 0;
+  text-align: right;
 }
 
-.findeo-custom .checkout_coupon  input {
+.findeo-custom .checkout_coupon_x  input {
+  height: 48px;
   margin: 0;
-  height: 48px;
-  border-bottom-right-radius: 0;
-  border-top-right-radius: 0;
+  text-align: left;
 }
 
-.findeo-custom .checkout_coupon button.btn {
-  border-bottom-left-radius: 0;
-  border-top-left-radius: 0;
+.findeo-custom .checkout_coupon_x button.btn {
+  background: transparent;
+  border: 1px solid #35327e;
+  color: #35327e !important;
   height: 48px;
-  margin-left: -4px;
+  margin-right: 0;
+  text-align: center;
 }
 
-.findeo-custom .checkout_coupon p:first-child {
+.findeo-custom .checkout_coupon_x p:first-child {
+  text-align: right;
   margin-bottom: 10px;
 }
 
@@ -317,6 +318,10 @@ body .findeo-custom .add-floorplans-submit-item.button,
 
 .findeo-custom .notification a {
   text-decoration: underline;
+}
+
+.findeo-custom .cart-subtotal {
+  display: none;
 }
 
 /* my profile hacks */
@@ -359,16 +364,35 @@ body .findeo-custom .add-floorplans-submit-item.button,
 }
 
 /* cart */
-.findeo-custom table.shop_table th,
-.findeo-custom table.manage-table th {
+.findeo-custom table.shop_table th {
   background-color: transparent !important;
   border-bottom: #e4e4e4 1px solid;
   color: #707070;
 }
 
+.findeo-custom #payment ul.payment_methods {
+  border-bottom: 4px solid #fff;
+  padding: 20px;
+}
+
+.findeo-custom #payment div.payment_box {
+  width: 100%;
+}
+
+.findeo-custom h3#order_review_heading,
 .findeo-custom input[name="update_cart"],
 .findeo-custom .cart_totals.calculated_shipping h2 {
   display: none;
+}
+
+.findeo-custom .product-remove.text-center {
+  text-align: center !important;
+}
+
+.findeo-custom .coupon-box .woocommerce-info {
+  background-color: transparent;
+  color: #707070;
+  border: 1px solid #ededed;
 }
 
 .findeo-custom table.shop_table td,
@@ -400,6 +424,16 @@ body .findeo-custom .add-floorplans-submit-item.button,
   line-height: 50px;
   padding: 0 25px;
   transition: all 0.2s ease-in-out;
+}
+
+.findeo-custom .ih-btn.secondary {
+  border: #35327e 1px solid;
+  background: transparent;
+  color: #35327e !important;
+}
+
+.findeo-custom .ih-btn.secondary:hover {
+  color: #fff !important;
 }
 
 .findeo-custom .ih-btn:hover {
