@@ -524,7 +524,7 @@ body .findeo-custom .add-floorplans-submit-item.button,
 }
 
 /* header */
-.header-widget a {
+.header-widget a.first-level {
   color: #35327e !important;
   margin-right: 25px;
   position: relative;
