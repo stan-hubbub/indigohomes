@@ -7,7 +7,7 @@
   box-shadow: none;
   background: #ffffff;
   padding: 16px 0 5px 0;
-  border-bottom: 1px solid #ededed;
+  border-bottom: 1px solid #dddddd;
 }
 
 .findeo-custom #header.cloned {
@@ -52,6 +52,11 @@
 }
 
 /* homepage */
+.findeo-custom .listing-item {
+  box-shadow: none;
+  border: 1px solid #dddddd;
+}
+
 .findeo-custom .listing-img-content .listing-price {
   display: none;
 }
@@ -100,7 +105,7 @@
 
 .findeo-custom .copyrights {
   margin-top: 0;
-  border-top: 1px solid rgba(0,0,0,0.08);
+  border-top: 0;
 }
 
 /* property/show  */
@@ -135,6 +140,8 @@
 /* sidebar */
 .findeo-custom .agent-widget {
   padding: 40px 20px;
+  box-shadow: none;
+  border: 1px solid #dddddd;
 }
 
 .findeo-custom .property-main-features li {
@@ -165,6 +172,11 @@
 .findeo-custom #property_preview .property-titlebar span a {
   margin-bottom: 10px;
   margin-top: 10px;
+}
+
+.findeo-custom .plan {
+  box-shadow: none;
+  border: 1px solid #dddddd;
 }
 
 .findeo-custom .plan.featured .plan-price {
