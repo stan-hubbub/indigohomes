@@ -473,8 +473,12 @@ body .findeo-custom .add-floorplans-submit-item.button,
 }
 
 .findeo-custom .back-to-listings {
-  border: 1px solid #35327e;
+  border: 1px solid #dddddd;
   background: transparent;
+}
+
+.findeo-custom .back-to-listings:hover {
+  border-color: #35327e;
 }
 
 /* login */
