@@ -150,7 +150,7 @@ $sticky = apply_filters('findeo_sticky_header_filter',$sticky);
 			<div class="right-side">
 				<!-- Header Widget -->
 				<div class="header-widget">
-
+					<a href="/properties/">Search</a>
 					<?php if( true == $my_account_display) : ?>
 
 							<?php
