@@ -325,9 +325,7 @@ function custom_override_checkout_fields( $fields ) {
 }
 
 // set og image
-add_action('wp_head', 'dgsoft_fb');
-function dgsoft_fb(){
-	if( is_single() ) {
-		echo '<meta property="og:image" content="'. get_the_post_thumbnail_url(get_the_ID(),'full')   .'" />';
-	}
+add_action('wp_head', 'ih_og');
+function ih_og(){
+	echo '<meta property="og:image" content="'. get_the_post_thumbnail_url(get_the_ID(),'full')   .'" />';
 }
