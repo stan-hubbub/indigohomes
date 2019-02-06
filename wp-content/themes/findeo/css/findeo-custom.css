@@ -59,6 +59,10 @@
   display: none;
 }
 
+.findeo-custom section.search {
+  background: #f5f5f5;
+}
+
 /* homepage */
 .findeo-custom .listing-item {
   box-shadow: none;
@@ -570,7 +574,7 @@ body .findeo-custom .add-floorplans-submit-item.button,
 
 /* header */
 .header-widget a.first-level {
-  color: #35327e !important;
+  color: #333333;
   margin-right: 25px;
   position: relative;
   top: 10px;
