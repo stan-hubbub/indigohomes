@@ -393,3 +393,4 @@ Stack trace:
 [05-Feb-2019 11:17:18 UTC] The WC_Cart::get_remove_url function is deprecated since version 3.3. Replace with wc_get_cart_remove_url.
 [05-Feb-2019 11:17:33 UTC] The WC_Cart::get_remove_url function is deprecated since version 3.3. Replace with wc_get_cart_remove_url.
 [05-Feb-2019 11:17:39 UTC] The WC_Cart::get_remove_url function is deprecated since version 3.3. Replace with wc_get_cart_remove_url.
+[06-Feb-2019 04:47:40 UTC] The WC_Cart::get_remove_url function is deprecated since version 3.3. Replace with wc_get_cart_remove_url.
