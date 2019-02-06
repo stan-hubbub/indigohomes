@@ -525,9 +525,17 @@ body .findeo-custom .add-floorplans-submit-item.button,
 
 /* header */
 .header-widget a {
+  color: #35327e !important;
+  margin-right: 25px;
   position: relative;
   top: 10px;
-  color: #35327e;
-  margin-right: 25px;
   vertical-align: top;
+}
+
+.header-widget a .sl {
+  font-size: 17px;
+  left: -22px;
+  position: absolute;
+  top: 1px;
+  z-index: 1;
 }
