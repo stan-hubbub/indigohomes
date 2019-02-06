@@ -394,3 +394,69 @@ Stack trace:
 [05-Feb-2019 11:17:33 UTC] The WC_Cart::get_remove_url function is deprecated since version 3.3. Replace with wc_get_cart_remove_url.
 [05-Feb-2019 11:17:39 UTC] The WC_Cart::get_remove_url function is deprecated since version 3.3. Replace with wc_get_cart_remove_url.
 [06-Feb-2019 04:47:40 UTC] The WC_Cart::get_remove_url function is deprecated since version 3.3. Replace with wc_get_cart_remove_url.
+[06-Feb-2019 05:31:02 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_field() in /home/hubbub42/public_html/indigohomes.ph/wp-content/themes/findeo/header.php:18
+Stack trace:
+#0 /home/hubbub42/public_html/indigohomes.ph/wp-includes/template.php(688): require_once()
+#1 /home/hubbub42/public_html/indigohomes.ph/wp-includes/template.php(647): load_template('/home/hubbub42/...', true)
+#2 /home/hubbub42/public_html/indigohomes.ph/wp-includes/general-template.php(41): locate_template(Array, true)
+#3 /home/hubbub42/public_html/indigohomes.ph/wp-content/plugins/realteo/templates/single-property.php(6): get_header('standard')
+#4 /home/hubbub42/public_html/indigohomes.ph/wp-includes/template-loader.php(74): include('/home/hubbub42/...')
+#5 /home/hubbub42/public_html/indigohomes.ph/wp-blog-header.php(19): require_once('/home/hubbub42/...')
+#6 /home/hubbub42/public_html/indigohomes.ph/index.php(17): require('/home/hubbub42/...')
+#7 {main}
+  thrown in /home/hubbub42/public_html/indigohomes.ph/wp-content/themes/findeo/header.php on line 18
+[06-Feb-2019 05:31:06 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_field() in /home/hubbub42/public_html/indigohomes.ph/wp-content/themes/findeo/header.php:18
+Stack trace:
+#0 /home/hubbub42/public_html/indigohomes.ph/wp-includes/template.php(688): require_once()
+#1 /home/hubbub42/public_html/indigohomes.ph/wp-includes/template.php(647): load_template('/home/hubbub42/...', true)
+#2 /home/hubbub42/public_html/indigohomes.ph/wp-includes/general-template.php(41): locate_template(Array, true)
+#3 /home/hubbub42/public_html/indigohomes.ph/wp-content/plugins/realteo/templates/single-property.php(6): get_header('standard')
+#4 /home/hubbub42/public_html/indigohomes.ph/wp-includes/template-loader.php(74): include('/home/hubbub42/...')
+#5 /home/hubbub42/public_html/indigohomes.ph/wp-blog-header.php(19): require_once('/home/hubbub42/...')
+#6 /home/hubbub42/public_html/indigohomes.ph/index.php(17): require('/home/hubbub42/...')
+#7 {main}
+  thrown in /home/hubbub42/public_html/indigohomes.ph/wp-content/themes/findeo/header.php on line 18
+[06-Feb-2019 05:31:11 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_field() in /home/hubbub42/public_html/indigohomes.ph/wp-content/themes/findeo/header.php:18
+Stack trace:
+#0 /home/hubbub42/public_html/indigohomes.ph/wp-includes/template.php(688): require_once()
+#1 /home/hubbub42/public_html/indigohomes.ph/wp-includes/template.php(647): load_template('/home/hubbub42/...', true)
+#2 /home/hubbub42/public_html/indigohomes.ph/wp-includes/general-template.php(41): locate_template(Array, true)
+#3 /home/hubbub42/public_html/indigohomes.ph/wp-content/themes/findeo/template-search-banner.php(13): get_header('standard')
+#4 /home/hubbub42/public_html/indigohomes.ph/wp-includes/template-loader.php(74): include('/home/hubbub42/...')
+#5 /home/hubbub42/public_html/indigohomes.ph/wp-blog-header.php(19): require_once('/home/hubbub42/...')
+#6 /home/hubbub42/public_html/indigohomes.ph/index.php(17): require('/home/hubbub42/...')
+#7 {main}
+  thrown in /home/hubbub42/public_html/indigohomes.ph/wp-content/themes/findeo/header.php on line 18
+[06-Feb-2019 05:31:44 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_field() in /home/hubbub42/public_html/indigohomes.ph/wp-content/themes/findeo/header.php:17
+Stack trace:
+#0 /home/hubbub42/public_html/indigohomes.ph/wp-includes/template.php(688): require_once()
+#1 /home/hubbub42/public_html/indigohomes.ph/wp-includes/template.php(647): load_template('/home/hubbub42/...', true)
+#2 /home/hubbub42/public_html/indigohomes.ph/wp-includes/general-template.php(41): locate_template(Array, true)
+#3 /home/hubbub42/public_html/indigohomes.ph/wp-content/themes/findeo/template-search-banner.php(13): get_header('standard')
+#4 /home/hubbub42/public_html/indigohomes.ph/wp-includes/template-loader.php(74): include('/home/hubbub42/...')
+#5 /home/hubbub42/public_html/indigohomes.ph/wp-blog-header.php(19): require_once('/home/hubbub42/...')
+#6 /home/hubbub42/public_html/indigohomes.ph/index.php(17): require('/home/hubbub42/...')
+#7 {main}
+  thrown in /home/hubbub42/public_html/indigohomes.ph/wp-content/themes/findeo/header.php on line 17
+[06-Feb-2019 05:31:46 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_field() in /home/hubbub42/public_html/indigohomes.ph/wp-content/themes/findeo/header.php:17
+Stack trace:
+#0 /home/hubbub42/public_html/indigohomes.ph/wp-includes/template.php(688): require_once()
+#1 /home/hubbub42/public_html/indigohomes.ph/wp-includes/template.php(647): load_template('/home/hubbub42/...', true)
+#2 /home/hubbub42/public_html/indigohomes.ph/wp-includes/general-template.php(41): locate_template(Array, true)
+#3 /home/hubbub42/public_html/indigohomes.ph/wp-content/themes/findeo/template-search-banner.php(13): get_header('standard')
+#4 /home/hubbub42/public_html/indigohomes.ph/wp-includes/template-loader.php(74): include('/home/hubbub42/...')
+#5 /home/hubbub42/public_html/indigohomes.ph/wp-blog-header.php(19): require_once('/home/hubbub42/...')
+#6 /home/hubbub42/public_html/indigohomes.ph/index.php(17): require('/home/hubbub42/...')
+#7 {main}
+  thrown in /home/hubbub42/public_html/indigohomes.ph/wp-content/themes/findeo/header.php on line 17
+[06-Feb-2019 05:31:49 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_field() in /home/hubbub42/public_html/indigohomes.ph/wp-content/themes/findeo/header.php:17
+Stack trace:
+#0 /home/hubbub42/public_html/indigohomes.ph/wp-includes/template.php(688): require_once()
+#1 /home/hubbub42/public_html/indigohomes.ph/wp-includes/template.php(647): load_template('/home/hubbub42/...', true)
+#2 /home/hubbub42/public_html/indigohomes.ph/wp-includes/general-template.php(41): locate_template(Array, true)
+#3 /home/hubbub42/public_html/indigohomes.ph/wp-content/themes/findeo/template-search-banner.php(13): get_header('standard')
+#4 /home/hubbub42/public_html/indigohomes.ph/wp-includes/template-loader.php(74): include('/home/hubbub42/...')
+#5 /home/hubbub42/public_html/indigohomes.ph/wp-blog-header.php(19): require_once('/home/hubbub42/...')
+#6 /home/hubbub42/public_html/indigohomes.ph/index.php(17): require('/home/hubbub42/...')
+#7 {main}
+  thrown in /home/hubbub42/public_html/indigohomes.ph/wp-content/themes/findeo/header.php on line 17
