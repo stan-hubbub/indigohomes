@@ -80,7 +80,7 @@
   border: 1px solid #dddddd;
 }
 
-ul.listing-details li {
+.findeo-custom ul.listing-details li {
   color: #666666;
   font-size: 16px;
 }
@@ -98,6 +98,7 @@ ul.listing-details li {
 }
 
 body,
+.search-container input,
 .findeo-custom .chosen-container-single .chosen-single span {
   color: #666666;
   font-weight: 400;
