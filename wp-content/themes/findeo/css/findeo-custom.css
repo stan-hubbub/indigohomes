@@ -81,6 +81,12 @@
   line-height: 26px;
 }
 
+body,
+.findeo-custom .chosen-container-single .chosen-single span {
+  color: #666666;
+  font-weight: 400;
+}
+
 /* pages */
 .findeo-custom #titlebar {
   padding: 10px 0;
