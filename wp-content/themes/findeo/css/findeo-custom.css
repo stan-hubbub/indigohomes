@@ -80,6 +80,11 @@
   border: 1px solid #dddddd;
 }
 
+ul.listing-details li {
+  color: #666666;
+  font-size: 16px;
+}
+
 .findeo-custom .listing-img-content .listing-price {
   display: none;
 }
