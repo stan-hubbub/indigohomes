@@ -1,0 +1,72 @@
+2019-02-06T05:31:02+00:00 CRITICAL Uncaught Error: Call to undefined function get_field() in /home/hubbub42/public_html/indigohomes.ph/wp-content/themes/findeo/header.php:18
+Stack trace:
+#0 /home/hubbub42/public_html/indigohomes.ph/wp-includes/template.php(688): require_once()
+#1 /home/hubbub42/public_html/indigohomes.ph/wp-includes/template.php(647): load_template('/home/hubbub42/...', true)
+#2 /home/hubbub42/public_html/indigohomes.ph/wp-includes/general-template.php(41): locate_template(Array, true)
+#3 /home/hubbub42/public_html/indigohomes.ph/wp-content/plugins/realteo/templates/single-property.php(6): get_header('standard')
+#4 /home/hubbub42/public_html/indigohomes.ph/wp-includes/template-loader.php(74): include('/home/hubbub42/...')
+#5 /home/hubbub42/public_html/indigohomes.ph/wp-blog-header.php(19): require_once('/home/hubbub42/...')
+#6 /home/hubbub42/public_html/indigohomes.ph/index.php(17): require('/home/hubbub42/...')
+#7 {main}
+  thrown in /home/hubbub42/public_html/indigohomes.ph/wp-content/themes/findeo/header.php on line 18
+
+2019-02-06T05:31:06+00:00 CRITICAL Uncaught Error: Call to undefined function get_field() in /home/hubbub42/public_html/indigohomes.ph/wp-content/themes/findeo/header.php:18
+Stack trace:
+#0 /home/hubbub42/public_html/indigohomes.ph/wp-includes/template.php(688): require_once()
+#1 /home/hubbub42/public_html/indigohomes.ph/wp-includes/template.php(647): load_template('/home/hubbub42/...', true)
+#2 /home/hubbub42/public_html/indigohomes.ph/wp-includes/general-template.php(41): locate_template(Array, true)
+#3 /home/hubbub42/public_html/indigohomes.ph/wp-content/plugins/realteo/templates/single-property.php(6): get_header('standard')
+#4 /home/hubbub42/public_html/indigohomes.ph/wp-includes/template-loader.php(74): include('/home/hubbub42/...')
+#5 /home/hubbub42/public_html/indigohomes.ph/wp-blog-header.php(19): require_once('/home/hubbub42/...')
+#6 /home/hubbub42/public_html/indigohomes.ph/index.php(17): require('/home/hubbub42/...')
+#7 {main}
+  thrown in /home/hubbub42/public_html/indigohomes.ph/wp-content/themes/findeo/header.php on line 18
+
+2019-02-06T05:31:11+00:00 CRITICAL Uncaught Error: Call to undefined function get_field() in /home/hubbub42/public_html/indigohomes.ph/wp-content/themes/findeo/header.php:18
+Stack trace:
+#0 /home/hubbub42/public_html/indigohomes.ph/wp-includes/template.php(688): require_once()
+#1 /home/hubbub42/public_html/indigohomes.ph/wp-includes/template.php(647): load_template('/home/hubbub42/...', true)
+#2 /home/hubbub42/public_html/indigohomes.ph/wp-includes/general-template.php(41): locate_template(Array, true)
+#3 /home/hubbub42/public_html/indigohomes.ph/wp-content/themes/findeo/template-search-banner.php(13): get_header('standard')
+#4 /home/hubbub42/public_html/indigohomes.ph/wp-includes/template-loader.php(74): include('/home/hubbub42/...')
+#5 /home/hubbub42/public_html/indigohomes.ph/wp-blog-header.php(19): require_once('/home/hubbub42/...')
+#6 /home/hubbub42/public_html/indigohomes.ph/index.php(17): require('/home/hubbub42/...')
+#7 {main}
+  thrown in /home/hubbub42/public_html/indigohomes.ph/wp-content/themes/findeo/header.php on line 18
+
+2019-02-06T05:31:44+00:00 CRITICAL Uncaught Error: Call to undefined function get_field() in /home/hubbub42/public_html/indigohomes.ph/wp-content/themes/findeo/header.php:17
+Stack trace:
+#0 /home/hubbub42/public_html/indigohomes.ph/wp-includes/template.php(688): require_once()
+#1 /home/hubbub42/public_html/indigohomes.ph/wp-includes/template.php(647): load_template('/home/hubbub42/...', true)
+#2 /home/hubbub42/public_html/indigohomes.ph/wp-includes/general-template.php(41): locate_template(Array, true)
+#3 /home/hubbub42/public_html/indigohomes.ph/wp-content/themes/findeo/template-search-banner.php(13): get_header('standard')
+#4 /home/hubbub42/public_html/indigohomes.ph/wp-includes/template-loader.php(74): include('/home/hubbub42/...')
+#5 /home/hubbub42/public_html/indigohomes.ph/wp-blog-header.php(19): require_once('/home/hubbub42/...')
+#6 /home/hubbub42/public_html/indigohomes.ph/index.php(17): require('/home/hubbub42/...')
+#7 {main}
+  thrown in /home/hubbub42/public_html/indigohomes.ph/wp-content/themes/findeo/header.php on line 17
+
+2019-02-06T05:31:46+00:00 CRITICAL Uncaught Error: Call to undefined function get_field() in /home/hubbub42/public_html/indigohomes.ph/wp-content/themes/findeo/header.php:17
+Stack trace:
+#0 /home/hubbub42/public_html/indigohomes.ph/wp-includes/template.php(688): require_once()
+#1 /home/hubbub42/public_html/indigohomes.ph/wp-includes/template.php(647): load_template('/home/hubbub42/...', true)
+#2 /home/hubbub42/public_html/indigohomes.ph/wp-includes/general-template.php(41): locate_template(Array, true)
+#3 /home/hubbub42/public_html/indigohomes.ph/wp-content/themes/findeo/template-search-banner.php(13): get_header('standard')
+#4 /home/hubbub42/public_html/indigohomes.ph/wp-includes/template-loader.php(74): include('/home/hubbub42/...')
+#5 /home/hubbub42/public_html/indigohomes.ph/wp-blog-header.php(19): require_once('/home/hubbub42/...')
+#6 /home/hubbub42/public_html/indigohomes.ph/index.php(17): require('/home/hubbub42/...')
+#7 {main}
+  thrown in /home/hubbub42/public_html/indigohomes.ph/wp-content/themes/findeo/header.php on line 17
+
+2019-02-06T05:31:49+00:00 CRITICAL Uncaught Error: Call to undefined function get_field() in /home/hubbub42/public_html/indigohomes.ph/wp-content/themes/findeo/header.php:17
+Stack trace:
+#0 /home/hubbub42/public_html/indigohomes.ph/wp-includes/template.php(688): require_once()
+#1 /home/hubbub42/public_html/indigohomes.ph/wp-includes/template.php(647): load_template('/home/hubbub42/...', true)
+#2 /home/hubbub42/public_html/indigohomes.ph/wp-includes/general-template.php(41): locate_template(Array, true)
+#3 /home/hubbub42/public_html/indigohomes.ph/wp-content/themes/findeo/template-search-banner.php(13): get_header('standard')
+#4 /home/hubbub42/public_html/indigohomes.ph/wp-includes/template-loader.php(74): include('/home/hubbub42/...')
+#5 /home/hubbub42/public_html/indigohomes.ph/wp-blog-header.php(19): require_once('/home/hubbub42/...')
+#6 /home/hubbub42/public_html/indigohomes.ph/index.php(17): require('/home/hubbub42/...')
+#7 {main}
+  thrown in /home/hubbub42/public_html/indigohomes.ph/wp-content/themes/findeo/header.php on line 17
+
