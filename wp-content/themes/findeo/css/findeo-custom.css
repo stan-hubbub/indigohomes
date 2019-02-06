@@ -112,11 +112,6 @@
   margin-top: 20px;
 }
 
-.findeo-custom .property-title {
-  margin-left: 0;
-  max-width: 100%;
-}
-
 .findeo-custom li.checkboxed:before,
 .findeo-custom .property-features.checkboxes li:before {
   color: inherit;
@@ -161,7 +156,6 @@
 }
 
 .findeo-custom .property-pricing,
-.findeo-custom .back-to-listings,
 .findeo-custom .property-type-badge {
   display: none !important;
 }
@@ -172,8 +166,7 @@
   padding: 0;
 }
 
-.findeo-custom #property_preview .property-titlebar span a,
-.findeo-custom #titlebar.property-titlebar span {
+.findeo-custom #property_preview .property-titlebar span a {
   margin-bottom: 10px;
   margin-top: 10px;
 }
@@ -354,7 +347,6 @@ body .findeo-custom .add-floorplans-submit-item.button,
   padding: 20px;
 }
 
-.findeo-custom #titlebar h2 + span,
 .findeo-custom #titlebar span a {
   margin-top: 0;
   margin-bottom: 5px;
