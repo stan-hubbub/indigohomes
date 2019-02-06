@@ -22,7 +22,7 @@
 <meta property="og:description" content="Find your home." />
 <link rel="profile" href="http://gmpg.org/xfn/11">
 <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
-<link rel="stylesheet" media="screen" href="<?php echo get_stylesheet_directory_uri(); ?>/css/findeo-custom.css?v=0.2.41">
+<link rel="stylesheet" media="screen" href="<?php echo get_stylesheet_directory_uri(); ?>/css/findeo-custom.css?v=0.2.47">
 <?php wp_head(); ?>
 </head>
 
@@ -150,7 +150,10 @@ $sticky = apply_filters('findeo_sticky_header_filter',$sticky);
 			<div class="right-side">
 				<!-- Header Widget -->
 				<div class="header-widget">
-
+					<a href="/properties/" class="first-level">
+						<i class="sl sl-icon-magnifier"></i>
+						Search
+					</a>
 					<?php if( true == $my_account_display) : ?>
 
 							<?php
