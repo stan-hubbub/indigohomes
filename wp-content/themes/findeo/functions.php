@@ -327,5 +327,7 @@ function custom_override_checkout_fields( $fields ) {
 // set og image
 add_action('wp_head', 'dgsoft_fb');
 function dgsoft_fb(){
-	echo '<meta property="og:image" content="'. get_the_post_thumbnail_url(get_the_ID(),'full')   .'" />';
+	if( is_single() ) {
+		echo '<meta property="og:image" content="'. get_the_post_thumbnail_url(get_the_ID(),'full')   .'" />';
+	}
 }
