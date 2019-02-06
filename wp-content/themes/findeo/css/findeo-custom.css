@@ -64,6 +64,16 @@
 }
 
 /* homepage */
+.findeo-custom a.listing-address {
+  padding-left: 0;
+  top: 0;
+  color: #666666;
+}
+
+.findeo-custom a.listing-address i.fa {
+  display: none;
+}
+
 .findeo-custom .listing-item {
   box-shadow: none;
   border: 1px solid #dddddd;
@@ -74,7 +84,7 @@
 }
 
 .findeo-custom .listing-title h4 {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .findeo-custom .listing-title h4 a {
