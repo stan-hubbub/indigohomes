@@ -114,6 +114,8 @@
 
 /* property/show  */
 .findeo-custom .property-main-features {
+  background-color: none;
+  border: 1px solid #f5f5f5;
   padding: 20px;
 }
 
@@ -143,9 +145,10 @@
 
 /* sidebar */
 .findeo-custom .agent-widget {
-  padding: 40px 20px;
+  background: #f5f5f5;
+  border: 0;
   box-shadow: none;
-  border: 1px solid #dddddd;
+  padding: 40px 20px;
 }
 
 .findeo-custom .property-main-features li {
