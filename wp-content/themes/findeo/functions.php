@@ -109,7 +109,7 @@ function findeo_widgets_init() {
 		'after_widget'  => '</section>',
 		'before_title'  => '<h3 class="widget-title">',
 		'after_title'   => '</h3>',
-	) );	
+	) );
 
 	register_sidebar(array(
 		'id' => 'footer1',
@@ -157,11 +157,11 @@ function findeo_widgets_init() {
 		'after_title'   => '',
 	) );
 	if (get_option('pp_findeo_sidebar')):
-		
+
 		$pp_sidebars = get_option('pp_findeo_sidebar');
 		if(!empty($pp_sidebars)):
 			foreach ($pp_sidebars as $pp_sidebar) {
-		
+
 				register_sidebar(array(
 					'name' => esc_html($pp_sidebar["sidebar_name"]),
 					'id' => esc_attr($pp_sidebar["sidebar_id"]),
@@ -184,7 +184,7 @@ function findeo_scripts() {
 	wp_register_style( 'findeo-woocommerce', get_template_directory_uri(). '/css/woocommerce.min.css' );
     wp_register_style( 'findeo-icons', get_template_directory_uri(). '/css/icons.css' );
 	wp_enqueue_style( 'findeo-style', get_stylesheet_uri(), array('bootstrap','findeo-icons','findeo-woocommerce') );
-	
+
 	wp_enqueue_script( 'findeo-navigation', get_template_directory_uri() . '/js/navigation.min.js', array(), '20151215', true );
 
 	wp_enqueue_script( 'findeo-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.min.js', array(), '20151215', true );
@@ -268,12 +268,12 @@ require get_template_directory() . '/inc/widgets/init.php';
 require get_template_directory() . '/inc/properties-maps.php';
 
 /**
- * Load woocommerce 
+ * Load woocommerce
  */
 require get_template_directory() . '/inc/woocommerce.php';
 
 /**
- * Load woocommerce 
+ * Load woocommerce
  */
 require get_template_directory() . '/inc/wsl.php';
 
@@ -297,7 +297,7 @@ function custom_map_link($address, $mmm ){
 	global $post;
 	$friendly_address =  get_post_meta( $post->ID, '_friendly_address', true );
 	if(empty($friendly_address)) { $friendly_address = $address; }
-		
+
 	return '<a class="listing-address" href="' . get_the_permalink($post) .'#location"><i class="fa fa-map-marker"></i>' . esc_html( strip_tags( $friendly_address ) ) . '</a>';
 }
 add_filter('the_property_map_link','custom_map_link',10,2);
@@ -322,4 +322,12 @@ function custom_override_checkout_fields( $fields ) {
     unset($fields['billing']['billing_email']);
     unset($fields['billing']['billing_city']);
     return $fields;
+}
+
+// set og image
+add_action('wp_head', 'dgsoft_fb');
+function dgsoft_fb(){
+	if( is_single() ) {
+		echo '<meta property="og:image" content="'. get_the_post_thumbnail_url(get_the_ID(),'full')   .'" />';
+	}
 }
