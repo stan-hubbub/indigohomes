@@ -68,7 +68,7 @@
 }
 
 @media (min-width: 992px) and (max-width: 1239px) {
-  .findeo-custom .container { width: 90% }
+  .findeo-custom .container { width: 100%; padding: 0 50px; }
   .findeo-custom #header { min-height: 77px }
 }
 
