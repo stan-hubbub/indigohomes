@@ -102,6 +102,7 @@
 }
 
 body,
+.findeo-custom input[type=text],
 .findeo-custom .search-container input,
 .findeo-custom .chosen-container-single .chosen-single span {
   color: #666666;
