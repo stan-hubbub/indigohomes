@@ -71,6 +71,18 @@
   .findeo-custom .container { width: 90%; }
 }
 
+@media (max-width: 1239px) {
+  .findeo-custom #navigation.style-1 {
+    margin: 0;
+    padding-top: 0;
+    width: auto;
+  }
+
+  .findeo-custom #navigation.style-1:before {
+    display: none;
+  }
+}
+
 /* homepage */
 .findeo-custom a.listing-address {
   color: #666666;
