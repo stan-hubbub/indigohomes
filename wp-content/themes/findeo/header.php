@@ -134,7 +134,6 @@ $sticky = apply_filters('findeo_sticky_header_filter',$sticky);
 				<!-- Main Navigation -->
 				<nav id="navigation" class="style-1">
 					<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'responsive', 'container' => false ) );  ?>
-
 				</nav>
 				<div class="clearfix"></div>
 				<!-- Main Navigation / End -->
