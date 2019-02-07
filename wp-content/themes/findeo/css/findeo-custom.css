@@ -104,6 +104,8 @@
 body,
 .findeo-custom input[type=text],
 .findeo-custom .search-container input,
+.findeo-custom .property-main-features li,
+.findeo-custom #titlebar.property-titlebar span a,
 .findeo-custom .chosen-container-single .chosen-single span {
   color: #666666;
   font-weight: 400;
