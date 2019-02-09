@@ -98,8 +98,7 @@
     width: 40px;
   }
 
-  .findeo-custom .header-widget a i.sl,
-  .findeo-custom .header-widget a i.fa {
+  .findeo-custom .header-widget a i.sl {
     padding: 0;
     top: 0;
     display: inline;
