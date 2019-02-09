@@ -90,6 +90,10 @@
   .findeo-custom .header-widget a.first-level,
   .findeo-custom .header-widget a.sign-in {
     display: inline-block;
+    height: 40px;
+    margin: 0;
+    top: 0;
+    width: 40px;
   }
   /* end of hack */
 
