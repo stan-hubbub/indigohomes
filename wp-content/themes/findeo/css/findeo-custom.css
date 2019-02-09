@@ -83,6 +83,7 @@
 @media (min-width: 992px) {
   .findeo-custom .left-side,
   .findeo-custom .right-side { width: 50% }
+  /* special 992px fix   */
   .findeo-custom #logo { position: relative }
   .findeo-custom .mmenu-trigger { display: none }
   .findeo-custom .header-widget {
