@@ -85,7 +85,7 @@
   .findeo-custom .right-side { width: 50% }
   /* special 992px fix   */
   .findeo-custom #logo { position: relative }
-  .findeo-custom .mmenu-trigger { display: none }
+  .findeo-custom .mmenu-trigger { display: none !important }
   .findeo-custom .header-widget {
     border: 0;
     padding: 0;
