@@ -22,7 +22,7 @@
 <meta property="og:description" content="Find your home." />
 <link rel="profile" href="http://gmpg.org/xfn/11">
 <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
-<link rel="stylesheet" media="screen" href="<?php echo get_stylesheet_directory_uri(); ?>/css/findeo-custom.css?v=0.2.73">
+<link rel="stylesheet" media="screen" href="<?php echo get_stylesheet_directory_uri(); ?>/css/findeo-custom.css?v=0.2.74">
 <?php wp_head(); ?>
 </head>
 
