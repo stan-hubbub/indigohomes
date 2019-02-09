@@ -618,7 +618,7 @@ body .findeo-custom .add-floorplans-submit-item.button,
 }
 
 /* header */
-.header-widget a.first-level {
+.findeo-custom .header-widget a.first-level {
   color: #333333;
   display: inline-block;
   height: 40px;
@@ -627,6 +627,10 @@ body .findeo-custom .add-floorplans-submit-item.button,
   position: relative;
   top: 0;
   vertical-align: top;
+}
+
+.findeo-custom .header-widget a.first-level:hover {
+  color: #35327e;
 }
 
 .header-widget a .sl-icon-magnifier {
@@ -638,7 +642,7 @@ body .findeo-custom .add-floorplans-submit-item.button,
   left: -5px;
   position: relative;
   right: 0;
-  top: -27px;
+  top: 2px;
   z-index: 1;
 }
 
@@ -679,10 +683,6 @@ body .findeo-custom .add-floorplans-submit-item.button,
     top: 0;
     vertical-align: middle;
     width: 40px;
-  }
-
-  .findeo-custom .header-widget a.first-level:hover {
-    color: #35327e;
   }
 
   .findeo-custom .header-widget a i.sl {
