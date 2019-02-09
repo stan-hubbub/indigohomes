@@ -67,75 +67,6 @@
   background: #f5f5f5;
 }
 
-.findeo-custom .header-widget a span.text {
-  vertical-align: top
-}
-
-@media only screen and (max-width: 991.98px) {
-  /* hack  */
-  .findeo-custom .mmenu-trigger {
-    display: none !important
-  }
-
-  .findeo-custom .header-widget {
-    display: table;
-    margin-top: 45px;
-    padding: 10px 0 5px;
-    width: 100%;
-  }
-
-  .findeo-custom .header-widget span.text {
-    display: none;
-  }
-
-  .findeo-custom .header-widget a .sl-icon-magnifier {
-    left: 0;
-  }
-
-  .findeo-custom .header-widget a.first-level,
-  .findeo-custom .header-widget a.sign-in {
-    display: inline-block;
-    height: 40px;
-    line-height: 40px;
-    margin: 0;
-    text-align: center;
-    top: 0;
-    vertical-align: middle;
-    width: 40px;
-  }
-
-  .findeo-custom .header-widget a i.sl {
-    display: inline;
-    padding: 0;
-    top: 0;
-  }
-  /* end of hack */
-
-  .findeo-custom #logo {
-    left: 0;
-    margin-top: 3px;
-    margin: 0 auto;
-    position: absolute;
-    right: 0;
-    text-align: center;
-    width: 100%;
-    width: 35%;
-  }
-}
-
-@media only screen and (min-width: 992px) {
-  .findeo-custom .left-side,
-  .findeo-custom .right-side { width: 50% }
-  /* special 992px fix   */
-  .findeo-custom #logo { position: relative }
-  .findeo-custom .mmenu-trigger { display: none !important }
-  .findeo-custom .header-widget {
-    border: 0;
-    padding: 0;
-    text-align: right;
-  }
-}
-
 @media only screen and (min-width: 992px) and (max-width: 1239px) {
   .findeo-custom .container { width: 100%; padding: 0 50px; }
   .findeo-custom #header { min-height: 77px }
@@ -701,7 +632,78 @@ body .findeo-custom .add-floorplans-submit-item.button,
 
 .header-widget a .sl {
   font-size: 17px;
+  left: 0;
   position: absolute;
+  right: 0;
   top: 1px;
   z-index: 1;
+}
+
+.findeo-custom .header-widget a span.text {
+  vertical-align: top
+}
+
+/* header menu fix  */
+@media only screen and (max-width: 991.98px) {
+
+  .findeo-custom .mmenu-trigger {
+    display: none !important
+  }
+
+  .findeo-custom .header-widget {
+    display: table;
+    margin-top: 45px;
+    padding: 10px 0 5px;
+    width: 100%;
+  }
+
+  .findeo-custom .header-widget span.text {
+    display: none;
+  }
+
+  .findeo-custom .header-widget a .sl-icon-magnifier {
+    left: 0;
+  }
+
+  .findeo-custom .header-widget a.first-level {
+    display: inline-block;
+    height: 40px;
+    line-height: 40px;
+    margin: 0;
+    text-align: center;
+    top: 0;
+    vertical-align: middle;
+    width: 40px;
+  }
+
+  .findeo-custom .header-widget a i.sl {
+    display: inline;
+    padding: 0;
+    top: 0;
+  }
+  /* end of hack */
+
+  .findeo-custom #logo {
+    left: 0;
+    margin-top: 3px;
+    margin: 0 auto;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    width: 100%;
+    width: 35%;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .findeo-custom .left-side,
+  .findeo-custom .right-side { width: 50% }
+  /* special 992px fix   */
+  .findeo-custom #logo { position: relative }
+  .findeo-custom .mmenu-trigger { display: none !important }
+  .findeo-custom .header-widget {
+    border: 0;
+    padding: 0;
+    text-align: right;
+  }
 }
