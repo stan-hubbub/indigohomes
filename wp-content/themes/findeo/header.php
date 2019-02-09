@@ -22,7 +22,7 @@
 <meta property="og:description" content="Find your home." />
 <link rel="profile" href="http://gmpg.org/xfn/11">
 <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
-<link rel="stylesheet" media="screen" href="<?php echo get_stylesheet_directory_uri(); ?>/css/findeo-custom.css?v=0.2.47">
+<link rel="stylesheet" media="screen" href="<?php echo get_stylesheet_directory_uri(); ?>/css/findeo-custom.css?v=0.2.93">
 <?php wp_head(); ?>
 </head>
 
@@ -134,7 +134,6 @@ $sticky = apply_filters('findeo_sticky_header_filter',$sticky);
 				<!-- Main Navigation -->
 				<nav id="navigation" class="style-1">
 					<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'responsive', 'container' => false ) );  ?>
-
 				</nav>
 				<div class="clearfix"></div>
 				<!-- Main Navigation / End -->
@@ -152,7 +151,7 @@ $sticky = apply_filters('findeo_sticky_header_filter',$sticky);
 				<div class="header-widget">
 					<a href="/properties/" class="first-level">
 						<i class="sl sl-icon-magnifier"></i>
-						Search
+						<span class="text">Search</span>
 					</a>
 					<?php if( true == $my_account_display) : ?>
 
@@ -196,7 +195,10 @@ $sticky = apply_filters('findeo_sticky_header_filter',$sticky);
 									</ul>
 								</div>
 							<?php } else { ?>
-									<a href="<?php echo get_permalink(realteo_get_option( 'my_account_page' ))?>" class="sign-in"><i class="fa fa-user"></i> <?php esc_html_e('Log In / Register','findeo');  ?></a>
+									<a href="<?php echo get_permalink(realteo_get_option( 'my_account_page' ))?>" class="first-level">
+										<i class="sl sl-icon-lock-open"></i>
+										<span class="text"><?php esc_html_e('Log In / Register','findeo');  ?></span>
+									</a>
 							<?php }	?>
 
 					<?php endif;?>
