@@ -83,6 +83,16 @@
     display: none;
   }
 
+  .findeo-custom .header-widget a .sl-icon-magnifier {
+    left: 0;
+  }
+
+  .findeo-custom .header-widget a.first-level,
+  .findeo-custom .header-widget a.sign-in {
+    display: inline-block;
+  }
+  /* end of hack */
+
   .findeo-custom #logo {
     left: 0;
     margin-top: 3px;
