@@ -151,7 +151,7 @@ $sticky = apply_filters('findeo_sticky_header_filter',$sticky);
 				<div class="header-widget">
 					<a href="/properties/" class="first-level">
 						<i class="sl sl-icon-magnifier"></i>
-						Search
+						<span class="text">Search</span>
 					</a>
 					<?php if( true == $my_account_display) : ?>
 
@@ -195,7 +195,10 @@ $sticky = apply_filters('findeo_sticky_header_filter',$sticky);
 									</ul>
 								</div>
 							<?php } else { ?>
-									<a href="<?php echo get_permalink(realteo_get_option( 'my_account_page' ))?>" class="sign-in"><i class="fa fa-user"></i> <?php esc_html_e('Log In / Register','findeo');  ?></a>
+									<a href="<?php echo get_permalink(realteo_get_option( 'my_account_page' ))?>" class="sign-in">
+										<i class="fa fa-user"></i>
+										<span class="text"><?php esc_html_e('Log In / Register','findeo');  ?></span>
+									</a>
 							<?php }	?>
 
 					<?php endif;?>
