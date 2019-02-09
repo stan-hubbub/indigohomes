@@ -156,6 +156,10 @@ body,
   box-shadow: none;
 }
 
+.findeo-custom #footer .container {
+  border-top: 1px solid #dddddd;
+}
+
 #footer .copyrights,
 .findeo-custom .copyrights {
   padding: 20px 0 !important;
@@ -343,7 +347,7 @@ body .findeo-custom .add-floorplans-submit-item.button,
 .findeo-custom #package_selection .user-packages label,
 .findeo-custom #package_selection .plan-features label {
   background: transparent;
-  border: 1px solid #35327e;
+  border: 1px solid #dddddd;
   color: #35327e !important;
 }
 
