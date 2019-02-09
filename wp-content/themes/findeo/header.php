@@ -195,7 +195,7 @@ $sticky = apply_filters('findeo_sticky_header_filter',$sticky);
 									</ul>
 								</div>
 							<?php } else { ?>
-									<a href="<?php echo get_permalink(realteo_get_option( 'my_account_page' ))?>" class="sign-in">
+									<a href="<?php echo get_permalink(realteo_get_option( 'my_account_page' ))?>" class="first-level">
 										<i class="sl sl-icon-lock-open"></i>
 										<span class="text"><?php esc_html_e('Log In / Register','findeo');  ?></span>
 									</a>
