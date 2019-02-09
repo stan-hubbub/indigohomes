@@ -71,10 +71,6 @@
   vertical-align: top
 }
 
-.findeo-custom .header-widget a .sl {
-  font-size: 17px;
-}
-
 @media only screen and (max-width: 991.98px) {
   /* hack  */
   .findeo-custom .mmenu-trigger {
@@ -701,8 +697,11 @@ body .findeo-custom .add-floorplans-submit-item.button,
 }
 
 .header-widget a .sl-icon-magnifier {
-  font-size: 17px;
   left: -22px;
+}
+
+.header-widget a .sl {
+  font-size: 17px;
   position: absolute;
   top: 1px;
   z-index: 1;
