@@ -621,6 +621,7 @@ body .findeo-custom .add-floorplans-submit-item.button,
 .header-widget a.first-level {
   color: #333333;
   margin-right: 25px;
+  padding-left: 5px;
   position: relative;
   top: 12px;
   vertical-align: top;
@@ -632,10 +633,10 @@ body .findeo-custom .add-floorplans-submit-item.button,
 
 .header-widget a .sl {
   font-size: 17px;
-  left: 0;
-  position: absolute;
+  left: -5px;
+  position: relative;
   right: 0;
-  top: 1px;
+  top: -27px;
   z-index: 1;
 }
 
@@ -643,9 +644,10 @@ body .findeo-custom .add-floorplans-submit-item.button,
   vertical-align: top
 }
 
-/* header menu fix  */
+
 @media only screen and (max-width: 991.98px) {
 
+  /* header menu fix  */
   .findeo-custom .mmenu-trigger {
     display: none !important
   }
@@ -670,16 +672,21 @@ body .findeo-custom .add-floorplans-submit-item.button,
     height: 40px;
     line-height: 40px;
     margin: 0;
+    padding-left: 0;
     text-align: center;
     top: 0;
     vertical-align: middle;
     width: 40px;
   }
 
+  .findeo-custom .header-widget a.first-level:hover {
+    color: #35327e;
+  }
+
   .findeo-custom .header-widget a i.sl {
     display: inline;
     padding: 0;
-    top: 0;
+    top: 10px;
   }
   /* end of hack */
 
@@ -698,6 +705,7 @@ body .findeo-custom .add-floorplans-submit-item.button,
 @media only screen and (min-width: 992px) {
   .findeo-custom .left-side,
   .findeo-custom .right-side { width: 50% }
+
   /* special 992px fix   */
   .findeo-custom #logo { position: relative }
   .findeo-custom .mmenu-trigger { display: none !important }
