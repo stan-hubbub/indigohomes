@@ -85,6 +85,7 @@
 
   .findeo-custom .header-widget a .sl-icon-magnifier {
     left: 0;
+    position: relative;
   }
 
   .findeo-custom .header-widget a.first-level,
@@ -99,9 +100,10 @@
   }
 
   .findeo-custom .header-widget a i.sl {
+    display: inline;
+    font-size: 17px;
     padding: 0;
     top: 0;
-    display: inline;
   }
   /* end of hack */
 
