@@ -331,6 +331,10 @@ body .findeo-custom .add-floorplans-submit-item.button,
 }
 
 /* woocommerce */
+.woocommerce-checkout-review-order-table th {
+  border-bottom: 0;
+}
+
 .findeo-custom #customer_details,
 .findeo-custom .woocommerce-customer-details {
   display: none;
