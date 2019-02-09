@@ -620,10 +620,12 @@ body .findeo-custom .add-floorplans-submit-item.button,
 /* header */
 .header-widget a.first-level {
   color: #333333;
-  margin-right: 25px;
-  padding-left: 5px;
+  display: inline-block;
+  height: 40px;
+  margin-right: 10px;
+  padding: 10px 10px 10px 15px;
   position: relative;
-  top: 12px;
+  top: 0;
   vertical-align: top;
 }
 
@@ -672,7 +674,7 @@ body .findeo-custom .add-floorplans-submit-item.button,
     height: 40px;
     line-height: 40px;
     margin: 0;
-    padding-left: 0;
+    padding: 0;
     text-align: center;
     top: 0;
     vertical-align: middle;
