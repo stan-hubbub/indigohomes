@@ -686,7 +686,8 @@ body .findeo-custom .add-floorplans-submit-item.button,
   .findeo-custom .header-widget a i.sl {
     display: inline;
     padding: 0;
-    top: 10px;
+    top: 2px;
+    left: 2px;
   }
   /* end of hack */
 
