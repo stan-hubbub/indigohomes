@@ -91,9 +91,17 @@
   .findeo-custom .header-widget a.sign-in {
     display: inline-block;
     height: 40px;
+    line-height: 40px;
     margin: 0;
     top: 0;
+    vertical-align: middle;
     width: 40px;
+  }
+
+  .findeo-custom .header-widget a i.fa {
+    padding: 0;
+    top: 0;
+    display: inline;
   }
   /* end of hack */
 
