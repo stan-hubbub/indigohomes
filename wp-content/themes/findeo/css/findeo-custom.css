@@ -169,11 +169,11 @@ body,
 }
 
 /* property/show  */
-.findeo-custom .property-main-features {
+.findeo-custom #titlebar .property-main-features {
   background-color: transparent;
   background: none;
-  border: 1px solid #dddddd;
-  padding: 20px;
+  border: 0;
+  padding: 0;
 }
 
 .findeo-custom li.checkboxed:before,

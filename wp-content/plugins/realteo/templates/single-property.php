@@ -78,7 +78,7 @@ switch ($layout) {
 
 			<div class="property-description print-only">
 				<?php $template_loader->get_template_part( 'single-partials/single-property','print-image' );  ?>
-				<!-- <?php $template_loader->get_template_part( 'single-partials/single-property','main-details' );  ?> -->
+				<?php # $template_loader->get_template_part( 'single-partials/single-property','main-details' );  ?>
 
 				<?php  $count = strlen(strip_tags(do_shortcode($post->post_content))); ?>
 
