@@ -156,10 +156,6 @@ body,
   box-shadow: none;
 }
 
-.findeo-custom #footer .container {
-  border-top: 1px solid #dddddd;
-}
-
 #footer .copyrights,
 .findeo-custom .copyrights {
   padding: 20px 0 !important;
@@ -167,8 +163,9 @@ body,
 }
 
 .findeo-custom .copyrights {
-  margin-top: 0;
   border-top: 0;
+  border-top: 1px solid #dddddd;
+  margin-top: 0;
 }
 
 /* property/show  */
