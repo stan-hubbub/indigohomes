@@ -241,6 +241,10 @@ body,
   padding: 0;
 }
 
+.findeo-custom .desc-headline {
+  margin-top: 0;
+}
+
 .findeo-custom #property_preview .property-titlebar span a {
   margin-bottom: 10px;
   margin-top: 10px;
