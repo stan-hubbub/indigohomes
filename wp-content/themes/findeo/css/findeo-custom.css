@@ -169,6 +169,7 @@ body,
 }
 
 /* property/show  */
+.findeo-custom .property-title .property-main-features,
 .findeo-custom #titlebar .property-main-features {
   background-color: transparent;
   background: none;
