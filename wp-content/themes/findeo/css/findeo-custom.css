@@ -300,6 +300,10 @@ body,
   background: transparent;
 }
 
+.findeo-custom #property_preview .property-titlebar {
+  margin-bottom: 0;
+}
+
 /* hack, cart and submit */
 .page-id-148 .header-widget .button,
 .page-id-171 .header-widget .button,
