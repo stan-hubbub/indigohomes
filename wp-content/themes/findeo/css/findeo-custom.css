@@ -237,6 +237,13 @@ body,
 }
 
 /* submit-property */
+
+@media screen and (max-width: 991px) {
+  .findeo-custom .pricing-container {
+    display: block;
+  }
+}
+
 .findeo-custom .submit-page,
 .findeo-custom #titlebar.submit-page h2 {
   padding: 0;
