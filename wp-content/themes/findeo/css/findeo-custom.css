@@ -239,9 +239,10 @@ body,
 /* submit-property */
 
 @media screen and (max-width: 991px) {
-  .findeo-custom .pricing-container {
-    display: block;
-  }
+  .findeo-custom .pricing-container { display: block; }
+  .findeo-custom .plan { margin-bottom: 35px }
+  .findeo-custom .plan-price { padding: 20px !important }
+  .findeo-custom .plan-price .period { margin-top: 0 }
 }
 
 .findeo-custom .submit-page,
