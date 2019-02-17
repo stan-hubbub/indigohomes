@@ -242,6 +242,7 @@ body,
   .findeo-custom #package_selection { max-width: 500px; margin: auto; }
   .findeo-custom .pricing-container { display: block; }
   .findeo-custom .plan { margin-bottom: 35px }
+  .findeo-custom .plan.featured { transform: none }
   .findeo-custom .plan-features,
   .findeo-custom .plan-price { padding: 20px !important }
   .findeo-custom .plan-price .period { margin-top: 0 }
