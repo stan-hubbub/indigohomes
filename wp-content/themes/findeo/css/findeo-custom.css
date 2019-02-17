@@ -605,13 +605,8 @@ body .findeo-custom .add-floorplans-submit-item.button,
 }
 
 /* forms and notification */
-.findeo-custom .property-manager-error {
-  color: #000;
-}
-
-.findeo-custom .notification.warning a {
-  color: #35327e;
-}
+.findeo-custom .property-manager-error { color: red }
+.findeo-custom .notification.warning a { color: #35327e; }
 
 .findeo-custom .chosen-container-single .chosen-single,
 .findeo-custom input[type=text],
