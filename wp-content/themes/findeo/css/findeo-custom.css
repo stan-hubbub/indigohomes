@@ -239,6 +239,7 @@ body,
 /* submit-property */
 
 @media screen and (max-width: 991px) {
+  .findeo-custom #package_selection { max-width: 500px; margin: auto; }
   .findeo-custom .pricing-container { display: block; }
   .findeo-custom .plan { margin-bottom: 35px }
   .findeo-custom .plan-price { padding: 20px !important }
