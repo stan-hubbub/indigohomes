@@ -156,10 +156,6 @@ body,
   box-shadow: none;
 }
 
-.findeo-custom #footer .container {
-  border-top: 1px solid #dddddd;
-}
-
 #footer .copyrights,
 .findeo-custom .copyrights {
   padding: 20px 0 !important;
@@ -167,16 +163,18 @@ body,
 }
 
 .findeo-custom .copyrights {
-  margin-top: 0;
   border-top: 0;
+  border-top: 1px solid #dddddd;
+  margin-top: 0;
 }
 
 /* property/show  */
-.findeo-custom .property-main-features {
+.findeo-custom .property-title .property-main-features,
+.findeo-custom #titlebar .property-main-features {
   background-color: transparent;
   background: none;
-  border: 1px solid #dddddd;
-  padding: 20px;
+  border: 0;
+  padding: 0;
 }
 
 .findeo-custom li.checkboxed:before,
@@ -239,9 +237,25 @@ body,
 }
 
 /* submit-property */
+
+@media screen and (max-width: 991px) {
+  .findeo-custom #package_selection { max-width: 500px; margin: auto; }
+  .findeo-custom .pricing-container { display: block; }
+  .findeo-custom .plan { margin-bottom: 35px }
+  .findeo-custom .plan.featured { transform: none }
+  .findeo-custom .plan-features,
+  .findeo-custom .plan-price { padding: 20px !important }
+  .findeo-custom .plan-price .period { margin-top: 0 }
+
+}
+
 .findeo-custom .submit-page,
 .findeo-custom #titlebar.submit-page h2 {
   padding: 0;
+}
+
+.findeo-custom .desc-headline {
+  margin-top: 0;
 }
 
 .findeo-custom #property_preview .property-titlebar span a {
@@ -298,6 +312,10 @@ body,
   background: transparent;
 }
 
+.findeo-custom #property_preview .property-titlebar {
+  margin-bottom: 0;
+}
+
 /* hack, cart and submit */
 .page-id-148 .header-widget .button,
 .page-id-171 .header-widget .button,
@@ -335,6 +353,11 @@ body .findeo-custom .add-floorplans-submit-item.button,
 }
 
 /* woocommerce */
+.findeo-custom .woocommerce-message {
+  display: none;
+  visibility: hidden;
+}
+
 .woocommerce-checkout-review-order-table th {
   border-bottom: 0;
 }
@@ -582,13 +605,8 @@ body .findeo-custom .add-floorplans-submit-item.button,
 }
 
 /* forms and notification */
-.findeo-custom .property-manager-error {
-  color: #000;
-}
-
-.findeo-custom .notification.warning a {
-  color: #35327e;
-}
+.findeo-custom .property-manager-error { color: red }
+.findeo-custom .notification.warning a { color: #35327e; }
 
 .findeo-custom .chosen-container-single .chosen-single,
 .findeo-custom input[type=text],

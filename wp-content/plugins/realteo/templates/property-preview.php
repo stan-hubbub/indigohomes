@@ -1,17 +1,17 @@
 <div class="notification closeable notice"><p><strong><?php esc_html_e('Notice!','realteo');?></strong> <?php esc_html_e("This is preview of property you've submitted, please confirm or edit your submission using buttons at the end of that page.",'realteo'); ?></p><a class="close" href="#"></a></div>
 <form method="post" id="property_preview" >
 
-<?php 
+<?php
 
 $template_loader = new Realteo_Template_Loader; ?>
 	<div  class="property-titlebar margin-top-55">
 
 		<div class="row">
 			<div class="col-md-12">
-				
+
 				<div class="property-title">
 					<h2><?php $post = get_post();
- 
+
     				$title = isset( $post->post_title ) ? $post->post_title : ''; echo $title;?> <?php the_property_offer_type(); ?> <?php the_property_type(); ?> </h2>
 					<?php if(get_the_property_address()): ?>
 					<span>
@@ -21,6 +21,7 @@ $template_loader = new Realteo_Template_Loader; ?>
 						</a>
 					</span>
 					<?php endif; ?>
+					<?php $template_loader->get_template_part( 'single-partials/single-property','main-details' );  ?>
 				</div>
 
 				<div class="property-pricing">
@@ -32,25 +33,25 @@ $template_loader = new Realteo_Template_Loader; ?>
 			</div>
 		</div>
 	</div>
-	
-		<?php 
-			$layout = get_post_meta( $post->ID, '_layout', true ); 
+
+		<?php
+			$layout = get_post_meta( $post->ID, '_layout', true );
 			if(empty($layout)) { $layout == 'style-1'; }
 			switch ($layout) {
 				case 'style-1':
-					$template_loader->get_template_part( 'single-partials/single-property','gallery' );  
+					$template_loader->get_template_part( 'single-partials/single-property','gallery' );
 					break;
 
 				case 'style-2':
-					$template_loader->get_template_part( 'single-partials/single-property','gallery-contact' );  
+					$template_loader->get_template_part( 'single-partials/single-property','gallery-contact' );
 					break;
-				
+
 				case 'style-3':
-					$template_loader->get_template_part( 'single-partials/single-property','gallery-fullwidth' );  
+					$template_loader->get_template_part( 'single-partials/single-property','gallery-fullwidth' );
 					break;
-				
+
 				default:
-					$template_loader->get_template_part( 'single-partials/single-property','gallery' );  
+					$template_loader->get_template_part( 'single-partials/single-property','gallery' );
 					break;
 			}
 		?>
@@ -60,7 +61,7 @@ $template_loader = new Realteo_Template_Loader; ?>
 
 			<div class="property-description">
 
-				<?php $template_loader->get_template_part( 'single-partials/single-property','main-details' );  ?>
+				<?php # $template_loader->get_template_part( 'single-partials/single-property','main-details' );  ?>
 
 				<?php  $count = strlen(strip_tags(do_shortcode($post->post_content))); ?>
 				<h3 class="desc-headline"><?php esc_html_e('Description', 'realteo') ?> </h3>
@@ -73,7 +74,7 @@ $template_loader = new Realteo_Template_Loader; ?>
 				<?php else : ?>
 					<?php the_content(); ?>
 				<?php endif; ?>
-				
+
 				<!-- Details -->
 				<?php $template_loader->get_template_part( 'single-partials/single-property','details' );  ?>
 				<?php $template_loader->get_template_part( 'single-partials/single-property','features' );  ?>

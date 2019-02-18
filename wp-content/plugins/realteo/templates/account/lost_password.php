@@ -1,7 +1,7 @@
 <div class="col-md-8">
 	<div class="row">
 		<div class="col-md-6 my-account">
-		<?php 
+		<?php
 		$errors = array();
 		if(isset($data)) :
 			$errors	 	= (isset($data->errors)) ? $data->errors : '' ;
@@ -21,11 +21,11 @@
 		<?php } else { ?>
 			<form id="lostpasswordform" action="<?php echo wp_lostpassword_url(); ?>" method="post">
 		<?php } ?>
-		
+
 			<p class="form-row">
 				<label for="user_login"><?php _e( 'Email Address:', 'realteo' ); ?>
 					<i class="im im-icon-Mail"></i>
-					<input type="text" name="user_login" id="user_login">
+					<input type="text" name="user_login" id="user_login" required >
 				</label>
 			</p>
 
