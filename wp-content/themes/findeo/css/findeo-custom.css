@@ -610,6 +610,8 @@ body .findeo-custom .add-floorplans-submit-item.button,
 .findeo-custom .back-to-listings {
   border: 1px solid #dddddd;
   background: transparent;
+  top: 35px;
+  margin-top: 0;
 }
 
 @media (max-width: 1299px) {
