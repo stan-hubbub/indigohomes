@@ -1,17 +1,2 @@
-[16-Sep-2018 10:04:23 UTC] PHP Warning:  sprintf(): Too few arguments in /home/hubbub42/public_html/indigohomes.ph/wp-admin/includes/class-bulk-upgrader-skin.php on line 150
-[16-Sep-2018 10:04:35 UTC] PHP Warning:  sprintf(): Too few arguments in /home/hubbub42/public_html/indigohomes.ph/wp-admin/includes/class-bulk-upgrader-skin.php on line 150
-[16-Sep-2018 10:04:43 UTC] PHP Warning:  sprintf(): Too few arguments in /home/hubbub42/public_html/indigohomes.ph/wp-admin/includes/class-bulk-upgrader-skin.php on line 150
-[16-Sep-2018 10:04:53 UTC] PHP Warning:  sprintf(): Too few arguments in /home/hubbub42/public_html/indigohomes.ph/wp-admin/includes/class-bulk-upgrader-skin.php on line 150
-[16-Sep-2018 10:05:03 UTC] PHP Warning:  sprintf(): Too few arguments in /home/hubbub42/public_html/indigohomes.ph/wp-admin/includes/class-bulk-upgrader-skin.php on line 150
-[16-Sep-2018 10:05:11 UTC] PHP Warning:  sprintf(): Too few arguments in /home/hubbub42/public_html/indigohomes.ph/wp-admin/includes/class-bulk-upgrader-skin.php on line 150
-[16-Sep-2018 10:05:18 UTC] PHP Warning:  sprintf(): Too few arguments in /home/hubbub42/public_html/indigohomes.ph/wp-admin/includes/class-bulk-upgrader-skin.php on line 150
-[16-Sep-2018 10:05:26 UTC] PHP Warning:  sprintf(): Too few arguments in /home/hubbub42/public_html/indigohomes.ph/wp-admin/includes/class-bulk-upgrader-skin.php on line 150
-[16-Sep-2018 10:05:37 UTC] PHP Warning:  sprintf(): Too few arguments in /home/hubbub42/public_html/indigohomes.ph/wp-admin/includes/class-bulk-upgrader-skin.php on line 150
-[16-Sep-2018 10:05:46 UTC] PHP Warning:  sprintf(): Too few arguments in /home/hubbub42/public_html/indigohomes.ph/wp-admin/includes/class-bulk-upgrader-skin.php on line 150
-[16-Sep-2018 10:05:54 UTC] PHP Warning:  sprintf(): Too few arguments in /home/hubbub42/public_html/indigohomes.ph/wp-admin/includes/class-bulk-upgrader-skin.php on line 150
-[16-Sep-2018 10:06:03 UTC] PHP Warning:  sprintf(): Too few arguments in /home/hubbub42/public_html/indigohomes.ph/wp-admin/includes/class-bulk-upgrader-skin.php on line 150
-[16-Sep-2018 10:06:12 UTC] PHP Warning:  sprintf(): Too few arguments in /home/hubbub42/public_html/indigohomes.ph/wp-admin/includes/class-bulk-upgrader-skin.php on line 150
-[16-Sep-2018 10:06:53 UTC] PHP Warning:  sprintf(): Too few arguments in /home/hubbub42/public_html/indigohomes.ph/wp-admin/includes/class-bulk-upgrader-skin.php on line 150
-[16-Sep-2018 10:07:03 UTC] PHP Warning:  sprintf(): Too few arguments in /home/hubbub42/public_html/indigohomes.ph/wp-admin/includes/class-bulk-upgrader-skin.php on line 150
-[16-Sep-2018 10:07:17 UTC] PHP Warning:  sprintf(): Too few arguments in /home/hubbub42/public_html/indigohomes.ph/wp-admin/includes/class-bulk-upgrader-skin.php on line 150
-[16-Sep-2018 10:07:32 UTC] PHP Warning:  sprintf(): Too few arguments in /home/hubbub42/public_html/indigohomes.ph/wp-admin/includes/class-bulk-upgrader-skin.php on line 150
+[23-Feb-2019 08:38:46 UTC] PHP Recoverable fatal error:  Object of class WP_Error could not be converted to string in /home/hubbub42/public_html/indigohomes.ph/wp-content/plugins/realteo/includes/class-realteo.php on line 521
+[23-Feb-2019 08:40:16 UTC] PHP Recoverable fatal error:  Object of class WP_Error could not be converted to string in /home/hubbub42/public_html/indigohomes.ph/wp-content/plugins/realteo/includes/class-realteo.php on line 521

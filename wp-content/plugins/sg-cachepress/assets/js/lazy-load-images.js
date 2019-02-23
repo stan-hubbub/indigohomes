@@ -1,6 +1,6 @@
 (function ($, window, document, undefined) {
     // options
-    var lazyLoad = 'lazyLoad',
+    var lazyLoadSG = 'lazyLoadSG',
         dataLazied = 'lazied',
         load_error = 'load error',
         classLazyHidden = 'lazy-hidden',
@@ -16,7 +16,7 @@
 
             loadEvent: 'pageshow', // check AJAX-loaded content in jQueryMobile
             updateEvent: 'load orientationchange resize scroll touchmove focus', // page-modified events
-            forceEvent: '', // force loading of all elements
+            forceEvent: 'lazyloadall', // force loading of all elements
 
             //onstart: null,
             oninit: {removeClass: 'lazy'}, // init handler
@@ -40,15 +40,6 @@
         $data = $.data || function (el, name) {
             return $(el).data(name);
         },
-    // $.contains is not included into DOMtastic, so implement it there
-        $contains = $.contains || function (parent, el) {
-            while (el = el.parentNode) {
-                if (el === parent) {
-                    return true;
-                }
-            }
-            return false;
-        },
         elements = [],
         topLazy = 0,
     /*
@@ -58,7 +49,7 @@
      */
         waitingMode = 0;
 
-    $[lazyLoad] = $extend(options, elementOptions, $[lazyLoad]);
+    $[lazyLoadSG] = $extend(options, elementOptions, $[lazyLoadSG]);
 
     /**
      * Return options.prop if obj.prop is undefined, otherwise return obj.prop
@@ -80,16 +71,17 @@
 
     /**
      * Add new elements to lazy-load list:
-     * $(elements).lazyLoad() or $(window).lazyLoad()
+     * $(elements).lazyLoadSG() or $(window).lazyLoadSG()
      *
      * @param {object} [overrides] override global options
      */
-    $.fn[lazyLoad] = function (overrides) {
+    $.fn[lazyLoadSG] = function (overrides) {
         overrides = overrides || {};
 
         var blankImage = getOrDef(overrides, 'blankImage'),
             checkDuplicates = getOrDef(overrides, 'checkDuplicates'),
             scrollContainer = getOrDef(overrides, 'scrollContainer'),
+            forceShow = getOrDef(overrides, 'show'),
             elementOptionsOverrides = {},
             prop;
 
@@ -102,25 +94,28 @@
 
         return this.each(function (index, el) {
             if (el === window) {
-                $(options.selector).lazyLoad(overrides);
+                $(options.selector).lazyLoadSG(overrides);
             } else {
+                var duplicate = checkDuplicates && $data(el, dataLazied),
+                    $el = $(el).data(dataLazied, forceShow ? -1 : 1);
+
                 // prevent duplicates
-                if (checkDuplicates && $data(el, dataLazied)) {
+                if (duplicate) {
+                    queueCheckLazyElements();
                     return;
                 }
-
-                var $el = $(el).data(dataLazied, 1);
 
                 if (blankImage && el.tagName === 'IMG' && !el.src) {
                     el.src = blankImage;
                 }
 
                 // clone elementOptionsOverrides object
-                $el[lazyLoad] = $extend({}, elementOptionsOverrides);
+                $el[lazyLoadSG] = $extend({}, elementOptionsOverrides);
 
                 triggerEvent('init', $el);
 
                 elements.push($el);
+                queueCheckLazyElements();
             }
         });
     };
@@ -184,13 +179,13 @@
         for (i = 0, length = elements.length; i < length; i++) {
             var $el = elements[i],
                 el = $el[0],
-                objData = $el[lazyLoad],
+                objData = $el[lazyLoadSG],
                 removeNode = false,
-                visible = force,
+                visible = force || $data(el, dataLazied) < 0,
                 topEdge;
 
             // remove items that are not in DOM
-            if (!$contains(docElement, el)) {
+            if (!$.contains(docElement, el)) {
                 removeNode = true;
             } else if (force || !objData.visibleOnly || el.offsetWidth || el.offsetHeight) {
 
@@ -206,12 +201,14 @@
                 }
 
                 if (visible) {
+                    $el.on(load_error, triggerLoadOrError);
+
                     triggerEvent('show', $el);
 
                     var srcAttr = objData.srcAttr,
                         src = $isFunction(srcAttr) ? srcAttr($el) : el.getAttribute(srcAttr);
+
                     if (src) {
-                        $el.on(load_error, triggerLoadOrError);
                         el.src = src;
                     }
 
@@ -224,6 +221,7 @@
             }
 
             if (removeNode) {
+                $data(el, dataLazied, 0);
                 elements.splice(i--, 1);
                 length--;
             }
@@ -276,7 +274,7 @@
      * Initialize list of hidden elements
      */
     function initLazyElements() {
-        $window.lazyLoad();
+        $window.lazyLoadSG();
     }
 
 
@@ -295,17 +293,51 @@
         triggerEvent('start', $window);
 
         $window
-            .on(options.loadEvent, initLazyElements)
             .on(options.updateEvent, queueCheckLazyElements)
             .on(options.forceEvent, forceLoadAll);
 
-
-        forceLoadAll();
         $(document).on(options.updateEvent, queueCheckLazyElements);
 
         if (options.autoInit) {
+            $window.on(options.loadEvent, initLazyElements);
             initLazyElements(); // standard initialization
         }
     });
 
 })(window.jQuery || window.Zepto || window.$, window, document);
+
+
+(function ($) {
+    var options = $.lazyLoadSG;
+
+    options.selector += ',video,iframe[data-src],embed[data-src]';
+    options.videoPoster = 'data-poster';
+
+    $(document).on('lazyshow', 'video', function (e, $el) {
+        var srcAttr = $el.lazyLoadSG.srcAttr,
+            isFuncSrcAttr = $.isFunction(srcAttr),
+            changed = false;
+
+        $el.attr('poster', $el.attr(options.videoPoster));
+        $el.children('source,track')
+            .each(function (index, el) {
+                var $child = $(el),
+                    src = isFuncSrcAttr ? srcAttr($child) : $child.attr(srcAttr);
+                if (src) {
+                    $child.attr('src', src);
+                    changed = true;
+                }
+            });
+
+        // reload video
+        if (changed && typeof $(this).attr('preload') !== 'undefined' && 'none' != $(this).attr('preload') ) {
+            this.load();
+        }
+        $(this).removeClass('lazy-hidden');
+    });
+
+    $(document).on('lazyshow', 'embed', function (e, $el) {
+        $(this).removeClass('lazy-hidden');
+    });
+
+})(window.jQuery || window.Zepto || window.$);
