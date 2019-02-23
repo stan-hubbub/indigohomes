@@ -563,6 +563,11 @@ body .findeo-custom .add-floorplans-submit-item.button,
   .findeo-custom .back-to-listings {
     display: none;
   }
+
+  .findeo-custom .property-title {
+    margin-left: 0;
+    max-width: 100%;
+  }
 }
 
 @media (min-width: 1300px) {
