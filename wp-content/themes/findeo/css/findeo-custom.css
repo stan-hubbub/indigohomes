@@ -84,13 +84,14 @@
   }
 }
 
-.findeo-custom .list-layout .listing-img-container:before,
-.findeo-custom .list-layout .listing-img-container:after,
-.findeo-custom .listing-img-container:after,
-.findeo-custom .listing-img-container:before {
+.findeo-custom .list-layout a.listing-img-container:before,
+.findeo-custom .list-layout a.listing-img-container:after,
+.findeo-custom a.listing-img-container:after,
+.findeo-custom a.listing-img-container:before {
   background: none;
 }
 
+.findeo-custom a.listing-img-container:before:hover
 .findeo-custom .list-layout a.listing-img-container:before:hover {
   background: linear-gradient(to bottom, transparent 55%, #66676b) !important;
 }
