@@ -99,6 +99,7 @@ $sticky = apply_filters('findeo_sticky_footer_filter',$sticky);
                         }
                     ?>
                 </li>
+                <li>&middot;</li>
                 <li>
                   <a href="/privacy-policy/">Privacy Policy</a>
                 </li>
