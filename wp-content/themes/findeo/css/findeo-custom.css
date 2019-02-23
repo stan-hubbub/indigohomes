@@ -88,11 +88,11 @@
 .findeo-custom .list-layout .listing-img-container:after,
 .findeo-custom .listing-img-container:after,
 .findeo-custom .listing-img-container:before {
-  background: none;
+  background: none !important;
 }
 
 .findeo-custom .list-layout a.listing-img-container:before {
-  background: linear-gradient(to bottom, transparent 55%, #66676b)
+  background: linear-gradient(to bottom, transparent 55%, #66676b) !important;
 }
 
 .findeo-custom .compare-button,
