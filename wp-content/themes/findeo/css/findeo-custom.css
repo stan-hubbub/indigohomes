@@ -1,3 +1,7 @@
+mark, ins {
+  background-color: transparent;
+}
+
 /* tinymce */
 #mceu_28 {
   display: none;
