@@ -132,7 +132,7 @@
   border: 1px solid #dddddd;
 }
 
-.findeo-custom ul.listing-details li {
+.findeo-custom .list-layout ul.listing-details li {
   color: #666666;
   font-size: 16px;
   padding-right: 30px;
