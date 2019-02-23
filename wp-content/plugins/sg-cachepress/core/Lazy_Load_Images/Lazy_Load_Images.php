@@ -39,6 +39,11 @@ class Lazy_Load_Images {
 		if ( Options::is_enabled( 'siteground_optimizer_lazyload_fadein' ) ) {
 			add_filter( 'body_class', array( $this, 'add_fadein_body_class' ) );
 		}
+
+		// If enabled replace the 'src' attr with 'data-src' in text widgets.
+		if ( Options::is_enabled( 'siteground_optimizer_lazyload_woocommerce' ) ) {
+			add_filter( 'woocommerce_product_get_image', array( $this, 'filter_html' ) );
+		}
 	}
 
 	/**
@@ -99,33 +104,47 @@ class Lazy_Load_Images {
 			empty( $content ) ||
 			is_admin() ||
 			( function_exists( 'is_amp_endpoint' ) && is_amp_endpoint() ) ||
-			method_exists( 'FLBuilderModel', 'is_builder_enabled' ) ||
-			wp_is_mobile()
+			method_exists( 'FLBuilderModel', 'is_builder_enabled' )
 		) {
+
 			return $content;
 		}
 
-		// Search patterns.
-		$patterns = array(
-			'/(?<!noscript\>)((<img.*?src=["|\'].*?["|\']).*?(\/?>))/i',
-			'/(?<!noscript\>)(<img.*?)(src)=["|\']((?!data).*?)["|\']/i',
-			'/(?<!noscript\>)(<img.*?)((srcset)=["|\'](.*?)["|\'])/i',
-		);
+		preg_match_all( '/<img[\s\r\n]+.*?>/is', $content, $matches );
 
-		// Replacements.
-		$replacements = array(
-			'$1<noscript>$2$3</noscript>',
-			'$1src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-$2="$3"',
-			'$1data-$3="$4"',
-		);
+		$search = array();
+		$replace = array();
 
-		// Finally do the search/replace and return modified content.
-		return preg_replace(
-			$patterns,
-			$replacements,
-			$content
-		);
+		foreach ( $matches[0] as $img_html ) {
+			// Skip already replaced images.
+			if ( preg_match( "/src=['\"]data:image/is", $img_html ) || preg_match( "/src=.*lazy_placeholder.gif['\"]/s", $img_html ) ) {
+				continue;
+			}
 
+			// Replace the src and add the data-src attribute.
+			$replace_html = '';
+			$replace_html = preg_replace( '/<img(.*?)src=/is', '<img$1src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src=', $img_html );
+			$replace_html = preg_replace( '/<img(.*?)srcset=/is', '<img$1srcset="" data-srcset=', $replace_html );
+
+			// Add the lazy class to the img element.
+			if ( preg_match( '/class=["\']/i', $replace_html ) ) {
+				$replace_html = preg_replace( '/class=(["\'])(.*?)["\']/is', 'class=$1lazy lazy-hidden $2$1', $replace_html );
+			} else {
+				$replace_html = preg_replace( '/<img/is', '<img class="lazy lazy-hidden"', $replace_html );
+			}
+
+			$replace_html .= '<noscript>' . $img_html . '</noscript>';
+
+			array_push( $search, $img_html );
+			array_push( $replace, $replace_html );
+		}
+
+		$search = array_unique( $search );
+		$replace = array_unique( $replace );
+
+		$content = str_replace( $search, $replace, $content );
+
+		return $content;
 	}
 
 	/**

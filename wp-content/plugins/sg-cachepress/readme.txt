@@ -3,7 +3,7 @@ Contributors: Hristo Sg, siteground, sstoqnov
 Tags: nginx, caching, speed, memcache, memcached, performance, siteground, nginx, supercacher
 Requires at least: 4.7
 Requires PHP: 5.5
-Tested up to: 5.0
+Tested up to: 5.1
 Stable tag: 1.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -42,14 +42,54 @@ Here, you can enable or disable optimization for your newly uploaded images, bul
 If your plugin does not trigger standard WordPress hooks or you need us to purge the cache, you can use this public function in your code:
 
     if (function_exists('sg_cachepress_purge_cache')) {
-    sg_cachepress_purge_cache();
+    	sg_cachepress_purge_cache();
     }
 
 Preferrably, you can pass an URL to the function to clear the cache just for it instead of purging the entire cache. For example:
 
     if (function_exists('sg_cachepress_purge_cache')) {
-    sg_cachepress_purge_cache('https://yoursite.com/pluginpage');
+   		sg_cachepress_purge_cache('https://yoursite.com/pluginpage');
     }
+
+You can exclude styles from being combined and minified using the filters we’ve designed for that purpose. Here’s an example of the code, you can add to your functions.php file:
+
+	add_filter( 'sgo_css_combine_exclude', 'css_combine_exclude' );
+	function css_combine_exclude( $exclude_list ) {
+		// Add the style handle to exclude list.
+		$exclude_list[] = 'style-handle';
+		$exclude_list[] = 'style-handle-2';
+
+		return $exclude_list;
+	}
+
+	add_filter( 'sgo_css_minify_exclude', 'css_minify_exclude' );
+	function css_minify_exclude( $exclude_list ) {
+		// Add the style handle to exclude list.
+		$exclude_list[] = 'style-handle';
+		$exclude_list[] = 'style-handle-2';
+
+		return $exclude_list;
+	}
+
+You can exclude script from being minified using the filter we’ve designed for that purpose. Here’s an example of the code, you can add to your functions.php file:
+
+	add_filter( 'sgo_js_minify_exclude', 'js_minify_exclude' );
+	function js_minify_exclude( $exclude_list ) {
+		$exclude_list[] = 'script-handle';
+		$exclude_list[] = 'script-handle-2';
+
+		return $exclude_list;
+	}
+
+You can exclude script from being loaded asynchronous using the filter we’ve designed for that purpose. Here’s an example of the code, you can add to your functions.php file:
+
+	add_filter( 'sgo_js_async_exclude', 'js_async_exclude' );
+	function js_async_exclude( $exclude_list ) {
+		$exclude_list[] = 'script-handle';
+		$exclude_list[] = 'script-handle-2';
+
+		return $exclude_list;
+	}
 
 = WP-CLI Support = 
 
@@ -100,6 +140,19 @@ Our plugin uses a cookie in order to function properly. It does not store person
 1. Go to Plugins -> Installed Plugins and click the 'Activate' link under the WordPress SG CachePress listing
 
 == Changelog ==
+
+= Version 5.1.0 =
+* Added CSS Combination Functionality
+* Added Async Load of Render-Blocking JS
+* Added WooCommerce Support for LazyLoad
+* Added Filter to Exclude Styles from CSS Combination
+* Improved Lazy Load Functionality on Mobile Devices
+* Fixed Issue with WP Rocket’s .htaccess rules and GZIP
+* Fixed Issue with Query String Removal Script in the Admin Section
+* Fixed Compatibility Issues with 3rd Party Plugins and Lazy Load
+* Fixed Compatibility Issues with Woo PDF Catalog Plugin and HTML Minification
+* Improved Memcached Reliability
+* Improved Lazy Load for Responsive Images
 
 = Version 5.0.13 =
 * Modified HTML minification to keep comments

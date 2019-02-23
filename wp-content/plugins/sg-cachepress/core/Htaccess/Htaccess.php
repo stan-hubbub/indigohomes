@@ -48,7 +48,7 @@ class Htaccess {
 		'gzip'            => array(
 			'enabled'  => '/\#\s+GZIP enabled by SG-Optimizer/si',
 			'disabled' => '/\#\s+GZIP enabled by SG-Optimizer(.+?)\#\s+END\s+GZIP\n/ims',
-			'disable_all' => '/\#\s+GZIP enabled by SG-Optimizer(.+?)\#\s+END\s+GZIP\n|<IfModule mod_deflate\.c>(.*?\n)<\/IfModule>/ims',
+			'disable_all' => '/\#\s+GZIP enabled by SG-Optimizer(.+?)\#\s+END\s+GZIP\n|<IfModule mod_deflate\.c>(.*?\n)<\/IfModule>|# BEGIN WP Rocket(.*)# END WP Rocket/ims',
 		),
 		'browser-caching' => array(
 			'enabled'  => '/\#\s+Leverage Browser Caching by SG-Optimizer/si',

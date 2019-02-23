@@ -148,6 +148,7 @@ class Admin {
 			'tabs'               => $this->modules->get_active_tabs(),
 			'locale'             => Helper::get_i18n_data_json(),
 			'should_flush_cache' => $this->should_flush_cache(),
+			'is_shop'            => is_plugin_active( 'woocommerce/woocommerce.php' ) ? 1 : 0,
 			'localeSlug'         => join( '-', explode( '_', \get_user_locale() ) ),
 			'wp_nonce'           => wp_create_nonce( 'wp_rest' ),
 			'config'             => array(
