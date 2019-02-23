@@ -88,7 +88,7 @@ $sticky = apply_filters('findeo_sticky_footer_filter',$sticky);
         <div class="row">
           <div class="col-md-12">
             <div class="copyrights">
-              <ul>
+              <ul class="list-inline">
                 <li>
                     <?php $copyrights = get_option( 'pp_copyrights' , '&copy; Theme by Purethemes.net. All Rights Reserved.' );
                         if (function_exists('icl_register_string')) {
