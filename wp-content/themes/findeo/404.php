@@ -7,7 +7,7 @@
  * @package findeo
  */
 
-get_header(get_option('header_bar_style','standard') ); 
+get_header(get_option('header_bar_style','standard') );
 
 ?>
 <!-- Titlebar
@@ -20,7 +20,7 @@ get_header(get_option('header_bar_style','standard') );
                 <div class="col-md-12">
 
                     <h2><?php esc_html_e( 'Page Not Found', 'findeo' ); ?></h2>
-                    
+
                     <?php if(function_exists('bcn_display')) { ?>
                         <nav id="breadcrumbs" xmlns:v="http://rdf.data-vocabulary.org/#">
                             <ul>
@@ -41,8 +41,8 @@ get_header(get_option('header_bar_style','standard') );
 	<div class="row">
     	<div class="col-md-12">
     		<section id="not-found" class="margin-bottom-50">
-    			<h2>404 <i class="fa fa-question-circle"></i></h2>
-    			<p><?php _e( 'We&rsquo;re sorry, but the page you were looking for doesn&rsquo;t exist..', 'findeo' ); ?></p>
+    			<h2>🏕</h2>
+    			<p><?php _e( 'We&rsquo;re sorry, but the page you were looking for doesn&rsquo;t exist.', 'findeo' ); ?></p>
     			<a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="button center border medium margin-top-30"><?php _e( 'Back to Homepage', 'findeo' ); ?></a>
     		</section>
     	</div>
