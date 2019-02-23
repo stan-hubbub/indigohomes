@@ -84,6 +84,25 @@
   }
 }
 
+.findeo-custom .list-layout a.listing-img-container:before,
+.findeo-custom .list-layout a.listing-img-container:after,
+.findeo-custom a.listing-img-container:after,
+.findeo-custom a.listing-img-container:before {
+  background: transparent;
+}
+
+.findeo-custom .list-layout a.listing-img-container:hover:before,
+.findeo-custom .list-layout a.listing-img-container:hover:after,
+.findeo-custom a.listing-img-container:hover:after,
+.findeo-custom a.listing-img-container:hover:before {
+  background: linear-gradient(to bottom, transparent 40%,rgba(0,0,0,0.5)) !important;
+}
+
+.findeo-custom .compare-button,
+.findeo-custom .like-icon {
+  bottom: 20px !important;
+}
+
 /* homepage */
 .findeo-custom a.listing-address {
   color: #666666;
