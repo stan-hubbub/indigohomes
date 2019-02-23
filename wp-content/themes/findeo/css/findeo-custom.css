@@ -4,7 +4,8 @@
 }
 
 .findeo-custom #property_description_ifr,
-.findeo-custom #property_description_ifr body {
+.findeo-custom #property_description_ifr body
+.findeo-custom .submit-page body#tinymce {
   min-height: 500px !important;
   font-family: sans-serif !important;
 }
