@@ -65,10 +65,10 @@
 .findeo-custom .text-right {
   text-align: right;
 }
-
+/*
 .findeo-custom ul.listing-details {
   background-color: transparent;
-}
+} */
 
 .layout-switcher,
 .findeo-custom .layout-switcher {
@@ -135,6 +135,8 @@
 .findeo-custom ul.listing-details li {
   color: #666666;
   font-size: 16px;
+  padding-right: 30px;
+  padding-left: 0;
 }
 
 .findeo-custom .listing-img-content .listing-price {
@@ -173,6 +175,7 @@ body,
 /* posts */
 .findeo-custom .list-layout ul.listing-details {
   background-color: transparent;
+  padding: 18px 35px;
 }
 
 /* footer */
@@ -200,6 +203,11 @@ body,
 }
 
 /* property/show  */
+.findeo-custom .slick-track a {
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
 .findeo-custom .property-title .property-main-features,
 .findeo-custom #titlebar .property-main-features {
   background-color: transparent;
