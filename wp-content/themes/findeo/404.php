@@ -41,7 +41,7 @@ get_header(get_option('header_bar_style','standard') );
 	<div class="row">
     	<div class="col-md-12">
     		<section id="not-found" class="margin-bottom-50">
-    			<h2>⛺️</h2>
+    			<h2>🏕</h2>
     			<p><?php _e( 'We&rsquo;re sorry, but the page you were looking for doesn&rsquo;t exist.', 'findeo' ); ?></p>
     			<a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="button center border medium margin-top-30"><?php _e( 'Back to Homepage', 'findeo' ); ?></a>
     		</section>
