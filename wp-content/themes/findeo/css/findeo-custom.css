@@ -84,6 +84,22 @@
   }
 }
 
+.findeo-custom .list-layout .listing-img-container:before,
+.findeo-custom .list-layout .listing-img-container:after,
+.findeo-custom .listing-img-container:after,
+.findeo-custom .listing-img-container:before {
+  background: none;
+}
+
+.findeo-custom .list-layout a.listing-img-container:before {
+  background: linear-gradient(to bottom, transparent 55%, #66676b)
+}
+
+.findeo-custom .compare-button,
+.findeo-custom .like-icon {
+  bottom: 20px !important;
+}
+
 /* homepage */
 .findeo-custom a.listing-address {
   color: #666666;
