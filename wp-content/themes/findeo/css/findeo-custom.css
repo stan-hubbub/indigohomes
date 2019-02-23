@@ -206,6 +206,7 @@ body,
 .findeo-custom .slick-track a {
   background-repeat: no-repeat;
   background-size: contain;
+  background-color: #f5f5f5;
 }
 
 .findeo-custom .property-title .property-main-features,
