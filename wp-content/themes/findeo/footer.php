@@ -107,6 +107,10 @@ $sticky = apply_filters('findeo_sticky_footer_filter',$sticky);
                 <li>
                   <a href="/terms-of-service/">Terms</a>
                 </li>
+                <li>&middot;</li>
+                <li>
+                  <a href="/contact/">Contact</a>
+                </li>
             </div>
           </div>
         </div>
