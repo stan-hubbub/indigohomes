@@ -95,7 +95,7 @@
 .findeo-custom .list-layout a.listing-img-container:hover:after,
 .findeo-custom a.listing-img-container:hover:after,
 .findeo-custom a.listing-img-container:hover:before {
-  background: linear-gradient(to bottom, transparent 55%, #66676b) !important;
+  background: linear-gradient(to bottom, transparent 40%,rgba(0,0,0,0.5)) !important;
 }
 
 .findeo-custom .compare-button,
