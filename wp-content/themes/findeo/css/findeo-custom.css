@@ -3,12 +3,9 @@
   display: none;
 }
 
-.findeo-custom #property_description_ifr {
-  height: 500px;
-}
-
+.findeo-custom #property_description_ifr,
 .findeo-custom #property_description_ifr body {
-  height: 500px;
+  min-height: 500px !important;
 }
 
 /* misc */
