@@ -88,7 +88,7 @@
 .findeo-custom .list-layout .listing-img-container:after,
 .findeo-custom .listing-img-container:after,
 .findeo-custom .listing-img-container:before {
-  background: none !important;
+  background: none;
 }
 
 .findeo-custom .list-layout a.listing-img-container:before:hover {
