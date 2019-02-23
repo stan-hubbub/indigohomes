@@ -5,7 +5,7 @@ $details_list = Realteo_Meta_Boxes::meta_boxes_main_details();
 $class = (isset($data->class)) ? $data->class : 'property-main-features' ;
 ?>
 <ul class="<?php esc_attr_e($class); ?>">
-	<?php if (!empty(the_property_price)) { ?>
+	<?php if (!empty(the_property_price())) { ?>
 		<li  class="main-detail-price"><?php the_property_price(); ?></li>
 	<?php } ?>
 <?php
