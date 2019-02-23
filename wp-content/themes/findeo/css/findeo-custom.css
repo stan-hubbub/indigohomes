@@ -70,10 +70,6 @@
 .findeo-custom .text-right {
   text-align: right;
 }
-/*
-.findeo-custom ul.listing-details {
-  background-color: transparent;
-} */
 
 .layout-switcher,
 .findeo-custom .layout-switcher {
@@ -143,6 +139,14 @@
   padding-right: 30px;
   padding-left: 0;
 }
+
+.findeo-custom .list-layout ul.listing-details li:first-child {
+  padding-right: 0;
+}
+
+.findeo-custom .list-layout ul.listing-details li:nth-child(2) {
+  padding-left: 30px;
+ }
 
 .findeo-custom .listing-img-content .listing-price {
   display: none;
