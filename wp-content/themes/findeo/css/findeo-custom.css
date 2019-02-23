@@ -91,7 +91,7 @@
   background: none !important;
 }
 
-.findeo-custom .list-layout a.listing-img-container:hover:before {
+.findeo-custom .list-layout a.listing-img-container:before:hover {
   background: linear-gradient(to bottom, transparent 55%, #66676b) !important;
 }
 
