@@ -1478,3 +1478,27 @@ Stack trace:
 [24-Feb-2019 07:53:20 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/hubbub42/public_html/indigohomes.ph/wp-content/plugins/realteo/realteo-template-functions.php on line 547
 [24-Feb-2019 08:11:08 UTC] The WC_Cart::get_remove_url function is deprecated since version 3.3. Replace with wc_get_cart_remove_url.
 [24-Feb-2019 08:13:11 UTC] The WC_Cart::get_remove_url function is deprecated since version 3.3. Replace with wc_get_cart_remove_url.
+[24-Feb-2019 08:28:37 UTC] PHP Warning:  range(): Invalid range string - must be numeric in /home/hubbub42/public_html/indigohomes.ph/wp-content/plugins/realteo/realteo-template-functions.php on line 543
+[24-Feb-2019 08:28:37 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/hubbub42/public_html/indigohomes.ph/wp-content/plugins/realteo/realteo-template-functions.php on line 547
+[24-Feb-2019 08:28:37 UTC] PHP Warning:  range(): Invalid range string - must be numeric in /home/hubbub42/public_html/indigohomes.ph/wp-content/plugins/realteo/realteo-template-functions.php on line 543
+[24-Feb-2019 08:28:37 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/hubbub42/public_html/indigohomes.ph/wp-content/plugins/realteo/realteo-template-functions.php on line 547
+[24-Feb-2019 08:30:22 UTC] PHP Warning:  range(): Invalid range string - must be numeric in /home/hubbub42/public_html/indigohomes.ph/wp-content/plugins/realteo/realteo-template-functions.php on line 543
+[24-Feb-2019 08:30:22 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/hubbub42/public_html/indigohomes.ph/wp-content/plugins/realteo/realteo-template-functions.php on line 547
+[24-Feb-2019 08:30:22 UTC] PHP Warning:  range(): Invalid range string - must be numeric in /home/hubbub42/public_html/indigohomes.ph/wp-content/plugins/realteo/realteo-template-functions.php on line 543
+[24-Feb-2019 08:30:22 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/hubbub42/public_html/indigohomes.ph/wp-content/plugins/realteo/realteo-template-functions.php on line 547
+[24-Feb-2019 08:35:53 UTC] PHP Warning:  range(): Invalid range string - must be numeric in /home/hubbub42/public_html/indigohomes.ph/wp-content/plugins/realteo/realteo-template-functions.php on line 543
+[24-Feb-2019 08:35:53 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/hubbub42/public_html/indigohomes.ph/wp-content/plugins/realteo/realteo-template-functions.php on line 547
+[24-Feb-2019 08:35:53 UTC] PHP Warning:  range(): Invalid range string - must be numeric in /home/hubbub42/public_html/indigohomes.ph/wp-content/plugins/realteo/realteo-template-functions.php on line 543
+[24-Feb-2019 08:35:53 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/hubbub42/public_html/indigohomes.ph/wp-content/plugins/realteo/realteo-template-functions.php on line 547
+[24-Feb-2019 08:38:18 UTC] PHP Warning:  range(): Invalid range string - must be numeric in /home/hubbub42/public_html/indigohomes.ph/wp-content/plugins/realteo/realteo-template-functions.php on line 543
+[24-Feb-2019 08:38:18 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/hubbub42/public_html/indigohomes.ph/wp-content/plugins/realteo/realteo-template-functions.php on line 547
+[24-Feb-2019 08:38:18 UTC] PHP Warning:  range(): Invalid range string - must be numeric in /home/hubbub42/public_html/indigohomes.ph/wp-content/plugins/realteo/realteo-template-functions.php on line 543
+[24-Feb-2019 08:38:18 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/hubbub42/public_html/indigohomes.ph/wp-content/plugins/realteo/realteo-template-functions.php on line 547
+[24-Feb-2019 08:38:24 UTC] PHP Warning:  range(): Invalid range string - must be numeric in /home/hubbub42/public_html/indigohomes.ph/wp-content/plugins/realteo/realteo-template-functions.php on line 543
+[24-Feb-2019 08:38:24 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/hubbub42/public_html/indigohomes.ph/wp-content/plugins/realteo/realteo-template-functions.php on line 547
+[24-Feb-2019 08:38:24 UTC] PHP Warning:  range(): Invalid range string - must be numeric in /home/hubbub42/public_html/indigohomes.ph/wp-content/plugins/realteo/realteo-template-functions.php on line 543
+[24-Feb-2019 08:38:24 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/hubbub42/public_html/indigohomes.ph/wp-content/plugins/realteo/realteo-template-functions.php on line 547
+[24-Feb-2019 08:42:43 UTC] PHP Warning:  range(): Invalid range string - must be numeric in /home/hubbub42/public_html/indigohomes.ph/wp-content/plugins/realteo/realteo-template-functions.php on line 543
+[24-Feb-2019 08:42:43 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/hubbub42/public_html/indigohomes.ph/wp-content/plugins/realteo/realteo-template-functions.php on line 547
+[24-Feb-2019 08:42:43 UTC] PHP Warning:  range(): Invalid range string - must be numeric in /home/hubbub42/public_html/indigohomes.ph/wp-content/plugins/realteo/realteo-template-functions.php on line 543
+[24-Feb-2019 08:42:43 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/hubbub42/public_html/indigohomes.ph/wp-content/plugins/realteo/realteo-template-functions.php on line 547
