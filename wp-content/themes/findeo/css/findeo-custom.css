@@ -28,7 +28,7 @@
 .findeo-custom .listing-badges span {
   border-radius: 30px;
 }
-
+.findeo-custom  #titlebar.property-titlebar span.property-badge-rent,
 .findeo-custom  #titlebar.property-titlebar span.property-badge-sale,
 .findeo-custom  #titlebar.property-titlebar span.property-type-badge {
   top: -7px;
