@@ -103,7 +103,7 @@ class Realteo_Submit  {
 
 		add_shortcode( 'realteo_submit_property', array( $this, 'get_form' ) );
 		//add_filter( 'ajax_query_attachments_args', array( $this, 'filter_media' ) );
-	
+
 		//add_filter( 'the_title', array( $this, 'change_page_title' ), 10, 2 );
 		add_filter( 'submit_property_steps', array( $this, 'enable_paid_listings' ), 30 );
 
@@ -132,17 +132,17 @@ class Realteo_Submit  {
 		if(realteo_get_option_with_name('realteo_property_submit_option', 'realteo_new_property_preview' )) {
 			unset($this->steps['preview']);
 		}
-	
+
 		uasort( $this->steps, array( $this, 'sort_by_priority' ) );
 
 
 		if ( ! empty( $_POST['package'] ) ) {
 			if ( is_numeric( $_POST['package'] ) ) {
-	
+
 				self::$package_id      = absint( $_POST['package'] );
 				self::$is_user_package = false;
 			} else {
-			
+
 				self::$package_id      = absint( substr( $_POST['package'], 5 ) );
 				self::$is_user_package = true;
 			}
@@ -159,11 +159,11 @@ class Realteo_Submit  {
 		}
 
 		$this->property_id = ! empty( $_REQUEST[ 'property_id' ] ) ? absint( $_REQUEST[ 'property_id' ] ) : 0;
-		
+
 		 if(isset($_GET["action"]) && $_GET["action"] == 'edit' ) {
 		 	$this->form_action = "editing";
 		 	$this->property_id = ! empty( $_GET[ 'property_id' ] ) ? absint( $_GET[ 'property_id' ] ) : 0;
-		 } 
+		 }
 
 		 if(isset($_GET["action"]) && $_GET["action"] == 'renew' ) {
 		 	$this->form_action = "renew";
@@ -180,10 +180,10 @@ class Realteo_Submit  {
 			if ( ( 'preview' === $property_status || 'pending_payment' === $property_status ) && get_post_meta( $property_id, '_submitting_key', true ) === $_COOKIE['realteo-submitting-property-key'] ) {
 				$this->property_id = $property_id;
 				$this->property_edit = get_post_meta( $property_id, '_submitting_key', true );
-				
+
 			}
 		}
-		
+
 		// We should make sure new jobs are pending payment and not published or pending.
 		add_filter( 'submit_property_post_status', array( $this, 'submit_property_post_status' ), 10, 2 );
 
@@ -262,7 +262,7 @@ class Realteo_Submit  {
 					'render_row_col' => '4',
 					'priority'    	 => 2,
 					'required'    	 => false,
-				),						
+				),
 				'_rental_period' => array(
 					'label'       	 => __( 'Rental Period', 'realteo' ),
 					'type'       	 => 'select',
@@ -274,7 +274,7 @@ class Realteo_Submit  {
 					'render_row_col' => '4',
 					'priority'    	 => 3,
 					'required'    	 => false,
-				),				
+				),
 				'_property_type' => array(
 					'label'       	 => __( 'Property Type', 'realteo' ),
 					'type'       	 => 'select',
@@ -300,7 +300,7 @@ class Realteo_Submit  {
 					'priority'    	=> 4,
 					'before_row' 	 => '<div class="row with-forms">',
 					'render_row_col' => '4'
-				),				
+				),
 				'_area' => array(
 					'label'       => __( 'Area', 'realteo' ),
 					'type'        => 'text',
@@ -357,7 +357,7 @@ class Realteo_Submit  {
 					'class'		  => '',
 					'priority'    => 1,
 					'required'    => false,
-				),				
+				),
 				'_thumbnail_id' => array(
 					'label'       => __( 'Thumbnail ID', 'realteo' ),
 					'type'        => 'hidden',
@@ -381,7 +381,7 @@ class Realteo_Submit  {
 					'before_row' 	 => '<div class="row with-forms">',
 					'priority'    => 7,
 					'render_row_col' => '6'
-				),				
+				),
 				'_friendly_address' => array(
 					'label'       => __( 'Friendly Address', 'realteo' ),
 					'type'        => 'text',
@@ -393,7 +393,7 @@ class Realteo_Submit  {
 					'after_row' 	 => '</div>',
 					'priority'    => 8,
 					'render_row_col' => '6'
-				),				
+				),
 				'_geolocation_long' => array(
 					'label'       => __( 'Longitude', 'realteo' ),
 					'type'        => 'text',
@@ -404,7 +404,7 @@ class Realteo_Submit  {
 					'before_row' 	 => '<div class="row with-forms">',
 					'priority'    => 9,
 					'render_row_col' => '3'
-				),				
+				),
 				'_geolocation_lat' => array(
 					'label'       => __( 'Latitude', 'realteo' ),
 					'type'        => 'text',
@@ -430,7 +430,7 @@ class Realteo_Submit  {
 
 				/**/
 				'header3' => array(
-					'label'       => __( 'Detailed Information', 'realteo' ),
+					'label'       => __( 'Details', 'realteo' ),
 					'type'        => 'header',
 					'required'    => false,
 				),
@@ -442,7 +442,7 @@ class Realteo_Submit  {
 					'priority'    => 11
 				),
 				'_building_age' => array(
-					'label'       	=> __( 'Building age', 'realteo' ),
+					'label'       	=> __( 'Age of home', 'realteo' ),
 					'type'       	=> 'select',
 					'name'        => '_building_age',
 					'options_source' => 'custom',
@@ -477,7 +477,7 @@ class Realteo_Submit  {
 					'render_row_col' => '4',
 					'priority'    	 => 2,
 					'required'    => false,
-				),				
+				),
 				'_bathrooms' => array(
 					'label'       	=> __( 'Bathrooms', 'realteo' ),
 					'type'       	=> 'select',
@@ -508,7 +508,7 @@ class Realteo_Submit  {
 					'before_row' 	 => '<div class="row with-forms">',
 					'priority'    => 5,
 					'render_row_col' => '4'
-				),				
+				),
 				'_cooling' => array(
 					'label'       => __( 'Cooling', 'realteo' ),
 					'type'        => 'text',
@@ -541,7 +541,7 @@ class Realteo_Submit  {
 					'before_row' 	 => '<div class="row with-forms">',
 					'priority'    => 5,
 					'render_row_col' => '3'
-				),				
+				),
 				'_water' => array(
 					'label'       => __( 'Water', 'realteo' ),
 					'type'        => 'text',
@@ -561,7 +561,7 @@ class Realteo_Submit  {
 					'class'		  => '',
 					'priority'    => 5,
 					'render_row_col' => '3'
-				),				
+				),
 				'_storage_room' => array(
 					'label'       => __( 'Storage Room', 'realteo' ),
 					'type'        => 'text',
@@ -598,9 +598,9 @@ class Realteo_Submit  {
 					'class'		  => '',
 					'priority'    => 1,
 					'required'    => false,
-				),		
+				),
 			),
-		
+
 		) );
 	}
 
@@ -650,7 +650,7 @@ class Realteo_Submit  {
 				}
 			}
 		}
-	
+
 		return apply_filters( 'submit_property_form_validate_fields', true, $this->fields, $values );
 	}
 
@@ -663,7 +663,7 @@ class Realteo_Submit  {
 		$template_loader = new Realteo_Template_Loader;
 		if ( ! is_user_logged_in() ) {
 			$template_loader->get_template_part( 'property-sign-in' );
-			$template_loader->get_template_part( 'account/login' ); 
+			$template_loader->get_template_part( 'account/login' );
 		} else {
 
 
@@ -686,7 +686,7 @@ class Realteo_Submit  {
 							case 'region' :
 								$this->fields[ $group_key ][ $key ]['value'] = wp_get_object_terms( $property->ID, 'region', array( 'fields' => 'ids' ) );
 							break;
-					
+
 							default:
 								//echo $this->fields[ $group_key ][ $key ]['value'];
 								if(isset($this->fields[ $group_key ][ $key ]['multi']) && $this->fields[ $group_key ][ $key ]['multi']) {
@@ -700,14 +700,14 @@ class Realteo_Submit  {
 					}
 				}
 			}
-			
+
 		}  elseif ( is_user_logged_in() && empty( $_POST['submit_property'] ) ) {
 			$this->fields = apply_filters( 'submit_property_form_fields_get_user_data', $this->fields, get_current_user_id() );
 		}
 
-		
-		$template_loader->set_template_data( 
-			array( 
+
+		$template_loader->set_template_data(
+			array(
 				'action' 		=> $this->get_action(),
 				'fields' 		=> $this->fields,
 				'form'      	=> $this->form_name,
@@ -715,11 +715,11 @@ class Realteo_Submit  {
 				'property_id'   => $this->get_property_id(),
 				'step'      	=> $this->get_step(),
 				'submit_button_text' => apply_filters( 'submit_property_form_submit_button_text', __( 'Preview', 'realteo' ) )
-				) 
+				)
 			)->get_template_part( 'property-submit' );
 		}
-	} 
-	
+	}
+
 
 	/**
 	 * Handles the submission of form data.
@@ -733,7 +733,7 @@ class Realteo_Submit  {
 
 			// Get posted values
 			$values = $this->get_posted_fields();
-			
+
 
 			if ( empty( $_POST['submit_property'] ) ) {
 				return;
@@ -748,7 +748,7 @@ class Realteo_Submit  {
 			if ( ! is_user_logged_in() ) {
 				throw new Exception( __( 'You must be signed in to post a new listing.', 'realteo' ) );
 			}
-		
+
 			// Update the property
 			$this->save_property( $values['property']['property_title'], $values['property']['property_description'], $this->property_id ? '' : 'preview', $values );
 
@@ -816,11 +816,11 @@ class Realteo_Submit  {
 	public function done() {
 		do_action( 'realteo_property_submitted', $this->property_id );
 		$template_loader = new Realteo_Template_Loader;
-		$template_loader->set_template_data( 
-			array( 
+		$template_loader->set_template_data(
+			array(
 				'property' 	=>  get_post( $this->property_id ),
 				'id' 		=> 	$this->property_id,
-				) 
+				)
 			)->get_template_part( 'property-submitted' );
 	}
 
@@ -829,13 +829,13 @@ class Realteo_Submit  {
 	$template_loader = new Realteo_Template_Loader;
 		if ( ! is_user_logged_in() ) {
 			$template_loader->get_template_part( 'property-sign-in' );
-			$template_loader->get_template_part( 'account/login' ); 
+			$template_loader->get_template_part( 'account/login' );
 		} else {
 			$packages      = self::get_packages(  );
 			$user_packages = realteo_user_packages( get_current_user_id() );
-			
-			$template_loader->set_template_data( 
-				array( 
+
+			$template_loader->set_template_data(
+				array(
 					'packages' 		=> $packages,
 					'user_packages' => $user_packages,
 					'form'      	=> $this->form_name,
@@ -843,7 +843,7 @@ class Realteo_Submit  {
 					'property_id'   => $this->get_property_id(),
 					'step'      	=> $this->get_step(),
 					'submit_button_text' => __( 'Submit Property', 'realteo' ),
-					) 
+					)
 				)->get_template_part( 'property-submit-package' );
 		}
 	}
@@ -911,7 +911,7 @@ class Realteo_Submit  {
 	 */
 	private static function process_package( $package_id, $is_user_package, $property_id ) {
 		// Make sure the job has the correct status
-		
+
 		if ( 'preview' === get_post_status( $property_id ) ) {
 			// Update job listing
 			$update_job                  = array();
@@ -920,7 +920,7 @@ class Realteo_Submit  {
 			$update_job['post_date']     = current_time( 'mysql' );
 			$update_job['post_date_gmt'] = current_time( 'mysql', 1 );
 			$update_job['post_author']   = get_current_user_id();
-		
+
 			wp_update_post( $update_job );
 		}
 
@@ -944,9 +944,9 @@ class Realteo_Submit  {
 		} elseif ( $package_id ) {
 			$package = wc_get_product( $package_id );
 
-			
+
 			$is_featured = $package->is_property_featured();
-			
+
 
 			// Give job the package attributes
 			update_post_meta( $property_id, '_duration', $package->get_duration() );
@@ -1138,10 +1138,10 @@ class Realteo_Submit  {
 
 		// Loop fields and save meta and term data
 		foreach ( $this->fields as $group_key => $group_fields ) {
-	
+
 			foreach ( $group_fields as $key => $field ) {
 				// Save taxonomies
-				
+
 				if ( ! empty( $field['taxonomy'] ) ) {
 					if ( is_array( $values[ $group_key ][ $key ] ) ) {
 
@@ -1159,24 +1159,24 @@ class Realteo_Submit  {
 					} else {
 						set_post_thumbnail( $this->property_id, $attachment_id );
 					}
-					
+
 
 				// Save meta data
 				} else {
 
 					if($field['multi']) {
-						
-						delete_post_meta($this->property_id, $key); 
-						
+
+						delete_post_meta($this->property_id, $key);
+
 						if ( is_array( $values[ $group_key ][ $key ] ) ) {
 							foreach( $values[ $group_key ][ $key ] as $value ) {
 								add_post_meta( $this->property_id, $key, $value );
 							}
 						} else {
 							if(!empty($values[ $group_key ][ $key ])){
-								add_post_meta( $this->property_id, $key, $values[ $group_key ][ $key ] );	
+								add_post_meta( $this->property_id, $key, $values[ $group_key ][ $key ] );
 							}
-							
+
 						}
 					} else {
 						update_post_meta( $this->property_id, $key, $values[ $group_key ][ $key ] );
@@ -1198,9 +1198,9 @@ class Realteo_Submit  {
 					// Handle attachments
 					if ( 'file' === $field['type'] ) {
 						$attachment_id = is_numeric( $values[ $group_key ][ $key ] ) ? absint( $values[ $group_key ][ $key ] ) : $this->create_attachment( $values[ $group_key ][ $key ] );
-				
+
 						update_post_meta( $this->property_id, $key.'_id', $attachment_id  );
-						
+
 						// if ( is_array( $values[ $group_key ][ $key ] ) ) {
 						// 	foreach ( $values[ $group_key ][ $key ] as $file_url ) {
 						// 		$maybe_attach[] = $file_url;
@@ -1235,7 +1235,7 @@ class Realteo_Submit  {
 		// }
 
 		// And user meta to save time in future
-		
+
 
 		do_action( 'realteo_update_property_data', $this->property_id, $values );
 	}
@@ -1246,7 +1246,7 @@ class Realteo_Submit  {
 	 */
 	public function preview() {
 		global $post, $property_preview;
-		
+
 		if ( $this->property_id ) {
 			$property_preview       = true;
 			$post              = get_post( $this->property_id );
@@ -1255,8 +1255,8 @@ class Realteo_Submit  {
 			setup_postdata( $post );
 
 			$template_loader = new Realteo_Template_Loader;
-			$template_loader->set_template_data( 
-			array( 
+			$template_loader->set_template_data(
+			array(
 				'action' 		=> $this->get_action(),
 				'fields' 		=> $this->fields,
 				'form'      	=> $this->form_name,
@@ -1264,7 +1264,7 @@ class Realteo_Submit  {
 				'property_id'   => $this->get_property_id(),
 				'step'      	=> $this->get_step(),
 				'submit_button_text' => apply_filters( 'submit_property_form_preview_button_text', __( 'Submit', 'realteo' ) )
-				) 
+				)
 			)->get_template_part( 'property-preview' );
 
 			wp_reset_postdata();
@@ -1283,7 +1283,7 @@ class Realteo_Submit  {
 
 
 	function enable_paid_listings($steps){
- 
+
 		if(realteo_get_option_with_name('realteo_property_submit_option', 'realteo_new_property_requires_purchase' ) && !isset($_GET["action"]) || isset($_GET["action"]) && $_GET["action"] == 'renew' ){
 
 		/*
@@ -1426,13 +1426,13 @@ class Realteo_Submit  {
 	 * @return string|null
 	 */
 	public function get_form( $atts = array() ) {
-			
+
 			ob_start();
 			$this->output( $atts );
 			return ob_get_clean();
-		
+
 	}
-	
+
 	/**
 	 * This filter insures users only see their own media
 	 */

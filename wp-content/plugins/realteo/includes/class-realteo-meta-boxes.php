@@ -14,7 +14,7 @@ class Realteo_Meta_Boxes {
 
 		// Add custom meta boxes
 		add_action( 'cmb2_admin_init', array( $this, 'add_meta_boxes' ) );
-		
+
 	}
 
 	public function add_meta_boxes( ) {
@@ -37,7 +37,7 @@ class Realteo_Meta_Boxes {
 			'layout' => 'vertical', // Default : horizontal
 			'tabs'   => array()
 		);
-		
+
 		$tabs_setting['tabs'] = array(
 			 $this->meta_boxes_price(),
 			 $this->meta_boxes_main_details(),
@@ -52,7 +52,7 @@ class Realteo_Meta_Boxes {
 			'type' => 'tabs',
 			'tabs' => $tabs_setting
 		) );
-  
+
 
   // GALLERY META BOX
 		$property_admin_options = array(
@@ -69,7 +69,7 @@ class Realteo_Meta_Boxes {
 			'desc' => '',
 			'id'   => '_property_expires',
 			'type' => 'text_date_timestamp',
-			
+
 		) );
 
 		// GALLERY META BOX
@@ -94,7 +94,7 @@ class Realteo_Meta_Boxes {
 			'text' => array(
 				'add_upload_files_text' => 'Add or Upload Images', // default: ""
 			),
-		) );		
+		) );
 
   		$cmb_gallery->add_field( array(
 			'name' => __( 'Gallery display layout', 'realteo' ),
@@ -109,7 +109,7 @@ class Realteo_Meta_Boxes {
 			'default' => realteo_get_option('default_gallery')
 		) );
 
-		
+
 		// EOT GALLERY META BOX
 
 
@@ -118,7 +118,7 @@ class Realteo_Meta_Boxes {
 				'id'           => 'realteo_featured_metabox',
 				'title'        => __( 'Featured Property', 'realteo' ),
 				'context'	   => 'side',
-				'priority'     => 'core', 
+				'priority'     => 'core',
 				'object_types' => array( 'property' ),
 				'show_names'   => false,
 
@@ -165,14 +165,14 @@ class Realteo_Meta_Boxes {
             'name'    => __( 'Title', 'realteo' ),
             'id'      => 'floorplan_title',
             'type'    => 'text',
-        ) );    
+        ) );
 
         $cmb_floorplans->add_group_field( $floorplans_group, array(
             'name'    => __( 'Area', 'realteo' ),
             'id'      => 'floorplan_area',
             'type'    => 'text',
         ) );
-        
+
         //* Textarea
         $cmb_floorplans->add_group_field( $floorplans_group, array(
             'name'    => __( 'Short description', 'realteo' ),
@@ -197,15 +197,15 @@ class Realteo_Meta_Boxes {
 				'show_names'   => true,
 
 		);
-		
+
 
 		// EOT LOCATION DETAILS META BOX
-		
+
 	}
 
 
 	public static function meta_boxes_price() {
-		
+
 		$fields = array(
 			'id'     => 'price_tab',
 			'title'  => __( 'Price', 'realteo' ),
@@ -215,7 +215,7 @@ class Realteo_Meta_Boxes {
 					'id'   => '_price',
 					'type' => 'text',
 					'desc'      => __( 'No currency symbols or thousands separators', 'realteo' ),
-					
+
 				),
 				'price_per' => array(
 					'name' => __( 'Price per  sq meter/sq ft', 'realteo' ),
@@ -230,7 +230,7 @@ class Realteo_Meta_Boxes {
 					'default'   => 'sale',
 					'options_source' => 'predefined',
 					'options_cb' => 'realteo_get_offer_types_flat',
-				),				
+				),
 				'property_type' => array(
 					'name'      => __( 'Property Type', 'realteo' ),
 					'id'        => '_property_type',
@@ -246,18 +246,18 @@ class Realteo_Meta_Boxes {
 					'default'   => 'weekly',
 					'options_source' => 'predefined',
 					'options_cb' => 'realteo_get_rental_period',
-				),	
-			
+				),
+
 			)
 		);
 		$fields = apply_filters( 'realteo_price_fields', $fields );
-		
+
 		// Set meta box
 		return $fields;
 	}
 
 	public static function meta_boxes_video() {
-		
+
 		$fields = array(
 			'id'     => 'video_tab',
 			'title'  => __( 'Video', 'realteo' ),
@@ -268,11 +268,11 @@ class Realteo_Meta_Boxes {
 					'type' => 'text',
 					'desc'      => __( 'URL to oEmbed supported service','realteo' ),
 				),
-			
+
 			)
 		);
 		$fields = apply_filters( 'realteo_video_fields', $fields );
-		
+
 		// Set meta box
 		return $fields;
 	}
@@ -280,7 +280,7 @@ class Realteo_Meta_Boxes {
 
 
 	public static function meta_boxes_main_details() {
-		
+
 		$fields = array(
 			'id'     => 'main_details_tab',
 			'title'  => __( 'Main Details', 'realteo' ),
@@ -290,25 +290,25 @@ class Realteo_Meta_Boxes {
 					'id'   	=> '_listing',
 					'type' 	=> 'text',
 					'invert' => false
-				),				
+				),
 				array(
 					'name' 	=> __( 'Area', 'realteo' ),
 					'id'   	=> '_area',
 					'type' 	=> 'text',
 					'invert' => true
-				),					
+				),
 				array(
 					'name' 	=> __( 'Rooms', 'realteo' ),
 					'id'   	=> '_rooms',
 					'type' 	=> 'text',
 					'invert' => true
-				),				
+				),
 				array(
 					'name' 	=> __( 'Bedrooms', 'realteo' ),
 					'id'   	=> '_bedrooms',
 					'type' 	=> 'text',
 					'invert' => false
-				),				
+				),
 				array(
 					'name' 	=> __( 'Bathrooms', 'realteo' ),
 					'id'   	=> '_bathrooms',
@@ -323,53 +323,53 @@ class Realteo_Meta_Boxes {
 	}
 
 	public static function meta_boxes_details() {
-		
+
 		$fields = array(
 			'id'     => 'details_tab',
 			'title'  => __( 'Details', 'realteo' ),
 			'fields' => array(
 				array(
-					'name' 	=> __( 'Building Age', 'realteo' ),
+					'name' 	=> __( 'Age of home', 'realteo' ),
 					'id'   	=> '_building_age',
 					'type' 	=> 'text',
 					'invert' => false
-				),				
+				),
 				array(
 					'name' 	=> __( 'Parking', 'realteo' ),
 					'id'   	=> '_parking',
 					'type' 	=> 'text',
 					'invert' => false
-				),					
+				),
 				array(
 					'name' 	=> __( 'Cooling', 'realteo' ),
 					'id'   	=> '_cooling',
 					'type' 	=> 'text',
 					'invert' => true
-				),				
+				),
 				array(
 					'name' 	=> __( 'Heating', 'realteo' ),
 					'id'   	=> '_heating',
 					'type' 	=> 'text',
 					'invert' => false
-				),				
+				),
 				array(
 					'name' 	=> __( 'Sewer', 'realteo' ),
 					'id'   	=> '_sewer',
 					'type' 	=> 'text',
 					'invert' => false
-				),				
+				),
 				array(
 					'name' 	=> __( 'Water', 'realteo' ),
 					'id'   	=> '_water',
 					'type' 	=> 'text',
 					'invert' => false
-				),				
+				),
 				array(
 					'name' 	=> __( 'Exercise Room', 'realteo' ),
 					'id'   	=> '_exercise_room',
 					'type' 	=> 'text',
 					'invert' => false
-				),				
+				),
 				array(
 					'name' 	=> __( 'Storage Room', 'realteo' ),
 					'id'   	=> '_storage_room',
@@ -384,7 +384,7 @@ class Realteo_Meta_Boxes {
 	}
 
 	public static function meta_boxes_location() {
-		
+
 		$fields = array(
 			'id'     => 'locations_tab',
 			'title'  => __( 'Location', 'realteo' ),
@@ -394,18 +394,18 @@ class Realteo_Meta_Boxes {
 					'id'   => '_friendly_address',
 					'type' => 'text',
 					'desc' => 'Human readable address'
-				),			
+				),
 				array(
 					'name' => __( 'Google Maps Address', 'realteo' ),
 					'id'   => '_address',
 					'type' => 'text',
 					'desc' => 'Used for geolocation and links'
-				),				
+				),
 				array(
 					'name' => __( 'Latitude', 'realteo' ),
 					'id'   => '_geolocation_lat',
 					'type' => 'text',
-				),				
+				),
 				array(
 					'name' => __( 'Longitude', 'realteo' ),
 					'id'   => '_geolocation_long',
@@ -426,14 +426,14 @@ class Realteo_Meta_Boxes {
 					'name'              => __( 'Agent Title', 'realteo' ),
 					'label'             => __( 'Agent Title', 'realteo' ),
 					'type'              => 'text',
-					
+
 				),
 				'phone' => array(
 					'id'                => 'phone',
 					'name'              => __( 'Phone', 'realteo' ),
 					'label'             => __( 'Phone', 'realteo' ),
 					'type'              => 'text',
-					
+
 				),
 				'header_social' => array(
 					'label'       => __( 'Social', 'realteo' ),
@@ -452,7 +452,7 @@ class Realteo_Meta_Boxes {
 					'name'              => __( '<i class="fa fa-facebook-square"></i> Facebook', 'realteo' ),
 					'label'             => __( '<i class="fa fa-facebook-square"></i> Facebook', 'realteo' ),
 					'type'              => 'text',
-				),				
+				),
 				'gplus' => array(
 					'id'                => 'gplus',
 					'name'              => __( '<i class="fa fa-google-plus"></i> Google+', 'realteo' ),
@@ -465,24 +465,24 @@ class Realteo_Meta_Boxes {
 					'name'              => __( '<i class="fa fa-linkedin"></i> Linkedin', 'realteo' ),
 					'label'             => __( '<i class="fa fa-linkedin"></i> Linkedin', 'realteo' ),
 					'type'              => 'text',
-					
+
 				),
 			);
 		$fields = apply_filters( 'realteo_user_agent_fields', $fields );
-		
+
 		// Set meta box
 		return $fields;
 	}
 
 	public static function meta_boxes_user_buyer(){
 		$fields = array(
-		
+
 				'phone' => array(
 					'id'                => 'phone',
 					'name'              => __( 'Phone', 'realteo' ),
 					'label'             => __( 'Phone', 'realteo' ),
 					'type'              => 'text',
-					
+
 				),
 				'header_social' => array(
 					'label'       => __( 'Social', 'realteo' ),
@@ -501,7 +501,7 @@ class Realteo_Meta_Boxes {
 					'name'              => __( '<i class="fa fa-facebook-square"></i> Facebook', 'realteo' ),
 					'label'             => __( '<i class="fa fa-facebook-square"></i> Facebook', 'realteo' ),
 					'type'              => 'text',
-				),				
+				),
 				'gplus' => array(
 					'id'                => 'gplus',
 					'name'              => __( '<i class="fa fa-google-plus"></i> Google+', 'realteo' ),
@@ -514,24 +514,24 @@ class Realteo_Meta_Boxes {
 					'name'              => __( '<i class="fa fa-linkedin"></i> Linkedin', 'realteo' ),
 					'label'             => __( '<i class="fa fa-linkedin"></i> Linkedin', 'realteo' ),
 					'type'              => 'text',
-					
+
 				),
 			);
 		$fields = apply_filters( 'realteo_user_buyer_fields', $fields );
-		
+
 		// Set meta box
 		return $fields;
 	}
 
 	public static function meta_boxes_user_owner(){
 		$fields = array(
-		
+
 				'phone' => array(
 					'id'                => 'phone',
 					'name'              => __( 'Phone', 'realteo' ),
 					'label'             => __( 'Phone', 'realteo' ),
 					'type'              => 'text',
-					
+
 				),
 				'header_social' => array(
 					'label'       => __( 'Social', 'realteo' ),
@@ -550,7 +550,7 @@ class Realteo_Meta_Boxes {
 					'name'              => __( '<i class="fa fa-facebook-square"></i> Facebook', 'realteo' ),
 					'label'             => __( '<i class="fa fa-facebook-square"></i> Facebook', 'realteo' ),
 					'type'              => 'text',
-				),				
+				),
 				'gplus' => array(
 					'id'                => 'gplus',
 					'name'              => __( '<i class="fa fa-google-plus"></i> Google+', 'realteo' ),
@@ -563,16 +563,16 @@ class Realteo_Meta_Boxes {
 					'name'              => __( '<i class="fa fa-linkedin"></i> Linkedin', 'realteo' ),
 					'label'             => __( '<i class="fa fa-linkedin"></i> Linkedin', 'realteo' ),
 					'type'              => 'text',
-					
+
 				),
 			);
 		$fields = apply_filters( 'realteo_user_owner_fields', $fields );
-		
+
 		// Set meta box
 		return $fields;
 	}
 
 
-	
+
 
 }

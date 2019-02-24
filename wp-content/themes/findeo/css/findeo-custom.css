@@ -117,6 +117,14 @@
 }
 
 /* homepage */
+.findeo-custom .sort-by {
+  display: none;
+}
+
+.findeo-custom .data-unit {
+  background-color: transparent;
+}
+
 .findeo-custom a.listing-address {
   color: #666666;
   font-size: 16px;
