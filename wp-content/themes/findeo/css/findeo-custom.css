@@ -16,7 +16,7 @@
 }
 
 .findeo-custom #properties-not-found {
-  background-color: #f5f5f5;
+  background: #f5f5f5;
   color: #333333;
 }
 
@@ -25,8 +25,14 @@
 }
 
 /* misc */
+.findeo-custom .listing-badges span {
+  border-radius: 30px;
+}
+.findeo-custom  #titlebar.property-titlebar span.property-badge-rent,
+.findeo-custom  #titlebar.property-titlebar span.property-badge-sale,
 .findeo-custom  #titlebar.property-titlebar span.property-type-badge {
   top: -7px;
+  border-radius: 30px;
 }
 
 .findeo-custom {
