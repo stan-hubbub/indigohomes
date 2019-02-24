@@ -16,6 +16,10 @@
 }
 
 /* misc */
+.findeo-custom  #titlebar.property-titlebar span.property-type-badge {
+  top: -7px;
+}
+
 .findeo-custom {
   color: #666666;
 }
@@ -272,8 +276,7 @@ body,
   margin-right: 0;
 }
 
-.findeo-custom .property-pricing,
-.findeo-custom .property-type-badge {
+.findeo-custom .property-pricing {
   display: none !important;
 }
 
