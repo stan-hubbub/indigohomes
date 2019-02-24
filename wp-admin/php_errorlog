@@ -1,2 +1,10 @@
 [23-Feb-2019 08:38:46 UTC] PHP Recoverable fatal error:  Object of class WP_Error could not be converted to string in /home/hubbub42/public_html/indigohomes.ph/wp-content/plugins/realteo/includes/class-realteo.php on line 521
 [23-Feb-2019 08:40:16 UTC] PHP Recoverable fatal error:  Object of class WP_Error could not be converted to string in /home/hubbub42/public_html/indigohomes.ph/wp-content/plugins/realteo/includes/class-realteo.php on line 521
+[23-Feb-2019 15:31:14 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method WP_Error::has_errors() in /home/hubbub42/public_html/indigohomes.ph/wp-admin/includes/file.php:1504
+Stack trace:
+#0 /home/hubbub42/public_html/indigohomes.ph/wp-content/plugins/sg-cachepress/core/Helper/Helper.php(111): WP_Filesystem()
+#1 /home/hubbub42/public_html/indigohomes.ph/wp-content/plugins/sg-cachepress/core/Htaccess/Htaccess.php(77): SiteGround_Optimizer\Helper\Helper::setup_wp_filesystem()
+#2 /home/hubbub42/public_html/indigohomes.ph/wp-content/plugins/sg-cachepress/core/Options/Options.php(20): SiteGround_Optimizer\Htaccess\Htaccess->__construct()
+#3 /home/hubbub42/public_html/indigohomes.ph/wp-content/plugins/sg-cachepress/core/Rest/Rest_Helper.php(23): SiteGround_Optimizer\Options\Options->__construct()
+#4 /home/hubbub42/public_html/indigohomes.ph/wp-content/plugins/sg-cachepress/core/Rest/Rest.php(15): SiteGround_Optimizer\Rest\Rest_Helper->__construct()
+#5 /home/hubbub42/public_html/indigohomes.ph/wp-content/plugins/sg-cachepress/core/Helper/Helper.php( in /home/hubbub42/public_html/indigohomes.ph/wp-admin/includes/file.php on line 1504
