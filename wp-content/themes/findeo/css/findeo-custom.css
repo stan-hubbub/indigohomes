@@ -413,6 +413,7 @@ body .findeo-custom .add-floorplans-submit-item.button,
 }
 
 /* woocommerce */
+.findeo-custom .woocommerce-info,
 .findeo-custom .woocommerce-message {
   display: none;
   visibility: hidden;
