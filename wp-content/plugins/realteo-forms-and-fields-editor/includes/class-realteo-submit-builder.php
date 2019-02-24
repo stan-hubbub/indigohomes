@@ -25,10 +25,10 @@ class Realteo_Submit_Editor {
     }
 
     public function __construct($version = '1.0.0') {
-  
+
        	add_action( 'admin_menu', array( $this, 'add_options_page' ) ); //create tab pages
-      	add_filter('submit_property_form_fields', array( $this,'add_realteo_submit_property_form_fields_form_editor')); 
-       
+      	add_filter('submit_property_form_fields', array( $this,'add_realteo_submit_property_form_fields_form_editor'));
+
     }
 
     function add_realteo_submit_property_form_fields_form_editor($r){
@@ -41,8 +41,8 @@ class Realteo_Submit_Editor {
      * Add menu options page
      * @since 0.1.0
      */
-    public function add_options_page() {        
-         add_submenu_page( 'realteo-fields-and-form', 'Submit Form', 'Submit Form', 'manage_options', 'realteo-submit-builder', array( $this, 'output' )); 
+    public function add_options_page() {
+         add_submenu_page( 'realteo-fields-and-form', 'Submit Form', 'Submit Form', 'manage_options', 'realteo-submit-builder', array( $this, 'output' ));
     }
 
 
@@ -84,7 +84,7 @@ class Realteo_Submit_Editor {
 					'render_row_col' => '4',
 					'priority'    	 => 3,
 					'required'    	 => false,
-				),						
+				),
 				'_rental_period' => array(
 					'label'       	 => __( 'Rental Period', 'realteo' ),
 					'type'       	 => 'select',
@@ -96,7 +96,7 @@ class Realteo_Submit_Editor {
 					'render_row_col' => '4',
 					'priority'    	 => 4,
 					'required'    	 => false,
-				),				
+				),
 				'_property_type' => array(
 					'label'       	 => __( 'Property Type', 'realteo' ),
 					'type'       	 => 'select',
@@ -122,7 +122,7 @@ class Realteo_Submit_Editor {
 					'priority'    	=> 6,
 					'before_row' 	 => '<div class="row with-forms">',
 					'render_row_col' => '4'
-				),				
+				),
 				'_area' => array(
 					'label'       => __( 'Area', 'realteo' ),
 					'type'        => 'text',
@@ -176,7 +176,7 @@ class Realteo_Submit_Editor {
 					'class'		  => '',
 					'priority'    => 9,
 					'required'    => false,
-				),				
+				),
 				'_thumbnail_id' => array(
 					'label'       => __( 'Thumbnail ID', 'realteo' ),
 					'type'        => 'hidden',
@@ -200,7 +200,7 @@ class Realteo_Submit_Editor {
 					'before_row' 	 => '<div class="row with-forms">',
 					'priority'    => 11,
 					'render_row_col' => '6'
-				),				
+				),
 				'friendly_address' => array(
 					'label'       => __( 'Friendly Address', 'realteo' ),
 					'type'        => 'text',
@@ -212,7 +212,7 @@ class Realteo_Submit_Editor {
 					'after_row' 	 => '</div>',
 					'priority'    => 12,
 					'render_row_col' => '6'
-				),				
+				),
 				'geolocation_long' => array(
 					'label'       => __( 'Longitude', 'realteo' ),
 					'type'        => 'text',
@@ -223,7 +223,7 @@ class Realteo_Submit_Editor {
 					'before_row' 	 => '<div class="row with-forms">',
 					'priority'    => 13,
 					'render_row_col' => '3'
-				),				
+				),
 				'geolocation_lat' => array(
 					'label'       => __( 'Latitude', 'realteo' ),
 					'type'        => 'text',
@@ -263,7 +263,7 @@ class Realteo_Submit_Editor {
 					'priority'    => 17
 				),
 				'_building_age' => array(
-					'label'       	=> __( 'Building age', 'realteo' ),
+					'label'       	=> __( 'Age of home', 'realteo' ),
 					'type'       	=> 'select',
 					'name'        => '_building_age',
 					'options_source' => 'custom',
@@ -298,7 +298,7 @@ class Realteo_Submit_Editor {
 					'render_row_col' => '4',
 					'priority'    	 => 19,
 					'required'    => false,
-				),				
+				),
 				'_bathrooms' => array(
 					'label'       	=> __( 'Bathrooms', 'realteo' ),
 					'type'       	=> 'select',
@@ -329,7 +329,7 @@ class Realteo_Submit_Editor {
 					'before_row' 	 => '<div class="row with-forms">',
 					'priority'    => 21,
 					'render_row_col' => '4'
-				),				
+				),
 				'_cooling' => array(
 					'label'       => __( 'Cooling', 'realteo' ),
 					'type'        => 'text',
@@ -362,7 +362,7 @@ class Realteo_Submit_Editor {
 					'before_row' 	 => '<div class="row with-forms">',
 					'priority'    => 24,
 					'render_row_col' => '3'
-				),				
+				),
 				'_water' => array(
 					'label'       => __( 'Water', 'realteo' ),
 					'type'        => 'text',
@@ -382,7 +382,7 @@ class Realteo_Submit_Editor {
 					'class'		  => '',
 					'priority'    => 26,
 					'render_row_col' => '3'
-				),				
+				),
 				'_storage_room' => array(
 					'label'       => __( 'Storage Room', 'realteo' ),
 					'type'        => 'text',
@@ -418,33 +418,33 @@ class Realteo_Submit_Editor {
 					'class'		  => '',
 					'priority'    => 1,
 					'required'    => false,
-				),	
+				),
 			);
 
 	 		if ( ! empty( $_GET['reset-fields'] ) && ! empty( $_GET['_wpnonce'] ) && wp_verify_nonce( $_GET['_wpnonce'], 'reset' ) ) {
                 delete_option("realteo_submit_form_fields");
                 echo '<div class="updated"><p>' . __( 'The fields were successfully reset.', 'realteo' ) . '</p></div>';
             }
-      
+
 
 
             if ( ! empty( $_POST )) { /* add nonce tu*/
-              
-                echo $this->form_editor_save(); 
+
+                echo $this->form_editor_save();
             }
-            
+
 	    	$options = get_option("realteo_submit_form_fields");
 	        $search_fields = (!empty($options)) ? get_option("realteo_submit_form_fields") : $defaults;
 
-       
+
          ?>
 			<h2>Realteo Submit Form editor</h2>
 			<div class="wrap realteo-forms-builder clearfix">
-                               
+
                 <form method="post" id="mainform" action="admin.php?page=realteo-submit-builder">
-               
+
                 <div class="realteo-forms-builder-left">
-                    <div class="form-editor-container" id="realteo-fafe-forms-editor"> 
+                    <div class="form-editor-container" id="realteo-fafe-forms-editor">
                         <?php
                         $index = 0;
                         foreach ( $search_fields as $field_key => $field ) {
@@ -453,13 +453,13 @@ class Realteo_Submit_Editor {
                             if(is_array($field)){ ?>
                                 <div class="form_item form_item_<?php echo $field_key; ?> form_item_<?php echo $field['type']; ?>" data-priority="<?php echo  $index; ?>">
                                     <span class="handle dashicons dashicons-editor-justify"></span>
-                                    <div class="element_title"><?php echo  esc_attr( $field['label'] );  ?>  
+                                    <div class="element_title"><?php echo  esc_attr( $field['label'] );  ?>
                                         <div class="element_title_edit"><span class="dashicons dashicons-edit"></span> Edit</div>
                                     </div>
                                     <?php include( plugin_dir_path( __DIR__  ) .  'views/form-edit-submit.php' ); ?>
 
-                                    <?php if( 
-                                    	isset($field['name']) && 
+                                    <?php if(
+                                    	isset($field['name']) &&
                                     	!in_array( $field['name'], array('property_title','thumbnail','property_description') ) ) { ?>
                                         <div class="remove_item"> Remove </div>
                                     <?php } ?>
@@ -469,9 +469,9 @@ class Realteo_Submit_Editor {
                         }  ?>
                         <div class="droppable-helper"></div>
                     </div>
-                  
+
                     <input type="submit" class="save-fields button-primary" value="<?php _e( 'Save Changes', 'realteo' ); ?>" />
-           
+
                     <a href="<?php echo wp_nonce_url( add_query_arg( 'reset-fields', 1 ), 'reset' ); ?>" class="reset button-secondary"><?php _e( 'Reset to defaults', 'realteo' ); ?></a>
                 </div>
                 <?php wp_nonce_field( 'save-fields' ); ?>
@@ -479,10 +479,10 @@ class Realteo_Submit_Editor {
         </form>
 <div class="realteo-forms-builder-right">
                     <h3>Available Submit Form Elements</h3>
-                    
+
                     <div class="form-editor-available-elements-container">
                         <h4>Visual fields:</h4>
-                        <?php 
+                        <?php
                         $visual_fields = array(
 								'header' => array(
 									'name' => __( 'Header', 'realteo' ),
@@ -510,9 +510,9 @@ class Realteo_Submit_Editor {
 									'type'        	=> 'files',
 									'description' 	=> __( 'By selecting (clicking on a photo) one of the uploaded photos you will set it as Featured Image for this property (marked by icon with star). Drag and drop thumbnails to re-order images in gallery.', 'realteo' ),
 									'placeholder' => 'Upload images',
-								),	
+								),
 						);
-                        foreach ($visual_fields as $key => $field) { 
+                        foreach ($visual_fields as $key => $field) {
                              $index++;
                         ?>
                         <div class="form_item form_item_<?php echo $key; ?>" data-priority="0">
@@ -521,11 +521,11 @@ class Realteo_Submit_Editor {
                             <?php include( plugin_dir_path( __DIR__  ) .  'views/form-edit-submit-ready-regular.php' ); ?>
                             <div class="remove_item"> Remove </div>
                         </div>
-                        <?php } 
+                        <?php }
                         ?>
 
                         <h4>Taxonomies:</h4>
-                        <?php 
+                        <?php
                         $taxonomy_objects = get_object_taxonomies( 'property', 'objects' );
                         foreach ($taxonomy_objects as $tax) {
                              $index++;
@@ -536,12 +536,12 @@ class Realteo_Submit_Editor {
                             <?php include( plugin_dir_path( __DIR__  ) .  'views/form-edit-submit-ready-tax.php' ); ?>
                             <div class="remove_item"> Remove </div>
                         </div>
-                        <?php } 
+                        <?php }
                         ?>
-                    
-                   
+
+
                     <h4>Custom Field</h4>
-                    <?php  
+                    <?php
                     $price_fields = Realteo_Meta_Boxes::meta_boxes_price();
                     foreach ($price_fields['fields'] as $key => $field) {  $index++;?>
                         <div class="form_item" data-priority="0">
@@ -550,9 +550,9 @@ class Realteo_Submit_Editor {
                             <?php  include( plugin_dir_path( __DIR__  ) .  'views/form-edit-submit-ready-field.php' ); ?>
                             <div class="remove_item"> Remove </div>
                         </div>
-                        <?php } 
-                    ?>               
-                    <?php  
+                        <?php }
+                    ?>
+                    <?php
                     $main_details = Realteo_Meta_Boxes::meta_boxes_main_details();
                     foreach ($main_details['fields'] as $key => $field) {  $index++;?>
                         <div class="form_item" data-priority="0">
@@ -561,9 +561,9 @@ class Realteo_Submit_Editor {
                             <?php  include( plugin_dir_path( __DIR__  ) .  'views/form-edit-submit-ready-field.php' ); ?>
                             <div class="remove_item"> Remove </div>
                         </div>
-                        <?php } 
-                    ?>                    
-                    <?php  
+                        <?php }
+                    ?>
+                    <?php
                     $details = Realteo_Meta_Boxes::meta_boxes_details();
                     foreach ($details['fields'] as $key => $field) {  $index++;?>
                         <div class="form_item" data-priority="0">
@@ -572,9 +572,9 @@ class Realteo_Submit_Editor {
                             <?php include( plugin_dir_path( __DIR__  ) .  'views/form-edit-submit-ready-field.php' ); ?>
                             <div class="remove_item"> Remove </div>
                         </div>
-                        <?php } 
-                    ?>                    
-                    <?php  
+                        <?php }
+                    ?>
+                    <?php
                     $location = Realteo_Meta_Boxes::meta_boxes_location();
                     foreach ($location['fields'] as $key => $field) {  $index++;?>
                         <div class="form_item" data-priority="0">
@@ -583,11 +583,11 @@ class Realteo_Submit_Editor {
                             <?php include( plugin_dir_path( __DIR__  ) .  'views/form-edit-submit-ready-field.php' ); ?>
                             <div class="remove_item"> Remove </div>
                         </div>
-                        <?php } 
+                        <?php }
                     ?>
                     </div>
 
-                  
+
                 </div>
                 </div>
         <?php
@@ -611,17 +611,17 @@ class Realteo_Submit_Editor {
         $field_render_row_col  = ! empty( $_POST['render_row_col'] ) ? array_map( 'sanitize_text_field', $_POST['render_row_col'] )                  : array();
 
         $field_class            = ! empty( $_POST['class'] ) ? array_map( 'sanitize_text_field', $_POST['class'] )                  : array();
-    
+
         $field_before_row         = ! empty( $_POST['before_row'] ) ? array_map( 'sanitize_text_field', $_POST['before_row'] )            : array();
         $field_after_row        = ! empty( $_POST['after_row'] ) ? array_map( 'sanitize_text_field', $_POST['after_row'] )          : array();
-        
+
         $field_unit            = ! empty( $_POST['unit'] ) ? array_map( 'sanitize_text_field', $_POST['unit'] )                  : array();
 
         $field_priority         = ! empty( $_POST['priority'] ) ? array_map( 'sanitize_text_field', $_POST['priority'] )            : array();
-       
+
         $field_taxonomy         = ! empty( $_POST['field_taxonomy'] ) ? array_map( 'sanitize_text_field', $_POST['field_taxonomy'] ): array();
         $field_default         = ! empty( $_POST['default'] ) ? array_map( 'sanitize_text_field', $_POST['default'] ): array();
-        
+
         $field_options_cb       = ! empty( $_POST['options_cb'] ) ? array_map( 'sanitize_text_field', $_POST['options_cb'] )        : array();
         $field_options_source   = ! empty( $_POST['options_source'] ) ? array_map( 'sanitize_text_field', $_POST['options_source'] ): array();
         $field_options          = ! empty( $_POST['options'] ) ? $this->sanitize_array( $_POST['options'] )                         : array();
@@ -629,14 +629,14 @@ class Realteo_Submit_Editor {
         $index                  = 0;
 
        foreach ( $field_label as $key => $field ) {
-          
-      
+
+
             $name                = sanitize_title( $field_name[ $key ] );
             $options             = array();
             if(! empty( $field_options[ $key ] )){
                 foreach ($field_options[ $key ] as $op_key => $op_value) {
                     $options[$op_value['name']] = $op_value['value'];
-                } 
+                }
             }
             $new_field                       = array();
             $new_field['type']               = $field_type[ $key ];
@@ -663,18 +663,18 @@ class Realteo_Submit_Editor {
                 $new_field['options']           = $options;
             }
             $new_field['priority']           = $index ++;
-            
+
             $new_fields[ $name ]            = $new_field;
-            
+
         }
 
         $result = update_option( "realteo_submit_form_fields", $new_fields);
-        
+
 
         if ( true === $result ) {
             echo '<div class="updated"><p>' . __( 'The fields were successfully saved.', 'wp-job-manager-applications' ) . '</p></div>';
         }
-      
+
     }
 
     /**

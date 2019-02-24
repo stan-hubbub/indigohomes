@@ -1,8 +1,8 @@
 <!-- Features -->
-<?php   
+<?php
 $term_list = get_the_term_list( $post->ID, 'property_feature' );
 if(!empty($term_list)): ?>
-<h3 class="desc-headline"><?php esc_html_e('Features','realteo'); ?></h3>
+<h3 class="desc-headline"><?php esc_html_e('Additional Features','realteo'); ?></h3>
 <?php $terms = get_the_terms($post->ID, 'property_feature');
    echo '<ul class="property-features checkboxes margin-top-0">';
    foreach($terms as $term){
