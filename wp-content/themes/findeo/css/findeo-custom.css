@@ -15,6 +15,15 @@
   font-family: sans-serif !important;
 }
 
+.findeo-custom #properties-not-found {
+  background-color: #f5f5f5;
+  color: #333333;
+}
+
+.findeo-custom #properties-not-found h2 {
+  color: #333333;
+}
+
 /* misc */
 .findeo-custom  #titlebar.property-titlebar span.property-type-badge {
   top: -7px;
