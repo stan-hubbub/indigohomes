@@ -22,7 +22,7 @@
 <meta property="og:description" content="Find your home." />
 <link rel="profile" href="http://gmpg.org/xfn/11">
 <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
-<link rel="stylesheet" media="screen" href="<?php echo get_stylesheet_directory_uri(); ?>/css/findeo-custom.css?v=0.6.7">
+<link rel="stylesheet" media="screen" href="<?php echo get_stylesheet_directory_uri(); ?>/css/findeo-custom.css?v=0.7">
 <?php wp_head(); ?>
 </head>
 
@@ -206,7 +206,7 @@ $sticky = apply_filters('findeo_sticky_header_filter',$sticky);
 					<?php
 
 					if( true == $submit_display ) : ?>
-						<a href="<?php echo get_permalink( realteo_get_option( 'submit_property_page' ) ); ?>" class="button border"><?php esc_html_e('Submit Property','findeo'); ?></a>
+						<a href="<?php echo get_permalink( realteo_get_option( 'submit_property_page' ) ); ?>" class="button border"><?php esc_html_e('Post Property - Free','findeo'); ?></a>
 					<?php endif; ?>
 				</div>
 			</div>

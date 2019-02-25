@@ -842,7 +842,7 @@ class Realteo_Submit  {
 					'action' 		=> $this->get_action(),
 					'property_id'   => $this->get_property_id(),
 					'step'      	=> $this->get_step(),
-					'submit_button_text' => __( 'Submit Property', 'realteo' ),
+					'submit_button_text' => __( 'Post Property - Free', 'realteo' ),
 					)
 				)->get_template_part( 'property-submit-package' );
 		}

@@ -323,3 +323,20 @@ function custom_override_checkout_fields( $fields ) {
     unset($fields['billing']['billing_city']);
     return $fields;
 }
+
+function create_meta_desc() {
+	global $post;
+	if (!is_singular()) {return; }
+	elseif(!empty( $post->post_excerpt)) {
+		echo "<meta name='description' content='$post->post_excerpt' />";
+	}
+	else{
+		$meta = apply_filters('the_content', $post->post_content);
+		$meta = strip_tags($meta);
+		$meta = strip_shortcodes($meta );
+		$meta = str_replace( array("\n", "\r", "\t", "<!-- wp:paragraph -->", "<p>", "<!--nextpage-->"), ' ', $meta );
+		$meta = substr($meta, 0, 400);
+		echo "<meta name='description' content='$meta' />";
+	}
+}
+add_action('wp_head', 'create_meta_desc');
