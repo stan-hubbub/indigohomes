@@ -25,9 +25,51 @@
 }
 
 /* misc */
+.findeo-custom a .ssba img {
+  filter: gray;
+  -webkit-filter: grayscale(1);
+  filter: grayscale(1);
+}
+
+.findeo-custom a:hover .ssba img {
+  -webkit-filter: grayscale(0);
+  filter: none;
+}
+
+.findeo-custom .agent-details {
+  margin-left: 0;
+  word-break: break-all;
+}
+
+.findeo-custom .agent-details span {
+  display: block
+}
+
+.findeo-custom .agent-title .agent-photo {
+  display: block;
+  float: none;
+  left: 0;
+  margin: auto;
+  position: relative;
+  right: 0;
+  text-align: center;
+  top: -68px;
+}
+
+.findeo-custom .agent-title .agent-photo img {
+  max-width: 60px;
+}
+
+.findeo-custom .agent-desc {
+  margin-bottom: 30px;
+  font-size: 15px;
+  line-height: 22px;
+}
+
 .findeo-custom .listing-badges span {
   border-radius: 30px;
 }
+
 .findeo-custom  #titlebar.property-titlebar span.property-badge-rent,
 .findeo-custom  #titlebar.property-titlebar span.property-badge-sale,
 .findeo-custom  #titlebar.property-titlebar span.property-type-badge {
