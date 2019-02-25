@@ -25,13 +25,13 @@
 }
 
 /* misc */
-.findeo-custom a .ssba img {
+.findeo-custom a img.ssba {
   filter: gray;
   -webkit-filter: grayscale(1);
   filter: grayscale(1);
 }
 
-.findeo-custom a:hover .ssba img {
+.findeo-custom a:hover img.ssba {
   -webkit-filter: grayscale(0);
   filter: none;
 }
