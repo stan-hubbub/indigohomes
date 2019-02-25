@@ -206,7 +206,7 @@ $sticky = apply_filters('findeo_sticky_header_filter',$sticky);
 					<?php
 
 					if( true == $submit_display ) : ?>
-						<a href="<?php echo get_permalink( realteo_get_option( 'submit_property_page' ) ); ?>" class="button border"><?php esc_html_e('Submit Property','findeo'); ?></a>
+						<a href="<?php echo get_permalink( realteo_get_option( 'submit_property_page' ) ); ?>" class="button border"><?php esc_html_e('Post Property - Free','findeo'); ?></a>
 					<?php endif; ?>
 				</div>
 			</div>
