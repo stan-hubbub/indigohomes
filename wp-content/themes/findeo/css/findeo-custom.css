@@ -45,6 +45,10 @@
   display: block
 }
 
+.findeo-custom .agent-details h4 {
+  padding-top: 10px;
+}
+
 .findeo-custom .agent-title .agent-photo {
   display: block;
   float: none;
@@ -57,7 +61,7 @@
 }
 
 .findeo-custom .agent-title .agent-photo img {
-  max-width: 60px;
+  max-width: 50px;
 }
 
 .findeo-custom .agent-desc {
